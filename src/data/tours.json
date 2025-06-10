@@ -1,0 +1,248 @@
+{
+  "tours": [
+    {
+      "id": "snorkel",
+      "images": {
+        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "gallery": [
+          "../src/assets/images/tours/snorkel/1.jpg",
+          "../src/assets/images/tours/snorkel/2.jpg",
+          "../src/assets/images/tours/snorkel/3.jpg",
+          "../src/assets/images/tours/snorkel/4.jpg",
+          "../src/assets/images/tours/snorkel/5.jpg"
+        ]
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "Snorkel",
+          "description": "Enjoy the fascinating submarine world",
+          "duration": "2 hrs",
+          "period": "3 times a day",
+          "age": "All ages",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Easy",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Sea",
+          "vehicle": "-",
+          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+        },
+        "es": {
+          "title": "Snorkel",
+          "description": "Disfruta del maravilloso mundo submarino",
+          "duration": "2 hrs",
+          "period": "3 veces al día",
+          "age": "Todas las edades",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Fácil",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Mar",
+          "vehicle": "-",
+          "additionalData": "Incluye equipo y transportación Hotel - Arrecife - Hotel"
+        },
+        "de": {
+          "title": "Schnorcheln",
+          "description": "Genießen Sie die faszinierende Unterwasserwelt",
+          "duration": "2 Std",
+          "period": "3 Mal am Tag",
+          "age": "Alle Altersgruppen",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Einfach",
+          "hour": "9:00 Uhr - 12:00 Uhr - 15:00 Uhr",
+          "type": "Meer",
+          "vehicle": "-",
+          "additionalData": "Inklusive Ausrüstung und Transport Hotel - Riff - Hotel"
+        }
+      }
+    },
+
+
+
+    {
+      "id": "citytour",
+      "images": {
+        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "gallery": [
+          "../src/assets/images/tours/snorkel/1.jpg",
+          "../src/assets/images/tours/snorkel/2.jpg",
+          "../src/assets/images/tours/snorkel/3.jpg",
+          "../src/assets/images/tours/snorkel/4.jpg",
+          "../src/assets/images/tours/snorkel/5.jpg"
+        ]
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "City tour",
+          "description": "Enjoy the fascinating submarine world",
+          "duration": "2 hrs",
+          "period": "3 times a day",
+          "age": "All ages",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Easy",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Sea",
+          "vehicle": "-",
+          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+        },
+        "es": {
+          "title": "Tour ciudad",
+          "description": "Disfruta del maravilloso mundo submarino",
+          "duration": "2 hrs",
+          "period": "3 veces al día",
+          "age": "Todas las edades",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Fácil",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Mar",
+          "vehicle": "-",
+          "additionalData": "Incluye equipo y transportación Hotel - Arrecife - Hotel"
+        },
+        "de": {
+          "title": "City tour",
+          "description": "Genießen Sie die faszinierende Unterwasserwelt",
+          "duration": "2 Std",
+          "period": "3 Mal am Tag",
+          "age": "Alle Altersgruppen",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Einfach",
+          "hour": "9:00 Uhr - 12:00 Uhr - 15:00 Uhr",
+          "type": "Meer",
+          "vehicle": "-",
+          "additionalData": "Inklusive Ausrüstung und Transport Hotel - Riff - Hotel"
+        }
+      }
+    },
+
+
+
+    {
+      "id": "camels",
+      "images": {
+        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "gallery": [
+          "../src/assets/images/tours/snorkel/1.jpg",
+          "../src/assets/images/tours/snorkel/2.jpg",
+          "../src/assets/images/tours/snorkel/3.jpg",
+          "../src/assets/images/tours/snorkel/4.jpg",
+          "../src/assets/images/tours/snorkel/5.jpg"
+        ]
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "Camels",
+          "description": "Enjoy the fascinating submarine world",
+          "duration": "2 hrs",
+          "period": "3 times a day",
+          "age": "All ages",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Easy",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Sea",
+          "vehicle": "-",
+          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+        },
+        "es": {
+          "title": "Camellos",
+          "description": "Disfruta del maravilloso mundo submarino",
+          "duration": "2 hrs",
+          "period": "3 veces al día",
+          "age": "Todas las edades",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Fácil",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Mar",
+          "vehicle": "-",
+          "additionalData": "Incluye equipo y transportación Hotel - Arrecife - Hotel"
+        },
+        "de": {
+          "title": "Camels",
+          "description": "Genießen Sie die faszinierende Unterwasserwelt",
+          "duration": "2 Std",
+          "period": "3 Mal am Tag",
+          "age": "Alle Altersgruppen",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Einfach",
+          "hour": "9:00 Uhr - 12:00 Uhr - 15:00 Uhr",
+          "type": "Meer",
+          "vehicle": "-",
+          "additionalData": "Inklusive Ausrüstung und Transport Hotel - Riff - Hotel"
+        }
+      }
+    },
+
+
+
+    {
+      "id": "sunset",
+      "images": {
+        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "gallery": [
+          "../src/assets/images/tours/snorkel/1.jpg",
+          "../src/assets/images/tours/snorkel/2.jpg",
+          "../src/assets/images/tours/snorkel/3.jpg",
+          "../src/assets/images/tours/snorkel/4.jpg",
+          "../src/assets/images/tours/snorkel/5.jpg"
+        ]
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "Sunset",
+          "description": "Enjoy the fascinating submarine world",
+          "duration": "2 hrs",
+          "period": "3 times a day",
+          "age": "All ages",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Easy",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Sea",
+          "vehicle": "-",
+          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+        },
+        "es": {
+          "title": "Atardecer",
+          "description": "Disfruta del maravilloso mundo submarino",
+          "duration": "2 hrs",
+          "period": "3 veces al día",
+          "age": "Todas las edades",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Fácil",
+          "hour": "9:00am - 12:00pm - 15:00pm",
+          "type": "Mar",
+          "vehicle": "-",
+          "additionalData": "Incluye equipo y transportación Hotel - Arrecife - Hotel"
+        },
+        "de": {
+          "title": "Sunset",
+          "description": "Genießen Sie die faszinierende Unterwasserwelt",
+          "duration": "2 Std",
+          "period": "3 Mal am Tag",
+          "age": "Alle Altersgruppen",
+          "price": "50 USD",
+          "promoCode": "PLSSD",
+          "dificulty": "Einfach",
+          "hour": "9:00 Uhr - 12:00 Uhr - 15:00 Uhr",
+          "type": "Meer",
+          "vehicle": "-",
+          "additionalData": "Inklusive Ausrüstung und Transport Hotel - Riff - Hotel"
+        }
+      }
+    }
+
+
+
+  ]
+}

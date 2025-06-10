@@ -1,0 +1,29 @@
+{
+  "en": {
+    "brand": "Cabos",
+    "transportation": "Transportation",
+    "restaurants":"Restaurants",
+    "experiences": "Experiences",
+    "accomodation": "Accomodation",
+    "tours": "Tours",
+    "aboutUs": "About Us"
+  },
+  "es": {
+    "brand": "Cabos",
+    "transportation": "Transportación",
+    "restaurants":"Restaurantes",
+    "experiences": "Experiencias",
+    "accomodation": "Alojamiento",
+    "tours": "Tours",
+    "aboutUs": "Sobre Nosotros"
+  },
+  "de": {
+    "brand": "Cabos",
+    "transportation": "Transport",
+    "restaurants":"Restaurants",
+    "experiences": "Erlebnisse",
+    "accomodation": "Unterkunft",
+    "tours": "Touren",
+    "aboutUs": "Über uns"
+  }
+}
