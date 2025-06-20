@@ -1,31 +1,55 @@
 import { useContext, useEffect, useState } from "react";
-import { ShoppingCartContext } from "../../Context";
+import contentData from '../../data/content.json';
+import { ToursContext } from "../../Context";
 import toursData from '../../data/tours.json';
+import { motion } from 'framer-motion'
+/*const icons = import.meta.glob('../../assets/icons/*.svg', {
+  eager: true,
+  import: 'default',
+});*/
 const Tours = () =>{
-    const { language } = useContext(ShoppingCartContext);
+    
+    const { language } = useContext(ToursContext);
     const [tours, setTours] = useState([]);
+    const content = contentData[language] || contentData['en']; // fallback to English
     useEffect(() => {
         // Filter only active tours
         const activeTours = toursData.tours.filter(tour => tour.status === "active");
         setTours(activeTours);
      }, []);
     return (
-        <section id="tours" className="px-4 md:px-16 lg:px-32 py-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Tours</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="tours" className="w-full bg-gradient-to-l from-[#03A6A6] to-[#07bcbc] px-4 md:px-16 lg:px-16 py-10">
+        <motion.div
+            className="container py-8"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.1 }}
+            viewport={{ once: true }}
+        >
+        <h2 className="font-[outfit] font-semibold text-[3.5rem] text-white">{content.toursTitle}</h2>
+        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {tours.map((tour) => {
-            const t = tour.translations[language] || tour.translations.en;
-            return (
-                <div key={tour.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <img src={tour.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
-                    <div className="p-4 space-y-2">
-                        <h3 className="text-xl font-semibold">{t.title}</h3>
-                        <p className="text-gray-600">{t.description}</p>
-                        <p className="text-sm text-gray-500">{t.duration} • {t.age} • {t.dificulty}</p>
-                        <p className="text-primary font-bold">{t.price}</p>
+                const iconPath = `../../assets/icons/${tour.icon}`;
+                //const icon = icons[iconPath];
+                const t = tour.translations[language] || tour.translations.en;
+                return (
+                    <div key={tour.id} className="max-w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-103">
+                        <img src={tour.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
+                        <div className="p-4 space-y-2">
+                            <div className="flex justify-between pr-[5px]">
+                                <h3 className="text-xl font-semibold text-[#049DBF]">{t.title}</h3>      
+                                {/*<img src={icon} alt={tour.icon} className="w-7 h-7 object-contain text-[#049DBF]"/>*/}
+                            </div>
+                            <p className="text-gray-600">{t.description}</p>
+                            <p className="text-sm text-gray-500">{t.duration} • {t.age} • {t.dificulty}</p>
+                            <p className="text-primary font-bold text-[#049DBF]">{t.price}</p>
+                            <button className="mt-2 px-4 py-2 bg-[#e59e1a] text-white rounded-md hover:bg-[#F2A516] transition duration-200">
+                                Show More
+                            </button>
+                        </div>
                     </div>
-                </div>
-            );
+                );
             })}
         </div>
         </section>

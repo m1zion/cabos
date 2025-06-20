@@ -13,6 +13,7 @@
         ]
       },
       "status": "active",
+      "icon":"snorkel.svg",
       "translations": {
         "en": {
           "title": "Snorkel",
@@ -73,6 +74,7 @@
           "../src/assets/images/tours/snorkel/5.jpg"
         ]
       },
+      "icon":"snorkel.svg",
       "status": "active",
       "translations": {
         "en": {
@@ -135,6 +137,7 @@
         ]
       },
       "status": "active",
+      "icon":"snorkel.svg",
       "translations": {
         "en": {
           "title": "Camels",
@@ -196,6 +199,7 @@
         ]
       },
       "status": "active",
+      "icon":"snorkel.svg",
       "translations": {
         "en": {
           "title": "Sunset",
@@ -241,8 +245,5 @@
         }
       }
     }
-
-
-
   ]
 }

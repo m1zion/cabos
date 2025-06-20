@@ -1,0 +1,26 @@
+{
+  "en": {
+    "aboutUsTitle": "About us",
+    "aboutUsContent": "Mexican tour company dedicated to offering tourist services and experiences, We are known for providing reliable service and complete satisfaction. We are always attentive to your needs at all times.",
+    "accomodationTitle": "Accomodation",
+    "accomodationContent": "We have exclusive accommodations for different needs, offering the highest quality in all our options.",
+    "toursTitle": "Tours and Activities",
+    "transportationTitle": "Our Vehicles"
+  },
+  "es": {
+    "aboutUsTitle": "Nosotros",
+    "aboutUsContent": "Empresa Méxicana dedicada a ofrecer servicios turisticos y experiencias, nos caracterizamos por brindar un servicio confiable con el 100% de satisfaccion, estamos pendientes de sus nececesidades en todo momento.",
+    "accomodationTitle": "Alojamiento",
+    "accomodationContent": "Contamos con alojamiento exclusivo para diferentes necesidades, ofrecemos la mejor calidad en todas nuestras opciones.",
+    "toursTitle": "Tours y Actividades",
+    "transportationTitle": "Nuestros Vehiculos"
+  },
+  "de": {
+    "aboutUsTitle": "Über uns",
+    "aboutUsContent": "Mexikanisches Tourismusunternehmen, das sich auf die Bereitstellung von touristischen Dienstleistungen und Erlebnissen spezialisiert hat. Wir sind bekannt für unseren zuverlässigen Service und die damit verbundene Zufriedenheit. Wir sind stets für Ihre Bedürfnisse da.",
+    "accomodationTitle": "Unterkunft",
+    "accomodationContent": "Wir verfügen über exklusive Unterkünfte für unterschiedliche Bedürfnisse und bieten in allen unseren Optionen höchste Qualität.",
+    "toursTitle": "Touren und Aktivitäten",
+    "transportationTitle": "Unsere Fahrzeuge"
+  }
+}

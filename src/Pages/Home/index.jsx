@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react'
 import Hero from '../../Components/Hero'
 import Footer from '../../Components/Footer'
 import Layout from '../../Components/Layout'
+import About from '../../Components/About'
 // Lazy load for animations/scroll-sensitive components
 const Tours = lazy(() => import('../../Components/Tours'))
 const Experiences = lazy(() => import('../../Components/Experiences'))
@@ -15,6 +16,7 @@ function Home() {
     <Layout>
       <Hero />
       <Suspense fallback={<div>Loading...</div>}>
+        <About/>
         <Accomodation />
         <Tours />
         <Restaurants/>

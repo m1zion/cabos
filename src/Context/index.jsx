@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react"
-export const ShoppingCartContext = createContext();
+export const ToursContext = createContext();
 
 export const ShoppingCartProvider  = ({children}) => {
     // Shopping Card quantity
@@ -15,13 +15,13 @@ export const ShoppingCartProvider  = ({children}) => {
     }, []);
 
     return (
-        <ShoppingCartContext.Provider value={{
+        <ToursContext.Provider value={{
             count,
             setCount,
             language,
             setLanguage,
         }}>
             {children}
-        </ShoppingCartContext.Provider>   
+        </ToursContext.Provider>   
     )
 }

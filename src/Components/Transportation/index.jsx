@@ -1,17 +1,18 @@
-import { motion } from 'framer-motion'
+import { useContext } from "react";
+import contentData from '../../data/content.json';
+import { ToursContext } from "../../Context";
 const Transportation = () =>{
+    const { language } = useContext(ToursContext);
+    const content = contentData[language] || contentData['en']; // fallback to English
     return (
-       <motion.div
-            className="container mx-auto px-4 py-16"
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            id="transportation"
-            >
-            <h2 className="text-3xl font-bold mb-4">Our Vehicles</h2>
-            <p>Explore beautiful destinations with us...</p>
-        </motion.div>
+       <div id="transportation" className="flex-column p-10 scroll-mt-20 h-[500px] w-full">
+            <h1 className="font-[outfit] font-semibold text-[3.5rem] text-[#03A6A6]">
+                {content.transportationTitle}
+            </h1>
+            <h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h1>
+        </div>
     )
 }
 export default Transportation
