@@ -20,7 +20,7 @@ function Home() {
         <Accomodation />
         <Tours />
         <Restaurants/>
-        <Experiences />
+        {/*<Experiences />*/}
         <Transportation/>
       </Suspense>
       <Footer />

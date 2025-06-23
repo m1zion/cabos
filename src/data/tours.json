@@ -65,7 +65,7 @@
     {
       "id": "citytour",
       "images": {
-        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "portrait": "../src/assets/images/tours/citytour/portrait.jpg",
         "gallery": [
           "../src/assets/images/tours/snorkel/1.jpg",
           "../src/assets/images/tours/snorkel/2.jpg",
@@ -127,7 +127,7 @@
     {
       "id": "camels",
       "images": {
-        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "portrait": "../src/assets/images/tours/camel/portrait.jpg",
         "gallery": [
           "../src/assets/images/tours/snorkel/1.jpg",
           "../src/assets/images/tours/snorkel/2.jpg",
@@ -189,7 +189,7 @@
     {
       "id": "sunset",
       "images": {
-        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "portrait": "../src/assets/images/tours/sunset/portrait.jpg",
         "gallery": [
           "../src/assets/images/tours/snorkel/1.jpg",
           "../src/assets/images/tours/snorkel/2.jpg",

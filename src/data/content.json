@@ -5,7 +5,9 @@
     "accomodationTitle": "Accomodation",
     "accomodationContent": "We have exclusive accommodations for different needs, offering the highest quality in all our options.",
     "toursTitle": "Tours and Activities",
-    "transportationTitle": "Our Vehicles"
+    "transportationTitle": "Our Vehicles",
+    "restaurantsTitle": "Restaurants",
+    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   "es": {
     "aboutUsTitle": "Nosotros",
@@ -13,7 +15,9 @@
     "accomodationTitle": "Alojamiento",
     "accomodationContent": "Contamos con alojamiento exclusivo para diferentes necesidades, ofrecemos la mejor calidad en todas nuestras opciones.",
     "toursTitle": "Tours y Actividades",
-    "transportationTitle": "Nuestros Vehiculos"
+    "transportationTitle": "Nuestros Vehiculos",
+    "restaurantsTitle": "Restaurantes",
+    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   "de": {
     "aboutUsTitle": "Über uns",
@@ -21,6 +25,8 @@
     "accomodationTitle": "Unterkunft",
     "accomodationContent": "Wir verfügen über exklusive Unterkünfte für unterschiedliche Bedürfnisse und bieten in allen unseren Optionen höchste Qualität.",
     "toursTitle": "Touren und Aktivitäten",
-    "transportationTitle": "Unsere Fahrzeuge"
+    "transportationTitle": "Unsere Fahrzeuge",
+    "restaurantsTitle": "Restaurants",
+    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
 }

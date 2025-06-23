@@ -7,6 +7,7 @@ import SnorkelIcon  from '../../assets/icons/snorkel.svg?react';
 import HammockIcon  from '../../assets/icons/hammock.svg?react';
 import FoodIcon  from '../../assets/icons/food.svg?react';
 import BeachIcon  from '../../assets/icons/beach.svg?react';
+import Logo2  from '../../assets/icons/logo2.svg?react';
 import TransportIcon  from '../../assets/icons/transport.svg?react';
 import { motion } from "framer-motion";
 
@@ -24,9 +25,9 @@ const About = () =>{
     return (
       <div id="aboutUs" className="flex w-full min-h-[300px] scroll-mt-20">
         <div className="relative  w-full md:w-2/3 bg-gradient-to-l from-[#02897c] to-[#03A6A6] p-10 flex flex-col justify-center">
-        <BeachIcon
-    className="absolute opacity-10 text-white w-[300px] h-[300px] right-[-40px] top-[-40px] pointer-events-none select-none"
-  />
+        <Logo2
+            className="absolute opacity-7 text-white w-[300px] h-[280px] right-[3px] top-[3px] pointer-events-none select-none"
+        />
 
             <motion.div                   
                 initial={{ x: -120, opacity: 0 }}

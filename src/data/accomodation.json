@@ -1,0 +1,153 @@
+{
+  "accomodations": [
+    {
+      "id": "apartment1",
+      "images": {
+        "portrait": "../src/assets/images/accomodation/apartment1/apartment1_md.png",
+        "gallery": []
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "de": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        }
+      }
+    },
+
+    {
+      "id": "apartment2",
+      "images": {
+        "portrait": "../src/assets/images/accomodation/apartment2/apartment2.png",
+        "gallery": []
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "Apartment in downtown",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Apartamento en el centro de los cabos",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "de": {
+          "title": "Apartamento en el centro de los cabos",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        }
+      }
+    },
+        {
+      "id": "house1",
+      "images": {
+        "portrait": "../src/assets/images/accomodation/apartment1/apartment1_md.png",
+        "gallery": []
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "de": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        }
+      }
+    },
+      {
+      "id": "van1",
+      "images": {
+        "portrait": "../src/assets/images/accomodation/apartment1/apartment1_md.png",
+        "gallery": []
+      },
+      "status": "active",
+      "translations": {
+        "en": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        },
+        "de": {
+          "title": "Apartamento vista al mar",
+          "description": "Lujoso apartamento con vista al mar",
+          "rooms": "2",
+          "bathrooms": "1",
+          "parking":"1",
+          "size":"60 m2",          
+          "additionalData": ""
+        }
+      }
+    }
+  ]
+}

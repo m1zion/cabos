@@ -25,8 +25,6 @@ export default function NavBar() {
         es: 'MX',
         de: 'DE'
     };
-
-
     return (
     <Disclosure as="nav" className="bg-[#03A6A6] fixed z-10 w-full top-0">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -36,15 +34,15 @@ export default function NavBar() {
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-[#087d7d] hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
+              <Bars3Icon aria-hidden="true" className="block size-6 open:hidden" />
+              <XMarkIcon aria-hidden="true" className="hidden size-6 open:block" />
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                src="../src/assets/icons/logo1.svg"
                 className="h-8 w-auto"
               />
             </div>
@@ -84,7 +82,9 @@ export default function NavBar() {
           </div>
         </div>
       </div>
+      
 
+      {/*Burguer*/}
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
@@ -109,64 +109,3 @@ export default function NavBar() {
 
 
 
-
-
-
-/*
-import { NavLink } from "react-router-dom"
-import { useContext } from "react";
-import { ToursContext } from "../../Context";
-import { HashLink } from 'react-router-hash-link'
-import navTexts from '../../i18n/navTexts.json';
-import Flag from 'react-world-flags'
-const NavBar = () =>{
-    const {language, setLanguage} = useContext(ToursContext);
-    const t = navTexts[language] || navTexts.en;
-    const activeStyle = "underline underline-offset-3";
-
-    const langToCountry = {
-    en: 'US',
-    es: 'MX',
-    de: 'DE'
-    };
-    return (
-        <nav className="bg-[#03A6A6] text-white flex justify-between items-center fixed z-10 w-full py-5 px-8 text-sm font-light top-0">
-            <ul className="flex items-center gap-3">
-                <li className="font-semibold text-xl">
-                    <NavLink to='/'>{t.brand}</NavLink>
-                </li>
-                <li>
-                    <HashLink className="text-lg" smooth to="/#accomodation">{t.accomodation}</HashLink>
-                </li>
-                <li>
-                    <HashLink className="text-lg" smooth to='/#tours'>{t.tours}</HashLink>
-                </li>
-                <li>
-                    <HashLink className="text-lg" smooth to='/#restaurants'>{t.restaurants}</HashLink>
-                </li>
-                <li>
-                    <HashLink className="text-lg" smooth to="/#experiences">{t.experiences}</HashLink>
-                </li>
-                <li>
-                    <HashLink className="text-lg" smooth to="/#transportation">{t.transportation}</HashLink>
-                </li>
-                <li>
-                    <NavLink className="text-lg" to='/aboutUs'>{t.aboutUs}</NavLink>
-                </li>              
-            </ul>  
-            <ul className="flex items-center gap-2">
-                {['en', 'es', 'de'].map((lang) => (
-                <li key={lang}>
-                    <button
-                    onClick={() => setLanguage(lang)}
-                    className={`uppercase ${language === lang ? 'font-bold underline' : ''}`}
-                    >
-                        <Flag code={langToCountry[lang]} style={{ width: 24, height: 16 }} />                            
-                    </button>
-                </li>
-                ))}
-            </ul>
-        </nav>
-    )
-}
-export default NavBar*/
