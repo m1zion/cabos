@@ -3,6 +3,7 @@ import navTexts from '../../i18n/navTexts.json'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ToursContext } from "../../Context"
+//import logo from '../assets/icons/logo1.svg'
 import Flag from 'react-world-flags'
 
 function classNames(...classes) {
@@ -42,7 +43,7 @@ export default function NavBar() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="../src/assets/icons/logo1.svg"
+                src="./src/assets/icons/logo1.svg"
                 className="h-8 w-auto"
               />
             </div>
