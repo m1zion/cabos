@@ -7,8 +7,7 @@ import { motion } from 'framer-motion'
   eager: true,
   import: 'default',
 });*/
-const Tours = () =>{
-    
+const Tours = () =>{    
     const { language } = useContext(ToursContext);
     const [tours, setTours] = useState([]);
     const content = contentData[language] || contentData['en']; // fallback to English
@@ -16,9 +15,9 @@ const Tours = () =>{
         // Filter only active tours
         const activeTours = toursData.tours.filter(tour => tour.status === "active");
         setTours(activeTours);
-     }, []);
+     }, []);    
     return (
-        <section id="tours" className="w-full bg-gradient-to-l from-[#03A6A6] to-[#07bcbc] px-4 md:px-16 lg:px-16 py-10">
+        <section id="tours" className="w-full bg-gradient-to-l from-[#03A6A6] to-[#07bcbc] px-10 py-5">
         <motion.div
             className="container py-8"
             initial={{ opacity: 0, x: 100 }}
@@ -26,7 +25,7 @@ const Tours = () =>{
             transition={{ duration: 1.1 }}
             viewport={{ once: true }}
         >
-        <h2 className="font-[outfit] font-semibold text-[3.5rem] text-white">{content.toursTitle}</h2>
+        <h2 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-white">{content.toursTitle}</h2>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {tours.map((tour) => {

@@ -34,7 +34,7 @@ const About = () =>{
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
             >
-            <h1 className="font-[outfit] font-semibold text-[3.5rem] text-white">
+            <h1 className="font-[outfit] font-semibold  text-[2.5rem] sm:text-[3.5rem] text-white">
             {content.aboutUsTitle}
             </h1>
              </motion.div>

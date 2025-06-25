@@ -22,7 +22,7 @@ const Accomodation = () =>{
 
     return (
         <section id="accomodation" className="flex-column p-10 scroll-mt-20 w-full bg-[#eaf8f8]">
-            <h1 className="font-[outfit] font-semibold text-[3.5rem] text-[#03A6A6]">
+            <h1 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-[#03A6A6]">
                 {content.accomodationTitle}
             </h1>
             <h1>
@@ -36,7 +36,7 @@ const Accomodation = () =>{
                         <img src={accomodation.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
                         <div className="p-4 space-y-2">
                             <div className="flex justify-between pr-[5px] items-center">
-                                <h3 className="text-xl font-semibold text-[#049DBF]">{t.title}</h3>      
+                                <h3 className="text-md md:text-xl font-semibold text-[#049DBF]">{t.title}</h3>      
                             </div>
                             <p className="text-gray-600">{t.description}</p>
                            <div className="flex items-center gap-4 text-gray-500 text-sm mt-2">

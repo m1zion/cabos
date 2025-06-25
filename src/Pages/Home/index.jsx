@@ -19,9 +19,8 @@ function Home() {
         <About/>
         <Accomodation />
         <Tours />
-        <Restaurants/>
-        {/*<Experiences />*/}
-        <Transportation/>
+        {/*<Restaurants/>        
+        <Transportation/>*/}
       </Suspense>
       <Footer />
          
