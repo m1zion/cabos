@@ -21,7 +21,7 @@ const icons = [
 const About = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
-    console.log(contentData);
+    //console.log(contentData);
     return (
       <div id="aboutUs" className="flex w-full min-h-[300px] scroll-mt-20">
         <div className="relative  w-full md:w-2/3 bg-gradient-to-l from-[#02897c] to-[#03A6A6] p-10 flex flex-col justify-center">
