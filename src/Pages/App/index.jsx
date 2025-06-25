@@ -15,7 +15,6 @@ const AppRoutes = () =>{
 const App = () => {
   return (
     <ShoppingCartProvider>
-      {/*basename={import.meta.env.BASE_URL}*/}
       <BrowserRouter >
         <AppRoutes/>
         <NavBar/>
@@ -24,3 +23,5 @@ const App = () => {
   )
 }
 export default App
+
+      {/*basename={import.meta.env.BASE_URL}*/}
