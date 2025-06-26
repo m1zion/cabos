@@ -43,8 +43,8 @@ export default function NavBar() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="./src/assets/icons/logo1.svg"
-                className="h-8 w-auto"
+                src="./src/assets/icons/logo4.svg"
+                className="h-12 w-auto"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">

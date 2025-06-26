@@ -25,9 +25,9 @@ const Tours = () =>{
             transition={{ duration: 1.1 }}
             viewport={{ once: true }}
         >
-        <h2 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-white">{content.toursTitle}</h2>
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <h2 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-white text-center sm:text-left">{content.toursTitle}</h2>
+        </motion.div>       
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-4 justify-items-center">
             {tours.map((tour) => {
                 const iconPath = `../../assets/icons/${tour.icon}`;
                 //const icon = icons[iconPath];
