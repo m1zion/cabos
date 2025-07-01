@@ -9,28 +9,31 @@
       "status": "active",
       "translations": {
         "en": {
-          "title": "Apartamento vista al mar",
-          "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
-          "bathrooms": "1",
+          "title": "Ocean View Escape: Infinity Pool & Private Balcony",
+          "description": "Enjoy this beautiful apartment with a private balcony and breathtaking ocean view. Relax in the infinity pool or stroll down to Costa Azul Beach, a true paradise for surf lovers. Located in an exclusive private community with 24/7 security, immaculate gardens, and free parking. We will be delighted to assist you so you can enjoy a comfortable stay full of unforgettable moments. Book today and live the dream of waking up to magical sunrises and stunning ocean views!",
+          "location": "San Jose del Cabo",
+          "beds": "1 king bed",
+          "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": ""
         },
         "es": {
-          "title": "Apartamento vista al mar",
-          "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
-          "bathrooms": "1",
+          "title": "Escape vista el mar, Alberca Infinita, Balcon Privado, ",
+          "description": "Enjoy this beautiful apartment with a private balcony and breathtaking ocean view. Relax in the infinity pool or stroll down to Costa Azul Beach, a true paradise for surf lovers. Located in an exclusive private community with 24/7 security, immaculate gardens, and free parking. We will be delighted to assist you so you can enjoy a comfortable stay full of unforgettable moments. Book today and live the dream of waking up to magical sunrises and stunning ocean views!",
+            "location": "San Jose del Cabo",
+          "beds": "1 king bed",
+          "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": ""
         },
         "de": {
-          "title": "Apartamento vista al mar",
-          "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
-          "bathrooms": "1",
+          "title": "Ocean View Escape: Infinity-Pool und privater Balkon",
+           "description": "Enjoy this beautiful apartment with a private balcony and breathtaking ocean view. Relax in the infinity pool or stroll down to Costa Azul Beach, a true paradise for surf lovers. Located in an exclusive private community with 24/7 security, immaculate gardens, and free parking. We will be delighted to assist you so you can enjoy a comfortable stay full of unforgettable moments. Book today and live the dream of waking up to magical sunrises and stunning ocean views!",
+          "location": "San Jose del Cabo",
+          "beds": "1 king bed",
+          "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": ""
@@ -49,7 +52,7 @@
         "en": {
           "title": "Apartment in downtown",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "1 king bed",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -58,7 +61,7 @@
         "es": {
           "title": "Apartamento en el centro de los cabos",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -67,7 +70,7 @@
         "de": {
           "title": "Apartamento en el centro de los cabos",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -86,7 +89,7 @@
         "en": {
           "title": "Apartamento vista al mar",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -95,7 +98,7 @@
         "es": {
           "title": "Apartamento vista al mar",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -104,7 +107,7 @@
         "de": {
           "title": "Apartamento vista al mar",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -123,7 +126,7 @@
         "en": {
           "title": "Apartamento vista al mar",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -132,7 +135,7 @@
         "es": {
           "title": "Apartamento vista al mar",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          
@@ -141,7 +144,7 @@
         "de": {
           "title": "Apartamento vista al mar",
           "description": "Lujoso apartamento con vista al mar",
-          "rooms": "2",
+          "beds": "2",
           "bathrooms": "1",
           "parking":"1",
           "size":"60 m2",          

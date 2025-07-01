@@ -1,8 +1,9 @@
 {
   "en": {
     "aboutUsTitle": "About us",
-    "aboutUsContent": "Mexican tour company dedicated to offering tourist services and experiences, We are known for providing reliable service and complete satisfaction. We are always attentive to your needs at all times.",
-    "accomodationTitle": "Accomodation",
+    "aboutUsContent": "We are a local team based in Los Cabos, dedicated to creating unforgettable travel experiences with a personal touch. With years of expertise in hospitality, premium guest services, and as proud Airbnb Superhosts, we specialize in making your stay effortless, comfortable, and truly memorable.",
+    "aboutUsContent2": "From ocean-view accommodations and private yacht tours to exclusive restaurant reservations and curated sunset experiences, every detail is tailored to your preferences. Whether you're here to unwind or explore, we ensure a seamless and elevated experience from start to finish. We offer a strong attention to detail, multilingual service (English, native Spanish and native German), and count with deep local insights. Personally, we have tried many of the tours and activities we offer, so you can trust that every recommendation is genuine, high-quality, and worth your time. Let us take care of the details — so you can simply enjoy Los Cabos.",
+    "accomodationTitle": "Our Accomodation",
     "accomodationContent": "We have exclusive accommodations for different needs, offering the highest quality in all our options.",
     "toursTitle": "Tours and Activities",
     "transportationTitle": "Our Vehicles",
@@ -11,8 +12,9 @@
   },
   "es": {
     "aboutUsTitle": "Nosotros",
-    "aboutUsContent": "Empresa Méxicana dedicada a ofrecer servicios turisticos y experiencias, nos caracterizamos por brindar un servicio confiable con el 100% de satisfaccion, estamos pendientes de sus nececesidades en todo momento.",
-    "accomodationTitle": "Alojamiento",
+    "aboutUsContent": "Somos un equipo local con sede en Los Cabos, dedicado a crear experiencias de viaje inolvidables con un toque personal. Con años de experiencia en hospitalidad, servicios premium para huéspedes y como orgullosos Superanfitriones de Airbnb, nos especializamos en hacer que tu estancia sea sencilla, cómoda y verdaderamente inolvidable.",
+    "aboutUsContent2":"Desde alojamientos con vista al mar y tours privados en yate hasta reservaciones exclusivas en restaurantes y experiencias seleccionadas para disfrutar del atardecer, cada detalle está adaptado a tus preferencias. Ya sea que vengas a relajarte o a explorar, garantizamos una experiencia fluida y de alto nivel de principio a fin. Ofrecemos una atención meticulosa a los detalles, un servicio multilingüe (inglés, español nativo y alemán nativo), y contamos con un profundo conocimiento local. Personalmente, hemos probado muchos de los tours y actividades que ofrecemos, por lo que puedes confiar en que cada recomendación es auténtica, de alta calidad y vale la pena. Permítenos encargarnos de los detalles — para que tú solo disfrutes de Los Cabos.",
+    "accomodationTitle": "Nuestros Alojamientos",
     "accomodationContent": "Contamos con alojamiento exclusivo para diferentes necesidades, ofrecemos la mejor calidad en todas nuestras opciones.",
     "toursTitle": "Tours y Actividades",
     "transportationTitle": "Nuestros Vehiculos",
@@ -21,7 +23,8 @@
   },
   "de": {
     "aboutUsTitle": "Über uns",
-    "aboutUsContent": "Mexikanisches Tourismusunternehmen, das sich auf die Bereitstellung von touristischen Dienstleistungen und Erlebnissen spezialisiert hat. Wir sind bekannt für unseren zuverlässigen Service und die damit verbundene Zufriedenheit. Wir sind stets für Ihre Bedürfnisse da.",
+    "aboutUsContent": "Wir sind ein lokales Team mit Sitz in Los Cabos und widmen uns der Gestaltung unvergesslicher Reiseerlebnisse mit einer persönlichen Note. Mit jahrelanger Erfahrung in der Gastfreundschaft, im Premium-Gästeservice und als stolze Airbnb-Superhosts sorgen wir dafür, dass Ihr Aufenthalt mühelos, komfortabel und wirklich unvergesslich wird.",
+    "aboutUsContent2": "Von Unterkünften mit Meerblick und privaten Yachttouren bis hin zu exklusiven Restaurantreservierungen und sorgfältig kuratierten Sonnenuntergangserlebnissen – jedes Detail wird individuell auf Ihre Wünsche abgestimmt. Ganz gleich, ob Sie zur Entspannung oder zum Erkunden hier sind, wir sorgen für ein nahtloses und hochwertiges Erlebnis von Anfang bis Ende. Wir bieten besondere Liebe zum Detail, einen mehrsprachigen Service (Englisch, Spanisch als Muttersprache und Deutsch als Muttersprache) sowie tiefgreifende lokale Kenntnisse. Viele der Touren und Aktivitäten, die wir anbieten, haben wir persönlich ausprobiert – Sie können sich also darauf verlassen, dass jede Empfehlung authentisch, hochwertig und lohnenswert ist. Überlassen Sie uns die Details – damit Sie Los Cabos einfach nur genießen können.",
     "accomodationTitle": "Unterkunft",
     "accomodationContent": "Wir verfügen über exklusive Unterkünfte für unterschiedliche Bedürfnisse und bieten in allen unseren Optionen höchste Qualität.",
     "toursTitle": "Touren und Aktivitäten",

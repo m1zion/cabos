@@ -2,6 +2,8 @@ import { useContext, useState, useEffect } from "react";
 import contentData from '../../data/content.json';
 import accomodationData from '../../data/accomodation.json';
 import { ToursContext } from "../../Context";
+import { MapPinIcon  } from '@heroicons/react/24/outline'
+
 
 const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
@@ -28,22 +30,26 @@ const Accomodation = () =>{
             <h1>
                 {content.accomodationContent}
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-4 justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 justify-items-center">
             {accomodations.map((accomodation) => {
                 const t = accomodation.translations[language] || accomodation.translations.en;
                 return (
-                    <div key={accomodation.id} className="max-w-[330px]  border border-gray-100 bg-white rounded-sm shadow-lg overflow-hidden transform transition duration-400 hover:-translate-y-1">
+                    <div key={accomodation.id} className="w-[100%]  border border-gray-100 bg-white rounded-sm shadow-lg overflow-hidden transform transition duration-400 hover:-translate-y-1">
                         <img src={accomodation.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
                         <div className="p-4 space-y-2">
                             <div className="flex justify-between pr-[5px] items-center">
                                 <h3 className="text-md md:text-xl font-semibold text-[#049DBF]">{t.title}</h3>      
                             </div>
-                            <p className="text-gray-600">{t.description}</p>
+                            <div className="flex gap-2"> 
+                                <MapPinIcon  className="block size-5" />
+                                <p className="text-gray-600">{t.location}</p> 
+                            </div>
+                            
                            <div className="flex items-center gap-4 text-gray-500 text-sm mt-2">
                                 {RoomIcon && (
                                     <div className="flex items-center gap-1">
                                     <img src={RoomIcon} alt="rooms" className="w-4 h-4" />
-                                    <span>{t.rooms} •</span>
+                                    <span>{t.beds} •</span>
                                     </div>
                                 )}
                                 {BathIcon && (
@@ -60,8 +66,8 @@ const Accomodation = () =>{
                                 )}
                             </div>
                 
-                            <button className="mt-2 px-4 py-2 bg-[#e59e1a] hover:bg-[#F2A516] text-white rounded-md cursor-pointer">
-                                Show More
+                            <button className="mt-2 px-4 py-2 border border-[#049DBF] text-[#049DBF] rounded-md cursor-pointer">
+                                View listing
                             </button>
                         </div>
                     </div>
