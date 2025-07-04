@@ -4,6 +4,7 @@
       "id": "Jolla",
       "images": {
         "portrait": "../src/assets/images/accomodation/jolla/portrait.png",
+        "background": "../src/assets/images/accomodation/jolla/background.png",
         "gallery": [
           "../src/assets/images/accomodation/jolla/1.png",
           "../src/assets/images/accomodation/jolla/2.png",
@@ -13,6 +14,8 @@
         ]
       },
       "status": "active",
+      "coordinateX":"23.0344784",
+      "coordinateY":"-109.7148714",
       "translations": {
         "en": {
           "title": "Ocean View Escape: Infinity Pool & Private Balcony",
@@ -35,6 +38,7 @@
             { "category":"Bathroom", "name": "Shower", "icon": "shower.svg" },
             { "category":"Bathroom", "name": "Bathtub", "icon": "bathtub.svg" },
             { "category":"Bathroom", "name": "Hot water", "icon": "hotWater.svg" },
+            { "category":"Bathroom", "name": "Towels", "icon": "towels.svg" },
             { "category":"Bathroom", "name": "Hairdryer", "icon": "hairdryer.svg" },
             { "category":"Kitchen", "name": "Dining table for 4", "icon": "table.svg" },
             { "category":"Kitchen", "name": "Fridge", "icon": "fridge.svg" },
@@ -91,6 +95,7 @@
             { "category": "Baño", "name": "Bañera", "icon": "bathtub.svg" },
             { "category": "Baño", "name": "Agua caliente", "icon": "hotWater.svg" },
             { "category": "Baño", "name": "Secadora de cabello", "icon": "hairdryer.svg" },
+            { "category": "Baño", "name": "Toallas", "icon": "towels.svg" },
             { "category": "Cocina", "name": "Mesa para 4 personas", "icon": "table.svg" },
             { "category": "Cocina", "name": "Refrigerador", "icon": "fridge.svg" },
             { "category": "Cocina", "name": "Congelador", "icon": "freezer.svg" },
@@ -146,6 +151,7 @@
             { "category": "Badezimmer", "name": "Badewanne", "icon": "bathtub.svg" },
             { "category": "Badezimmer", "name": "Warmwasser", "icon": "hotWater.svg" },
             { "category": "Badezimmer", "name": "Haartrockner", "icon": "hairdryer.svg" },
+            { "category": "Badezimmer", "name": "Handtuch", "icon": "towels.svg" },
             { "category": "Küche", "name": "Esstisch für 4 Personen", "icon": "table.svg" },
             { "category": "Küche", "name": "Kühlschrank", "icon": "fridge.svg" },
             { "category": "Küche", "name": "Gefrierschrank", "icon": "freezer.svg" },
@@ -185,43 +191,145 @@
     {
       "id": "Cardinal",
       "images": {
-        "portrait": "../src/assets/images/accomodation/apartment2/apartment2.png",
-        "gallery": []
+        "portrait": "../src/assets/images/accomodation/cardinal/portrait.png",
+        "background": "../src/assets/images/accomodation/cardinal/background.png",
+        "gallery": [ 
+          "../src/assets/images/accomodation/cardinal/1.png",
+          "../src/assets/images/accomodation/cardinal/2.png",
+          "../src/assets/images/accomodation/cardinal/3.png",
+          "../src/assets/images/accomodation/cardinal/4.png",
+          "../src/assets/images/accomodation/cardinal/5.png"
+        ]
       },
       "status": "active",
+      "coordinateX":"23.0344784",
+      "coordinateY":"-109.7148714",
       "translations": {
         "en": {
           "title": "Cozy Art District Studio with Rooftop, Pool & Views",
-          "description": "Immerse yourself in the heart of the Art District and downtown San José del Cabo, just steps from the famous Art Walk, restaurants, artisan shops, and galleries. Enjoy the breathtaking views of the ocean, mountains, and city from the rooftop terrace with pool. Perfect for couples and solo travelers seeking culture and relaxation. We’re happy to assist you with tips and tour bookings. Book your unforgettable getaway today! We are looking forward to welcoming you!",
+          "description": "Immerse yourself in the heart of the Art District and downtown San José del Cabo, just steps from the famous Art Walk, restaurants, artisan shops, and galleries. Enjoy the breathtaking views of the ocean, mountains, and city from the rooftop terrace with pool.\n\nPerfect for couples and solo travelers seeking culture and relaxation.\n\nWe’re happy to assist you with tips and tour bookings.\n\nBook your unforgettable getaway today! We are looking forward to welcoming you!",
           "location": "Downtown San Jose del Cabo",
           "beds": "1 Queen bed",
           "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities":"Amenities"
+          "amenities":"Amenities",
+          "amenitiesList": [
+            { "category":"Bedroom", "name": "Queen size bed", "icon": "doubleBed.svg" },
+            { "category":"Bedroom", "name": "Closet", "icon": "closet.svg" },
+            { "category":"Bedroom", "name": "Extra pillows and blankets", "icon": "pillow.svg" },
+            { "category":"Bathroom", "name": "Spacious shower", "icon": "shower.svg" },
+            { "category":"Bathroom", "name": "Hot water", "icon": "hotWater.svg" },
+            { "category":"Bathroom", "name": "Hairdryer", "icon": "hairdryer.svg" },
+            { "category":"Bathroom", "name": "Towels", "icon": "towels.svg" },
+            { "category":"Kitchen", "name": "Dining table", "icon": "table.svg" },
+            { "category":"Kitchen", "name": "Fridge", "icon": "fridge.svg" },
+            { "category":"Kitchen", "name": "Freezer", "icon": "freezer2.png" },
+            { "category":"Kitchen", "name": "Electric stove", "icon": "stove.svg" },
+            { "category":"Kitchen", "name": "Blender", "icon": "blender.svg" },
+            { "category":"Kitchen", "name": "Coffeemaker & coffee", "icon": "coffee.svg" },            
+            { "category":"Kitchen", "name": "Microwave", "icon": "microwave.svg" },
+            { "category":"Kitchen", "name": "Toaster", "icon": "toaster.svg" },
+            { "category":"Kitchen", "name": "Pots, pans, tableware", "icon": "pan.svg" },
+            { "category":"Connectivity & Services", "name": "50” Smart TV with Amazon Prime Video", "icon": "tv.svg" },
+            { "category":"Connectivity & Services", "name": "Wifi (150mbps) ", "icon": "wifi.svg" },
+            { "category":"Connectivity & Services", "name": "A/C", "icon": "ac.svg" },
+            { "category":"Shared rooftop", "name": "Long heated infinity pool", "icon": "pool.svg" },
+            { "category":"Shared rooftop", "name": "Fitness area with dumbbells, basic equipment", "icon": "gym.svg" },
+            { "category":"Shared rooftop", "name": "Firepit", "icon": "firepit.svg" },
+            { "category":"Shared rooftop", "name": "Sun loungers and outdoor furniture", "icon": "lounger.svg" },
+            { "category":"Shared rooftop", "name": "Outdoor bathrooms and showers", "icon": "bathroom.svg" },
+            { "category":"Shared rooftop", "name": "Wifi", "icon": "wifi.svg" },
+            { "category":"Services & building amenities", "name": "Elevator", "icon": "elevator.svg" },
+            { "category":"Services & building amenities", "name": "Receptionist during office times", "icon": "recepcionist.svg" },
+            { "category":"Services & building amenities", "name": "Multilingual concierge", "icon": "concierge.svg" },
+            { "category":"Services & building amenities", "name": "Smart door lock", "icon": "lock.svg" }       
+          ]
         },
         "es": {
           "title": "Acogedor estudio en el distrito artístico con azotea, piscina y vistas",
-          "description": "Sumérgete en el corazón del Distrito de las Artes y el centro de San José del Cabo, a solo unos pasos del famoso Paseo del Arte, restaurantes, tiendas de artesanía y galerías. Disfruta de las impresionantes vistas del océano, las montañas y la ciudad desde la terraza con piscina en la azotea. Ideal para parejas y viajeros solitarios que buscan cultura y relajación. Con gusto te ayudaremos con consejos y reservas de tours. ¡Reserva tu escapada inolvidable hoy mismo! ¡Te esperamos!",
+          "description": "Sumérgete en el corazón del Distrito de las Artes y el centro de San José del Cabo, a solo unos pasos del famoso Paseo del Arte, restaurantes, tiendas de artesanía y galerías. Disfruta de las impresionantes vistas del océano, las montañas y la ciudad desde la terraza con piscina en la azotea.\n\nIdeal para parejas y viajeros solitarios que buscan cultura y relajación.\n\nCon gusto te ayudaremos con consejos y reservas de tours.\n\n¡Reserva tu escapada inolvidable hoy mismo! ¡Te esperamos!",
           "location": "Centro San Jose del Cabo",
           "beds": "1 Cama Queen",
           "bathrooms": "1 baño",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities":"Amenidades"
+          "amenities": "Amenidades",
+          "amenitiesList": [
+            { "category": "Dormitorio", "name": "Cama queen size", "icon": "doubleBed.svg" },
+            { "category": "Dormitorio", "name": "Clóset", "icon": "closet.svg" },
+            { "category": "Dormitorio", "name": "Almohadas y cobijas extras", "icon": "pillow.svg" },
+            { "category": "Baño", "name": "Ducha amplia", "icon": "shower.svg" },
+            { "category": "Baño", "name": "Agua caliente", "icon": "hotWater.svg" },
+            { "category": "Baño", "name": "Secadora de cabello", "icon": "hairdryer.svg" },
+            { "category": "Baño", "name": "Toallas", "icon": "towels.svg" },
+            { "category": "Cocina", "name": "Mesa de comedor", "icon": "table.svg" },
+            { "category": "Cocina", "name": "Refrigerador", "icon": "fridge.svg" },
+            { "category": "Cocina", "name": "Congelador", "icon": "freezer2.png" },
+            { "category": "Cocina", "name": "Estufa eléctrica", "icon": "stove.svg" },
+            { "category": "Cocina", "name": "Licuadora", "icon": "blender.svg" },
+            { "category": "Cocina", "name": "Cafetera y café", "icon": "coffee.svg" },
+            { "category": "Cocina", "name": "Microondas", "icon": "microwave.svg" },
+            { "category": "Cocina", "name": "Tostadora", "icon": "toaster.svg" },
+            { "category": "Cocina", "name": "Sartenes, ollas y vajilla", "icon": "pan.svg" },
+            { "category": "Conectividad y servicios", "name": "Smart TV de 50” con Amazon Prime Video", "icon": "tv.svg" },
+            { "category": "Conectividad y servicios", "name": "Wifi (150mbps)", "icon": "wifi.svg" },
+            { "category": "Conectividad y servicios", "name": "A/C", "icon": "ac.svg" },
+            { "category": "Terraza compartida", "name": "Alberca infinita larga climatizada", "icon": "pool.svg" },
+            { "category": "Terraza compartida", "name": "Área de ejercicio con mancuernas y equipo básico", "icon": "gym.svg" },
+            { "category": "Terraza compartida", "name": "Fogatero", "icon": "firepit.svg" },
+            { "category": "Terraza compartida", "name": "Camastros y muebles exteriores", "icon": "lounger.svg" },
+            { "category": "Terraza compartida", "name": "Baños y regaderas al aire libre", "icon": "bathroom.svg" },
+            { "category": "Terraza compartida", "name": "Wifi", "icon": "wifi.svg" },
+            { "category": "Servicios y amenidades del edificio", "name": "Elevador", "icon": "elevator.svg" },
+            { "category": "Servicios y amenidades del edificio", "name": "Recepcionista en horario de oficina", "icon": "recepcionist.svg" },
+            { "category": "Servicios y amenidades del edificio", "name": "Conserje multilingüe", "icon": "concierge.svg" },
+            { "category": "Servicios y amenidades del edificio", "name": "Cerradura inteligente", "icon": "lock.svg" }
+          ]
         },
         "de": {
           "title": "Gemütliches Art District Studio mit Dachterrasse, Pool und Aussicht",
-          "description": "Tauchen Sie ein in das Herz des Kunstviertels und der Innenstadt von San José del Cabo, nur wenige Schritte vom berühmten Art Walk, Restaurants, Kunsthandwerksläden und Galerien entfernt. Genießen Sie den atemberaubenden Blick auf Meer, Berge und Stadt von der Dachterrasse mit Pool. Perfekt für Paare und Alleinreisende, die Kultur und Entspannung suchen. Wir unterstützen Sie gerne mit Tipps und Tourenbuchungen. Buchen Sie noch heute Ihren unvergesslichen Kurzurlaub! Wir freuen uns auf Sie!",
+          "description": "Tauchen Sie ein in das Herz des Kunstviertels und der Innenstadt von San José del Cabo, nur wenige Schritte vom berühmten Art Walk, Restaurants, Kunsthandwerksläden und Galerien entfernt. Genießen Sie den atemberaubenden Blick auf Meer, Berge und Stadt von der Dachterrasse mit Pool.\n\nPerfekt für Paare und Alleinreisende, die Kultur und Entspannung suchen.\n\nWir unterstützen Sie gerne mit Tipps und Tourenbuchungen.\n\nBuchen Sie noch heute Ihren unvergesslichen Kurzurlaub! Wir freuen uns auf Sie!",
           "location": "Downtown San Jose del Cabo",
           "beds": "1 Queen bed",
           "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities":"Annehmlichkeiten"
+          "amenities": "Ausstattung",
+          "amenitiesList": [
+            { "category": "Schlafzimmer", "name": "Queensize-Bett", "icon": "doubleBed.svg" },
+            { "category": "Schlafzimmer", "name": "Kleiderschrank", "icon": "closet.svg" },
+            { "category": "Schlafzimmer", "name": "Zusätzliche Kissen und Decken", "icon": "pillow.svg" },
+            { "category": "Badezimmer", "name": "Geräumige Dusche", "icon": "shower.svg" },
+            { "category": "Badezimmer", "name": "Warmwasser", "icon": "hotWater.svg" },
+            { "category": "Badezimmer", "name": "Haartrockner", "icon": "hairdryer.svg" },
+            { "category": "Badezimmer", "name": "Handtücher", "icon": "towels.svg" },
+            { "category": "Küche", "name": "Esstisch", "icon": "table.svg" },
+            { "category": "Küche", "name": "Kühlschrank", "icon": "fridge.svg" },
+            { "category": "Küche", "name": "Gefrierschrank", "icon": "freezer2.png" },
+            { "category": "Küche", "name": "Elektroherd", "icon": "stove.svg" },
+            { "category": "Küche", "name": "Mixer", "icon": "blender.svg" },
+            { "category": "Küche", "name": "Kaffeemaschine & Kaffee", "icon": "coffee.svg" },
+            { "category": "Küche", "name": "Mikrowelle", "icon": "microwave.svg" },
+            { "category": "Küche", "name": "Toaster", "icon": "toaster.svg" },
+            { "category": "Küche", "name": "Töpfe, Pfannen und Geschirr", "icon": "pan.svg" },
+            { "category": "Konnektivität & Services", "name": "50” Smart-TV mit Amazon Prime Video", "icon": "tv.svg" },
+            { "category": "Konnektivität & Services", "name": "WLAN (150 Mbit/s)", "icon": "wifi.svg" },
+            { "category": "Konnektivität & Services", "name": "Klimaanlage", "icon": "ac.svg" },
+            { "category": "Gemeinschaftsdachterrasse", "name": "Langer, beheizter Infinity-Pool", "icon": "pool.svg" },
+            { "category": "Gemeinschaftsdachterrasse", "name": "Fitnessbereich mit Hanteln und Grundausstattung", "icon": "gym.svg" },
+            { "category": "Gemeinschaftsdachterrasse", "name": "Feuerstelle", "icon": "firepit.svg" },
+            { "category": "Gemeinschaftsdachterrasse", "name": "Sonnenliegen und Gartenmöbel", "icon": "lounger.svg" },
+            { "category": "Gemeinschaftsdachterrasse", "name": "Außenbäder und Duschen", "icon": "bathroom.svg" },
+            { "category": "Gemeinschaftsdachterrasse", "name": "WLAN", "icon": "wifi.svg" },
+            { "category": "Gebäudeservices & Ausstattung", "name": "Aufzug", "icon": "elevator.svg" },
+            { "category": "Gebäudeservices & Ausstattung", "name": "Rezeption während der Bürozeiten", "icon": "recepcionist.svg" },
+            { "category": "Gebäudeservices & Ausstattung", "name": "Mehrsprachiger Concierge", "icon": "concierge.svg" },
+            { "category": "Gebäudeservices & Ausstattung", "name": "Elektronisches Türschloss", "icon": "lock.svg" }
+          ]
         }
       }
     },
@@ -229,42 +337,132 @@
       "id": "Camper",
       "images": {
         "portrait": "../src/assets/images/accomodation/camper/portrait.png",
-        "gallery": []
+        "background": "../src/assets/images/accomodation/camper/background.png",
+        "gallery": [
+          "../src/assets/images/accomodation/camper/1.png",
+          "../src/assets/images/accomodation/camper/2.png",
+          "../src/assets/images/accomodation/camper/3.png",
+          "../src/assets/images/accomodation/camper/4.png",
+          "../src/assets/images/accomodation/camper/5.png"
+        ]
       },
       "status": "active",
+      "coordinateX":"23.0344784",
+      "coordinateY":"-109.7148714",
       "translations": {
         "en": {
           "title": "Unique Camper Stay in Art District & Downtown",
-          "description": "Spend a unique stay in our renovated camper and enjoy an extraordinary experience, just 5 minutes walking distance from the city center and art district of San Jose del Cabo. The camper offers you a bedroom, full bathroom with hot water, kitchen, dining area, air conditioning, a spacious terrace and outside area with hammock to spend the evenings outside. We are also happy to help you book your tours and restaurants. Don't hesitate to start your next outstanding adventure and book today!",
+          "description": "Spend a unique stay in our renovated camper and enjoy an extraordinary experience, just 5 minutes walking distance from the city center and art district of San Jose del Cabo.\n\nThe camper offers you a bedroom, full bathroom with hot water, kitchen, dining area, air conditioning, a spacious terrace and outside area with hammock to spend the evenings outside.\n\nWe are also happy to help you book your tours and restaurants.\n\nDon't hesitate to start your next outstanding adventure and book today!",
           "location": "Downtown San Jose del Cabo",
           "beds": "1 Double bed",
           "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",          
-          "amenities":"Amenities"
+          "amenities":"Amenities",
+          "amenitiesList": [
+            { "category":"Bedroom", "name": "Double bed", "icon": "doubleBed.svg" },
+            { "category":"Bedroom", "name": "Closet", "icon": "closet.svg" },
+            { "category":"Bedroom", "name": "Extra pillows and blankets", "icon": "pillow.svg" },
+            { "category":"Bathroom", "name": "Shower", "icon": "shower.svg" },
+            { "category":"Bathroom", "name": "Hot water", "icon": "hotWater.svg" },
+            { "category":"Bathroom", "name": "Towels", "icon": "towels.svg" },
+            { "category":"Bathroom", "name": "Hairdryer", "icon": "hairdryer.svg" },
+            { "category":"Kitchen", "name": "Dining table", "icon": "table.svg" },
+            { "category":"Kitchen", "name": "Fridge", "icon": "fridge.svg" },
+            { "category":"Kitchen", "name": "Freezer", "icon": "freezer2.png" },
+            { "category":"Kitchen", "name": "Electric stovetop", "icon": "stove.svg" },           
+            { "category":"Kitchen", "name": "Blender", "icon": "blender.svg" },
+            { "category":"Kitchen", "name": "Coffeemaker & coffee", "icon": "coffee.svg" },
+            { "category":"Kitchen", "name": "Toaster", "icon": "toaster.svg" },
+            { "category":"Kitchen", "name": "Pots, pans, tableware", "icon": "pan.svg" },         
+            { "category":"Kitchen", "name": "Microwave", "icon": "microwave.svg" },
+            { "category":"Terrace", "name": "Outdoor seating area", "icon": "couch.svg" },
+            { "category":"Terrace", "name": "Umbrella", "icon": "umbrella.svg" },
+            { "category":"Terrace", "name": "Hammock", "icon": "hammock.svg" },
+            { "category":"Terrace", "name": "Cornhole ", "icon": "hole.svg" },
+            { "category":"Connectivity & Services", "name": "Wifi (150mbps) ", "icon": "wifi.svg" },
+            { "category":"Connectivity & Services", "name": "A/C", "icon": "ac.svg" },
+            { "category":"Services & building amenities", "name": "Multilingual concierge", "icon": "concierge.svg" },
+            { "category":"Services & building amenities", "name": "Flexible check-in and check-out", "icon": "lock.svg" },
+            { "category":"Parking", "name": "Free, secure parking", "icon": "parking.svg" }          
+          ]
         },
         "es": {
           "title": "Estancia única en camper en el distrito artístico y el centro de la ciudad",
-          "description": "Disfruta de una estancia única en nuestro camper renovado y una experiencia extraordinaria, a solo 5 minutos a pie del centro de la ciudad y del distrito artístico de San José del Cabo. Nuestro camper te ofrece una recámara, baño completo con agua caliente, cocina, comedor, aire acondicionado, una amplia terraza y una zona exterior con hamaca para disfrutar de las tardes al aire libre. También estaremos encantados de ayudarte a reservar tus tours y restaurantes. ¡No dudes en empezar tu próxima aventura inolvidable y reserva hoy mismo!",
+          "description": "Disfruta de una estancia única en nuestro camper renovado y una experiencia extraordinaria, a solo 5 minutos a pie del centro de la ciudad y del distrito artístico de San José del Cabo.\n\nNuestro camper te ofrece una recámara, baño completo con agua caliente, cocina, comedor, aire acondicionado, una amplia terraza y una zona exterior con hamaca para disfrutar de las tardes al aire libre.\n\nTambién estaremos encantados de ayudarte a reservar tus tours y restaurantes.\n\n¡No dudes en empezar tu próxima aventura inolvidable y reserva hoy mismo!",
           "location": "Downtown San Jose del Cabo",
           "beds": "1 Cama doble",
           "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities":"Amenidades"
+          "amenities":"Amenidades",
+          "amenitiesList": [
+            { "category": "Dormitorio", "name": "Cama doble", "icon": "doubleBed.svg" },
+            { "category": "Dormitorio", "name": "Clóset", "icon": "closet.svg" },
+            { "category": "Dormitorio", "name": "Almohadas y cobijas extras", "icon": "pillow.svg" },
+            { "category": "Baño", "name": "Ducha", "icon": "shower.svg" },
+            { "category": "Baño", "name": "Agua caliente", "icon": "hotWater.svg" },
+            { "category": "Baño", "name": "Toallas", "icon": "towels.svg" },
+            { "category": "Baño", "name": "Secadora de cabello", "icon": "hairdryer.svg" },
+            { "category": "Cocina", "name": "Mesa de comedor", "icon": "table.svg" },
+            { "category": "Cocina", "name": "Refrigerador", "icon": "fridge.svg" },
+            { "category": "Cocina", "name": "Congelador", "icon": "freezer2.png" },
+            { "category": "Cocina", "name": "Estufa eléctrica", "icon": "stove.svg" },
+            { "category": "Cocina", "name": "Licuadora", "icon": "blender.svg" },
+            { "category": "Cocina", "name": "Cafetera y café", "icon": "coffee.svg" },
+            { "category": "Cocina", "name": "Tostadora", "icon": "toaster.svg" },
+            { "category": "Cocina", "name": "Sartenes, ollas y vajilla", "icon": "pan.svg" },
+            { "category": "Cocina", "name": "Microondas", "icon": "microwave.svg" },
+            { "category": "Terraza", "name": "Área de descanso al aire libre", "icon": "couch.svg" },
+            { "category": "Terraza", "name": "Sombrilla", "icon": "umbrella.svg" },
+            { "category": "Terraza", "name": "Hamaca", "icon": "hammock.svg" },
+            { "category": "Terraza", "name": "Juego de lanzamiento de bolsa", "icon": "hole.svg" },
+            { "category": "Conectividad y servicios", "name": "Wifi (150mbps)", "icon": "wifi.svg" },
+            { "category": "Conectividad y servicios", "name": "A/C", "icon": "ac.svg" },
+            { "category": "Servicios y amenidades del edificio", "name": "Conserje multilingüe", "icon": "concierge.svg" },
+            { "category": "Servicios y amenidades del edificio", "name": "Check-in y check-out flexibles", "icon": "lock.svg" },
+            { "category": "Estacionamiento", "name": "Estacionamiento gratuito y seguro", "icon": "parking.svg" }
+          ]
         },
         "de": {
           "title": "Einzigartiger Camper-Aufenthalt im Kunstviertel und in der Innenstadt",
-          "description": "Verbringen Sie einen einzigartigen Aufenthalt in unserem renovierten Wohnmobil und genießen Sie ein außergewöhnliches Erlebnis, nur 5 Gehminuten vom Stadtzentrum und dem Kunstviertel von San Jose del Cabo entfernt. Das Wohnmobil bietet Ihnen ein Schlafzimmer, ein komplettes Badezimmer mit Warmwasser, eine Küche, einen Essbereich, eine Klimaanlage, eine geräumige Terrasse und einen Außenbereich mit Hängematte, um die Abende draußen zu verbringen. Gerne helfen wir Ihnen auch bei der Buchung Ihrer Touren und Restaurants. Zögern Sie nicht, Ihr nächstes außergewöhnliches Abenteuer zu beginnen und buchen Sie noch heute!",
+          "description": "Verbringen Sie einen einzigartigen Aufenthalt in unserem renovierten Wohnmobil und genießen Sie ein außergewöhnliches Erlebnis, nur 5 Gehminuten vom Stadtzentrum und dem Kunstviertel von San Jose del Cabo entfernt.\n\nDas Wohnmobil bietet Ihnen ein Schlafzimmer, ein komplettes Badezimmer mit Warmwasser, eine Küche, einen Essbereich, eine Klimaanlage, eine geräumige Terrasse und einen Außenbereich mit Hängematte, um die Abende draußen zu verbringen.\n\nGerne helfen wir Ihnen auch bei der Buchung Ihrer Touren und Restaurants.\n\nZögern Sie nicht, Ihr nächstes außergewöhnliches Abenteuer zu beginnen und buchen Sie noch heute!",
           "location": "Downtown San Jose del Cabo",
           "beds": "1 Double bed",
           "bathrooms": "1 bath",
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities":"Annehmlichkeiten"
+          "amenities":"Annehmlichkeiten",
+          "amenitiesList": [
+            { "category": "Schlafzimmer", "name": "Doppelbett", "icon": "doubleBed.svg" },
+            { "category": "Schlafzimmer", "name": "Kleiderschrank", "icon": "closet.svg" },
+            { "category": "Schlafzimmer", "name": "Zusätzliche Kissen und Decken", "icon": "pillow.svg" },
+            { "category": "Badezimmer", "name": "Dusche", "icon": "shower.svg" },
+            { "category": "Badezimmer", "name": "Warmwasser", "icon": "hotWater.svg" },
+            { "category": "Badezimmer", "name": "Handtücher", "icon": "towels.svg" },
+            { "category": "Badezimmer", "name": "Haartrockner", "icon": "hairdryer.svg" },
+            { "category": "Küche", "name": "Esstisch", "icon": "table.svg" },
+            { "category": "Küche", "name": "Kühlschrank", "icon": "fridge.svg" },
+            { "category": "Küche", "name": "Gefrierschrank", "icon": "freezer2.png" },
+            { "category": "Küche", "name": "Elektrisches Kochfeld", "icon": "stove.svg" },
+            { "category": "Küche", "name": "Mixer", "icon": "blender.svg" },
+            { "category": "Küche", "name": "Kaffeemaschine & Kaffee", "icon": "coffee.svg" },
+            { "category": "Küche", "name": "Toaster", "icon": "toaster.svg" },
+            { "category": "Küche", "name": "Töpfe, Pfannen und Geschirr", "icon": "pan.svg" },
+            { "category": "Küche", "name": "Mikrowelle", "icon": "microwave.svg" },
+            { "category": "Terrasse", "name": "Sitzbereich im Freien", "icon": "couch.svg" },
+            { "category": "Terrasse", "name": "Sonnenschirm", "icon": "umbrella.svg" },
+            { "category": "Terrasse", "name": "Hängematte", "icon": "hammock.svg" },
+            { "category": "Terrasse", "name": "Wurfspiel (Cornhole)", "icon": "hole.svg" },
+            { "category": "Konnektivität & Services", "name": "WLAN (150 Mbit/s)", "icon": "wifi.svg" },
+            { "category": "Konnektivität & Services", "name": "Klimaanlage", "icon": "ac.svg" },
+            { "category": "Gebäudeservices & Ausstattung", "name": "Mehrsprachiger Concierge", "icon": "concierge.svg" },
+            { "category": "Gebäudeservices & Ausstattung", "name": "Flexibler Check-in und Check-out", "icon": "lock.svg" },
+            { "category": "Parkplatz", "name": "Kostenloser, sicherer Parkplatz", "icon": "parking.svg" }
+          ]
         }
       }
     },
@@ -272,9 +470,18 @@
       "id": "van1",
       "images": {
         "portrait": "../src/assets/images/accomodation/apartment1/apartment1_md.png",
-        "gallery": []
+        "background": "../src/assets/images/accomodation/apartment1/background.png",
+        "gallery": [
+          "../src/assets/images/accomodation/apartment1/1.png",
+          "../src/assets/images/accomodation/apartment1/2.png",
+          "../src/assets/images/accomodation/apartment1/3.png",
+          "../src/assets/images/accomodation/apartment1/4.png",
+          "../src/assets/images/accomodation/apartment1/5.png"
+        ]
       },
       "status": "active",
+      "coordinateX":"23.0344784",
+      "coordinateY":"-109.7148714",
       "translations": {
         "en": {
           "title": "Apartamento vista al mar",
@@ -284,7 +491,16 @@
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities":"Amenities"
+          "amenities":"Amenities",
+          "amenitiesList": [
+            { "category":"Bedroom", "name": "Double bed", "icon": "doubleBed.svg" },
+            { "category":"Bedroom", "name": "Closet", "icon": "closet.svg" },
+            { "category":"Bedroom", "name": "Extra pillows and blankets", "icon": "pillow.svg" },
+            { "category":"Bathroom", "name": "Shower", "icon": "shower.svg" },
+            { "category":"Bathroom", "name": "Hot water", "icon": "hotWater.svg" },
+            { "category":"Bathroom", "name": "Towels", "icon": "towels.svg" },
+            { "category":"Bathroom", "name": "Hairdryer", "icon": "hairdryer.svg" }                   
+          ]
         },
         "es": {
           "title": "Apartamento vista al mar",
@@ -294,7 +510,16 @@
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",          
-          "amenities":"Amenidades"
+          "amenities":"Amenidades",
+          "amenitiesList": [
+            { "category": "Dormitorio", "name": "Cama doble", "icon": "doubleBed.svg" },
+            { "category": "Dormitorio", "name": "Clóset", "icon": "closet.svg" },
+            { "category": "Dormitorio", "name": "Almohadas y cobijas extras", "icon": "pillow.svg" },
+            { "category": "Baño", "name": "Ducha", "icon": "shower.svg" },
+            { "category": "Baño", "name": "Agua caliente", "icon": "hotWater.svg" },
+            { "category": "Baño", "name": "Toallas", "icon": "towels.svg" },
+            { "category": "Baño", "name": "Secadora de cabello", "icon": "hairdryer.svg" }
+          ]
         },
         "de": {
           "title": "Apartamento vista al mar",
@@ -305,12 +530,15 @@
           "size":"60 m2",          
           "additionalData": "",
           "amenities":"Annehmlichkeiten",
-          "amenitiesList":[ "Beach view",
-            "Swimming pool",
-            "Free WiFi",
-            "Air conditioning",
-            "Washing Machine",
-            "Suitable for children"]
+          "amenitiesList": [
+            { "category": "Schlafzimmer", "name": "Doppelbett", "icon": "doubleBed.svg" },
+            { "category": "Schlafzimmer", "name": "Kleiderschrank", "icon": "closet.svg" },
+            { "category": "Schlafzimmer", "name": "Zusätzliche Kissen und Decken", "icon": "pillow.svg" },
+            { "category": "Badezimmer", "name": "Dusche", "icon": "shower.svg" },
+            { "category": "Badezimmer", "name": "Warmwasser", "icon": "hotWater.svg" },
+            { "category": "Badezimmer", "name": "Handtücher", "icon": "towels.svg" },
+            { "category": "Badezimmer", "name": "Haartrockner", "icon": "hairdryer.svg" }
+          ]
         }
       }
     }

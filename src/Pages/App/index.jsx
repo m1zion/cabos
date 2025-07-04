@@ -3,7 +3,7 @@ import { useRoutes, BrowserRouter } from 'react-router-dom'
 import { ShoppingCartProvider } from '../../Context'
 import './App.css'
 import NavBar from '../../Components/NavBar/'
-
+import ScrollToTop from "../../Components/scrollToTop";
 import Footer from '../../Components/Footer'
 import Home from '../Home/'
 import NotFound from '../NotFound/'
@@ -20,6 +20,7 @@ const App = () => {
   return (
     <ShoppingCartProvider>
       <BrowserRouter >
+        <ScrollToTop />
         <AppRoutes/>
         <NavBar/>
         <Footer />
