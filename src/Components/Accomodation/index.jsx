@@ -3,6 +3,7 @@ import contentData from '../../data/content.json';
 import accomodationData from '../../data/accomodation.json';
 import { ToursContext } from "../../Context";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 
 const icons = import.meta.glob('../../assets/icons/*.svg', {
@@ -64,11 +65,12 @@ const Accomodation = () =>{
                                     <span>{t.parking}</span>
                                     </div>
                                 )}
-                            </div>
-                
-                            <button className="mt-2 px-4 py-2 border border-[#049DBF] text-[#049DBF] rounded-md cursor-pointer">
-                                View listing
-                            </button>
+                            </div>   
+                            <Link to={`/Accommodation/${accomodation.id}`}>
+                                <button className="mt-2 px-4 py-2 border border-[#049DBF] text-[#049DBF] rounded-md cursor-pointer">
+                                    View listing
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 );

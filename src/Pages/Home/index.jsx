@@ -22,7 +22,7 @@ function Home() {
         <Restaurants/>        
         <Transportation/>
       </Suspense>
-      <Footer />
+      {/*<Footer />*/}
          
     </Layout>
   )
