@@ -5,6 +5,7 @@ import svgr from "vite-plugin-svgr"; //Para colorear los svg
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/cabos/',
   plugins: [
     tailwindcss(),
     svgr(),
