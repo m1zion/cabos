@@ -14,12 +14,11 @@ export default function NavBar() {
     const {language, setLanguage} = useContext(ToursContext);
     const t = navTexts[language] || navTexts.en;
     const navigation = [
-        { name: t.accomodation, href: '/#accomodation', current: false },
-        { name: t.tours, href: '/#tours', current: false },
-        { name: t.restaurants, href: '/#restaurants', current: false },
-        { name: t.experiences, href: '/#experiences', current: false },
-        { name: t.transportation, href: '/#transportation', current: false },
-        { name: t.aboutUs, href: '/#aboutUs', current: false },
+        { name: t.accomodation, href: '#accomodation', current: false },
+        { name: t.tours, href: '#tours', current: false },
+        { name: t.restaurants, href: '#restaurants', current: false },
+        { name: t.experiences, href: '#experiences', current: false },
+        { name: t.transportation, href: '#transportation', current: false },
     ]
     const langToCountry = {
         en: 'US',

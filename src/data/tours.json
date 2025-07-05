@@ -3,13 +3,13 @@
     {
       "id": "snorkel",
       "images": {
-        "portrait": "../src/assets/images/tours/snorkel/portrait.jpg",
+        "portrait": "/cabos/assets/images/tours/snorkel/portrait.jpg",
         "gallery": [
-          "../src/assets/images/tours/snorkel/1.jpg",
-          "../src/assets/images/tours/snorkel/2.jpg",
-          "../src/assets/images/tours/snorkel/3.jpg",
-          "../src/assets/images/tours/snorkel/4.jpg",
-          "../src/assets/images/tours/snorkel/5.jpg"
+          "/cabos/assets/images/tours/snorkel/1.jpg",
+          "/cabos/assets/images/tours/snorkel/2.jpg",
+          "/cabos/assets/images/tours/snorkel/3.jpg",
+          "/cabos/assets/images/tours/snorkel/4.jpg",
+          "/cabos/assets/images/tours/snorkel/5.jpg"
         ]
       },
       "status": "active",
@@ -65,13 +65,13 @@
     {
       "id": "citytour",
       "images": {
-        "portrait": "../src/assets/images/tours/citytour/portrait.jpg",
+        "portrait": "/cabos/assets/images/tours/citytour/portrait.jpg",
         "gallery": [
-          "../src/assets/images/tours/snorkel/1.jpg",
-          "../src/assets/images/tours/snorkel/2.jpg",
-          "../src/assets/images/tours/snorkel/3.jpg",
-          "../src/assets/images/tours/snorkel/4.jpg",
-          "../src/assets/images/tours/snorkel/5.jpg"
+          "/cabos/assets/images/tours/snorkel/1.jpg",
+          "/cabos/assets/images/tours/snorkel/2.jpg",
+          "/cabos/assets/images/tours/snorkel/3.jpg",
+          "/cabos/assets/images/tours/snorkel/4.jpg",
+          "/cabos/assets/images/tours/snorkel/5.jpg"
         ]
       },
       "icon":"snorkel.svg",
@@ -127,13 +127,13 @@
     {
       "id": "camels",
       "images": {
-        "portrait": "../src/assets/images/tours/camel/portrait.jpg",
+        "portrait": "/cabos/assets/images/tours/camel/portrait.jpg",
         "gallery": [
-          "../src/assets/images/tours/snorkel/1.jpg",
-          "../src/assets/images/tours/snorkel/2.jpg",
-          "../src/assets/images/tours/snorkel/3.jpg",
-          "../src/assets/images/tours/snorkel/4.jpg",
-          "../src/assets/images/tours/snorkel/5.jpg"
+          "/cabos/assets/images/tours/snorkel/1.jpg",
+          "/cabos/assets/images/tours/snorkel/2.jpg",
+          "/cabos/assets/images/tours/snorkel/3.jpg",
+          "/cabos/assets/images/tours/snorkel/4.jpg",
+          "/cabos/assets/images/tours/snorkel/5.jpg"
         ]
       },
       "status": "active",
@@ -189,13 +189,13 @@
     {
       "id": "sunset",
       "images": {
-        "portrait": "../src/assets/images/tours/sunset/portrait.jpg",
+        "portrait": "/cabos/assets/images/tours/sunset/portrait.jpg",
         "gallery": [
-          "../src/assets/images/tours/snorkel/1.jpg",
-          "../src/assets/images/tours/snorkel/2.jpg",
-          "../src/assets/images/tours/snorkel/3.jpg",
-          "../src/assets/images/tours/snorkel/4.jpg",
-          "../src/assets/images/tours/snorkel/5.jpg"
+          "/cabos/assets/images/tours/snorkel/1.jpg",
+          "/cabos/assets/images/tours/snorkel/2.jpg",
+          "/cabos/assets/images/tours/snorkel/3.jpg",
+          "/cabos/assets/images/tours/snorkel/4.jpg",
+          "/cabos/assets/images/tours/snorkel/5.jpg"
         ]
       },
       "status": "active",

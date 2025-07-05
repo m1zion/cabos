@@ -2,10 +2,10 @@ import { useContext } from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import Carousel from 'react-multi-carousel';
-import car1 from '../../assets/images/transportation/car(1).png';
-import car2 from '../../assets/images/transportation/car(2).png';
-import car3 from '../../assets/images/transportation/car(3).png';
-import car4 from '../../assets/images/transportation/car(4).png';
+import car1 from '/cabos/assets/images/transportation/car(1).png';
+import car2 from '/cabos/assets/images/transportation/car(2).png';
+import car3 from '/cabos/assets/images/transportation/car(3).png';
+import car4 from '/cabos/assets/images/transportation/car(4).png';
 
 import "react-multi-carousel/lib/styles.css";
 const responsive = {

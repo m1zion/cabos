@@ -3,14 +3,14 @@
     {
       "id": "Jolla",
       "images": {
-        "portrait": "../src/assets/images/accomodation/jolla/portrait.png",
-        "background": "../src/assets/images/accomodation/jolla/background.png",
+        "portrait": "/cabos/assets/images/accomodation/jolla/portrait.png",
+        "background": "/cabos/assets/images/accomodation/jolla/background.png",
         "gallery": [
-          "../src/assets/images/accomodation/jolla/1.png",
-          "../src/assets/images/accomodation/jolla/2.png",
-          "../src/assets/images/accomodation/jolla/3.png",
-          "../src/assets/images/accomodation/jolla/4.png",
-          "../src/assets/images/accomodation/jolla/5.png"
+          "/cabos/assets/images/accomodation/jolla/1.png",
+          "/cabos/assets/images/accomodation/jolla/2.png",
+          "/cabos/assets/images/accomodation/jolla/3.png",
+          "/cabos/assets/images/accomodation/jolla/4.png",
+          "/cabos/assets/images/accomodation/jolla/5.png"
         ]
       },
       "status": "active",
@@ -191,14 +191,14 @@
     {
       "id": "Cardinal",
       "images": {
-        "portrait": "../src/assets/images/accomodation/cardinal/portrait.png",
-        "background": "../src/assets/images/accomodation/cardinal/background.png",
+        "portrait": "/cabos/assets/images/accomodation/cardinal/portrait.png",
+        "background": "/cabos/assets/images/accomodation/cardinal/background.png",
         "gallery": [ 
-          "../src/assets/images/accomodation/cardinal/1.png",
-          "../src/assets/images/accomodation/cardinal/2.png",
-          "../src/assets/images/accomodation/cardinal/3.png",
-          "../src/assets/images/accomodation/cardinal/4.png",
-          "../src/assets/images/accomodation/cardinal/5.png"
+          "/cabos/assets/images/accomodation/cardinal/1.png",
+          "/cabos/assets/images/accomodation/cardinal/2.png",
+          "/cabos/assets/images/accomodation/cardinal/3.png",
+          "/cabos/assets/images/accomodation/cardinal/4.png",
+          "/cabos/assets/images/accomodation/cardinal/5.png"
         ]
       },
       "status": "active",
@@ -336,14 +336,14 @@
     {
       "id": "Camper",
       "images": {
-        "portrait": "../src/assets/images/accomodation/camper/portrait.png",
-        "background": "../src/assets/images/accomodation/camper/background.png",
+        "portrait": "/cabos/assets/images/accomodation/camper/portrait.png",
+        "background": "/cabos/assets/images/accomodation/camper/background.png",
         "gallery": [
-          "../src/assets/images/accomodation/camper/1.png",
-          "../src/assets/images/accomodation/camper/2.png",
-          "../src/assets/images/accomodation/camper/3.png",
-          "../src/assets/images/accomodation/camper/4.png",
-          "../src/assets/images/accomodation/camper/5.png"
+          "/cabos/assets/images/accomodation/camper/1.png",
+          "/cabos/assets/images/accomodation/camper/2.png",
+          "/cabos/assets/images/accomodation/camper/3.png",
+          "/cabos/assets/images/accomodation/camper/4.png",
+          "/cabos/assets/images/accomodation/camper/5.png"
         ]
       },
       "status": "active",
@@ -469,14 +469,14 @@
       {
       "id": "van1",
       "images": {
-        "portrait": "../src/assets/images/accomodation/apartment1/apartment1_md.png",
-        "background": "../src/assets/images/accomodation/apartment1/background.png",
+        "portrait": "/cabos/assets/images/accomodation/apartment1/apartment1_md.png",
+        "background": "/cabos/assets/images/accomodation/apartment1/background.png",
         "gallery": [
-          "../src/assets/images/accomodation/apartment1/1.png",
-          "../src/assets/images/accomodation/apartment1/2.png",
-          "../src/assets/images/accomodation/apartment1/3.png",
-          "../src/assets/images/accomodation/apartment1/4.png",
-          "../src/assets/images/accomodation/apartment1/5.png"
+          "/cabos/assets/images/accomodation/apartment1/1.png",
+          "/cabos/assets/images/accomodation/apartment1/2.png",
+          "/cabos/assets/images/accomodation/apartment1/3.png",
+          "/cabos/assets/images/accomodation/apartment1/4.png",
+          "/cabos/assets/images/accomodation/apartment1/5.png"
         ]
       },
       "status": "active",

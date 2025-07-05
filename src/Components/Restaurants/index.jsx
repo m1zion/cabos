@@ -20,7 +20,7 @@ const Restaurants = () =>{
             </div>
             <div
                 className="absolute right-[0px] w-[100%] sm:w-[70%]  h-full bg-cover bg-center flex items-center"
-                style={{backgroundImage: "url('../../src/assets/images/restaurants/portrait.jpg')",}}> 
+                style={{backgroundImage: "url('/cabos/assets/images/restaurants/portrait.jpg')",}}> 
                 <div className="absolute inset-0 bg-black/40 sm:bg-transparent"></div>            
             </div>                   
         </section>

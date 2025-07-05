@@ -11,9 +11,9 @@ import NotFound from '../NotFound/'
 import Accommodation from '../Accommodation/'
 const AppRoutes = () =>{
   let routes = useRoutes([
-    { path: '/',  element: <Home/> },
-    { path: '/Accommodation/:id',  element: <Accommodation/> },
-    { path: '/*',  element: <NotFound/> },
+    { path: '',  element: <Home/> },
+    { path: 'Accommodation/:id',  element: <Accommodation/> },
+    { path: '*',  element: <NotFound/> },
   ]);
   return routes;
 };

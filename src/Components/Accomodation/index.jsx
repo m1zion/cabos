@@ -66,7 +66,7 @@ const Accomodation = () =>{
                                     </div>
                                 )}
                             </div>   
-                            <Link to={`/Accommodation/${accomodation.id}`}>
+                            <Link to={`Accommodation/${accomodation.id}`}>
                                 <button className="mt-2 px-4 py-2 border border-[#049DBF] text-[#049DBF] rounded-md cursor-pointer">
                                     View listing
                                 </button>
