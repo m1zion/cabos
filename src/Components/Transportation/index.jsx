@@ -2,12 +2,10 @@ import { useContext } from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import Carousel from 'react-multi-carousel';
-import car1 from '/cabos/assets/images/transportation/car1.png';
-import car2 from '/cabos/assets/images/transportation/car2.png';
-import car3 from '/cabos/assets/images/transportation/car3.png';
-import car4 from '/cabos/assets/images/transportation/car4.png';
 
 import "react-multi-carousel/lib/styles.css";
+
+
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -26,7 +24,13 @@ const responsive = {
     items: 1
   }
 };
-const images = [car1, car2, car3, car4];
+const images = [
+  '/cabos/assets/images/transportation/car1.png',
+  '/cabos/assets/images/transportation/car2.png',
+  '/cabos/assets/images/transportation/car3.png',
+  '/cabos/assets/images/transportation/car4.png'
+];
+
 const Transportation = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
