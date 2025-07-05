@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { useRoutes, BrowserRouter } from 'react-router-dom'
+//I was using BrowserRouter  but GitHub Pages does not support server-side routing
+import { useRoutes, HashRouter  } from 'react-router-dom'
 import { ShoppingCartProvider } from '../../Context'
 import './App.css'
 import NavBar from '../../Components/NavBar/'
@@ -19,12 +20,12 @@ const AppRoutes = () =>{
 const App = () => {
   return (
     <ShoppingCartProvider>
-      <BrowserRouter >
+      <HashRouter  >
         <ScrollToTop />
         <AppRoutes/>
         <NavBar/>
         <Footer />
-      </BrowserRouter> 
+      </HashRouter > 
     </ShoppingCartProvider>
   )
 }
