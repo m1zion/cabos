@@ -202,8 +202,8 @@
         ]
       },
       "status": "active",
-      "coordinateX":"23.0344784",
-      "coordinateY":"-109.7148714",
+      "coordinateX":"23.0605365",
+      "coordinateY":"-109.6952224",
       "translations": {
         "en": {
           "title": "Cozy Art District Studio with Rooftop, Pool & Views",
@@ -347,8 +347,8 @@
         ]
       },
       "status": "active",
-      "coordinateX":"23.0344784",
-      "coordinateY":"-109.7148714",
+      "coordinateX":"23.0638512",
+      "coordinateY":"-109.7007607",
       "translations": {
         "en": {
           "title": "Unique Camper Stay in Art District & Downtown",
@@ -418,7 +418,7 @@
             { "category": "Terraza", "name": "Área de descanso al aire libre", "icon": "couch.svg" },
             { "category": "Terraza", "name": "Sombrilla", "icon": "umbrella.svg" },
             { "category": "Terraza", "name": "Hamaca", "icon": "hammock.svg" },
-            { "category": "Terraza", "name": "Juego de lanzamiento de bolsa", "icon": "hole.svg" },
+            { "category": "Terraza", "name": "Cornhole ", "icon": "hole.svg" },
             { "category": "Conectividad y servicios", "name": "Wifi (150mbps)", "icon": "wifi.svg" },
             { "category": "Conectividad y servicios", "name": "A/C", "icon": "ac.svg" },
             { "category": "Servicios y amenidades del edificio", "name": "Conserje multilingüe", "icon": "concierge.svg" },

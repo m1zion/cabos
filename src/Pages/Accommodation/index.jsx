@@ -12,6 +12,8 @@ import "leaflet/dist/leaflet.css";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
@@ -26,17 +28,38 @@ const icons = import.meta.glob('../../assets/icons/*.svg', {
   import: 'default',
 });
 
+const responsive = {
+  desktop: {breakpoint: { max: 3000, min: 1024 }, items: 1, },
+  tablet: {breakpoint: { max: 1024, min: 464 }, items: 1, },
+  mobile: {breakpoint: { max: 464, min: 0 }, items: 1, },
+};
 function accommodation() {  
     const { language } = useContext(ToursContext);
     const { id } = useParams();
     const RoomIcon = icons['../../assets/icons/bed.svg'];
     const BathIcon = icons['../../assets/icons/bathroom.svg'];
     const ParkingIcon = icons['../../assets/icons/parking.svg'];
-
+    const [showModal, setShowModal] = useState(false);
+    const [startIndex, setStartIndex] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(startIndex);
     const accomodation = accomodationData.accomodations.find(a => a.id === id);
     if (!accomodation) {
         return <div>Accommodation not found</div>;
     }
+    const allImages = [accomodation.images.portrait, ...accomodation.images.gallery];
+    const handleImageClick = (index) => {
+        setStartIndex(index);
+        setShowModal(true);
+    };
+
+    const Dot = ({ index, onClick, current }) => (
+    <li
+        className={`w-3 h-3 mx-1 rounded-full ${
+        index === current ? "bg-white" : "bg-gray-400"
+        } cursor-pointer`}
+        onClick={() => onClick()}
+    />
+    );
     const t = accomodation.translations[language] || accomodation.translations.en;
     //const position = [23.0344784,-109.7148714]; 
     const position = [accomodation.coordinateX,accomodation.coordinateY]; 
@@ -76,7 +99,7 @@ function accommodation() {
                 </div>      
             </div>
         </div>
-{/*px-3 sm:px-10 */}
+        {/*px-3 sm:px-10 */}
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[1rem] mb-[2rem] flex-column items-left">
             {/*<h1 className="text-[2rem]">{t.title}</h1>*/}
             <div className="flex items-center gap-4 text-gray-500 text-sm mt-2">
@@ -106,11 +129,13 @@ function accommodation() {
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
             <button className="w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#03A6A6] text-white font-medium rounded-sm shadow hover:bg-[#028b8b] transition duration-200">Reservar</button>  
         </div> 
+
         <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%] h-[400px] gap-1 flex flex-col md:flex-row" id ="images"> 
-            <div className="w-full md:w-1/2 h-[400px]">
+            <div className="w-full md:w-1/2 h-[400px] cursor-pointer">
                 <img
                 src={accomodation.images.portrait}
                 alt="Main"
+                onClick={() => handleImageClick(0)}
                 className="w-full h-full object-cover"
                 />
             </div>
@@ -147,10 +172,13 @@ function accommodation() {
             
             {openCategories[category] && (
             <div className="grid grid-cols-2 gap-4">
+
+
+
             {amenities.map((amenity, index) => (
                 <div key={index} className="flex items-center gap-2">
                 <img
-                    src={`/src/assets/icons/amenities/${amenity.icon}`}
+                    src={`/cabos/src/assets/icons/amenities/${amenity.icon}`}
                     alt={amenity.name}
                     className="w-6 h-6 object-contain"
                     onError={(e) => {
@@ -161,6 +189,9 @@ function accommodation() {
                 <span className="text-sm text-gray-700">{amenity.name}</span>
                 </div>
             ))}
+
+
+            
             </div>
             )}
         </div>
@@ -189,6 +220,41 @@ function accommodation() {
         </div>
        
 
+
+
+        {/* Modal with Carousel */}
+        {showModal && (
+        <div className="fixed inset-0 bg-black/90 bg-opacity-50 z-[999] flex items-center justify-center p-4">
+          <button
+            className="absolute top-4 right-4 text-white text-2xl cursor-pointer"
+            onClick={() => setShowModal(false)}
+          >
+            ✕
+          </button>
+          <div className="w-full max-w-4xl">
+            <Carousel
+              responsive={responsive}
+              infinite
+              
+              autoPlay={false}
+              arrows
+              initialSlide={startIndex}
+              afterChange={(previousSlide, { currentSlide }) => setCurrentSlide(currentSlide)}
+                customDot={<Dot current={currentSlide} />}
+            >
+              {allImages.map((img, index) => (
+                <div key={index} className="h-[80vh] flex justify-center items-center">
+                  <img
+                    src={img}
+                    alt={`Gallery ${index}`}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </Carousel>
+          </div>
+        </div>
+        )}
         </Layout>
     )
 }

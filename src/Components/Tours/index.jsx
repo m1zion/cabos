@@ -16,17 +16,17 @@ const Tours = () =>{
         const activeTours = toursData.tours.filter(tour => tour.status === "active");
         setTours(activeTours);
      }, []);    
-    return (
-        <section id="tours" className="w-full bg-gradient-to-l from-[#03A6A6] to-[#07bcbc] px-10 py-5">
+    return (     
+        <section id="tours" className="w-full bg-gradient-to-l from-[#03A6A6] to-[#07bcbc] px-10 py-5 scroll-mt-20">
         <motion.div
             className="container py-8"
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.1 }}
             viewport={{ once: true }}
         >
-        <h2 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-white text-center sm:text-left">{content.toursTitle}</h2>
-        </motion.div>       
+            <h2 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-white text-center sm:text-left">{content.toursTitle}</h2>
+        </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-4 justify-items-center">
             {tours.map((tour) => {
                 const iconPath = `../../assets/icons/${tour.icon}`;
