@@ -3,19 +3,20 @@ import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import toursData from '../../data/tours.json';
 import { motion } from 'framer-motion'
-/*const icons = import.meta.glob('../../assets/icons/*.svg', {
-  eager: true,
-  import: 'default',
-});*/
+import { Link } from "react-router-dom";
+
+
+const categories = [
+    { name: 'Sea Adventure', image: './src/assets/images/sea.jpg', category: 'sea' },
+    { name: 'Yatch & Boat', image: './src/assets/images/boat.jpg', category: 'boat' },
+    { name: 'Land Adventure', image: './src/assets/images/land.jpg', category: 'land' },
+    { name: 'City Tour', image: './src/assets/images/city.jpg', category: 'city' },
+];
+
 const Tours = () =>{    
     const { language } = useContext(ToursContext);
     const [tours, setTours] = useState([]);
     const content = contentData[language] || contentData['en']; // fallback to English
-    useEffect(() => {
-        // Filter only active tours
-        const activeTours = toursData.tours.filter(tour => tour.status === "active");
-        setTours(activeTours);
-     }, []);    
     return (     
         <section id="tours" className="w-full bg-gradient-to-l from-[#03A6A6] to-[#07bcbc] px-10 py-5 scroll-mt-20">
         <motion.div
@@ -27,29 +28,31 @@ const Tours = () =>{
         >
             <h2 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-white text-center sm:text-left">{content.toursTitle}</h2>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-4 justify-items-center">
-            {tours.map((tour) => {
-                const iconPath = `../../assets/icons/${tour.icon}`;
-                //const icon = icons[iconPath];
-                const t = tour.translations[language] || tour.translations.en;
-                return (
-                    <div key={tour.id} className="max-w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-103">
-                        <img src={tour.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
-                        <div className="p-4 space-y-2">
-                            <div className="flex justify-between pr-[5px]">
-                                <h3 className="text-xl font-semibold text-[#049DBF]">{t.title}</h3>      
-                                {/*<img src={icon} alt={tour.icon} className="w-7 h-7 object-contain text-[#049DBF]"/>*/}
-                            </div>
-                            <p className="text-gray-600">{t.description}</p>
-                            <p className="text-sm text-gray-500">{t.duration} • {t.age} • {t.dificulty}</p>
-                            <p className="text-primary font-bold text-[#049DBF]">{t.price}</p>
-                            <button className="mt-2 px-4 py-2 bg-[#e59e1a] text-white rounded-md hover:bg-[#F2A516] transition duration-200">
-                                Show More
-                            </button>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+            {categories.map((category, index) => (
+                <div
+                    key={index}
+                    className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer"
+                >
+
+                     <Link to={`/Tours/${category.category}`}>
+
+                       <img
+                        src={category.image}
+                        alt={category.name}
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+                    />
+                    <div className="absolute inset-0 flex items-end justify-center">
+                        <div className="w-full bg-white bg-opacity-90 text-center py-3 text-[#03A6A6] font-semibold text-xl">
+                            {category.name}
                         </div>
                     </div>
-                );
-            })}
+
+
+                     </Link>
+                  
+                </div>
+            ))}
         </div>
         </section>
     )

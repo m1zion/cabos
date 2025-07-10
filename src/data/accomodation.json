@@ -3,14 +3,19 @@
     {
       "id": "Jolla",
       "images": {
-        "portrait": "/cabos/assets/images/accomodation/jolla/portrait.png",
+        "portrait": "/cabos/assets/images/accomodation/jolla/portrait.jpg",
         "background": "/cabos/assets/images/accomodation/jolla/background.png",
         "gallery": [
-          "/cabos/assets/images/accomodation/jolla/1.png",
-          "/cabos/assets/images/accomodation/jolla/2.png",
-          "/cabos/assets/images/accomodation/jolla/3.png",
-          "/cabos/assets/images/accomodation/jolla/4.png",
-          "/cabos/assets/images/accomodation/jolla/5.png"
+          "/cabos/assets/images/accomodation/jolla/1.jpg",
+          "/cabos/assets/images/accomodation/jolla/2.jpg",
+          "/cabos/assets/images/accomodation/jolla/3.jpg",
+          "/cabos/assets/images/accomodation/jolla/4.jpg",
+          "/cabos/assets/images/accomodation/jolla/5.jpg",
+          "/cabos/assets/images/accomodation/jolla/6.jpg",
+          "/cabos/assets/images/accomodation/jolla/7.jpg",
+          "/cabos/assets/images/accomodation/jolla/8.jpg",
+          "/cabos/assets/images/accomodation/jolla/9.jpg",
+          "/cabos/assets/images/accomodation/jolla/10.jpg"
         ]
       },
       "status": "active",
@@ -191,14 +196,19 @@
     {
       "id": "Cardinal",
       "images": {
-        "portrait": "/cabos/assets/images/accomodation/cardinal/portrait.png",
+        "portrait": "/cabos/assets/images/accomodation/cardinal/portrait.jpg",
         "background": "/cabos/assets/images/accomodation/cardinal/background.png",
         "gallery": [ 
-          "/cabos/assets/images/accomodation/cardinal/1.png",
-          "/cabos/assets/images/accomodation/cardinal/2.png",
-          "/cabos/assets/images/accomodation/cardinal/3.png",
-          "/cabos/assets/images/accomodation/cardinal/4.png",
-          "/cabos/assets/images/accomodation/cardinal/5.png"
+          "/cabos/assets/images/accomodation/cardinal/1.jpg",
+          "/cabos/assets/images/accomodation/cardinal/2.jpg",
+          "/cabos/assets/images/accomodation/cardinal/3.jpg",
+          "/cabos/assets/images/accomodation/cardinal/4.jpg",
+          "/cabos/assets/images/accomodation/cardinal/5.jpg",
+          "/cabos/assets/images/accomodation/cardinal/6.jpg",
+          "/cabos/assets/images/accomodation/cardinal/7.jpg",
+          "/cabos/assets/images/accomodation/cardinal/8.jpg",
+          "/cabos/assets/images/accomodation/cardinal/9.jpg",
+          "/cabos/assets/images/accomodation/cardinal/10.jpg"
         ]
       },
       "status": "active",
@@ -336,14 +346,15 @@
     {
       "id": "Camper",
       "images": {
-        "portrait": "/cabos/assets/images/accomodation/camper/portrait.png",
+        "portrait": "/cabos/assets/images/accomodation/camper/portrait.jpg",
         "background": "/cabos/assets/images/accomodation/camper/background.png",
         "gallery": [
-          "/cabos/assets/images/accomodation/camper/1.png",
-          "/cabos/assets/images/accomodation/camper/2.png",
-          "/cabos/assets/images/accomodation/camper/3.png",
-          "/cabos/assets/images/accomodation/camper/4.png",
-          "/cabos/assets/images/accomodation/camper/5.png"
+          "/cabos/assets/images/accomodation/camper/1.jpg",
+          "/cabos/assets/images/accomodation/camper/2.jpg",
+          "/cabos/assets/images/accomodation/camper/3.jpg",
+          "/cabos/assets/images/accomodation/camper/4.jpg",
+          "/cabos/assets/images/accomodation/camper/5.jpg",
+          "/cabos/assets/images/accomodation/camper/5.jpg"
         ]
       },
       "status": "active",
@@ -465,82 +476,7 @@
           ]
         }
       }
-    },
-      {
-      "id": "van1",
-      "images": {
-        "portrait": "/cabos/assets/images/accomodation/apartment1/apartment1_md.png",
-        "background": "/cabos/assets/images/accomodation/apartment1/background.png",
-        "gallery": [
-          "/cabos/assets/images/accomodation/apartment1/1.png",
-          "/cabos/assets/images/accomodation/apartment1/2.png",
-          "/cabos/assets/images/accomodation/apartment1/3.png",
-          "/cabos/assets/images/accomodation/apartment1/4.png",
-          "/cabos/assets/images/accomodation/apartment1/5.png"
-        ]
-      },
-      "status": "active",
-      "coordinateX":"23.0344784",
-      "coordinateY":"-109.7148714",
-      "translations": {
-        "en": {
-          "title": "Apartamento vista al mar",
-          "description": "Lujoso apartamento con vista al mar",
-          "beds": "2",
-          "bathrooms": "1",
-          "parking":"1",
-          "size":"60 m2",          
-          "additionalData": "",
-          "amenities":"Amenities",
-          "amenitiesList": [
-            { "category":"Bedroom", "name": "Double bed", "icon": "doubleBed.svg" },
-            { "category":"Bedroom", "name": "Closet", "icon": "closet.svg" },
-            { "category":"Bedroom", "name": "Extra pillows and blankets", "icon": "pillow.svg" },
-            { "category":"Bathroom", "name": "Shower", "icon": "shower.svg" },
-            { "category":"Bathroom", "name": "Hot water", "icon": "hotWater.svg" },
-            { "category":"Bathroom", "name": "Towels", "icon": "towels.svg" },
-            { "category":"Bathroom", "name": "Hairdryer", "icon": "hairdryer.svg" }                   
-          ]
-        },
-        "es": {
-          "title": "Apartamento vista al mar",
-          "description": "Lujoso apartamento con vista al mar",
-          "beds": "2",
-          "bathrooms": "1",
-          "parking":"1",
-          "size":"60 m2",          
-          "additionalData": "",          
-          "amenities":"Amenidades",
-          "amenitiesList": [
-            { "category": "Dormitorio", "name": "Cama doble", "icon": "doubleBed.svg" },
-            { "category": "Dormitorio", "name": "Clóset", "icon": "closet.svg" },
-            { "category": "Dormitorio", "name": "Almohadas y cobijas extras", "icon": "pillow.svg" },
-            { "category": "Baño", "name": "Ducha", "icon": "shower.svg" },
-            { "category": "Baño", "name": "Agua caliente", "icon": "hotWater.svg" },
-            { "category": "Baño", "name": "Toallas", "icon": "towels.svg" },
-            { "category": "Baño", "name": "Secadora de cabello", "icon": "hairdryer.svg" }
-          ]
-        },
-        "de": {
-          "title": "Apartamento vista al mar",
-          "description": "Lujoso apartamento con vista al mar",
-          "beds": "2",
-          "bathrooms": "1",
-          "parking":"1",
-          "size":"60 m2",          
-          "additionalData": "",
-          "amenities":"Annehmlichkeiten",
-          "amenitiesList": [
-            { "category": "Schlafzimmer", "name": "Doppelbett", "icon": "doubleBed.svg" },
-            { "category": "Schlafzimmer", "name": "Kleiderschrank", "icon": "closet.svg" },
-            { "category": "Schlafzimmer", "name": "Zusätzliche Kissen und Decken", "icon": "pillow.svg" },
-            { "category": "Badezimmer", "name": "Dusche", "icon": "shower.svg" },
-            { "category": "Badezimmer", "name": "Warmwasser", "icon": "hotWater.svg" },
-            { "category": "Badezimmer", "name": "Handtücher", "icon": "towels.svg" },
-            { "category": "Badezimmer", "name": "Haartrockner", "icon": "hairdryer.svg" }
-          ]
-        }
-      }
+    
     }
   ]
 }

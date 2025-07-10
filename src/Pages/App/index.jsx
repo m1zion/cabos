@@ -9,10 +9,12 @@ import Footer from '../../Components/Footer'
 import Home from '../Home/'
 import NotFound from '../NotFound/'
 import Accommodation from '../Accommodation/'
+import Tours from '../Tours/'
 const AppRoutes = () =>{
   let routes = useRoutes([
     { path: '',  element: <Home/> },
     { path: 'Accommodation/:id',  element: <Accommodation/> },
+    { path: 'Tours/:id',  element: <Tours/> },
     { path: '*',  element: <NotFound/> },
   ]);
   return routes;
