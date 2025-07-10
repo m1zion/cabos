@@ -1,62 +1,9 @@
 {
   "tours": [
     {
-      "id": "archOfCabo",
-      "name": "Visit the Arch of Cabo San Lucas in a transparent boat",
-      "category": "boat",
-      "images": {
-        "portrait": "/cabos/assets/images/tours/archOfCabo/portrait.jpg",
-        "gallery": [
-          "/cabos/assets/images/tours/archOfCabo/1.jpg",
-          "/cabos/assets/images/tours/archOfCabo/2.jpg",
-          "/cabos/assets/images/tours/archOfCabo/3.jpg",
-          "/cabos/assets/images/tours/archOfCabo/4.jpg",
-          "/cabos/assets/images/tours/archOfCabo/5.jpg"
-        ]
-      },
-      "status": "active",
-      "icon":"snorkel.svg",
-      "translations": {
-        "en": {
-          "title": "Visit the Arch of Cabo San Lucas in a transparent boat",
-          "description": "Experience Cabo’s iconic Arch from a transparent boat. Admire the breathtaking rock formations, vibrant tropical fish, coral reefs, and visit the famous Lovers and Divorce Beaches — as well as other world-renowned coastal landmarks — all in one unforgettable excursion.",
-          "duration": "45 minutes",
-          "period": "Daily, every hour from 9:00am until 5:00pm",
-          "age": "All ages",
-          "price": "35 USD pro Gast",
-          "promoCode": "PLSSD",
-          "rounTripTransportation":"20 USD per guest",         
-          "additionalData": ""
-        },
-        "es": {
-          "title": "Visit the Arch of Cabo San Lucas in a transparent boat",
-          "description": "Experience Cabo’s iconic Arch from a transparent boat. Admire the breathtaking rock formations, vibrant tropical fish, coral reefs, and visit the famous Lovers and Divorce Beaches — as well as other world-renowned coastal landmarks — all in one unforgettable excursion.",
-          "duration": "45 minutes",
-          "period": "Daily, every hour from 9:00am until 5:00pm",
-          "age": "All ages",
-          "price": "35 USD pro Gast",
-          "promoCode": "PLSSD",
-          "rounTripTransportation":"20 USD per guest",         
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
-        },
-        "de": {          
-          "title": "Arco von Cabo San Lucas im transparenten Boot",
-          "description": "Erleben Sie das Wahrzeichen von Cabo – den berühmten Arco – aus einem transparenten Boot. Bestaunen Sie beeindruckende Felsformationen, farbenfrohe tropische Fische, Korallenriffe sowie die berühmten Strände Playa del Amor und Playa del Divorcio – und weitere weltbekannte Küstenhighlights – alles in einem unvergesslichen Ausflug.",
-          "duration": "45 Minuten",
-          "period": "Täglich, stündlich von 9:00 bis 17:00 Uhr",
-          "age": "Für alle Altersgruppen geeignet",
-          "price": "35 USD pro Gast",
-          "roundtrip transportation": "20 USD pro Gast",
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
-        }
-      }
-    },
-
-
-    {
       "id": "sunsetPartyboat",
       "name": "Sunset Partyboat with Mexican dinner",
-      "category": "boat",
+      "category": "sunsetCruises",
       "images": {
         "portrait": "/cabos/assets/images/tours/sunsetPartyboat/portrait.jpg",
         "gallery": [
@@ -98,16 +45,14 @@
           "age": "Für alle Altersgruppen geeignet", 
           "price": "75 USD pro Erwachsenen, 38 USD pro Kind", 
           "roundtripTransportation": "20 USD pro Gast", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "additionalData": ""
         }
       }
     },
-
-
     {
       "id": "sunsetDinnerPirate",
       "name": "Sunset Dinner & Pirate Show Tour",
-      "category": "boat",
+      "category": "sunsetCruises",
       "images": {
         "portrait": "/cabos/assets/images/tours/sunsetDinnerPirate/portrait.jpg",
         "gallery": [
@@ -149,16 +94,14 @@
           "age": "Für alle Altersgruppen geeignet", 
           "price": "75 USD pro Erwachsenen, 38 USD pro Kind", 
           "roundtripTransportation": "20 USD pro Gast", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "additionalData": ""
         }
       }
     },
-
-
     {
       "id": "sunsetJazz",
-      "name": "Sunset Jazz & Wine Cruise",
-      "category": "boat",
+      "name": "Sunset Jazz & Wine Tour",
+      "category": "sunsetCruises",
       "images": {
         "portrait": "/cabos/assets/images/tours/sunsetJazz/portrait.jpg",
         "gallery": [
@@ -173,7 +116,7 @@
       "icon":"snorkel.svg",
       "translations": {
         "en": {
-          "title": "Sunset Jazz & Wine Cruise",
+          "title": "Sunset Jazz & Wine Tour",
           "description": "Sail into the Pacific aboard the elegant 65-foot Tropicat for a smooth and scenic sunset experience accompanied by contemporary jazz music, free bar and snacks. Enjoy views of Cabo’s iconic landmarks—Lover’s Beach, Land’s End, and the Arch—while sipping wine and relaxing.",
           "duration": "2 hours", 
           "period": "Daily, at 5:00pm in winter, at 6:00pm in summer",
@@ -183,7 +126,7 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Sunset Jazz & Wine Cruise",
+          "title": "Sunset Jazz & Wine Tour",
           "description": "Sail into the Pacific aboard the elegant 65-foot Tropicat for a smooth and scenic sunset experience accompanied by contemporary jazz music, free bar and snacks. Enjoy views of Cabo’s iconic landmarks—Lover’s Beach, Land’s End, and the Arch—while sipping wine and relaxing.",
           "duration": "2 hours", 
           "period": "Daily, at 5:00pm in winter, at 6:00pm in summer",
@@ -200,16 +143,14 @@
           "age": "Für alle Altersgruppen geeignet", 
           "price": "100 USD pro Erwachsenen, 70 USD pro Kind", 
           "roundtripTransportation": "20 USD pro Gast", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "additionalData": ""
         }
       }
     },
-
-
     {
       "id": "romanticSunset",
       "name": "Romantic sunset sailing tour",
-      "category": "boat",
+      "category": "sunsetCruises",
       "images": {
         "portrait": "/cabos/assets/images/tours/romanticSunset/portrait.jpg",
         "gallery": [
@@ -251,67 +192,14 @@
           "age": "Nur für Erwachsene", 
           "price": "179 USD pro Erwachsenen", 
           "roundtripTransportation": "20 USD pro Gast", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "additionalData": ""
         }
       }
     },
-
-
-    {
-      "id": "snorkelPirate",
-      "name": "Snorkel Pirate ship with lunch",
-      "category": "sea",
-      "images": {
-        "portrait": "/cabos/assets/images/tours/snorkelPirate/portrait.jpg",
-        "gallery": [
-          "/cabos/assets/images/tours/snorkelPirate/1.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/2.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/3.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/4.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/5.jpg"
-        ]
-      },
-      "status": "active",
-      "icon":"snorkel.svg",
-      "translations": {
-        "en": {
-          "title": "Snorkel Pirate ship with lunch",
-          "description": "Sail on a 100-foot pirate ship, explore the famous Arch, hear pirate tales, and snorkel with tropical fish. Enjoy burritos, drinks from the open bar, and fun pirate-themed activities for the whole family.",
-          "duration": "3.5 hours", 
-          "period": "Daily, at 12:00pm",
-          "age": "All ages", 
-          "price": "69 USD per adult,37 USD per child" ,
-          "rounTripTransportation": "20 USD per guest"   ,   
-          "additionalData": ""
-        },
-        "es": {
-          "title": "Snorkel Pirate ship with lunche",
-          "description": "Sail on a 100-foot pirate ship, explore the famous Arch, hear pirate tales, and snorkel with tropical fish. Enjoy burritos, drinks from the open bar, and fun pirate-themed activities for the whole family.",
-          "duration": "3.5 hours", 
-          "period": "Daily, at 12:00pm",
-          "age": "All ages", 
-          "price": "69 USD per adult, 37 USD per child" ,
-          "rounTripTransportation": "20 USD per guest"   ,   
-          "additionalData": ""
-        },
-        "de": {          
-          "title": "Piraten-Schiff Schnorchelausflug mit Mittagessen",
-          "description": "Segeln Sie an Bord eines 30 Meter langen Piratenschiffs, entdecken Sie den berühmten Arco, lauschen Sie spannenden Piratengeschichten und schnorcheln Sie mit tropischen Fischen. Genießen Sie leckere Burritos, Getränke von der offenen Bar und unterhaltsame Piratenaktivitäten für die ganze Familie.",
-          "duration": "3.5 Stunden",
-          "period": "Täglich, um 12:00 Uhr", 
-          "age": "Alle Altersgruppen", 
-          "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
-          "roundtripTransportation": "20 USD pro Gast", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
-        }
-      }
-    },
-
-
     {
       "id": "snorkelAdventure",
       "name": "Snorkel adventure with lunch",
-      "category": "sea",
+      "category": "snorkelDiving",
       "images": {
         "portrait": "/cabos/assets/images/tours/snorkelAdventure/portrait.jpg",
         "gallery": [
@@ -353,169 +241,63 @@
           "age": "Alle Altersgruppen", 
           "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
           "roundtripTransportation": "20 USD pro Gast", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "additionalData": ""
         }
       }
     },
-
-
     {
-      "id": "whaleWatching",
-      "name": "Whale Watching breakfast",
-      "category": "boat",
+      "id": "snorkelPirate",
+      "name": "Pirate Ship Snorkel experience with lunch",
+      "category": "snorkelDiving",
       "images": {
-        "portrait": "/cabos/assets/images/tours/whaleWatching/portrait.jpg",
+        "portrait": "/cabos/assets/images/tours/snorkelPirate/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/whaleWatching/1.jpg",
-          "/cabos/assets/images/tours/whaleWatching/2.jpg",
-          "/cabos/assets/images/tours/whaleWatching/3.jpg",
-          "/cabos/assets/images/tours/whaleWatching/4.jpg",
-          "/cabos/assets/images/tours/whaleWatching/5.jpg"
+          "/cabos/assets/images/tours/snorkelPirate/1.jpg",
+          "/cabos/assets/images/tours/snorkelPirate/2.jpg",
+          "/cabos/assets/images/tours/snorkelPirate/3.jpg",
+          "/cabos/assets/images/tours/snorkelPirate/4.jpg",
+          "/cabos/assets/images/tours/snorkelPirate/5.jpg"
         ]
       },
       "status": "active",
       "icon":"snorkel.svg",
       "translations": {
         "en": {
-          "title": "Whale Watching breakfast",
-          "description": "Get ready for the ultimate ocean adventure—watch massive humpback whales leap from the water right before your eyes in Cabo’s stunning bay! Cruise past the famous Arch, enjoy a delicious breakfast and open bar, and feel the thrill of nature up close—book now and be part of the magic!",
-          "duration": "2 hours", 
-          "period": "From December 15th until April 15th, daily, 9:00am",
+          "title": "Pirate Ship Snorkel experience with lunch",
+          "description": "Sail on a 100-foot pirate ship, explore the famous Arch, hear pirate tales, and snorkel with tropical fish. Enjoy burritos, drinks from the open bar, and fun pirate-themed activities for the whole family.",
+          "duration": "3.5 hours", 
+          "period": "Daily, at 12:00pm",
           "age": "All ages", 
-          "price": "69 USD per adult,37 USD per child",
-          "rounTripTransportation": "20 USD",   
+          "price": "69 USD per adult,37 USD per child" ,
+          "rounTripTransportation": "20 USD per guest"   ,   
           "additionalData": ""
         },
         "es": {
-          "title": "Whale Watching breakfast",
-          "description": "Get ready for the ultimate ocean adventure—watch massive humpback whales leap from the water right before your eyes in Cabo’s stunning bay! Cruise past the famous Arch, enjoy a delicious breakfast and open bar, and feel the thrill of nature up close—book now and be part of the magic!",
-          "duration": "2 hours", 
-          "period": "From December 15th until April 15th, daily, 9:00am",
+          "title": "Pirate Ship Snorkel experience with lunche",
+          "description": "Sail on a 100-foot pirate ship, explore the famous Arch, hear pirate tales, and snorkel with tropical fish. Enjoy burritos, drinks from the open bar, and fun pirate-themed activities for the whole family.",
+          "duration": "3.5 hours", 
+          "period": "Daily, at 12:00pm",
           "age": "All ages", 
-          "price": "69 USD per adult,37 USD per child",
-          "rounTripTransportation": "20 USD",    
+          "price": "69 USD per adult, 37 USD per child" ,
+          "rounTripTransportation": "20 USD per guest"   ,   
           "additionalData": ""
         },
         "de": {          
-          "title": "Whale Watching mit Frühstück",
-          "description": "Freuen Sie sich auf ein unvergessliches Meeresabenteuer – beobachten Sie riesige Buckelwale, die direkt vor Ihren Augen aus dem Wasser springen, in der atemberaubenden Bucht von Cabo! Fahren Sie am berühmten Arco vorbei, genießen Sie ein leckeres Frühstück und eine offene Bar und spüren Sie die Magie der Natur hautnah – buchen Sie jetzt und seien Sie Teil dieses Erlebnisses!",
-          "duration": "2 Stunden",
-          "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
+          "title": "Piraten-Schiff Schnorchelausflug mit Mittagessen",
+          "description": "Segeln Sie an Bord eines 30 Meter langen Piratenschiffs, entdecken Sie den berühmten Arco, lauschen Sie spannenden Piratengeschichten und schnorcheln Sie mit tropischen Fischen. Genießen Sie leckere Burritos, Getränke von der offenen Bar und unterhaltsame Piratenaktivitäten für die ganze Familie.",
+          "duration": "3.5 Stunden",
+          "period": "Täglich, um 12:00 Uhr", 
           "age": "Alle Altersgruppen", 
           "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
-          "roundtripTransportation": "20 USD", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "roundtripTransportation": "20 USD pro Gast", 
+          "additionalData": ""
         }
       }
     },
-
-
-    {
-      "id": "pirateWhaleWatching",
-      "name": "Pirate Ship Whale Watching breakfast",
-      "category": "boat",
-      "images": {
-        "portrait": "/cabos/assets/images/tours/pirateWhaleWatching/portrait.jpg",
-        "gallery": [
-          "/cabos/assets/images/tours/pirateWhaleWatching/1.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/2.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/3.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/4.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/5.jpg"
-        ]
-      },
-      "status": "active",
-      "icon":"snorkel.svg",
-      "translations": {
-        "en": {
-          "title": "Pirate Ship Whale Watching breakfast",
-          "description": "Join a legendary pirate voyage and chase mighty humpback whales across the wild seas of Cabo—feel the thrill as these ocean giants leap into the air before your eyes! Cruise on a real pirate ship past the famous Arch and sea lions while enjoying breakfast and free open bar, with your fearless crew guiding the hunt—book now and live the adventure you’ll never forget!",
-          "duration": "2 hours", 
-          "period": "From December 15th until April 15th, daily, 9:00am",
-          "age": "All ages", 
-          "price": "69 USD per adult,37 USD per child",
-          "rounTripTransportation": "20 USD",   
-          "additionalData": ""
-        },
-        "es": {
-          "title": "Whale Watching breakfast",
-          "description": "Join a legendary pirate voyage and chase mighty humpback whales across the wild seas of Cabo—feel the thrill as these ocean giants leap into the air before your eyes! Cruise on a real pirate ship past the famous Arch and sea lions while enjoying breakfast and free open bar, with your fearless crew guiding the hunt—book now and live the adventure you’ll never forget!",
-          "duration": "2 hours", 
-          "period": "From December 15th until April 15th, daily, 9:00am",
-          "age": "All ages", 
-          "price": "69 USD per adult,37 USD per child",
-          "rounTripTransportation": "20 USD",    
-          "additionalData": ""
-        },
-        "de": {          
-          "title": "Whale Watching mit Frühstück",
-          "description": "Begeben Sie sich auf eine legendäre Piratenfahrt und jagen Sie mächtige Buckewale über die wilden Gewässer von Cabo – spüren Sie den Nervenkitzel, wenn diese Ozeanriesen direkt vor Ihren Augen aus dem Wasser springen! Fahren Sie mit einem echten Piratenschiff am berühmten Arco und an Seelöwen vorbei, genießen Sie ein Frühstück und die offene Bar – Ihre furchtlose Crew führt Sie auf dieser unvergesslichen Abenteuerfahrt.",
-          "duration": "2 Stunden",
-          "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
-          "age": "Alle Altersgruppen", 
-          "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
-          "roundtripTransportation": "20 USD", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
-        }
-      }
-    },
-
-
-    {
-      "id": "whaleWatchingSunset",
-      "name": "Whale Watching dinner cruise",
-      "category": "boat",
-      "images": {
-        "portrait": "/cabos/assets/images/tours/whaleWatchingSunset/portrait.jpg",
-        "gallery": [
-          "/cabos/assets/images/tours/whaleWatchingSunset/1.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/2.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/3.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/4.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/5.jpg"
-        ]
-      },
-      "status": "active",
-      "icon":"snorkel.svg",
-      "translations": {
-        "en": {
-          "title": "Whale Watching dinner cruise",
-          "description": "Experience the magic of whale watching in Cabo San Lucas as majestic whales grace the warm waters of the Pacific and Sea of Cortez with breathtaking jumps and dives during their mating and birthing season. Departing from Dock #4, this unforgettable journey takes you past iconic landmarks like the Arch and Lovers Beach, while you enjoy Mexican dinner, refreshing drinks, and expert guidance in spotting and capturing amazing moments with these gentle giants.",
-          "duration": "2.5 hours", 
-          "period": "From December 15th until April 15th, daily, 9:00am",
-          "age": "All ages", 
-          "price": "100 USD per adult,55 USD per child",
-          "rounTripTransportation": "20 USD",   
-          "additionalData": ""
-        },
-        "es": {
-          "title": "Whale Watching dinner cruise",
-          "description": "Experience the magic of whale watching in Cabo San Lucas as majestic whales grace the warm waters of the Pacific and Sea of Cortez with breathtaking jumps and dives during their mating and birthing season. Departing from Dock #4, this unforgettable journey takes you past iconic landmarks like the Arch and Lovers Beach, while you enjoy Mexican dinner, refreshing drinks, and expert guidance in spotting and capturing amazing moments with these gentle giants.",
-          "duration": "2.5 hours", 
-          "period": "From December 15th until April 15th, daily, 9:00am",
-          "age": "All ages", 
-          "price": "100 USD per adult,55 USD per child",
-          "rounTripTransportation": "20 USD",    
-          "additionalData": ""
-        },
-        "de": {          
-          "title": "Whale Watching-Dinnerfahrt",
-          "description": "Erleben Sie die Magie der Walbeobachtung in Cabo San Lucas, wenn majestätische Buckelwale während ihrer Paarungs- und Geburtszeit mit atemberaubenden Sprüngen und Tauchgängen die warmen Gewässer des Pazifiks und des Golfs von Kalifornien durchqueren. Die Fahrt startet am Dock Nr. 4 und führt Sie an berühmten Wahrzeichen wie dem Arco und der Playa del Amor vorbei – begleitet von einem mexikanischen Abendessen, erfrischenden Getränken und fachkundiger Begleitung zur Beobachtung und zum Fotografieren dieser sanften Riesen.",
-          "duration": "2.5 Stunden",
-          "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
-          "age": "Alle Altersgruppen", 
-          "price": "100 USD pro Erwachsenen, 55 USD pro Kind", 
-          "roundtripTransportation": "20 USD", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
-        }
-      }
-    },
-
-
     {
       "id": "scubaDiving",
       "name": "Scuba Diving Beginner Experience",
-      "category": "sea",
+      "category": "snorkelDiving",
       "images": {
         "portrait": "/cabos/assets/images/tours/scubaDiving/portrait.jpg",
         "gallery": [
@@ -557,220 +339,114 @@
           "age": "Ab 10 Jahren", 
           "price": "130 USD pro Erwachsener", 
           "roundtripTransportation": "20 USD", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "additionalData": ""
         }
       }
     },
-
-
     {
-      "id": "dunesCamel",
-      "name": "Beach & Dunes Camel Ride Experience",
-      "category": "land",
+      "id": "surfLessons",
+      "name": "Surf Lessons at Costa Azul",
+      "category": "snorkelDiving",
       "images": {
-        "portrait": "/cabos/assets/images/tours/dunesCamel/portrait.jpg",
+        "portrait": "/cabos/assets/images/tours/surfLessons/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/dunesCamel/1.jpg",
-          "/cabos/assets/images/tours/dunesCamel/2.jpg",
-          "/cabos/assets/images/tours/dunesCamel/3.jpg",
-          "/cabos/assets/images/tours/dunesCamel/4.jpg",
-          "/cabos/assets/images/tours/dunesCamel/5.jpg"
+          "/cabos/assets/images/tours/surfLessons/1.jpg",
+          "/cabos/assets/images/tours/surfLessons/2.jpg",
+          "/cabos/assets/images/tours/surfLessons/3.jpg",
+          "/cabos/assets/images/tours/surfLessons/4.jpg",
+          "/cabos/assets/images/tours/surfLessons/5.jpg"
         ]
       },
       "status": "active",
       "icon":"snorkel.svg",
       "translations": {
         "en": {
-          "title": "Beach & Dunes Camel Ride Experience",
-          "description": "Embark on one of the most unique experiences in Los Cabos—a peaceful camel ride along a Pacific beach, guided by bilingual experts and surrounded by stunning ocean views, with the chance to spot humpback whales in winter. Your adventure includes a desert safari, time at a rescued camel sanctuary, a walk through native cacti, a Mexican buffet, tequila tasting, and professional photos to remember it all—plus free round-trip transportation for a truly unforgettable day.",
-          "duration": "2 hours", 
-          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
-          "age": "5+ years", 
-          "price": "95 USD per adult, 45 USD per child + 25 USD park entrance fee",
-          "rounTripTransportation": "Included",   
+          "title": "Surf Lessons at Costa Azul",
+          "description": "Learn to ride the waves at the iconic Costa Azul Beach, one of the best surf spots in Los Cabos. Whether you're a beginner or looking to improve your skills, enjoy personalized instruction, warm waters, and consistent waves in a safe and fun environment.",
+          "duration": "upon request", 
+          "period": "Daily”",
+          "age": "", 
+          "price": "upon request",
+          "rounTripTransportation": "not included",   
           "additionalData": ""
         },
         "es": {
-          "title": "Beach & Dunes Camel Ride Experience",
-          "description": "Embark on one of the most unique experiences in Los Cabos—a peaceful camel ride along a Pacific beach, guided by bilingual experts and surrounded by stunning ocean views, with the chance to spot humpback whales in winter. Your adventure includes a desert safari, time at a rescued camel sanctuary, a walk through native cacti, a Mexican buffet, tequila tasting, and professional photos to remember it all—plus free round-trip transportation for a truly unforgettable day.",
-          "duration": "2 hours", 
-          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
-          "age": "5+ years", 
-          "price": "95 USD per adult, 45 USD per child + 25 USD park entrance fee",
-          "rounTripTransportation": "Included",    
+          "title": "Surf Lessons at Costa Azul",
+          "description": "Learn to ride the waves at the iconic Costa Azul Beach, one of the best surf spots in Los Cabos. Whether you're a beginner or looking to improve your skills, enjoy personalized instruction, warm waters, and consistent waves in a safe and fun environment.",
+          "duration": "upon request", 
+          "period": "Daily”",
+          "age": "", 
+          "price": "upon request",
+          "rounTripTransportation": "not included",    
           "additionalData": ""
         },
         "de": {          
           "title": "Taucherlebenis für Anfänger",
-          "description": "Erleben Sie eines der einzigartigsten Abenteuer in Los Cabos – einen entspannten Kamelritt entlang eines pazifischen Strandes, geführt von zweisprachigen Experten und begleitet von atemberaubendem Meerblick mit der Chance, im Winter Buckelwale zu entdecken. Ihr Ausflug beinhaltet eine Safari durch die Wüste, Zeit im Kamel-Schutzgebiet, einen Spaziergang durch einheimische Kakteenlandschaften, ein mexikanisches Buffet, Tequila-Verkostung sowie professionelle Fotos – inklusive kostenloser Hin- und Rückfahrt für einen unvergesslichen Tag.",
-          "duration": "2 Stunden",
-          "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
-          "age": "Ab 5 Jahren", 
-          "price": "95 USD pro Erwachsener, 45 USD pro Kind + 25 USD Eintrittsgebühr", 
-          "roundtripTransportation": "Inklusive", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "description": "Lernen Sie das Wellenreiten am legendären Strand Costa Azul – einem der besten Surfspots in Los Cabos. Ob Anfänger oder mit Vorkenntnissen: Freuen Sie sich auf individuellen Unterricht, warmes Wasser und gleichmäßige Wellen in einer sicheren und unterhaltsamen Umgebung.",
+          "duration": "auf Anfrage",
+          "period": "Täglich", 
+          "age": "", 
+          "price": "auf Anfrage", 
+          "roundtripTransportation": "nicht inbegriffen", 
+          "additionalData": ""
         }
       }
     },
-
-
     {
-      "id": "dunesATV",
-      "name": "Beach & Dunes ATV Tour",
-      "category": "land",
+      "id": "archOfCabo",
+      "name": "Visit the Arch of Cabo San Lucas in a transparent boat",
+      "category": "boatYatch",
       "images": {
-        "portrait": "/cabos/assets/images/tours/dunesATV/portrait.jpg",
+        "portrait": "/cabos/assets/images/tours/archOfCabo/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/dunesATV/1.jpg",
-          "/cabos/assets/images/tours/dunesATV/2.jpg",
-          "/cabos/assets/images/tours/dunesATV/3.jpg",
-          "/cabos/assets/images/tours/dunesATV/4.jpg",
-          "/cabos/assets/images/tours/dunesATV/5.jpg"
+          "/cabos/assets/images/tours/archOfCabo/1.jpg",
+          "/cabos/assets/images/tours/archOfCabo/2.jpg",
+          "/cabos/assets/images/tours/archOfCabo/3.jpg",
+          "/cabos/assets/images/tours/archOfCabo/4.jpg",
+          "/cabos/assets/images/tours/archOfCabo/5.jpg"
         ]
       },
       "status": "active",
       "icon":"snorkel.svg",
       "translations": {
         "en": {
-          "title": "Beach & Dunes ATV Tour",
-          "description": "Embark on an adrenaline-filled ATV adventure through the stunning desert trails of Los Cabos, surrounded by unique landscapes and native flora. Your journey begins with free air-conditioned transportation, followed by a quick check-in and safety briefing before hitting the trails with a bilingual guide.",
-          "duration": "2 hours", 
-          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
-          "age": "7+ years", 
-          "price": "single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
-          "rounTripTransportation": "Included",   
+          "title": "Visit the Arch of Cabo San Lucas in a transparent boat",
+          "description": "Experience Cabo’s iconic Arch from a transparent boat. Admire the breathtaking rock formations, vibrant tropical fish, coral reefs, and visit the famous Lovers and Divorce Beaches — as well as other world-renowned coastal landmarks — all in one unforgettable excursion.",
+          "duration": "45 minutes",
+          "period": "Daily, every hour from 9:00am until 5:00pm",
+          "age": "All ages",
+          "price": "35 USD pro Gast",
+          "promoCode": "PLSSD",
+          "rounTripTransportation":"20 USD per guest",         
           "additionalData": ""
         },
         "es": {
-          "title": "Beach & Dunes ATV Tour",
-          "description": "Embark on an adrenaline-filled ATV adventure through the stunning desert trails of Los Cabos, surrounded by unique landscapes and native flora. Your journey begins with free air-conditioned transportation, followed by a quick check-in and safety briefing before hitting the trails with a bilingual guide.",
-          "duration": "2 hours", 
-          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
-          "age": "5+ years", 
-          "price": "single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
-          "rounTripTransportation": "Included",    
+          "title": "Visit the Arch of Cabo San Lucas in a transparent boat",
+          "description": "Experience Cabo’s iconic Arch from a transparent boat. Admire the breathtaking rock formations, vibrant tropical fish, coral reefs, and visit the famous Lovers and Divorce Beaches — as well as other world-renowned coastal landmarks — all in one unforgettable excursion.",
+          "duration": "45 minutes",
+          "period": "Daily, every hour from 9:00am until 5:00pm",
+          "age": "All ages",
+          "price": "35 USD pro Gast",
+          "promoCode": "PLSSD",
+          "rounTripTransportation":"20 USD per guest",         
           "additionalData": ""
         },
         "de": {          
-          "title": "Strand- & Dünen-ATV-Tour",
-          "description": "Begeben Sie sich auf ein adrenalingeladenes ATV-Abenteuer durch die atemberaubenden Wüstenpfade von Los Cabos, umgeben von einzigartigen Landschaften und einheimischer Flora. Ihre Tour beginnt mit einem kostenlosen klimatisierten Transport, gefolgt von einem schnellen Check-in und einer Sicherheitseinweisung, bevor Sie gemeinsam mit einem zweisprachigen Guide die Strecke erkunden.",
-          "duration": "2 Stunden",
-          "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
-          "age": "Ab 7 Jahren", 
-          "price": "Einzelfahrer ATV 95 USD, Doppelfahrer ATV 150 USD + 25 USD Eintrittsgebühr", 
-          "roundtripTransportation": "Inklusive", 
-          "additionalData": "Includes equipment and transportation Hotel - Reef - Hotel"
+          "title": "Arco von Cabo San Lucas im transparenten Boot",
+          "description": "Erleben Sie das Wahrzeichen von Cabo – den berühmten Arco – aus einem transparenten Boot. Bestaunen Sie beeindruckende Felsformationen, farbenfrohe tropische Fische, Korallenriffe sowie die berühmten Strände Playa del Amor und Playa del Divorcio – und weitere weltbekannte Küstenhighlights – alles in einem unvergesslichen Ausflug.",
+          "duration": "45 Minuten",
+          "period": "Täglich, stündlich von 9:00 bis 17:00 Uhr",
+          "age": "Für alle Altersgruppen geeignet",
+          "price": "35 USD pro Gast",
+          "roundtrip transportation": "20 USD pro Gast",
+          "additionalData": ""
         }
       }
     },
-
-
-    {
-      "id": "dunesUTV",
-      "name": "Beach & Dunes UTV Razor Tour",
-      "category": "land",
-      "images": {
-        "portrait": "/cabos/assets/images/tours/dunesUTV/portrait.jpg",
-        "gallery": [
-          "/cabos/assets/images/tours/dunesUTV/1.jpg",
-          "/cabos/assets/images/tours/dunesUTV/2.jpg",
-          "/cabos/assets/images/tours/dunesUTV/3.jpg",
-          "/cabos/assets/images/tours/dunesUTV/4.jpg",
-          "/cabos/assets/images/tours/dunesUTV/5.jpg"
-        ]
-      },
-      "status": "active",
-      "icon":"snorkel.svg",
-      "translations": {
-        "en": {
-          "title": "Beach & Dunes UTV Razor Tour",
-          "description": "Get ready for the most thrilling off-road tour in Cabo! This Side by Side UTV adventure is perfect for adrenaline lovers. Start your excursion by hopping on the free air-conditioned shuttle. After a quick check-in and safety briefing from your expert bilingual guide, you’ll be all set to explore Cabo’s beaches and deserts while feeling the rush of driving or riding in a Side by Side UTV.",
-          "duration": "2 hours", 
-          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
-          "age": "7+ years", 
-          "price": "driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
-          "rounTripTransportation": "Included",   
-          "additionalData": ""
-        },
-        "es": {
-          "title": "Beach & Dunes UTV Razor Toure",
-          "description": "Get ready for the most thrilling off-road tour in Cabo! This Side by Side UTV adventure is perfect for adrenaline lovers. Start your excursion by hopping on the free air-conditioned shuttle. After a quick check-in and safety briefing from your expert bilingual guide, you’ll be all set to explore Cabo’s beaches and deserts while feeling the rush of driving or riding in a Side by Side UTV.",
-          "duration": "2 hours", 
-          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
-          "age": "7+ years", 
-          "price": "driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
-          "rounTripTransportation": "Included",    
-          "additionalData": ""
-        },
-        "de": {          
-          "title": "Strand- & Dünen-UTV-Razor-Tour",
-          "description": "Bereiten Sie sich auf die aufregendste Offroad-Tour in Cabo vor! Dieses Side-by-Side-UTV-Abenteuer ist perfekt für Adrenalinliebhaber. Ihre Tour beginnt mit dem kostenlosen klimatisierten Shuttle. Nach einem schnellen Check-in und einer Sicherheitseinweisung durch Ihren zweisprachigen Guide sind Sie bereit, die Strände und Wüsten von Cabo zu erkunden – als Fahrer oder Mitfahrer in einem leistungsstarken UTV.",
-          "duration": "2 Stunden",
-          "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
-          "age": "Ab 7 Jahren", 
-          "price": "Fahrer 160 USD, 1 Fahrer & 1 Mitfahrer 225 USD, 1 Fahrer & 2 Mitfahrer 270 USD, 1 Fahrer & 3 Mitfahrer 320 USD + 25 USD Eintrittsgebühr",
-          "roundtripTransportation": "Inklusive", 
-          "additionalData":""
-        }
-      }
-    },
-
-
-    {
-      "id": "beachHorse",
-      "name": "Beach Horseback Riding",
-      "category": "land",
-      "images": {
-        "portrait": "/cabos/assets/images/tours/beachHorse/portrait.jpg",
-        "gallery": [
-          "/cabos/assets/images/tours/beachHorse/1.jpg",
-          "/cabos/assets/images/tours/beachHorse/2.jpg",
-          "/cabos/assets/images/tours/beachHorse/3.jpg",
-          "/cabos/assets/images/tours/beachHorse/4.jpg",
-          "/cabos/assets/images/tours/beachHorse/5.jpg"
-        ]
-      },
-      "status": "active",
-      "icon":"snorkel.svg",
-      "translations": {
-        "en": {
-          "title": "Beach Horseback Riding",
-          "description": "Experience the magic of beach horseback riding in San Jose del Cabo as you trot along golden sands with ocean waves at your side. Perfect for couples, families, or solo travelers—this unforgettable ride blends adventure and breathtaking views.",
-          "duration": "1-2 hours", 
-          "period": "Daily, 9:00am | 10:30am|3:00pm | 4:30pm",
-          "age": "4+ years", 
-          "price": "1 hour 65 USD, 1,5 hours 90 USD, 2 hours 120 USD",
-          "rounTripTransportation": "included within San Jose del Cabo",   
-          "additionalData": ""
-        },
-        "es": {
-          "title": "Beach Horseback Riding",
-          "description": "Experience the magic of beach horseback riding in San Jose del Cabo as you trot along golden sands with ocean waves at your side. Perfect for couples, families, or solo travelers—this unforgettable ride blends adventure and breathtaking views.",
-          "duration": "1-2 hours", 
-          "period": "Daily, 9:00am | 10:30am|3:00pm | 4:30pm",
-          "age": "4+ years", 
-          "price": "1 hour 65 USD, 1,5 hours 90 USD, 2 hours 120 USD",
-          "rounTripTransportation": "included within San Jose del Cabo",    
-          "additionalData": ""
-        },
-        "de": {          
-          "title": "Ausritt am Strand",
-          "description": "Erleben Sie den Zauber eines Ausritts am Strand von San José del Cabo, während Sie auf goldenen Sandwegen reiten und die Meereswellen an Ihrer Seite genießen. Ideal für Paare, Familien oder Alleinreisende – dieses unvergessliche Erlebnis vereint Abenteuer mit atemberaubenden Ausblicken.",
-          "duration": "1-2 Stunden",
-          "period": "Täglich, 9:00 Uhr | 10:30 Uhr | 15:00 Uhr | 16:30 Uhr", 
-          "age": "Ab 4 Jahren", 
-          "price": "1 Stunde 65 USD, 1,5 Stunden 90 USD, 2 Stunden 120 USD",
-          "roundtripTransportation": "Inklusive innerhalb von San José del Cabo", 
-          "additionalData":""
-        }
-      }
-    },
-
-
     {
       "id": "privateBoat",
       "name": "Private Boat and Yacht Tours Cabo San Lucas",
-      "category": "boat",
+      "category": "boatYatch",
       "images": {
         "portrait": "/cabos/assets/images/tours/privateBoat/portrait.jpg",
         "gallery": [
@@ -816,12 +492,10 @@
         }
       }
     },
-
-
     {
       "id": "fishing",
       "name": "Fishing boat rental",
-      "category": "sea",
+      "category": "boatYatch",
       "images": {
         "portrait": "/cabos/assets/images/tours/fishing/portrait.jpg",
         "gallery": [
@@ -867,12 +541,353 @@
         }
       }
     },
-
-
+    {
+      "id": "whaleWatching",
+      "name": "Whale Watching breakfast",
+      "category": "whaleWatching",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/whaleWatching/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/whaleWatching/1.jpg",
+          "/cabos/assets/images/tours/whaleWatching/2.jpg",
+          "/cabos/assets/images/tours/whaleWatching/3.jpg",
+          "/cabos/assets/images/tours/whaleWatching/4.jpg",
+          "/cabos/assets/images/tours/whaleWatching/5.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "translations": {
+        "en": {
+          "title": "Whale Watching breakfast",
+          "description": "Get ready for the ultimate ocean adventure—watch massive humpback whales leap from the water right before your eyes in Cabo’s stunning bay! Cruise past the famous Arch, enjoy a delicious breakfast and open bar, and feel the thrill of nature up close—book now and be part of the magic!",
+          "duration": "2 hours", 
+          "period": "From December 15th until April 15th, daily, 9:00am",
+          "age": "All ages", 
+          "price": "69 USD per adult,37 USD per child",
+          "rounTripTransportation": "20 USD",   
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Whale Watching breakfast",
+          "description": "Get ready for the ultimate ocean adventure—watch massive humpback whales leap from the water right before your eyes in Cabo’s stunning bay! Cruise past the famous Arch, enjoy a delicious breakfast and open bar, and feel the thrill of nature up close—book now and be part of the magic!",
+          "duration": "2 hours", 
+          "period": "From December 15th until April 15th, daily, 9:00am",
+          "age": "All ages", 
+          "price": "69 USD per adult,37 USD per child",
+          "rounTripTransportation": "20 USD",    
+          "additionalData": ""
+        },
+        "de": {          
+          "title": "Whale Watching mit Frühstück",
+          "description": "Freuen Sie sich auf ein unvergessliches Meeresabenteuer – beobachten Sie riesige Buckelwale, die direkt vor Ihren Augen aus dem Wasser springen, in der atemberaubenden Bucht von Cabo! Fahren Sie am berühmten Arco vorbei, genießen Sie ein leckeres Frühstück und eine offene Bar und spüren Sie die Magie der Natur hautnah – buchen Sie jetzt und seien Sie Teil dieses Erlebnisses!",
+          "duration": "2 Stunden",
+          "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
+          "age": "Alle Altersgruppen", 
+          "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
+          "roundtripTransportation": "20 USD", 
+          "additionalData": ""
+        }
+      }
+    },
+    {
+      "id": "pirateWhaleWatching",
+      "name": "Pirate Ship Whale Watching breakfast",
+      "category": "whaleWatching",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/pirateWhaleWatching/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/pirateWhaleWatching/1.jpg",
+          "/cabos/assets/images/tours/pirateWhaleWatching/2.jpg",
+          "/cabos/assets/images/tours/pirateWhaleWatching/3.jpg",
+          "/cabos/assets/images/tours/pirateWhaleWatching/4.jpg",
+          "/cabos/assets/images/tours/pirateWhaleWatching/5.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "translations": {
+        "en": {
+          "title": "Pirate Ship Whale Watching breakfast",
+          "description": "Join a legendary pirate voyage and chase mighty humpback whales across the wild seas of Cabo—feel the thrill as these ocean giants leap into the air before your eyes! Cruise on a real pirate ship past the famous Arch and sea lions while enjoying breakfast and free open bar, with your fearless crew guiding the hunt—book now and live the adventure you’ll never forget!",
+          "duration": "2 hours", 
+          "period": "From December 15th until April 15th, daily, 9:00am",
+          "age": "All ages", 
+          "price": "69 USD per adult,37 USD per child",
+          "rounTripTransportation": "20 USD",   
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Whale Watching breakfast",
+          "description": "Join a legendary pirate voyage and chase mighty humpback whales across the wild seas of Cabo—feel the thrill as these ocean giants leap into the air before your eyes! Cruise on a real pirate ship past the famous Arch and sea lions while enjoying breakfast and free open bar, with your fearless crew guiding the hunt—book now and live the adventure you’ll never forget!",
+          "duration": "2 hours", 
+          "period": "From December 15th until April 15th, daily, 9:00am",
+          "age": "All ages", 
+          "price": "69 USD per adult,37 USD per child",
+          "rounTripTransportation": "20 USD",    
+          "additionalData": ""
+        },
+        "de": {          
+          "title": "Whale Watching mit Frühstück",
+          "description": "Begeben Sie sich auf eine legendäre Piratenfahrt und jagen Sie mächtige Buckewale über die wilden Gewässer von Cabo – spüren Sie den Nervenkitzel, wenn diese Ozeanriesen direkt vor Ihren Augen aus dem Wasser springen! Fahren Sie mit einem echten Piratenschiff am berühmten Arco und an Seelöwen vorbei, genießen Sie ein Frühstück und die offene Bar – Ihre furchtlose Crew führt Sie auf dieser unvergesslichen Abenteuerfahrt.",
+          "duration": "2 Stunden",
+          "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
+          "age": "Alle Altersgruppen", 
+          "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
+          "roundtripTransportation": "20 USD", 
+          "additionalData": ""
+        }
+      }
+    },
+    {
+      "id": "whaleWatchingSunset",
+      "name": "Whale Watching dinner cruise",
+      "category": "whaleWatching",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/whaleWatchingSunset/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/whaleWatchingSunset/1.jpg",
+          "/cabos/assets/images/tours/whaleWatchingSunset/2.jpg",
+          "/cabos/assets/images/tours/whaleWatchingSunset/3.jpg",
+          "/cabos/assets/images/tours/whaleWatchingSunset/4.jpg",
+          "/cabos/assets/images/tours/whaleWatchingSunset/5.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "translations": {
+        "en": {
+          "title": "Whale Watching dinner cruise",
+          "description": "Experience the magic of whale watching in Cabo San Lucas as majestic whales grace the warm waters of the Pacific and Sea of Cortez with breathtaking jumps and dives during their mating and birthing season. Departing from Dock #4, this unforgettable journey takes you past iconic landmarks like the Arch and Lovers Beach, while you enjoy Mexican dinner, refreshing drinks, and expert guidance in spotting and capturing amazing moments with these gentle giants.",
+          "duration": "2.5 hours", 
+          "period": "From December 15th until April 15th, daily, 9:00am",
+          "age": "All ages", 
+          "price": "100 USD per adult,55 USD per child",
+          "rounTripTransportation": "20 USD",   
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Whale Watching dinner cruise",
+          "description": "Experience the magic of whale watching in Cabo San Lucas as majestic whales grace the warm waters of the Pacific and Sea of Cortez with breathtaking jumps and dives during their mating and birthing season. Departing from Dock #4, this unforgettable journey takes you past iconic landmarks like the Arch and Lovers Beach, while you enjoy Mexican dinner, refreshing drinks, and expert guidance in spotting and capturing amazing moments with these gentle giants.",
+          "duration": "2.5 hours", 
+          "period": "From December 15th until April 15th, daily, 9:00am",
+          "age": "All ages", 
+          "price": "100 USD per adult,55 USD per child",
+          "rounTripTransportation": "20 USD",    
+          "additionalData": ""
+        },
+        "de": {          
+          "title": "Whale Watching-Dinnerfahrt",
+          "description": "Erleben Sie die Magie der Walbeobachtung in Cabo San Lucas, wenn majestätische Buckelwale während ihrer Paarungs- und Geburtszeit mit atemberaubenden Sprüngen und Tauchgängen die warmen Gewässer des Pazifiks und des Golfs von Kalifornien durchqueren. Die Fahrt startet am Dock Nr. 4 und führt Sie an berühmten Wahrzeichen wie dem Arco und der Playa del Amor vorbei – begleitet von einem mexikanischen Abendessen, erfrischenden Getränken und fachkundiger Begleitung zur Beobachtung und zum Fotografieren dieser sanften Riesen.",
+          "duration": "2.5 Stunden",
+          "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
+          "age": "Alle Altersgruppen", 
+          "price": "100 USD pro Erwachsenen, 55 USD pro Kind", 
+          "roundtripTransportation": "20 USD", 
+          "additionalData": ""
+        }
+      }
+    },
+    {
+      "id": "dunesCamel",
+      "name": "Beach & Dunes Camel Ride Experience",
+      "category": "camelHorse",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/dunesCamel/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/dunesCamel/1.jpg",
+          "/cabos/assets/images/tours/dunesCamel/2.jpg",
+          "/cabos/assets/images/tours/dunesCamel/3.jpg",
+          "/cabos/assets/images/tours/dunesCamel/4.jpg",
+          "/cabos/assets/images/tours/dunesCamel/5.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "translations": {
+        "en": {
+          "title": "Beach & Dunes Camel Ride Experience",
+          "description": "Embark on one of the most unique experiences in Los Cabos—a peaceful camel ride along a Pacific beach, guided by bilingual experts and surrounded by stunning ocean views, with the chance to spot humpback whales in winter. Your adventure includes a desert safari, time at a rescued camel sanctuary, a walk through native cacti, a Mexican buffet, tequila tasting, and professional photos to remember it all—plus free round-trip transportation for a truly unforgettable day.",
+          "duration": "2 hours", 
+          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
+          "age": "5+ years", 
+          "price": "95 USD per adult, 45 USD per child + 25 USD park entrance fee",
+          "rounTripTransportation": "Included",   
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Beach & Dunes Camel Ride Experience",
+          "description": "Embark on one of the most unique experiences in Los Cabos—a peaceful camel ride along a Pacific beach, guided by bilingual experts and surrounded by stunning ocean views, with the chance to spot humpback whales in winter. Your adventure includes a desert safari, time at a rescued camel sanctuary, a walk through native cacti, a Mexican buffet, tequila tasting, and professional photos to remember it all—plus free round-trip transportation for a truly unforgettable day.",
+          "duration": "2 hours", 
+          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
+          "age": "5+ years", 
+          "price": "95 USD per adult, 45 USD per child + 25 USD park entrance fee",
+          "rounTripTransportation": "Included",    
+          "additionalData": ""
+        },
+        "de": {          
+          "title": "Taucherlebenis für Anfänger",
+          "description": "Erleben Sie eines der einzigartigsten Abenteuer in Los Cabos – einen entspannten Kamelritt entlang eines pazifischen Strandes, geführt von zweisprachigen Experten und begleitet von atemberaubendem Meerblick mit der Chance, im Winter Buckelwale zu entdecken. Ihr Ausflug beinhaltet eine Safari durch die Wüste, Zeit im Kamel-Schutzgebiet, einen Spaziergang durch einheimische Kakteenlandschaften, ein mexikanisches Buffet, Tequila-Verkostung sowie professionelle Fotos – inklusive kostenloser Hin- und Rückfahrt für einen unvergesslichen Tag.",
+          "duration": "2 Stunden",
+          "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
+          "age": "Ab 5 Jahren", 
+          "price": "95 USD pro Erwachsener, 45 USD pro Kind + 25 USD Eintrittsgebühr", 
+          "roundtripTransportation": "Inklusive", 
+          "additionalData": ""
+        }
+      }
+    },
+    {
+      "id": "beachHorse",
+      "name": "Beach Horseback Riding",
+      "category": "camelHorse",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/beachHorse/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/beachHorse/1.jpg",
+          "/cabos/assets/images/tours/beachHorse/2.jpg",
+          "/cabos/assets/images/tours/beachHorse/3.jpg",
+          "/cabos/assets/images/tours/beachHorse/4.jpg",
+          "/cabos/assets/images/tours/beachHorse/5.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "translations": {
+        "en": {
+          "title": "Beach Horseback Riding",
+          "description": "Experience the magic of beach horseback riding in San Jose del Cabo as you trot along golden sands with ocean waves at your side. Perfect for couples, families, or solo travelers—this unforgettable ride blends adventure and breathtaking views.",
+          "duration": "1-2 hours", 
+          "period": "Daily, 9:00am | 10:30am|3:00pm | 4:30pm",
+          "age": "4+ years", 
+          "price": "1 hour 65 USD, 1,5 hours 90 USD, 2 hours 120 USD",
+          "rounTripTransportation": "included within San Jose del Cabo",   
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Beach Horseback Riding",
+          "description": "Experience the magic of beach horseback riding in San Jose del Cabo as you trot along golden sands with ocean waves at your side. Perfect for couples, families, or solo travelers—this unforgettable ride blends adventure and breathtaking views.",
+          "duration": "1-2 hours", 
+          "period": "Daily, 9:00am | 10:30am|3:00pm | 4:30pm",
+          "age": "4+ years", 
+          "price": "1 hour 65 USD, 1,5 hours 90 USD, 2 hours 120 USD",
+          "rounTripTransportation": "included within San Jose del Cabo",    
+          "additionalData": ""
+        },
+        "de": {          
+          "title": "Ausritt am Strand",
+          "description": "Erleben Sie den Zauber eines Ausritts am Strand von San José del Cabo, während Sie auf goldenen Sandwegen reiten und die Meereswellen an Ihrer Seite genießen. Ideal für Paare, Familien oder Alleinreisende – dieses unvergessliche Erlebnis vereint Abenteuer mit atemberaubenden Ausblicken.",
+          "duration": "1-2 Stunden",
+          "period": "Täglich, 9:00 Uhr | 10:30 Uhr | 15:00 Uhr | 16:30 Uhr", 
+          "age": "Ab 4 Jahren", 
+          "price": "1 Stunde 65 USD, 1,5 Stunden 90 USD, 2 Stunden 120 USD",
+          "roundtripTransportation": "Inklusive innerhalb von San José del Cabo", 
+          "additionalData":""
+        }
+      }
+    },
+    {
+      "id": "dunesATV",
+      "name": "Beach & Dunes ATV Tour",
+      "category": "atvRazors",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/dunesATV/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/dunesATV/1.jpg",
+          "/cabos/assets/images/tours/dunesATV/2.jpg",
+          "/cabos/assets/images/tours/dunesATV/3.jpg",
+          "/cabos/assets/images/tours/dunesATV/4.jpg",
+          "/cabos/assets/images/tours/dunesATV/5.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "translations": {
+        "en": {
+          "title": "Beach & Dunes ATV Tour",
+          "description": "Embark on an adrenaline-filled ATV adventure through the stunning desert trails of Los Cabos, surrounded by unique landscapes and native flora. Your journey begins with free air-conditioned transportation, followed by a quick check-in and safety briefing before hitting the trails with a bilingual guide.",
+          "duration": "2 hours", 
+          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
+          "age": "7+ years", 
+          "price": "single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
+          "rounTripTransportation": "Included",   
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Beach & Dunes ATV Tour",
+          "description": "Embark on an adrenaline-filled ATV adventure through the stunning desert trails of Los Cabos, surrounded by unique landscapes and native flora. Your journey begins with free air-conditioned transportation, followed by a quick check-in and safety briefing before hitting the trails with a bilingual guide.",
+          "duration": "2 hours", 
+          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
+          "age": "5+ years", 
+          "price": "single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
+          "rounTripTransportation": "Included",    
+          "additionalData": ""
+        },
+        "de": {          
+          "title": "Strand- & Dünen-ATV-Tour",
+          "description": "Begeben Sie sich auf ein adrenalingeladenes ATV-Abenteuer durch die atemberaubenden Wüstenpfade von Los Cabos, umgeben von einzigartigen Landschaften und einheimischer Flora. Ihre Tour beginnt mit einem kostenlosen klimatisierten Transport, gefolgt von einem schnellen Check-in und einer Sicherheitseinweisung, bevor Sie gemeinsam mit einem zweisprachigen Guide die Strecke erkunden.",
+          "duration": "2 Stunden",
+          "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
+          "age": "Ab 7 Jahren", 
+          "price": "Einzelfahrer ATV 95 USD, Doppelfahrer ATV 150 USD + 25 USD Eintrittsgebühr", 
+          "roundtripTransportation": "Inklusive", 
+          "additionalData": ""
+        }
+      }
+    },
+    {
+      "id": "dunesUTV",
+      "name": "Beach & Dunes UTV Razor Tour",
+      "category": "atvRazors",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/dunesUTV/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/dunesUTV/1.jpg",
+          "/cabos/assets/images/tours/dunesUTV/2.jpg",
+          "/cabos/assets/images/tours/dunesUTV/3.jpg",
+          "/cabos/assets/images/tours/dunesUTV/4.jpg",
+          "/cabos/assets/images/tours/dunesUTV/5.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "translations": {
+        "en": {
+          "title": "Beach & Dunes UTV Razor Tour",
+          "description": "Get ready for the most thrilling off-road tour in Cabo! This Side by Side UTV adventure is perfect for adrenaline lovers. Start your excursion by hopping on the free air-conditioned shuttle. After a quick check-in and safety briefing from your expert bilingual guide, you’ll be all set to explore Cabo’s beaches and deserts while feeling the rush of driving or riding in a Side by Side UTV.",
+          "duration": "2 hours", 
+          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
+          "age": "7+ years", 
+          "price": "driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
+          "rounTripTransportation": "Included",   
+          "additionalData": ""
+        },
+        "es": {
+          "title": "Beach & Dunes UTV Razor Toure",
+          "description": "Get ready for the most thrilling off-road tour in Cabo! This Side by Side UTV adventure is perfect for adrenaline lovers. Start your excursion by hopping on the free air-conditioned shuttle. After a quick check-in and safety briefing from your expert bilingual guide, you’ll be all set to explore Cabo’s beaches and deserts while feeling the rush of driving or riding in a Side by Side UTV.",
+          "duration": "2 hours", 
+          "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
+          "age": "7+ years", 
+          "price": "driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
+          "rounTripTransportation": "Included",    
+          "additionalData": ""
+        },
+        "de": {          
+          "title": "Strand- & Dünen-UTV-Razor-Tour",
+          "description": "Bereiten Sie sich auf die aufregendste Offroad-Tour in Cabo vor! Dieses Side-by-Side-UTV-Abenteuer ist perfekt für Adrenalinliebhaber. Ihre Tour beginnt mit dem kostenlosen klimatisierten Shuttle. Nach einem schnellen Check-in und einer Sicherheitseinweisung durch Ihren zweisprachigen Guide sind Sie bereit, die Strände und Wüsten von Cabo zu erkunden – als Fahrer oder Mitfahrer in einem leistungsstarken UTV.",
+          "duration": "2 Stunden",
+          "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
+          "age": "Ab 7 Jahren", 
+          "price": "Fahrer 160 USD, 1 Fahrer & 1 Mitfahrer 225 USD, 1 Fahrer & 2 Mitfahrer 270 USD, 1 Fahrer & 3 Mitfahrer 320 USD + 25 USD Eintrittsgebühr",
+          "roundtripTransportation": "Inklusive", 
+          "additionalData":""
+        }
+      }
+    },
     {
       "id": "balandraBeach",
       "name": "Balandra Beach, City Tour La Paz & Todos Santos",
-      "category": "city",
+      "category": "dayTrip",
       "images": {
         "portrait": "/cabos/assets/images/tours/balandraBeach/portrait.jpg",
         "gallery": [
@@ -918,12 +933,10 @@
         }
       }
     },
-
-
     {
       "id": "espirituSanto",
       "name": "Espiritu Santo Island Boat and Snorkel Experience",
-      "category": "sea",
+      "category": "dayTrip",
       "images": {
         "portrait": "/cabos/assets/images/tours/espirituSanto/portrait.jpg",
         "gallery": [
@@ -969,12 +982,10 @@
         }
       }
     },
-
-
     {
       "id": "whaleSharkPaz",
       "name": "Whale Shark Snorkeling in La Paz",
-      "category": "sea",
+      "category": "dayTrip",
       "images": {
           "portrait": "/cabos/assets/images/tours/whaleSharkPaz/portrait.jpg",
           "gallery": [
@@ -1000,11 +1011,10 @@
           }
       }
     },
-
     {
       "id": "snorkelCaboPulmo",
       "name": "Snorkel in Cabo Pulmo Marine Park",
-      "category": "sea",
+      "category": "dayTrip",
       "images": {
           "portrait": "/cabos/assets/images/tours/snorkelCaboPulmo/portrait.jpg",
           "gallery": [
@@ -1030,11 +1040,10 @@
           }
       }
     },
-
     {
       "id": "santiago",
       "name": "Santiago Waterfall",
-      "category": "land",
+      "category": "dayTrip",
       "images": {
           "portrait": "/cabos/assets/images/tours/santiago/portrait.jpg",
           "gallery": [
@@ -1060,11 +1069,10 @@
           }
       }
     },
-
     {
       "id": "todosSantos",
       "name": "Todos Santos Day Tour",
-      "category": "city",
+      "category": "dayTrip",
       "images": {
           "portrait": "/cabos/assets/images/tours/todosSantos/portrait.jpg",
           "gallery": [
@@ -1089,7 +1097,6 @@
             "additionalData": ""
           }
       }
-    }
-        
+    }        
   ]
 }

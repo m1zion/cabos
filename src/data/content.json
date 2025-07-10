@@ -8,7 +8,16 @@
     "toursTitle": "Tours and Activities",
     "transportationTitle": "Our Vehicles",
     "restaurantsTitle": "Restaurants",
-    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "categories": {
+      "sunsetCruises": "Sunset cruises",
+      "snorkelDiving": "Surf, Snorkel & Diving experiences",
+      "boatYatch": "Boat and Yacht tours & rentals",
+      "whaleWatching": "Whale Watching",
+      "camelHorse": "Camel- and Horseriding",
+      "atvRazors": "Desert ATV & Razor Tours",
+      "dayTrip": "Day Trips from Los Cabos"
+    }
   },
   "es": {
     "aboutUsTitle": "Nosotros",
@@ -19,7 +28,16 @@
     "toursTitle": "Tours y Actividades",
     "transportationTitle": "Nuestros Vehiculos",
     "restaurantsTitle": "Restaurantes",
-    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "categories": {
+      "sunsetCruises": "Cruceros al atardecer",
+      "snorkelDiving": "Experiencias de surf, esnórquel y buceo",
+      "boatYatch": "Paseos y alquiler de barcos y yates",
+      "whaleWatching": "Avistamiento de ballenas",
+      "camelHorse": "Paseos en camello y caballo",
+      "atvRazors": "Tours en cuatrimoto y razors",
+      "dayTrip": "Excursiones desde Los Cabos"
+    }
   },
   "de": {
     "aboutUsTitle": "Über uns",
@@ -30,6 +48,15 @@
     "toursTitle": "Touren und Aktivitäten",
     "transportationTitle": "Unsere Fahrzeuge",
     "restaurantsTitle": "Restaurants",
-    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "categories": {
+      "sunsetCruises": "Sonnenuntergangsfahrten",
+      "snorkelDiving": "Surf-, Schnorchel- & Taucherlebnisse",
+      "boatYatch": "Boots- und Yachtouren & Vermietungen",
+      "whaleWatching": "Walbeobachtung",
+      "camelHorse": "Kamel- und Pferdereiten",
+      "atvRazors": "Wüstentouren mit ATV & Razor",
+      "dayTrip": "Tagesausflüge ab Los Cabos"
+    }
   }
 }
