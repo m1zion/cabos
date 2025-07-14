@@ -8,6 +8,7 @@ import "leaflet/dist/leaflet.css";
 import 'react-multi-carousel/lib/styles.css';
 import contentData from '../../data/content.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
+import { Link } from "react-router-dom";
 
 
 const categories = [
@@ -31,40 +32,40 @@ function tours() {
     const categoryData = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
     return (
         <Layout>              
-        <div
-        className="relative h-[270px] w-full flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${categoryData?.image})` }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <h1 className="relative z-10 text-white text-4xl font-semibold uppercase">
-          {content.categories[categoryData.key]}
-        </h1>
-      </div>
-
-
-      <div className="px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-        {filteredTours.map((tour) => {
-          const t = tour.translations[language] || tour.translations.en;
-          return (
-            <div
-              key={tour.id}
-              className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"
-            >
-              <img
-                src={tour.images.portrait}
-                alt={t.title}
-                className="w-full h-60 object-cover"
-              />
-              <div className="p-4 space-y-2">
-                <h2 className="text-lg font-semibold text-[#03A6A6]">{t.title}</h2>
-                <div className="flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.duration}</p></div>
-                <div className="flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.period}</p></div>
-                <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.price}</p></div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+          <div
+          className="relative h-[270px] w-full flex items-center justify-center bg-cover bg-center"
+          style={{ backgroundImage: `url(${categoryData?.image})` }}
+          >
+            <div className="absolute inset-0 bg-black/40"></div>
+            <h1 className="relative z-10 text-white text-4xl font-semibold uppercase">
+              {content.categories[categoryData.key]}
+            </h1>
+          </div>
+          <div className="px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            {filteredTours.map((tour) => {
+              const t = tour.translations[language] || tour.translations.en;
+              return (                
+                <Link to={`/tourDetail/${tour.id}`}>
+                  <div
+                    key={tour.id}
+                    className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"
+                  >
+                    <img
+                      src={tour.images.portrait}
+                      alt={t.title}
+                      className="w-full h-60 object-cover"
+                    />
+                    <div className="p-4 space-y-2">
+                      <h2 className="text-lg font-semibold text-[#03A6A6]">{t.title}</h2>
+                      <div className="flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.duration}</p></div>
+                      <div className="flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.period}</p></div>
+                      <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.price}</p></div>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </Layout>
     )
 }

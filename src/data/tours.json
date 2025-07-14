@@ -7,11 +7,7 @@
       "images": {
         "portrait": "/cabos/assets/images/tours/sunsetPartyboat/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/sunsetPartyboat/1.jpg",
-          "/cabos/assets/images/tours/sunsetPartyboat/2.jpg",
-          "/cabos/assets/images/tours/sunsetPartyboat/3.jpg",
-          "/cabos/assets/images/tours/sunsetPartyboat/4.jpg",
-          "/cabos/assets/images/tours/sunsetPartyboat/5.jpg"
+          "/cabos/assets/images/tours/sunsetPartyboat/1.jpg"
         ]
       },
       "status": "active",
@@ -19,7 +15,7 @@
       "translations": {
         "en": {
           "title": "Sunset Partyboat with Mexican dinner",
-          "description": "Sail aboard a double-decker catamaran at sunset for breathtaking 360° views of Cabo’s iconic landmarks—like El Arco, Lover’s Beach, and a sea lion colony—while enjoying chicken or beef fajita buffet and bottomless open bar. The evening concludes with lively music, dancing on the upper deck, and a festive atmosphere perfect for groups and couples alike.",
+          "description": "Sail aboard a double-decker catamaran at sunset for breathtaking 360° views of Cabo’s iconic landmarks—like El Arco, Lover’s Beach, and a sea lion colony—while enjoying chicken or beef fajita buffet and bottomless open bar. \n\n The evening concludes with lively music, dancing on the upper deck, and a festive atmosphere perfect for groups and couples alike.",
           "duration": "2 hours", 
           "period": "Daily, at 5:00pm in winter, at 6:00pm in summer",
           "age": "All ages", 
@@ -29,7 +25,7 @@
         },
         "es": {
           "title": "Sunset Partyboat with Mexican dinner",
-          "description": "Sail aboard a double-decker catamaran at sunset for breathtaking 360° views of Cabo’s iconic landmarks—like El Arco, Lover’s Beach, and a sea lion colony—while enjoying chicken or beef fajita buffet and bottomless open bar. The evening concludes with lively music, dancing on the upper deck, and a festive atmosphere perfect for groups and couples alike.",
+          "description": "Sail aboard a double-decker catamaran at sunset for breathtaking 360° views of Cabo’s iconic landmarks—like El Arco, Lover’s Beach, and a sea lion colony—while enjoying chicken or beef fajita buffet and bottomless open bar. \n\nThe evening concludes with lively music, dancing on the upper deck, and a festive atmosphere perfect for groups and couples alike.",
           "duration": "2 hours", 
           "period": "Daily, at 5:00pm in winter, at 6:00pm in summer",
           "age": "All ages", 
@@ -39,7 +35,7 @@
         },
         "de": {          
           "title": "Sunset-Partyboot mit mexikanischem Abendessen",
-          "description": "Segeln Sie an Bord eines zweistöckigen Katamarans in den Sonnenuntergang und genießen Sie atemberaubende 360°-Aussichten auf die Wahrzeichen von Cabo – darunter El Arco, Playa del Amor und Playa dekl Divorcio – während Sie ein Buffet mit Hähnchen- oder Rindfleisch-Fajitas und eine unbegrenzte Open Bar genießen. Der Abend endet mit Musik, Tanz auf dem Oberdeck und einer festlichen Atmosphäre – perfekt für Gruppen und Paare.",
+          "description": "Segeln Sie an Bord eines zweistöckigen Katamarans in den Sonnenuntergang und genießen Sie atemberaubende 360°-Aussichten auf die Wahrzeichen von Cabo – darunter El Arco, Playa del Amor und Playa dekl Divorcio – während Sie ein Buffet mit Hähnchen- oder Rindfleisch-Fajitas und eine unbegrenzte Open Bar genießen.\n\n Der Abend endet mit Musik, Tanz auf dem Oberdeck und einer festlichen Atmosphäre – perfekt für Gruppen und Paare.",
           "duration": "2 Stunden",
           "period": "Täglich, um 17:00 Uhr im Winter, um 18:00 Uhr im Sommer", 
           "age": "Für alle Altersgruppen geeignet", 
