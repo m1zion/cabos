@@ -1,0 +1,1 @@
+import{j as e}from"./index-BS4Dv6Pk.js";const s=()=>e.jsxs("div",{id:"experiences",className:"scroll-mt-20 m-4 h-[600px] bg-yellow-200 w-[90%]",children:[e.jsx("h1",{children:"Experiences"}),e.jsx("h1",{children:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."})]});export{s as default};
