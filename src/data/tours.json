@@ -447,10 +447,7 @@
         "portrait": "/cabos/assets/images/tours/privateBoat/portrait.jpg",
         "gallery": [
           "/cabos/assets/images/tours/privateBoat/1.jpg",
-          "/cabos/assets/images/tours/privateBoat/2.jpg",
-          "/cabos/assets/images/tours/privateBoat/3.jpg",
-          "/cabos/assets/images/tours/privateBoat/4.jpg",
-          "/cabos/assets/images/tours/privateBoat/5.jpg"
+          "/cabos/assets/images/tours/privateBoat/2.jpg"
         ]
       },
       "status": "active",
@@ -1042,23 +1039,17 @@
       "category": "dayTrip",
       "images": {
           "portrait": "/cabos/assets/images/tours/santiago/portrait.jpg",
-          "gallery": [
-            "/cabos/assets/images/tours/santiago/1.jpg",
-            "/cabos/assets/images/tours/santiago/2.jpg",
-            "/cabos/assets/images/tours/santiago/3.jpg",
-            "/cabos/assets/images/tours/santiago/4.jpg",
-            "/cabos/assets/images/tours/santiago/5.jpg"
-          ]
+          "gallery": []
       },
       "status": "active",
       "icon":"",
       "translations": {
           "en": {
             "title": "Santiago Waterfall",
-            "description": "Escape the city and connect with nature on a scenic tour from Los Cabos to the beautiful Santiago Waterfall. Enjoy roundtrip transportation, a short 15-minute walk through lush surroundings, and up to 3 hours at the waterfall to swim, relax, and explore. Water and a light snack are included for a refreshing and energizing experience in this hidden oasis.",
+            "description": "Escape the city and connect with nature on a scenic tour from Los Cabos to the beautiful Santiago Waterfall. \n\nEnjoy roundtrip transportation, a short 15-minute walk through lush surroundings, and up to 3 hours at the waterfall to swim, relax, and explore. Water and a light snack are included for a refreshing and energizing experience in this hidden oasis.",
             "duration": "7-8 hours",
             "period": "Daily, early departure",
-            "age": "",
+            "age": "-",
             "price": "100 USD per person",
             "rounTripTransportation": "included",
             "additionalData": ""

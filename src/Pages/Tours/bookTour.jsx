@@ -14,23 +14,7 @@ import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import 'react-multi-carousel/lib/styles.css';
 
-// Set default icon manually
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
-});
-const icons = import.meta.glob('../../assets/icons/*.svg', {
-  eager: true,
-  import: 'default',
-});
-const responsive = {
-  desktop: {breakpoint: { max: 3000, min: 1024 }, items: 1, },
-  tablet: {breakpoint: { max: 1024, min: 464 }, items: 1, },
-  mobile: {breakpoint: { max: 464, min: 0 }, items: 1, },
-};
-function TourDetail() {  
+function BookTour() {  
     const { language } = useContext(ToursContext);
     const { id } = useParams();
     const tour = tourData.tours.find(a => a.id === id);
@@ -144,4 +128,4 @@ function TourDetail() {
         </Layout>
     )
 }
-export default TourDetail
+export default BookTour

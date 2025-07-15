@@ -9,6 +9,13 @@
     "transportationTitle": "Our Vehicles",
     "restaurantsTitle": "Restaurants",
     "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "bookButton": "Book Now",
+    "duration": "Duration",
+    "period": "Schedule",
+    "age": "Age",
+    "price": "Price",
+    "rounTripTransportation": "Round Trip Transportation",
+    "additionalData": "Additional Data",
     "categories": {
       "sunsetCruises": "Sunset cruises",
       "snorkelDiving": "Surf, Snorkel & Diving experiences",
@@ -17,7 +24,12 @@
       "camelHorse": "Camel- and Horseriding",
       "atvRazors": "Desert ATV & Razor Tours",
       "dayTrip": "Day Trips from Los Cabos"
-    }
+    },
+    "contact": "Contact",
+    "information": "Information",
+    "social": "Social",
+    "phone": "Phone",
+    "location": "location"
   },
   "es": {
     "aboutUsTitle": "Nosotros",
@@ -29,6 +41,13 @@
     "transportationTitle": "Nuestros Vehiculos",
     "restaurantsTitle": "Restaurantes",
     "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "bookButton": "Reservar",
+    "duration": "Duración",
+    "period": "Frecuencia",
+    "age": "Edad",
+    "price": "Precio",
+    "rounTripTransportation": "Transporte",
+    "additionalData": "Información adicional",
     "categories": {
       "sunsetCruises": "Cruceros al atardecer",
       "snorkelDiving": "Experiencias de surf, esnórquel y buceo",
@@ -37,7 +56,12 @@
       "camelHorse": "Paseos en camello y caballo",
       "atvRazors": "Tours en cuatrimoto y razors",
       "dayTrip": "Excursiones desde Los Cabos"
-    }
+    },
+    "contact": "Contacto",
+    "information": "Información",
+    "social": "Social",
+    "phone": "Teléfono",
+    "location": "Ubicación"
   },
   "de": {
     "aboutUsTitle": "Über uns",
@@ -49,6 +73,13 @@
     "transportationTitle": "Unsere Fahrzeuge",
     "restaurantsTitle": "Restaurants",
     "restaurantsContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "bookButton": "Reservieren",
+    "duration": "Dauer",
+    "period": "Frequenz",
+    "age": "Alter",
+    "price": "Preis",
+    "rounTripTransportation": "Transport",
+    "additionalData": "Weitere Informationen",
     "categories": {
       "sunsetCruises": "Sonnenuntergangsfahrten",
       "snorkelDiving": "Surf-, Schnorchel- & Taucherlebnisse",
@@ -57,6 +88,11 @@
       "camelHorse": "Kamel- und Pferdereiten",
       "atvRazors": "Wüstentouren mit ATV & Razor",
       "dayTrip": "Tagesausflüge ab Los Cabos"
-    }
+    },
+    "contact": "Kontakt",
+    "information": "Information",
+    "social": "Sozial",
+    "phone": "Telefon",
+    "location": "Standort"
   }
 }

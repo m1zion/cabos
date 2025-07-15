@@ -4,15 +4,14 @@ import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
 
-
 const categories = [
-  { key: 'sunsetCruises', image: './src/assets/images/sunset.jpg' },
-  { key: 'snorkelDiving', image: './src/assets/images/snorkel.jpg' },
-  { key: 'boatYatch', image: './src/assets/images/boat.jpg' },
-  { key: 'whaleWatching', image: './src/assets/images/sea.jpg' },
-  { key: 'camelHorse', image: './src/assets/images/camel.jpg' },
-  { key: 'atvRazors', image: './src/assets/images/utv.jpg' },
-  { key: 'dayTrip', image: './src/assets/images/land.jpg' },
+  { key: 'sunsetCruises', image: '/cabos/assets/images/sunset.jpg' },
+  { key: 'snorkelDiving', image: '/cabos/assets/images/snorkel.jpg' },
+  { key: 'boatYatch', image: '/cabos/assets/images/boat.jpg' },
+  { key: 'whaleWatching', image: '/cabos/assets/images/sea.jpg' },
+  { key: 'camelHorse', image: '/cabos/assets/images/camel.jpg' },
+  { key: 'atvRazors', image: '/cabos/assets/images/utv.jpg' },
+  { key: 'dayTrip', image: '/cabos/assets/images/land.jpg' },
 ];
 
 
