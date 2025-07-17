@@ -11,12 +11,14 @@ import NotFound from '../NotFound/'
 import Accommodation from '../Accommodation/'
 import Tours from '../Tours/'
 import TourDetail from '../Tours/tourDetail'
+import BookTour from '../Tours/bookTour'
 const AppRoutes = () =>{
   let routes = useRoutes([
     { path: '',  element: <Home/> },
     { path: 'Accommodation/:id',  element: <Accommodation/> },
     { path: 'Tours/:id',  element: <Tours/> },
     { path: 'TourDetail/:id',  element: <TourDetail/> },
+    { path: 'BookTour/:id',  element: <BookTour/> },
     { path: '*',  element: <NotFound/> },
   ]);
   return routes;

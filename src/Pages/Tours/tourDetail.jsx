@@ -13,6 +13,7 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from "react-router-dom";
 
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
@@ -102,7 +103,9 @@ function TourDetail() {
 
         
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
-            <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#03A6A6] text-white font-medium rounded-sm shadow hover:bg-[#028b8b] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
+            <Link to={`/bookTour/${tour.id}`}>
+                <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#03A6A6] text-white font-medium rounded-sm shadow hover:bg-[#028b8b] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
+            </Link>
         </div>
        <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%]" id="images">
         <div className="flex flex-wrap gap-2 justify-center sm:justify-start">

@@ -29,7 +29,14 @@
     "information": "Information",
     "social": "Social",
     "phone": "Phone",
-    "location": "location"
+    "location": "location",
+    "date": "Date",
+    "hour": "Hour",
+    "name": "Name",
+    "promoCode": "Promo Code",
+    "noPeople": "Number of adults",
+    "noChild": "Number of children",
+    "bookTitle": "Book a tour"
   },
   "es": {
     "aboutUsTitle": "Nosotros",
@@ -61,7 +68,14 @@
     "information": "Información",
     "social": "Social",
     "phone": "Teléfono",
-    "location": "Ubicación"
+    "location": "Ubicación",
+    "date": "Fecha",
+    "hour": "Hora",
+    "name": "Nombre",
+    "promoCode": "Coigo promocional",
+    "noPeople": "Número de adultos",
+    "noChild": "Numero de niños",
+    "bookTitle": "Reserva tu tour"
   },
   "de": {
     "aboutUsTitle": "Über uns",
@@ -93,6 +107,13 @@
     "information": "Information",
     "social": "Sozial",
     "phone": "Telefon",
-    "location": "Standort"
+    "location": "Standort",
+    "date": "Datum",
+    "hour": "Stunde",
+    "name": "Name",
+    "promoCode": "Aktionscode",
+    "noPeople": "Anzahl der Personen",
+    "noChild": "Anzahl Kinder",
+    "bookTitle": "Eine Tour buchen"
   }
 }

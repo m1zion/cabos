@@ -4,13 +4,10 @@ import { ToursContext } from "../../Context";
 import HotelIcon  from '../../assets/icons/hotel1.svg?react';
 import YatchIcon  from '../../assets/icons/yatch.svg?react';
 import SnorkelIcon  from '../../assets/icons/snorkel.svg?react';
-import HammockIcon  from '../../assets/icons/hammock.svg?react';
 import FoodIcon  from '../../assets/icons/food.svg?react';
-import BeachIcon  from '../../assets/icons/beach.svg?react';
 import Logo2  from '../../assets/icons/logo2.svg?react';
 import TransportIcon  from '../../assets/icons/transport.svg?react';
 import { motion } from "framer-motion";
-
 const icons = [
   { Component: HotelIcon, x: 100, y: -110 },
   { Component: YatchIcon, x: 150, y: -55 },
@@ -39,7 +36,6 @@ const About = () =>{
         <Logo2
             className="absolute opacity-7 text-white w-[300px] h-[280px] right-[3px] top-[3px] pointer-events-none select-none"
         />
-
             <motion.div                   
                 initial={{ x: -120, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -49,13 +45,7 @@ const About = () =>{
             {content.aboutUsTitle}
             </h1>
              </motion.div>
-            <h2 className="font-[quicksand] text-[#e6f9f7]">
-            {content.aboutUsContent}
-            </h2>
-
-
-
-
+            <h2 className="font-[quicksand] text-[#e6f9f7]">{content.aboutUsContent}</h2>
             {/* Collapsible section */}
             <div
                 ref={contentRef}
@@ -66,20 +56,12 @@ const About = () =>{
                 {content.aboutUsContent2}
                 </p>
             </div>
-
             <button
                 onClick={toggleExpanded}
                 className="mt-3 text-sm text-white underline self-start"
             >
                 {isExpanded ? "Read less" : "Read more"}
-            </button>
-
-
-
-
-
-
-      
+            </button>     
         </div>        
         <div className="hidden md:block w-1/3 relative bg-white flex items-center justify-center overflow-hidden">
             <div
@@ -104,16 +86,3 @@ const About = () =>{
     )
 }
 export default About
-
-/*
- <div id="accomodation" className="bg-gradient-to-r from-[#02897c] to-[#03A696] scroll-mt-20  min-h-[200px] w-[100%]">
-            <div>
-                <h1 className="font-[outfit] font-semibold text-[3.5rem] text-white">
-                {content.aboutUsTitle}
-                </h1>
-                <h1 className="font-[quicksand] text-[#e6f9f7]">
-                    {content.aboutUsContent}
-                </h1>                        
-            </div>
-            <img src = ""/>   
-        </div>*/
