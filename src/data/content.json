@@ -18,7 +18,7 @@
     "additionalData": "Additional Data",
     "categories": {
       "sunsetCruises": "Sunset cruises",
-      "snorkelDiving": "Surf, Snorkel & Diving experiences",
+      "waterExperiences": "Water Experiences",
       "boatYatch": "Boat and Yacht tours & rentals",
       "whaleWatching": "Whale Watching",
       "camelHorse": "Camel- and Horseriding",
@@ -57,7 +57,7 @@
     "additionalData": "Información adicional",
     "categories": {
       "sunsetCruises": "Cruceros al atardecer",
-      "snorkelDiving": "Experiencias de surf, esnórquel y buceo",
+      "waterExperiences": "Experiencias en agua",
       "boatYatch": "Paseos y alquiler de barcos y yates",
       "whaleWatching": "Avistamiento de ballenas",
       "camelHorse": "Paseos en camello y caballo",
@@ -96,7 +96,7 @@
     "additionalData": "Weitere Informationen",
     "categories": {
       "sunsetCruises": "Sonnenuntergangsfahrten",
-      "snorkelDiving": "Surf-, Schnorchel- & Taucherlebnisse",
+      "waterExperiences": "Wassererlebnisse",
       "boatYatch": "Boots- und Yachtouren & Vermietungen",
       "whaleWatching": "Walbeobachtung",
       "camelHorse": "Kamel- und Pferdereiten",

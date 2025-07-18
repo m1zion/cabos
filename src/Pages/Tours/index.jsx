@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const categories = [
   { key: 'sunsetCruises', image: '/cabos/assets/images/sunset.jpg' },
-  { key: 'snorkelDiving', image: '/cabos/assets/images/snorkel.jpg' },
+  { key: 'waterExperiences', image: '/cabos/assets/images/snorkel.jpg' },
   { key: 'boatYatch', image: '/cabos/assets/images/boat.jpg' },
   { key: 'whaleWatching', image: '/cabos/assets/images/sea.jpg' },
   { key: 'camelHorse', image: '/cabos/assets/images/camel.jpg' },
@@ -45,7 +45,7 @@ function tours() {
             {filteredTours.map((tour) => {
               const t = tour.translations[language] || tour.translations.en;
               return (                
-                <Link to={`/tourDetail/${tour.id}`}>
+                <Link to={`/tourDetail/${tour.id}`} key={tour.id}>
                   <div
                     key={tour.id}
                     className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"

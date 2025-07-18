@@ -163,7 +163,7 @@
       "status": "active",
       "icon":"snorkel.svg",
       "adultPrice":"179",
-      "childPrice":"179",
+      "childPrice":"-",
       "translations": {
         "en": {
           "title": "Romantic sunset sailing tour",
@@ -200,15 +200,12 @@
     {
       "id": "snorkelAdventure",
       "name": "Snorkel adventure with lunch",
-      "category": "snorkelDiving",
+      "category": "waterExperiences",
       "images": {
         "portrait": "/cabos/assets/images/tours/snorkelAdventure/portrait.jpg",
         "gallery": [
           "/cabos/assets/images/tours/snorkelAdventure/1.jpg",
-          "/cabos/assets/images/tours/snorkelAdventure/2.jpg",
-          "/cabos/assets/images/tours/snorkelAdventure/3.jpg",
-          "/cabos/assets/images/tours/snorkelAdventure/4.jpg",
-          "/cabos/assets/images/tours/snorkelAdventure/5.jpg"
+          "/cabos/assets/images/tours/snorkelAdventure/2.jpg"
         ]
       },
       "status": "active",
@@ -251,7 +248,7 @@
     {
       "id": "snorkelPirate",
       "name": "Pirate Ship Snorkel experience with lunch",
-      "category": "snorkelDiving",
+      "category": "waterExperiences",
       "images": {
         "portrait": "/cabos/assets/images/tours/snorkelPirate/portrait.jpg",
         "gallery": [
@@ -302,7 +299,7 @@
     {
       "id": "scubaDiving",
       "name": "Scuba Diving Beginner Experience",
-      "category": "snorkelDiving",
+      "category": "waterExperiences",
       "images": {
         "portrait": "/cabos/assets/images/tours/scubaDiving/portrait.jpg",
         "gallery": [
@@ -316,7 +313,7 @@
       "status": "active",
       "icon":"snorkel.svg",
       "adultPrice":"130",
-      "childPrice":"130",
+      "childPrice":"-",
       "translations": {
         "en": {
           "title": "Scuba Diving Beginner Experience",
@@ -353,7 +350,7 @@
     {
       "id": "surfLessons",
       "name": "Surf Lessons at Costa Azul",
-      "category": "snorkelDiving",
+      "category": "waterExperiences",
       "images": {
         "portrait": "/cabos/assets/images/tours/surfLessons/portrait.jpg",
         "gallery": [
@@ -402,6 +399,101 @@
       }
     },
     {
+      "id": "jetSki",
+      "name": "Jet Ski",
+      "category": "waterExperiences",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/jetSki/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/jetSki/1.jpg",
+          "/cabos/assets/images/tours/jetSki/2.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "adultPrice":"-",
+      "childPrice":"-",
+      "translations": {
+        "en": {
+          "title": "Jet Ski in Cabo San Lucas",
+          "description": "Feel the thrill as you ride a high-powered VX cruiser jet ski along the stunning Cabo San Lucas coastline, reaching speeds of up to 45 mph from the heart of Medano Beach. Whether you choose 30 or 60 minutes, this adrenaline-filled adventure promises breathtaking views and nonstop excitement for up to two riders per wave runner.",
+          "duration": "30 or 60 minutes", 
+          "period": "Daily",
+          "age": "10+ years passenger, 17+ driver", 
+          "price": "30 minutes 80 USD, 60 minutes 140 USD",
+          "rounTripTransportation": "not included",   
+          "additionalData": ""
+        },
+       "es": {
+          "title": "Jet Ski en Cabo San Lucas",
+          "description": "Sienta la adrenalina mientras conduce un potente jet ski VX Cruiser a lo largo de la impresionante costa de Cabo San Lucas, alcanzando velocidades de hasta 72 km/h desde el corazón de Playa Médano. Ya sea que elija 30 o 60 minutos, esta aventura llena de emoción le ofrece vistas espectaculares y diversión sin parar para hasta dos personas por moto acuática.",
+          "duration": "30 o 60 minutos",
+          "period": "Diariamente",
+          "age": "Pasajeros desde 10 años, conductor desde 17 años",
+          "price": "30 minutos 80 USD, 60 minutos 140 USD",
+          "rounTripTransportation": "no incluido",
+          "additionalData": ""
+        },
+        "de": {
+          "title": "Jet-Ski in Cabo San Lucas",
+          "description": "Erleben Sie den Nervenkitzel, wenn Sie mit einem leistungsstarken VX Cruiser Jet-Ski entlang der atemberaubenden Küste von Cabo San Lucas fahren - mit Geschwindigkeiten von bis zu 72 km/h vom Herzen des Medano Beach aus. Ob 30 oder 60 Minuten – dieses actiongeladene Abenteuer verspricht spektakuläre Ausblicke und durchgehenden Fahrspaß für bis zu zwei Personen pro Jet-Ski.",
+          "duration": "30 oder 60 Minuten",
+          "period": "Täglich",
+          "age": "Beifahrer ab 10 Jahren, Fahrer ab 17 Jahren",
+          "price": "30 Minuten 80 USD, 60 Minuten 140 USD",
+          "rounTripTransportation": "nicht inbegriffen",
+          "additionalData": ""
+        }
+      }
+    },
+    {
+      "id": "parasailing",
+      "name": "Parasailing",
+      "category": "waterExperiences",
+      "images": {
+        "portrait": "/cabos/assets/images/tours/paraSailing/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/tours/paraSailing/1.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "adultPrice":"80",
+      "childPrice":"-",
+      "translations": {
+        "en": {
+          "title": "Parasailing in Cabo San Lucas",
+          "description": "Soar up to 600 feet above Cabo San Lucas enjoy breathtaking views of Medano Beach, Land's End, and the Pacific Ocean. Whether solo or tandem, this thrilling parasailing experience includes optional water dips and free photos to remember your flight forever.",
+          "duration": "10 minutes", 
+          "period": "Daily between 9:00am and 4:00pm",
+          "age": "10+ years", 
+          "price": "80 USD per person",
+          "rounTripTransportation": "not included",   
+          "additionalData": "Minimum weight is 160lbs, Maximum weight is 350lbs on both single or doubles."
+        },
+       "es": {
+          "title": "Parasailing en Cabo San Lucas",
+          "description": "Vuele hasta 180 metros de altura sobre Cabo San Lucas y disfrute de vistas impresionantes de Playa Médano, Land’s End y el Océano Pacífico. Ya sea solo o en pareja, esta emocionante experiencia de paravelismo incluye un opcional chapuzón en el mar y fotos gratuitas para recordar su vuelo para siempre.",
+          "duration": "10 minutos",
+          "period": "Diariamente entre 9:00 a.m. y 4:00 p.m.",
+          "age": "A partir de 10 años",
+          "price": "80 USD por persona",
+          "rounTripTransportation": "no incluido",
+          "additionalData": "El peso mínimo es de 160 lb (73 kg) y el máximo de 350 lb (159 kg) tanto para vuelos individuales como dobles."
+        },
+        "de": {
+          "title": "Parasailing in Cabo San Lucas",
+          "description": "Steigen Sie bis zu 180 Meter hoch über Cabo San Lucas und genießen Sie atemberaubende Ausblicke auf den Medano Beach, Land’s End und den Pazifischen Ozean. Ob allein oder zu zweit – dieses aufregende Parasailing-Erlebnis beinhaltet auf Wunsch einen kurzen Sprung ins Meer sowie kostenlose Fotos, die Ihren Flug für immer unvergesslich machen.",
+          "duration": "10 Minuten",
+          "period": "Täglich zwischen 9:00 und 16:00 Uhr",
+          "age": "Ab 10 Jahren",
+          "price": "80 USD pro Person",
+          "rounTripTransportation": "nicht inbegriffen",
+          "additionalData": "Mindestgewicht: 73 kg, Maximalgewicht: 159 kg  gilt für Einzel- und Doppelflüge."
+        }
+      }
+    },
+    {
       "id": "archOfCabo",
       "name": "Visit the Arch of Cabo San Lucas in a transparent boat",
       "category": "boatYatch",
@@ -444,7 +536,7 @@
         },
         "de": {          
           "title": "Arco von Cabo San Lucas im transparenten Boot",
-          "description": "Erleben Sie das Wahrzeichen von Cabo – den berühmten Arco – aus einem transparenten Boot. Bestaunen Sie beeindruckende Felsformationen, farbenfrohe tropische Fische, Korallenriffe sowie die berühmten Strände Playa del Amor und Playa del Divorcio – und weitere weltbekannte Küstenhighlights – alles in einem unvergesslichen Ausflug.",
+          "description": "Erleben Sie das Wahrzeichen von Cabo - den berühmten Arco - aus einem transparenten Boot. Bestaunen Sie beeindruckende Felsformationen, farbenfrohe tropische Fische, Korallenriffe sowie die berühmten Strände Playa del Amor und Playa del Divorcio - und weitere weltbekannte Küstenhighlights - alles in einem unvergesslichen Ausflug.",
           "duration": "45 Minuten",
           "period": "Täglich, stündlich von 9:00 bis 17:00 Uhr",
           "age": "Für alle Altersgruppen geeignet",
@@ -825,7 +917,7 @@
           "duration": "2 hours", 
           "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
           "age": "7+ years",
-          "price": "single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
+          "price": "Single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
           "rounTripTransportation": "Included",   
           "additionalData": ""
         },
@@ -835,7 +927,7 @@
           "duration": "2 hours", 
           "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
           "age": "5+ years",
-          "price": "single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
+          "price": "Single ATV 95 USD, double ATV 150 USD + 25 USD park entrance fee",
           "rounTripTransportation": "Included",    
           "additionalData": ""
         },
@@ -858,11 +950,7 @@
       "images": {
         "portrait": "/cabos/assets/images/tours/dunesUTV/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/dunesUTV/1.jpg",
-          "/cabos/assets/images/tours/dunesUTV/2.jpg",
-          "/cabos/assets/images/tours/dunesUTV/3.jpg",
-          "/cabos/assets/images/tours/dunesUTV/4.jpg",
-          "/cabos/assets/images/tours/dunesUTV/5.jpg"
+          "/cabos/assets/images/tours/dunesUTV/1.jpg"
         ]
       },
       "status": "active",
@@ -876,7 +964,7 @@
           "duration": "2 hours", 
           "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
           "age": "7+ years",
-          "price": "driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
+          "price": "Driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
           "rounTripTransportation": "Included",   
           "additionalData": ""
         },
@@ -886,7 +974,7 @@
           "duration": "2 hours", 
           "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
           "age": "7+ years",
-          "price": "driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
+          "price": "Driver 160 USD, 1 driver & 1 passenger 225 USD, 1 driver & 2 passengers USD 270, 1 driver & 3 passengers USD 320 + 25 USD park entrance fee",
           "rounTripTransportation": "Included",    
           "additionalData": ""
         },
@@ -1038,15 +1126,13 @@
       "images": {
           "portrait": "/cabos/assets/images/tours/snorkelCaboPulmo/portrait.jpg",
           "gallery": [
-            "/cabos/assets/images/tours/snorkelCaboPulmo/1.jpg",
-            "/cabos/assets/images/tours/snorkelCaboPulmo/2.jpg",
-            "/cabos/assets/images/tours/snorkelCaboPulmo/3.jpg",
-            "/cabos/assets/images/tours/snorkelCaboPulmo/4.jpg",
-            "/cabos/assets/images/tours/snorkelCaboPulmo/5.jpg"
+            "/cabos/assets/images/tours/snorkelCaboPulmo/1.jpg"
           ]
       },
       "status": "active",
       "icon":"",
+      "adultPrice":"200",
+      "childPrice":"200",
       "translations": {
           "en": {
             "title": "Snorkel in Cabo Pulmo Marine Park",

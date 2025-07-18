@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const categories = [
   { key: 'sunsetCruises', image: '/cabos/assets/images/sunset.jpg' },
-  { key: 'snorkelDiving', image: '/cabos/assets/images/snorkel.jpg' },
+  { key: 'waterExperiences', image: '/cabos/assets/images/snorkel.jpg' },
   { key: 'boatYatch', image: '/cabos/assets/images/boat.jpg' },
   { key: 'whaleWatching', image: '/cabos/assets/images/sea.jpg' },
   { key: 'camelHorse', image: '/cabos/assets/images/camel.jpg' },

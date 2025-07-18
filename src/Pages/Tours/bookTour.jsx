@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import Layout from '../../Components/Layout'
 import tourData from '../../data/tours.json';
 import contentData from '../../data/content.json';
@@ -12,6 +12,7 @@ import bgImage from '../../assets/icons/bg2.svg';
 function BookTour() {  
     const { language } = useContext(ToursContext);
     const { id } = useParams();
+    
     const tour = tourData.tours.find(a => a.id === id);
     const content = contentData[language] || contentData['en']; 
     if (!tour) {
@@ -22,8 +23,25 @@ function BookTour() {
         register,
         handleSubmit,
         reset,
+        watch,
         formState: { errors },
     } = useForm();
+
+    //CALCULATE THE PRICE
+    const [totalPrice, setTotalPrice] = useState(0);
+    const adults = watch("adults") || 0;
+    const children = watch("children") || 0;
+    useEffect(() => {
+        const countAdults = parseInt(adults);
+        const countChildren = parseInt(children);
+        const adultPrice = parseFloat(tour.adultPrice) || 0;
+        const childPrice = parseFloat(tour.childPrice) || 0;
+        if (!isNaN(countAdults) && !isNaN(countChildren)) {
+            const total = (countAdults * adultPrice) + (countChildren * childPrice);
+            setTotalPrice(total);
+        }
+    }, [adults,children, tour.adultPrice]);
+
     const sendEmail = (data) => {
         emailjs
             .send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
@@ -56,7 +74,7 @@ function BookTour() {
         <div 
             className="w-full sm:pl-[2rem] mt-[2rem] bg-white bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative"
             style={{ backgroundImage: `url(${bgImage})` }}>
-            <h3 className="text-2xl font-semibold text-[#03A6A6] mb-4">{content.bookTitle}</h3>
+            <h3 className="text-2xl font-semibold text-[#03A6A6] mb-4 pl-4 sm:pl-6">{content.bookTitle}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base ">
 
             <form onSubmit={handleSubmit(sendEmail)}  className="space-y-4 sm:space-y-6 sm:border sm:border-gray-200 sm:rounded-xl sm:shadow-lg p-4 sm:p-6 bg-white">
@@ -137,9 +155,13 @@ function BookTour() {
                     </div>
                 </div>    
 
+                <div className="flex flex-row justify-between text-md text-[#03A6A6]">
+                    {(tour.adultPrice === '-' && tour.childPrice === '-') && ('*This tour requieres additional data to calculate the price please provide it in the description: ' + t.price)}
+                </div>
                 <div className="flex flex-row justify-between">
                     <div className="flex flex-col w-[48%]">
-                        <label htmlFor="adults" className="mb-1 text-sm font-medium text-gray-600">{content.adults || "Number of Adults"}</label>
+                        <label htmlFor="adults" 
+                         className="mb-1 text-sm font-medium text-gray-600">{content.adults || "Number of Adults"}</label>
                         <input
                             type="number"
                             {...register("adults", { required: true, min: 1 })}
@@ -150,18 +172,21 @@ function BookTour() {
                     </div>
 
                     <div className="flex flex-col w-[48%]">
-                        <label htmlFor="children" className="mb-1 text-sm font-medium text-gray-600">{content.children || "Number of Children"}</label>
+                        <label htmlFor="children" 
+                        className={`mb-1 text-sm font-medium ${
+                                    tour.childPrice === 0 || tour.childPrice === '-' ? 'text-gray-400' : 'text-gray-600'
+                                }`}
+                        >{content.children || "Number of Children"} {tour.childPrice == '-' && '(Adults only)'}</label>
                         <input
                             type="number"
                             {...register("children", { required: true, min: 0 })}
                             className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
                             min="0"
+                            disabled = {tour.childPrice == '-' ? true : false}
                         />
                         {errors.children && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
                 </div>
-
-
                 <div className="flex flex-col">
                     <label htmlFor="message" className="mb-1 text-sm font-medium text-gray-600">{content.additionalData}</label>
                     <textarea
@@ -173,13 +198,17 @@ function BookTour() {
                     placeholder="¿Requisitos especiales?"
                     ></textarea>
                 </div>
-                <div>
+                <div className="flex flex-col-reverse align-center lg:flex-row justify-between">
                     <button
                     type="submit"
-                    className="w-full sm:w-[200px] mt-4 px-6 py-3 bg-[#03A6A6] text-white font-medium rounded-md shadow hover:bg-[#028b8b] transition duration-200"
+                    className="w-full lg:w-[200px] mt-4 px-6 py-3 bg-[#03A6A6] text-white font-medium rounded-md shadow hover:bg-[#028b8b] transition duration-200"
                     >
                     {content.bookButton}
                     </button>
+                    <div className="h-100% sm:pl-4 flex flex-col justify-center">
+                        <p className="text-md text-[#03A6A6]">Price for this tour: Adults {tour.adultPrice} USD, Children {tour.childPrice} USD </p>
+                        <p className="font-semibold text-xl text-[#F2A516]">Total: {totalPrice} USD</p>
+                    </div>
                 </div>
             </form>           
             </div>
