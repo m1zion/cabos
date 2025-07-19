@@ -26,7 +26,13 @@ function BookTour() {
         watch,
         formState: { errors },
     } = useForm();
-
+    const [promoCode, setPromoCode] = useState("");
+    const [discount, setDiscount] = useState(0); // in percentage
+    const validPromoCodes = {
+    "SUMMER10": 10,
+    "WELCOME15": 15,
+    "VIP20": 20,
+    };
     //CALCULATE THE PRICE
     const [totalPrice, setTotalPrice] = useState(0);
     const adults = watch("adults") || 0;
@@ -37,10 +43,41 @@ function BookTour() {
         const adultPrice = parseFloat(tour.adultPrice) || 0;
         const childPrice = parseFloat(tour.childPrice) || 0;
         if (!isNaN(countAdults) && !isNaN(countChildren)) {
-            const total = (countAdults * adultPrice) + (countChildren * childPrice);
+            let total = (countAdults * adultPrice) + (countChildren * childPrice);
+            if (discount > 0) {
+                total = total - (total * discount / 100);
+            }
             setTotalPrice(total);
         }
-    }, [adults,children, tour.adultPrice]);
+    }, [adults,children, tour.adultPrice,discount]);
+    const handlePromoCode = () => {
+        const code = promoCode.toUpperCase().trim();
+        if (validPromoCodes[code]) {
+            setDiscount(validPromoCodes[code]);
+            alert(`Promo code applied! ${validPromoCodes[code]}% off`);
+        } else {
+            setDiscount(0);
+            alert("Invalid promo code");
+        }
+    };
+
+
+    const applyPromoCode = async () => {
+    const response = await fetch("supervisiones/Administrador/getCode.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code: promoCode }),
+    });
+
+    const result = await response.json();
+    if (result.valid) {
+        setDiscount(result.discount);
+        alert(`Promo code applied! ${result.discount}% off`);
+    } else {
+        setDiscount(0);
+        alert("Invalid promo code");
+    }
+    };
 
     const sendEmail = (data) => {
         emailjs
@@ -187,6 +224,23 @@ function BookTour() {
                         {errors.children && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
                 </div>
+                <div className="flex flex-col sm:flex-row items-center gap-2">
+                    <input
+                        type="text"
+                        placeholder="Enter promo code"
+                        value={promoCode}
+                        onChange={(e) => setPromoCode(e.target.value)}
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                    />
+                    <button
+                        type="button"
+                        onClick={handlePromoCode} //handlePromoCode if i want to use the frontend  aplyPromoCOde If i want to use php
+                        className="px-4 py-2 bg-[#F2A516] text-white rounded-md hover:bg-[#d79410] transition"
+                    >
+                        Apply
+                    </button>
+                </div>
+
                 <div className="flex flex-col">
                     <label htmlFor="message" className="mb-1 text-sm font-medium text-gray-600">{content.additionalData}</label>
                     <textarea
