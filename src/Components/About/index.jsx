@@ -30,9 +30,10 @@ const About = () =>{
     };
     const [maxHeight, setMaxHeight] = useState("0px");
     //console.log(contentData);
+    //#03A6A6
     return (
       <div id="aboutUs" className="flex w-full min-h-[300px] scroll-mt-20">
-        <div className="relative  w-full md:w-2/3 bg-gradient-to-l from-[#02897c] to-[#03A6A6] p-10 flex flex-col justify-center">
+        <div className="relative  w-full md:w-2/3 bg-gradient-to-l from-[#02897c] to-[#64a2ad] p-10 flex flex-col justify-center">
         <Logo2
             className="absolute opacity-7 text-white w-[300px] h-[280px] right-[3px] top-[3px] pointer-events-none select-none"
         />
@@ -77,7 +78,7 @@ const About = () =>{
                     animate={{ x: x+50, y: y+120, opacity: 1 }}
                     transition={{ duration: 0.8, delay: index * 0.2, ease: 'easeOut' }}
                 >
-                    <Component className="w-12 h-12 text-[#03A6A6]" />
+                    <Component className="w-12 h-12 text-[#64a2ad]" />
                 </motion.div>
                 ))}
             </div>           

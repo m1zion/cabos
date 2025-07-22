@@ -55,10 +55,7 @@
         "portrait": "/cabos/assets/images/tours/sunsetDinnerPirate/portrait.jpg",
         "gallery": [
           "/cabos/assets/images/tours/sunsetDinnerPirate/1.jpg",
-          "/cabos/assets/images/tours/sunsetDinnerPirate/2.jpg",
-          "/cabos/assets/images/tours/sunsetDinnerPirate/3.jpg",
-          "/cabos/assets/images/tours/sunsetDinnerPirate/4.jpg",
-          "/cabos/assets/images/tours/sunsetDinnerPirate/5.jpg"
+          "/cabos/assets/images/tours/sunsetDinnerPirate/2.jpg"
         ]
       },
       "status": "active",
@@ -106,10 +103,7 @@
         "portrait": "/cabos/assets/images/tours/sunsetJazz/portrait.jpg",
         "gallery": [
           "/cabos/assets/images/tours/sunsetJazz/1.jpg",
-          "/cabos/assets/images/tours/sunsetJazz/2.jpg",
-          "/cabos/assets/images/tours/sunsetJazz/3.jpg",
-          "/cabos/assets/images/tours/sunsetJazz/4.jpg",
-          "/cabos/assets/images/tours/sunsetJazz/5.jpg"
+          "/cabos/assets/images/tours/sunsetJazz/2.jpg"
         ]
       },
       "status": "active",
@@ -698,13 +692,7 @@
       "category": "whaleWatching",
       "images": {
         "portrait": "/cabos/assets/images/tours/pirateWhaleWatching/portrait.jpg",
-        "gallery": [
-          "/cabos/assets/images/tours/pirateWhaleWatching/1.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/2.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/3.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/4.jpg",
-          "/cabos/assets/images/tours/pirateWhaleWatching/5.jpg"
-        ]
+        "gallery": [ ]
       },
       "status": "active",
       "icon":"snorkel.svg",
@@ -750,11 +738,7 @@
       "images": {
         "portrait": "/cabos/assets/images/tours/whaleWatchingSunset/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/whaleWatchingSunset/1.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/2.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/3.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/4.jpg",
-          "/cabos/assets/images/tours/whaleWatchingSunset/5.jpg"
+          "/cabos/assets/images/tours/whaleWatchingSunset/1.jpg"
         ]
       },
       "status": "active",
@@ -997,11 +981,7 @@
       "images": {
         "portrait": "/cabos/assets/images/tours/balandraBeach/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/balandraBeach/1.jpg",
-          "/cabos/assets/images/tours/balandraBeach/2.jpg",
-          "/cabos/assets/images/tours/balandraBeach/3.jpg",
-          "/cabos/assets/images/tours/balandraBeach/4.jpg",
-          "/cabos/assets/images/tours/balandraBeach/5.jpg"
+          "/cabos/assets/images/tours/balandraBeach/1.jpg"
         ]
       },
       "status": "active",
@@ -1049,10 +1029,7 @@
         "portrait": "/cabos/assets/images/tours/espirituSanto/portrait.jpg",
         "gallery": [
           "/cabos/assets/images/tours/espirituSanto/1.jpg",
-          "/cabos/assets/images/tours/espirituSanto/2.jpg",
-          "/cabos/assets/images/tours/espirituSanto/3.jpg",
-          "/cabos/assets/images/tours/espirituSanto/4.jpg",
-          "/cabos/assets/images/tours/espirituSanto/5.jpg"
+          "/cabos/assets/images/tours/espirituSanto/2.jpg"
         ]
       },
       "status": "active",
@@ -1180,9 +1157,7 @@
           "gallery": [
             "/cabos/assets/images/tours/todosSantos/1.jpg",
             "/cabos/assets/images/tours/todosSantos/2.jpg",
-            "/cabos/assets/images/tours/todosSantos/3.jpg",
-            "/cabos/assets/images/tours/todosSantos/4.jpg",
-            "/cabos/assets/images/tours/todosSantos/5.jpg"
+            "/cabos/assets/images/tours/todosSantos/3.jpg"
           ]
       },
       "status": "active",
@@ -1198,6 +1173,26 @@
             "age": "",
             "price": "90 USD per person",
             "rounTripTransportation": "included",
+            "additionalData": ""
+          },
+          "es": {
+            "title": "Tour de un día a Todos Santos",
+            "description": "Viva la magia de Todos Santos en este tour desde Los Cabos. Viaje con comodidad gracias al transporte redondo mientras visita una fábrica tradicional de alfombras, hace una parada en la pintoresca Playa Cerritos y explora el icónico Hotel California. Disfrute de tiempo libre para recorrer galerías de arte, boutiques locales y el encanto relajado de este Pueblo Mágico.",
+            "duration": "aproximadamente 5–6 horas",
+            "period": "Diario",
+            "age": "",
+            "price": "90 USD por persona",
+            "rounTripTransportation": "incluido",
+            "additionalData": ""
+          },
+          "de": {
+            "title": "Tagesausflug nach Todos Santos",
+            "description": "Erleben Sie den Zauber von Todos Santos bei diesem Tagesausflug ab Los Cabos. Reisen Sie bequem mit Hin- und Rücktransport, während Sie eine traditionelle Teppichfabrik besuchen, einen Halt am malerischen Strand von Cerritos einlegen und das legendäre Hotel California erkunden. Genießen Sie freie Zeit, um Kunstgalerien, lokale Boutiquen und den entspannten Charme dieses Pueblo Mágico zu entdecken.",
+            "duration": "ca. 5–6 Stunden",
+            "period": "Täglich",
+            "age": "",
+            "price": "90 USD pro Person",
+            "rounTripTransportation": "inbegriffen",
             "additionalData": ""
           }
       }

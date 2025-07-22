@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ToursContext } from "../../Context"
 import logo from '/src/assets/icons/logo4.svg'
 import Flag from 'react-world-flags'
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -25,8 +26,36 @@ export default function NavBar() {
         es: 'MX',
         de: 'DE'
     };
+
+
+    //PARA LA NAVEGACION ENTRE LAS SECCIONES
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleNavClick = (e, href) => {
+      e.preventDefault();
+      const targetId = href.replace('#', '');
+      const scrollToTarget = () => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+      if (location.pathname !== "/") {
+        navigate("/", { replace: false }); // Go to home
+        // Delay scroll to wait for the home page to load
+        setTimeout(scrollToTarget, 200);
+      } else {
+        scrollToTarget();
+      }
+    };
+
+    //#03A6A6
     return (
-    <Disclosure as="nav" className="bg-[#03A6A6] fixed z-10 w-full top-0">
+    <Disclosure as="nav" 
+    cclassName="bg-[#64a2ad] fixed z-10 w-full top-0"
+    className="bg-gradient-to-r from-[#64a2ad] via-[#03A6A6] to-[#087d7d] fixed z-10 w-full top-0"
+    >
       <div className="mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-17 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -40,18 +69,21 @@ export default function NavBar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
+              <a href="./">
+                <img
                 alt="Your Company"
                 src={logo}
                 className="h-12 w-auto"
-              />
+                />
+              </a>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
-                    href={item.href}
+                    href={item.href}  //con react router
+                    onClick={(e) => handleNavClick(e, item.href)}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-[#087d7d] hover:text-white',

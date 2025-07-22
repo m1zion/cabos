@@ -6,9 +6,15 @@ import { useParams } from 'react-router-dom';
 import { ToursContext } from "../../Context";
 import "leaflet/dist/leaflet.css";
 import 'react-multi-carousel/lib/styles.css';
+import { createClient } from "@supabase/supabase-js";
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import bgImage from '../../assets/icons/bg2.svg'; 
+import WhatsApp from "../../Components/WhatsApp";
+
+const supabaseUrl = "https://qzjipxehwcrgqmjzeqbv.supabase.co"; // your URL
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF6amlweGVod2NyZ3FtanplcWJ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI4ODE5ODcsImV4cCI6MjA2ODQ1Nzk4N30.Ay5OCwOOFS_9tpouzMhipHCz40Fz0tZb5EKyV0NvGbU";
+const supabase = createClient(supabaseUrl, supabaseKey);
 function BookTour() {  
     const { language } = useContext(ToursContext);
     const { id } = useParams();
@@ -60,23 +66,43 @@ function BookTour() {
             alert("Invalid promo code");
         }
     };
-
+    const applyPromoCodePHP = async () => {
+        const response = await fetch("supervisiones/Administrador/getCode.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ code: promoCode }),
+        });
+        const result = await response.json();
+        if (result.valid) {
+            setDiscount(result.discount);
+            alert(`Promo code applied! ${result.discount}% off`);
+        } else {
+            setDiscount(0);
+            alert("Invalid promo code");
+        }
+    };
 
     const applyPromoCode = async () => {
-    const response = await fetch("supervisiones/Administrador/getCode.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ code: promoCode }),
-    });
-
-    const result = await response.json();
-    if (result.valid) {
-        setDiscount(result.discount);
-        alert(`Promo code applied! ${result.discount}% off`);
-    } else {
-        setDiscount(0);
-        alert("Invalid promo code");
-    }
+        const code = promoCode.toUpperCase().trim();
+        const { data, error } = await supabase
+            .from("promo_codes")
+            .select("code, discount")
+            .eq("code", code)
+            .eq("is_active", true)
+            .single(); // returns only one row
+        if (error) {
+            console.error("Error fetching promo:", error);
+            alert("Invalid promo code");
+            setDiscount(0);
+            return;
+        }
+        if (data) {
+            setDiscount(data.discount);
+            alert(`Promo code applied! ${data.discount}% off`);
+        } else {
+            setDiscount(0);
+            alert("Invalid promo code");
+        }
     };
 
     const sendEmail = (data) => {
@@ -220,24 +246,23 @@ function BookTour() {
                             className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
                             min="0"
                             disabled = {tour.childPrice == '-' ? true : false}
-                        />
-                        {errors.children && <span className="text-red-500 text-sm">This field is required</span>}
+                        />                        
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-row items-center gap-2">
                     <input
                         type="text"
-                        placeholder="Enter promo code"
+                        placeholder={content.promoCode}
                         value={promoCode}
                         onChange={(e) => setPromoCode(e.target.value)}
                         className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
                     />
                     <button
                         type="button"
-                        onClick={handlePromoCode} //handlePromoCode if i want to use the frontend  aplyPromoCOde If i want to use php
+                        onClick={applyPromoCode} //handlePromoCode if i want to use the frontend  applyPromoCode If i want to use php
                         className="px-4 py-2 bg-[#F2A516] text-white rounded-md hover:bg-[#d79410] transition"
                     >
-                        Apply
+                        {content.apply}
                     </button>
                 </div>
 
@@ -249,7 +274,7 @@ function BookTour() {
                     name="message"
                     rows="4"
                     className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6] resize-none"
-                    placeholder="¿Requisitos especiales?"
+                    placeholder={content.requirements}
                     ></textarea>
                 </div>
                 <div className="flex flex-col-reverse align-center lg:flex-row justify-between">
@@ -260,13 +285,14 @@ function BookTour() {
                     {content.bookButton}
                     </button>
                     <div className="h-100% sm:pl-4 flex flex-col justify-center">
-                        <p className="text-md text-[#03A6A6]">Price for this tour: Adults {tour.adultPrice} USD, Children {tour.childPrice} USD </p>
+                        <p className="text-md text-[#03A6A6]">{content.priceTour}: {content.adults} {tour.adultPrice} USD, {content.children} {tour.childPrice} USD </p>
                         <p className="font-semibold text-xl text-[#F2A516]">Total: {totalPrice} USD</p>
                     </div>
                 </div>
             </form>           
             </div>
         </div> 
+        <WhatsApp/>
         </Layout>
     )
 }

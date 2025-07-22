@@ -14,12 +14,14 @@ const categories = [
   { key: 'dayTrip', image: '/cabos/assets/images/land.jpg' },
 ];
 
-
+//#03A6A6  #07bcbc
+//#64a2ad
+//#d3c199
 const Tours = () =>{    
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     return (     
-        <section id="tours" className="w-full bg-gradient-to-l from-[#03A6A6] to-[#07bcbc] px-10 py-5 scroll-mt-20">
+        <section id="tours" className="w-full bg-gradient-to-l from-[#64a2ad] to-[#03A6A6] px-10 py-5 scroll-mt-20">
         <motion.div
             className="container py-8"
             initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar

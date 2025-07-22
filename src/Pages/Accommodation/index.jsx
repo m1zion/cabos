@@ -14,7 +14,7 @@ import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
+import WhatsApp from '../../Components/WhatsApp';
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -87,7 +87,6 @@ function accommodation() {
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             />
             <div className="bg-black/20 px-3 py-1 rounded-sm backdrop-blur-5 absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent"></div>
-            
             <div className="absolute inset-0 flex flex-col justify-center items-start text-start">
                 <div className="w-[95%] sm:w-[90%] xl:w-[85%] mx-auto">
                     <h2 className="text-white text-5xl sm:text-6xl font-semibold drop-shadow-md mb-2">
@@ -129,7 +128,6 @@ function accommodation() {
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
             <button className="w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#03A6A6] text-white font-medium rounded-sm shadow hover:bg-[#028b8b] transition duration-200">Reservar</button>  
         </div> 
-
         <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%] h-[400px] gap-1 flex flex-col md:flex-row" id ="images"> 
             <div className="w-full md:w-1/2 h-[400px] cursor-pointer">
                 <img
@@ -149,8 +147,7 @@ function accommodation() {
                     />
                 ))}
             </div>
-        </div>
-        
+        </div>        
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[1rem] text-[2rem]">
             {t.amenities}
         </div>
@@ -168,17 +165,14 @@ function accommodation() {
                 ) : (
                 <ChevronDownIcon className="w-5 h-5 text-gray-600" />
                 )}
-            </button>
-            
+            </button>            
             {openCategories[category] && (
             <div className="grid grid-cols-2 gap-4">
-
-
-
             {amenities.map((amenity, index) => (
                 <div key={index} className="flex items-center gap-2">
                 <img
-                    src={`/cabos/src/assets/icons/amenities/${amenity.icon}`}
+                    src={`/cabos/public/assets/icons/amenities/${amenity.icon}`}
+                    //src={`/cabos/src/assets/icons/amenities/${amenity.icon}`}
                     alt={amenity.name}
                     className="w-6 h-6 object-contain"
                     onError={(e) => {
@@ -188,10 +182,7 @@ function accommodation() {
                 />
                 <span className="text-sm text-gray-700">{amenity.name}</span>
                 </div>
-            ))}
-
-
-            
+            ))}            
             </div>
             )}
         </div>
@@ -218,10 +209,6 @@ function accommodation() {
             </MapContainer>
             </div>
         </div>
-       
-
-
-
         {/* Modal with Carousel */}
         {showModal && (
         <div className="fixed inset-0 bg-black/90 bg-opacity-50 z-[999] flex items-center justify-center p-4">
@@ -255,6 +242,7 @@ function accommodation() {
           </div>
         </div>
         )}
+        <WhatsApp/>
         </Layout>
     )
 }

@@ -9,6 +9,7 @@ import 'react-multi-carousel/lib/styles.css';
 import contentData from '../../data/content.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-router-dom";
+import WhatsApp from "../../Components/WhatsApp";
 
 
 const categories = [
@@ -66,6 +67,7 @@ function tours() {
               );
             })}
           </div>
+          <WhatsApp/>
         </Layout>
     )
 }

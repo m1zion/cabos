@@ -14,6 +14,7 @@ import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from "react-router-dom";
+import WhatsApp from "../../Components/WhatsApp";
 
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
@@ -123,10 +124,7 @@ function TourDetail() {
             </div>
             ))}
         </div>
-        </div>
-
-
-        
+        </div>        
         {showModal && (
         <div className="fixed inset-0 bg-black/90 bg-opacity-50 z-[999] flex items-center justify-center p-4">
           <button
@@ -144,6 +142,7 @@ function TourDetail() {
           </div>
         </div>
         )}
+        <WhatsApp/>
         </Layout>
     )
 }
