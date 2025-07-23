@@ -9,16 +9,25 @@ import 'react-multi-carousel/lib/styles.css';
 import { createClient } from "@supabase/supabase-js";
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
+
+/*
+npm install @emailjs/browser
+Create EmailJS Account https://www.emailjs.com
+    Create a free account
+    Connect your email service (e.g., Gmail)
+    Create a new email template (you'll use this template ID later)
+    Copy your Service ID, Template ID, and Public Key
+*/
 import bgImage from '../../assets/icons/bg2.svg'; 
 import WhatsApp from "../../Components/WhatsApp";
-
 const supabaseUrl = "https://qzjipxehwcrgqmjzeqbv.supabase.co"; // your URL
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF6amlweGVod2NyZ3FtanplcWJ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI4ODE5ODcsImV4cCI6MjA2ODQ1Nzk4N30.Ay5OCwOOFS_9tpouzMhipHCz40Fz0tZb5EKyV0NvGbU";
 const supabase = createClient(supabaseUrl, supabaseKey);
 function BookTour() {  
+    const navigate = useNavigate();
     const { language } = useContext(ToursContext);
-    const { id } = useParams();
-    
+    const { id } = useParams();    
     const tour = tourData.tours.find(a => a.id === id);
     const content = contentData[language] || contentData['en']; 
     if (!tour) {
@@ -28,19 +37,19 @@ function BookTour() {
     const {
         register,
         handleSubmit,
+        setValue,
         reset,
         watch,
         formState: { errors },
     } = useForm();
     const [promoCode, setPromoCode] = useState("");
     const [discount, setDiscount] = useState(0); // in percentage
-    const validPromoCodes = {
-    "SUMMER10": 10,
-    "WELCOME15": 15,
-    "VIP20": 20,
-    };
+    const [discountMoney, setDiscountMoney] = useState(0); // in percentage
     //CALCULATE THE PRICE
+    const [total, setTotal] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
+    const [totalPriceAdults, setTotalPriceAdults] = useState(0);
+    const [totalPriceChildren, setTotalPriceChildren] = useState(0);
     const adults = watch("adults") || 0;
     const children = watch("children") || 0;
     useEffect(() => {
@@ -48,14 +57,37 @@ function BookTour() {
         const countChildren = parseInt(children);
         const adultPrice = parseFloat(tour.adultPrice) || 0;
         const childPrice = parseFloat(tour.childPrice) || 0;
-        if (!isNaN(countAdults) && !isNaN(countChildren)) {
-            let total = (countAdults * adultPrice) + (countChildren * childPrice);
-            if (discount > 0) {
-                total = total - (total * discount / 100);
-            }
-            setTotalPrice(total);
+        if (isNaN(countAdults) || isNaN(countChildren)) {
+            return;
         }
-    }, [adults,children, tour.adultPrice,discount]);
+        const priceAdults = countAdults * adultPrice;
+        const priceChildren = countChildren * childPrice;
+        const subtotal = priceAdults + priceChildren;
+        const discountAmount = (discount > 0) ? (subtotal * discount / 100) : 0;
+        const finalTotal = subtotal - discountAmount;
+        setTotal(subtotal);
+        setTotalPriceAdults(priceAdults);
+        setTotalPriceChildren(priceChildren);
+        setDiscountMoney(discountAmount);
+        setTotalPrice(finalTotal);
+
+        //Update form values
+        //Cuando uso react-hook-form no toma en cuenta los valores del state, 
+        //por eso tengo que actualizar tambien 
+        setValue("total", subtotal);
+        setValue("totalPriceAdults", priceAdults);
+        setValue("totalPriceChildren", priceChildren);
+        setValue("discount", discount);
+        setValue("discountMoney", discountAmount);
+        setValue("totalPrice", finalTotal);
+
+    }, [adults,children, tour.adultPrice,tour.childPrice,discount]);
+    /*    
+    const validPromoCodes = {
+    "SUMMER10": 10,
+    "WELCOME15": 15,
+    "VIP20": 20,
+    };
     const handlePromoCode = () => {
         const code = promoCode.toUpperCase().trim();
         if (validPromoCodes[code]) {
@@ -80,8 +112,7 @@ function BookTour() {
             setDiscount(0);
             alert("Invalid promo code");
         }
-    };
-
+    };*/
     const applyPromoCode = async () => {
         const code = promoCode.toUpperCase().trim();
         const { data, error } = await supabase
@@ -104,17 +135,18 @@ function BookTour() {
             alert("Invalid promo code");
         }
     };
-
     const sendEmail = (data) => {
+        //console.log(data);
         emailjs
             .send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
             .then((result) => {
             console.log(result.text);
             alert("Your booking request was sent successfully!");
             reset(); // Reset the form
+            navigate("/"); 
             }, (error) => {
-            console.error(error.text);
-            alert("Something went wrong, please try again later.");
+                console.error(error.text);
+                alert("Something went wrong, please try again later.");
             });
     };
     return (
@@ -141,13 +173,15 @@ function BookTour() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base ">
 
             <form onSubmit={handleSubmit(sendEmail)}  className="space-y-4 sm:space-y-6 sm:border sm:border-gray-200 sm:rounded-xl sm:shadow-lg p-4 sm:p-6 bg-white">
-                <input
-                    {...register("tour")} 
-                    type="hidden"
-                    id="tour"
-                    name="tour"
-                    value={id}
-                />        
+                <input {...register("tour")} type="hidden" id="tour" name="tour" value={id}/> 
+                <input {...register("priceAdult")} type="hidden" id="priceAdult" name="priceAdult" value={tour.adultPrice}/> 
+                <input {...register("priceChildren")} type="hidden" id="priceChildren" name="priceChildren" value={tour.childPrice}/> 
+                <input {...register("totalPriceAdults")} type="hidden" id="totalPriceAdults" name="totalPriceAdults" value={totalPriceAdults}/> 
+                <input {...register("totalPriceChildren")} type="hidden" id="totalPriceChildren" name="totalPriceChildren" value={totalPriceChildren}/> 
+                <input {...register("total")} type="hidden" id="total" name="total" value={total}/>  
+                <input {...register("totalPrice")} type="hidden" id="totalPrice" name="totalPrice" value={totalPrice}/> 
+                <input {...register("discount")} type="hidden" id="discount" name="discount" value={discount}/> 
+                <input {...register("discountMoney")} type="hidden" id="discountMoney" name="discountMoney" value={discountMoney}/> 
                 <div className="flex flex-col">
                     <label htmlFor="email" className="mb-1 text-sm font-medium text-gray-600">*{content.name}</label>
                     <input
@@ -217,7 +251,6 @@ function BookTour() {
                         {errors.hour && <span className="text-red-500 text-sm">Please select a time</span>}
                     </div>
                 </div>    
-
                 <div className="flex flex-row justify-between text-md text-[#03A6A6]">
                     {(tour.adultPrice === '-' && tour.childPrice === '-') && ('*This tour requieres additional data to calculate the price please provide it in the description: ' + t.price)}
                 </div>
@@ -233,7 +266,6 @@ function BookTour() {
                         />
                         {errors.adults && <span className="text-red-500 text-sm">Please enter at least 1 adult</span>}
                     </div>
-
                     <div className="flex flex-col w-[48%]">
                         <label htmlFor="children" 
                         className={`mb-1 text-sm font-medium ${
@@ -252,6 +284,7 @@ function BookTour() {
                 <div className="flex flex-col sm:flex-row items-center gap-2">
                     <input
                         type="text"
+                        {...register("promoCode")}
                         placeholder={content.promoCode}
                         value={promoCode}
                         onChange={(e) => setPromoCode(e.target.value)}

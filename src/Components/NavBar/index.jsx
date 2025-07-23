@@ -53,8 +53,7 @@ export default function NavBar() {
     //#03A6A6
     return (
     <Disclosure as="nav" 
-    cclassName="bg-[#64a2ad] fixed z-10 w-full top-0"
-    className="bg-gradient-to-r from-[#64a2ad] via-[#03A6A6] to-[#087d7d] fixed z-10 w-full top-0"
+    className="bg-[#087d7d]/75 backdrop-blur-md backdrop-saturate-150 fixed z-10 w-full top-0 shadow-md"
     >
       <div className="mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-17 items-center justify-between">
@@ -87,7 +86,7 @@ export default function NavBar() {
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-[#087d7d] hover:text-white',
-                      'rounded-md px-3 py-2 text-md whitespace-nowrap',
+                      'rounded-md px-3 py-2 text-md md:text-lg whitespace-nowrap',
                     )}
                   >
                     {item.name}
