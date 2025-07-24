@@ -49,7 +49,7 @@ const Tours = () =>{
                 transition={{ duration: 1.1 }}
                 viewport={{ once: true }}
             >
-                <h2 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-white text-center sm:text-left">{content.toursTitle}</h2>
+                <h2 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-white text-center sm:text-left">{content.toursTitle}</h2>
             </motion.div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-4">
                 {categories.map((category, index) => (

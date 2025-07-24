@@ -36,7 +36,7 @@ const Transportation = () =>{
     const content = contentData[language] || contentData['en']; // fallback to English
     return (
         <div id="transportation" className="flex-column p-10 scroll-mt-20 h-[500px] w-full">
-            <h1 className="font-[outfit] font-semibold text-[2.5rem] sm:text-[3.5rem] text-[#03A6A6]">
+            <h1 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-[#03A6A6]">
                 {content.transportationTitle}
             </h1>
             <Carousel className="" responsive={responsive}>

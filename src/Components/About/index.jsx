@@ -30,9 +30,9 @@ const About = () =>{
             <motion.div                   
                 initial={{ x: -120, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, ease: 'easeOut', delay: .3  }}
+                transition={{ duration: 1.5, ease: 'easeOut', delay: .9  }}
             >
-            <h1 className=" pl-10 pr-10 pt-5 font-[outfit] font-semibold  text-[2.5rem] sm:text-[3.5rem] text-white">
+            <h1 className=" pl-10 pr-10 pt-5 font-[outfit]   text-[2.5rem] sm:text-[3.5rem] text-white">
             {content.aboutUsTitle}
             </h1>
              </motion.div>

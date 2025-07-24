@@ -18,7 +18,7 @@ export default function NavBar() {
         { name: t.accomodation, href: '#accomodation', current: false },
         { name: t.tours, href: '#tours', current: false },
         { name: t.restaurants, href: '#restaurants', current: false },
-        { name: t.experiences, href: '#experiences', current: false },
+        /*{ name: t.experiences, href: '#experiences', current: false },*/
         { name: t.transportation, href: '#transportation', current: false },
     ]
     const langToCountry = {
@@ -49,14 +49,15 @@ export default function NavBar() {
         scrollToTarget();
       }
     };
-
+    //#087d7d
     //#03A6A6
     return (
     <Disclosure as="nav" 
-    className="bg-[#087d7d]/75 backdrop-blur-md backdrop-saturate-150 fixed z-10 w-full top-0 shadow-md"
+    className="bg-[#03A6A6]/80 backdrop-blur-md backdrop-saturate-150 fixed z-10 w-full top-0 shadow-md"
     >
       <div className="mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-17 items-center justify-between">
+
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-[#087d7d] hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
@@ -66,6 +67,7 @@ export default function NavBar() {
               <XMarkIcon aria-hidden="true" className="hidden size-6 open:block" />
             </DisclosureButton>
           </div>
+
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
               <a href="./">
@@ -95,22 +97,22 @@ export default function NavBar() {
               </div>
             </div>
           </div>
+
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">          
            <ul className="flex items-center gap-2">
                 {['en', 'es', 'de'].map((lang) => (
                 <li className="flex" key={lang}>
                     <button
                     onClick={() => setLanguage(lang)}
-                    className={`uppercase ${language === lang ? 'font-bold underline' : ''}`}
+                    className={`uppercase cursor-pointer ${language === lang ? 'font-bold underline' : ''}`}
                     >
                         <Flag code={langToCountry[lang]} style={{ width: 24, height: 16 }} />                            
                     </button>
                 </li>
                 ))}
             </ul>
-
-
           </div>
+
         </div>
       </div>
       
