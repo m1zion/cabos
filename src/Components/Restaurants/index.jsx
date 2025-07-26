@@ -1,6 +1,7 @@
 import { useContext} from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
+import { Link } from "react-router-dom";
 const Restaurants = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en'];
@@ -14,9 +15,11 @@ const Restaurants = () =>{
                         Cabos is known for its extraordinary cuisine, host of michelin restaurantspremium steaks, and also regional and street food, Enjoy premium food and local flavors in our seaside restaurants.
                     </p>
                 </div>
+                <Link to={`/Restaurants`}>
                 <button className="ml-15 hover:bg-white/10 cursor-pointer mt-8 border border-[white] p-1 w-[120px] rounded-md">
                     Explore
                 </button>
+                </Link>
             </div>
             <div
                 className="absolute right-[0px] w-[100%] sm:w-[70%]  h-full bg-cover bg-center flex items-center"

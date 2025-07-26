@@ -1,0 +1,561 @@
+{
+"restaurants": [
+  {
+    "id": "harry",
+    "name": "Harry's Steakhouse & Raw Bar",
+    "category": "Cabo San Lucas",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/harry/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/harry/1.jpg",
+        "/cabos/assets/images/restaurants/harry/2.jpg"
+      ]
+    },
+    "status": "active",
+    "icon":"",
+    "translations": {
+      "en": { 
+        "title": "Harry's Steakhouse & Raw Bar", 
+        "description": "Harry's Steakhouse in Los Cabos is an upscale dining experience that combines premium steaks and fresh seafood in a refined yet relaxed atmosphere. Located along the Tourist Corridor, this restaurant is known for its high-quality cuts like USDA Prime, Australian Wagyu, and authentic Japanese Kobe beef. The raw bar features fresh oysters, king crab, and creative seafood platters, perfect for sharing.\n\nThe menu also includes gourmet appetizers, pasta dishes with truffle or lobster, grilled octopus, and signature desserts like their famous carrot cake with 24K gold. With elegant ocean views, top-notch service, and a stylish setting, Harry's is the perfect place for a romantic dinner, special celebration, or an unforgettable night out in Cabo.", 
+        "kitchen": "Steakhouse & Raw Bar", 
+        "openingTimes": "Daily, 5:00 pm - 0:00 am", 
+        "address": "Harry's Steakhouse & Raw Bar\nCarretera Transpeninsular, Lote CSL-KM 5\nTourist Corridor\nCabo San Lucas, Baja California Sur 23410\nMexico", 
+        "price": "MXN 1000 and over", 
+        "dressCode": "Smart casual" 
+      }, 
+      "es": { 
+        "title": "Harry's Steakhouse & Raw Bar", 
+        "description": "Harry's Steakhouse en Los Cabos es una experiencia gastronómica elegante que combina cortes premium de carne y mariscos frescos en un ambiente refinado pero relajado. Ubicado sobre el Corredor Turístico, este restaurante es reconocido por ofrecer cortes de alta calidad como USDA Prime, Wagyu australiano y auténtico Kobe japonés. Su barra de mariscos incluye ostras frescas, king crab y platillos creativos para compartir.\n\nEl menú también ofrece entradas gourmet, pastas con trufa o langosta, pulpo a la parrilla y postres emblemáticos como su famoso pastel de zanahoria con oro de 24 quilates. Con vistas elegantes al mar, servicio de primer nivel y un ambiente sofisticado, Harry's es el lugar ideal para una cena romántica, una celebración especial o una noche inolvidable en Cabo.", 
+        "kitchen": "Cortes finos y barra de mariscos", 
+        "openingTimes": "Todos los días, de 5:00 pm a 0:00 am", 
+        "address": "Harry's Steakhouse & Raw Bar\nCarretera Transpeninsular, Lote CSL-KM 5\nCorredor Turístico\nCabo San Lucas, Baja California Sur 23410\nMéxico", 
+        "price": "MXN 1000 y más", 
+        "dressCode": "Casual elegante" 
+      },
+      "de": { 
+        "title": "Harry's Steakhouse & Raw Bar", 
+        "description": "Harry's Steakhouse in Los Cabos bietet ein gehobenes kulinarisches Erlebnis mit erstklassigen Steaks und frischen Meeresfrüchten - in einem stilvollen, aber entspannten Ambiente. Das Restaurant liegt am Tourist Corridor und ist bekannt für seine hochwertigen Fleischsorten wie USDA Prime, australisches Wagyu und echtes japanisches Kobe-Rind. Die Raw Bar bietet frische Austern, Königskrabben und kreative Meeresfrüchteplatten - ideal zum Teilen.\n\nAuf der Speisekarte finden Sie außerdem Gourmet-Vorspeisen, Pasta mit Trüffel oder Hummer, gegrillten Oktopus und besondere Desserts wie den berühmten Karottenkuchen mit 24-karätigem Gold. Mit Meerblick, exzellentem Service und eleganter Atmosphäre ist Harry's der perfekte Ort für ein romantisches Abendessen, besondere Anlässe oder einen unvergesslichen Abend in Cabo.", 
+        "kitchen": "Steakhouse & Raw Bar", 
+        "openingTimes": "Täglich, 17:00 - 0:00 Uhr", 
+        "address": "Harry's Steakhouse & Raw Bar\nCarretera Transpeninsular, Lote CSL-KM 5\nTourist Corridor\nCabo San Lucas, Baja California Sur 23410\nMexiko", 
+        "price": "MXN 1000 und mehr", 
+        "dressCode": "Smart Casual (gehobene Freizeitkleidung)" 
+      }
+    }
+  },
+  {
+    "id": "ilios",
+    "name": "Ilios Greek Restaurant",
+    "category": "Cabo San Lucas",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/ilios/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/ilios/1.jpg",
+        "/cabos/assets/images/restaurants/ilios/2.jpg"
+      ]
+    },
+    "status": "active",
+    "icon":"",
+    "translations": {
+      "en": { 
+        "title": "Ilios Greek Restaurant", 
+        "description": "Ilios in Cabo San Lucas offers an energetic, Mediterranean-inspired dining experience, blending authentic Greek flavors—like moussaka, souvlaki, grilled octopus, tzatziki and baklava—with lively entertainment including fire shows, plate smashing, and DJ sets. The stylish island-inspired setting with ocean views makes it both festive and intimate.", 
+        "kitchen": "Greek / Mediterranean", 
+        "openingTimes": "Daily, 5:00 pm - 2:00 am", 
+        "address": "Ilios Greek Estiatorio\nCarr. Transpeninsular, Lote CSL-KM 5\nTourist Corridor\nCabo San Lucas, Baja California Sur 23410\nMexico", 
+        "price": "MXN 1000 and over", 
+        "dressCode": "Resort casual / Smart casual" 
+      },
+      "es": { 
+        "title": "Ilios Greek Restaurant", 
+        "description": "Ilios en Cabo San Lucas ofrece una experiencia vibrante con inspiración mediterránea, donde la auténtica cocina griega—como moussaka, souvlaki, pulpo a la parrilla, tzatziki y baklava—se combina con entretenimiento como shows de fuego, rompimiento de platos y DJ en vivo. Su ambiente elegante con toques isleños y vista al mar es ideal para cenas animadas e íntimas.", 
+        "kitchen": "Griega / Mediterránea", 
+        "openingTimes": "Todos los días, de 5:00 pm a 2:00 am", 
+        "address": "Ilios Greek Estiatorio\nCarr. Transpeninsular, Lote CSL-KM 5\nCorredor Turístico\nCabo San Lucas, Baja California Sur 23410\nMéxico", 
+        "price": "MXN 1000 y más", 
+        "dressCode": "Casual resort / casual elegante" 
+      },
+      "de": { 
+        "title": "Ilios Greek Restaurant", 
+        "description": "Ilios in Cabo San Lucas bietet ein lebendiges, vom Mittelmeer inspiriertes Restauranterlebnis mit authentisch griechischen Aromen - wie Moussaka, Souvlaki, gegrilltem Oktopus, Tzatziki und Baklava - kombiniert mit unterhaltsamen Shows wie Feuerdarbietungen, Tellerwerfen und DJ-Sets. Das stilvolle Ambiente mit Inselcharme und Meeresblick ist perfekt für festliche und zugleich intime Abende.", 
+        "kitchen": "Griechisch / Mediterran", 
+        "openingTimes": "Täglich, 17:00 - 02:00 Uhr", 
+        "address": "Ilios Greek Estiatorio\nCarr. Transpeninsular, Lote CSL-KM 5\nTourist Corridor\nCabo San Lucas, Baja California Sur 23410\nMexiko", 
+        "price": "MXN 1000 und mehr", 
+        "dressCode": "Resort Casual / Smart Casual" 
+      }
+    }
+  },       
+  {
+    "id": "bagatelle",
+    "name": "Bagatelle",
+    "category": "Cabo San Lucas",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/bagatelle/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/bagatelle/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon":"",
+    "translations": {
+      "en": { 
+        "title": "Bagatelle", 
+        "description": "Bagatelle Los Cabos delivers a vibrant French-Mediterranean beach-club vibe with sophisticated cuisine, creative cocktails, live music and dinner-shows. Expect signature dishes — such as truffle ravioli, sea-bass carpaccio and decadent desserts — alongside a party atmosphere that transforms the space into an electric evening spot.", 
+        "kitchen": "French / Mediterranean", 
+        "openingTimes": "Daily, 11:00 am - 6:00 pm, 7:00 pm - 1:00 am", 
+        "address": "Bagatelle Los Cabos\nPaseo de la Marina 4750, Locales 4-7\nEl Médano Ejidal, Cabo San Lucas, Baja California Sur 23453\nMexico", 
+        "price": "MXN 1000 and over", 
+        "dressCode": "Casual chic / Smart casual" 
+      },
+      "es": { 
+        "title": "Bagatelle", 
+        "description": "Bagatelle Los Cabos ofrece un ambiente vibrante estilo beach-club de estilo francés-mediterráneo con cocina sofisticada, coctelería creativa, música en vivo y shows durante la cena. Encontrará platillos emblemáticos como ravioles con trufa, carpaccio de robalo y postres decadentes, todo en un espacio que se convierte en una fiesta eléctrica por la noche.", 
+        "kitchen": "Francés / Mediterráneo", 
+        "openingTimes": "Todos los días, de 11:00 am - 6:00 pm, 7:00 pm - 1:00 am", 
+        "address": "Bagatelle Los Cabos\nPaseo de la Marina 4750, Locales 4-7\nEl Médano Ejidal, Cabo San Lucas, Baja California Sur 23453\nMéxico", 
+        "price": "MXN 1000 y más", 
+        "dressCode": "Casual chic / Casual elegante" 
+      },
+      "de": { 
+        "title": "Bagatelle", 
+        "description": "Bagatelle Los Cabos vereint ein lebendiges französisch-mediterranes Beach-Club-Ambiente mit raffiniertem Essen, kreativen Cocktails, Live-Musik und Dinner-Shows. Genießen Sie Klassiker wie Trüffel-Ravioli, Wolfsbarsch-Carpaccio und opulente Desserts in einem Lokal, das abends zu einem elektrisierenden Party-Hotspot wird.", 
+        "kitchen": "Französisch / Mediterran", 
+        "openingTimes": "Täglich, 11:00 - 18:00 Uhr, 19:00 - 1:00 Uhr ", 
+        "address": "Bagatelle Los Cabos\nPaseo de la Marina 4750, Lokale 4-7\nEl Médano Ejidal, Cabo San Lucas, Baja California Sur 23453\nMexiko", 
+        "price": "MXN 1000 und mehr", 
+        "dressCode": "Casual Chic / Smart Casual" 
+      }
+    }
+  },
+  {
+    "id": "rosaNegra",
+    "name": "Rosa Negra",
+    "category": "Cabo San Lucas",
+      "images": {
+      "portrait": "/cabos/assets/images/restaurants/rosaNegra/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/rosaNegra/1.jpg",
+        "/cabos/assets/images/restaurants/rosaNegra/1.jpg"
+      ]
+      },
+      "status": "active",
+      "icon": "",
+      "translations": {
+        "en": {
+        "title": "Rosa Negra",
+        "description": "Rosa Negra Cabo San Lucas offers a vibrant Latin-fusion dining experience with a sultry atmosphere, live music, and signature grilled meats and seafood. Expect playful cocktails, sizzling parrilla creations, and a sultry, upscale ambiance that transitions effortlessly into an electrifying evening.",
+        "kitchen": "Latin Fusion / Grill",
+        "openingTimes": "Daily, 5:00 pm - 1:00 am",
+        "address": "Rosa Negra\nPaseo de la Marina 4750, Locales 10-14\nEl Médano Ejidal, Cabo San Lucas, Baja California Sur 23453\nMexico",
+        "price": "MXN 1200 and over",
+        "dressCode": "Smart casual"
+      },
+      "es": {
+        "title": "Rosa Negra",
+        "description": "Rosa Negra Cabo San Lucas ofrece una experiencia gastronómica latino-fusión con un ambiente seductor, música en vivo y parrilla de carnes y mariscos como protagonistas. Disfrute de cocteles innovadores, preparaciones a la parrilla que chispean sabor, y un ambiente refinado que se transforma en una noche de energía vibrante.",
+        "kitchen": "Fusión Latina / Parrilla",
+        "openingTimes": "Todos los días, 5:00 pm - 1:00 am",
+        "address": "Rosa Negra\nPaseo de la Marina 4750, Locales 10-14\nEl Médano Ejidal, Cabo San Lucas, Baja California Sur 23453\nMéxico",
+        "price": "MXN 1200 y más",
+        "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Rosa Negra",
+        "description": "Rosa Negra Cabo San Lucas bietet ein lebendiges Latin-Fusion-Erlebnis mit verführerischer Atmosphäre, Live-Musik und gegrillten Fleisch- und Fischspezialitäten. Freuen Sie sich auf kreative Cocktails, heiße Grillkreationen und ein gehobenes Ambiente, das sich abends in einen elektrisierenden Hotspot verwandelt.",
+        "kitchen": "Latin Fusion / Grill",
+        "openingTimes": "Täglich, 17:00 - 1:00 Uhr",
+        "address": "Rosa Negra\nPaseo de la Marina 4750, Lokale 10-14\nEl Médano Ejidal, Cabo San Lucas, Baja California Sur 23453\nMexiko",
+        "price": "ab MXN 1200",
+        "dressCode": "Smart Casual"
+      }
+    }
+  },
+  {
+    "id": "tabooCabo",
+    "name": "Taboo Cabo",
+    "category": "Cabo San Lucas",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/tabooCabo/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/tabooCabo/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon": "",
+    "translations": {
+      "en": {
+        "title": "Taboo Cabo",
+        "description": "Taboo Cabo delivers a luxurious Mediterranean dining and beach-club experience at ME Cabo with panoramic ocean views, live DJs, saxophone and violin performances, and nightly fireworks over the sea. Enjoy pristine seafood, crafted cocktails and memorable dinner-shows in a vibrant, high-energy atmosphere that blends relaxation and celebration.",
+        "kitchen": "Mediterranean / Seafood",
+        "openingTimes": "Daily, 11:00 am-1:00 am",
+        "address": "Taboo Cabo, ME Cabo Hotel, Acuario, Playa El Médano, Hotel Zone, Cabo San Lucas, BCS 23410, Mexico",
+        "price": "MXN 500 and over",
+        "dressCode": "Smart casual"
+      },
+      "es": {
+        "title": "Taboo Cabo",
+        "description": "Taboo Cabo ofrece una experiencia de alta energía combinando gastronomía mediterránea de lujo y club de playa en ME Cabo, con vistas al mar, DJs en vivo, presentaciones de saxofón y violín, y fuegos artificiales nocturnos sobre el océano. Disfrute de mariscos frescos, coctelería de autor y shows nocturnos en un ambiente vibrante que mezcla relajación y celebración.",
+        "kitchen": "Mediterráneo / Mariscos",
+        "openingTimes": "Diario 11:00 am-1:00 am",
+        "address": "Taboo Cabo, Hotel ME Cabo, Acuario, Playa El Médano, Zona Hotelera, Cabo San Lucas, BCS 23410, México",
+        "price": "MXN 500 y más",
+        "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Taboo Cabo",
+        "description": "Taboo Cabo vereint luxuriöses mediterranes Dining und Beach-Club-Atmosphäre im ME Cabo mit Panoramablick aufs Meer, Live-DJs, Saxophon- und Violin-Performances sowie nächtlichem Feuerwerk über dem Ozean. Genießen Sie frische Meeresfrüchte, kunstvoll kreierte Cocktails und Dinner-Shows in einer energiegeladenen Umgebung, die Entspannung mit Feierlaune verbindet.",
+        "kitchen": "Mediterran / Meeresfrüchte",
+        "openingTimes": "Täglich, 11:00 Uhr - 1:00 Uhr",
+        "address": "Taboo Cabo, ME Cabo Hotel, Acuario, Playa El Médano, Hotelzone, Cabo San Lucas, BCS 23410, Mexiko",
+        "price": "ab MXN 500",
+        "dressCode": "Smart casual"
+      }
+    }
+  },
+  {
+    "id": "craftCabo",
+    "name": "Craft Cabo",
+    "category": "Cabo San Lucas",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/craftCabo/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/craftCabo/1.jpg",
+        "/cabos/assets/images/restaurants/craftCabo/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon": "",
+    "translations": {
+      "en": {
+        "title": "Craft Cabo",
+        "description": "Craft Cabo offers an elevated open-fire kitchen experience atop ME Cabo, featuring grilled meats and fresh seafood, artisan farm-to-glass cocktails, and stunning rooftop ocean views. Enjoy a relaxed yet sophisticated ambiance with live DJs and occasional fireworks as you savor smoky, flavorful dishes.",
+        "kitchen": "Grill / Farm-to-table / Seafood",
+        "openingTimes": "Daily, 5:00 pm - 1:00 am", 
+        "address": "Craft Cabo, ME Cabo Hotel, Acuario, Playa El Médano, Zona Hotelera, Cabo San Lucas, BCS 23410, Mexico",
+        "price": "MXN 1000 and over",
+        "dressCode": "Resort casual"
+    },
+      "es": {
+        "title": "Craft Cabo",
+        "description": "Craft Cabo ofrece una experiencia de cocina al fuego en la azotea del hotel ME Cabo, con carnes y mariscos a la parrilla, coctelería artesanal farm-to-glass y vistas espectaculares al océano. Disfrute de un ambiente relajado y sofisticado con DJs en vivo y fuegos artificiales ocasionales mientras saborea platillos ahumados llenos de sabor.",
+        "kitchen": "Parrilla / De la granja a la mesa / Mariscos",
+        "openingTimes": "Diariamente, 5:00 p.m. - 1:00 a.m.",
+        "address": "Craft Cabo, Hotel ME Cabo, Acuario, Playa El Médano, Zona Hotelera, Cabo San Lucas, BCS 23410, México",
+        "price": "MXN 1000 y más",
+        "dressCode": "Casual resort"
+      },
+      "de": {
+        "title": "Craft Cabo",
+        "description": "Craft Cabo bietet kulinarische Genüsse am offenen Feuer auf der Dachterrasse des ME Cabo Hotels - mit gegrilltem Fleisch und frischem Fisch, handgemachten Farm-to-Glass-Cocktails und traumhaften Blicken aufs Meer. Genießen Sie eine entspannte, elegante Atmosphäre mit Live-DJs und gelegentlichen Feuerwerken, während Sie rauchige, geschmacksintensive Speisen probieren.",
+        "kitchen": "Grill / Farm-to-table / Meeresfrüchte",
+        "openingTimes": "Täglich, 17:00 - 1:00 Uhr",
+        "address": "Craft Cabo, ME Cabo Hotel, Acuario, Playa El Médano, Hotelzone, Cabo San Lucas, BCS 23410, Mexiko",
+        "price": "ab MXN 1000",
+        "dressCode": "Resort Casual"
+      }
+    }
+  },
+  {
+    "id": "toroteCabo",
+    "name": "Torote",
+    "category": "Cabo San Lucas",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/toroteCabo/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/toroteCabo/1.jpg",
+        "/cabos/assets/images/restaurants/toroteCabo/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon": "",
+    "translations": {
+      "en": {
+        "title": "Torote",
+        "description": "Torote Restaurant offers an exceptional farm-to-table experience showcasing Baja's freshest ingredients with a Mediterranean twist, set in the foothills of El Tezal with spectacular views. Enjoy organic produce from on-site gardens, wood-fired dishes, craft cocktails, cooking classes and expert service in a refined yet welcoming atmosphere.",
+        "kitchen": "Contemporary Mexican / Mediterranean",
+        "openingTimes": "Tue-Sun 8:30 am-2:30 pm; Daily 5:00 pm-10:30 pm",
+        "address": "Torote Restaurant\nAltos del Tezal, Parcela 02 El Tezal\nCabo San Lucas, BCS 23454\nMexico",
+        "price": "MXN 500 and over",
+        "dressCode": "Business casual"
+      },
+      "es": {
+        "title": "Torote",
+        "description": "Torote Restaurant ofrece una experiencia farm-to-table excepcional con los ingredientes más frescos de La Baja y un toque mediterráneo, ubicado en las faldas de El Tezal con vistas espectaculares. Disfrute de productos orgánicos de sus propios jardines, platillos al horno de leña, coctelería artesanal, clases de cocina y servicio experto en un ambiente refinado pero acogedor.",
+        "kitchen": "Mexicana contemporánea / Mediterránea",
+        "openingTimes": "Mar-Dom 8:30 a.m.-2:30 p.m.; Diario 5:00 p.m.-10:30 p.m.",
+        "address": "Torote Restaurant\nAltos del Tezal, Parcela 02 El Tezal\nCabo San Lucas, BCS 23454\nMéxico",
+        "price": "MXN 500 y más",
+        "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Torote",
+        "description": "Das Torote Restaurant bietet ein exzellentes Farm-to-Table-Erlebnis mit den frischesten Zutaten aus Baja und mediterranem Flair - eingebettet in den Ausläufern von El Tezal mit spektakulärer Aussicht. Genießen Sie Bio-Produkte aus dem eigenen Garten, Gerichte vom Holzofen, handgemixte Cocktails, Kochkurse und erstklassigen Service in einer stilvollen, dennoch einladenden Atmosphäre.",
+        "kitchen": "Zeitgenössische Mexikanische Küche / Mediterran",
+        "openingTimes": "Di-So 8:30-14:30 Uhr; Täglich 17:00-22:30 Uhr",
+        "address": "Torote Restaurant\nAltos del Tezal, Parcela 02 El Tezal\nCabo San Lucas, BCS 23454\nMexiko",
+        "price": "ab MXN 500",
+        "dressCode": "Business casual"
+        }
+      }
+    },
+    {
+      "id": "chambaoCabo",
+      "name": "Chambao",
+      "category": "San José del Cabo",
+      "images": {
+        "portrait": "/cabos/assets/images/restaurants/chambaoCabo/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/restaurants/chambaoCabo/1.jpg",
+          "/cabos/assets/images/restaurants/chambaoCabo/1.jpg"
+        ]
+      },
+      "status": "active",
+      "icon": "",
+      "translations": {
+        "en": {
+          "title": "Chambao",
+          "description": "Chambao offers an exclusive Fashion Grillhouse experience with premium steak and seafood cuts in a stylish, bohemian setting. Enjoy nightly live performances, fire and water shows, a resident DJ, and a vibrant atmosphere—all blending nature, art, and sophistication.",
+          "kitchen": "Steakhouse / Seafood",
+          "openingTimes": "Daily, 5:00 pm - 1:00 am",
+          "address": "Chambao, Paseo Malecón #585, Zona Hotelera, San José del Cabo, BCS 23405, Mexico",
+          "price": "MXN 1000 and over",
+          "dressCode": "Smart casual"
+      },
+      "es": {
+        "title": "Chambao",
+        "description": "Chambao ofrece una exclusiva experiencia Fashion Grillhouse con cortes premium de carne y mariscos en un ambiente bohemio y sofisticado. Disfrute de presentaciones en vivo, shows de fuego y agua, DJ residente y un ambiente vibrante que combina naturaleza, arte y sofisticación.",
+        "kitchen": "Steakhouse / Mariscos",
+        "openingTimes": "Todos los días, de 5:00 pm a 1:00 am",
+        "address": "Chambao, Paseo Malecón #585, Zona Hotelera, San José del Cabo, BCS 23405, México",
+        "price": "MXN 1000 y más",
+        "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Chambao",
+        "description": "Chambao bietet ein exklusives Fashion-Grillhouse-Erlebnis mit Premium-Steak- und Meeresfrüchte-Spezialitäten in einem stilvollen, bohemischen Ambiente. Erleben Sie Live-Shows, Feuer-und-Wasser-Performances, einen Resident-DJ und eine lebendige Atmosphäre - eine Mischung aus Natur, Kunst und Raffinesse.",
+        "kitchen": "Steakhouse / Meeresfrüchte",
+        "openingTimes": "Täglich, 17:00 - 1:00 Uhr",
+        "address": "Chambao, Paseo Malecón #585, Zona Hotelera, San José del Cabo, BCS 23405, Mexiko",
+        "price": "ab MXN 1000",
+        "dressCode": "Smart casual"
+        }
+      }
+    },
+    {
+      "id": "agaveKitchen",
+      "name": "Agave Kitchen",
+      "category": "San José del Cabo",
+      "images": {
+        "portrait": "/cabos/assets/images/restaurants/agaveKitchen/portrait.jpg",
+        "gallery": [
+          "/cabos/assets/images/restaurants/agaveKitchen/1.jpg",
+          "/cabos/assets/images/restaurants/agaveKitchen/1.jpg"
+        ]
+      },
+      "status": "active",
+      "icon": "",
+      "translations": {
+        "en": {
+        "title": "Agave Kitchen",
+        "description": "Set on a rooftop overlooking San José del Cabo's Art District, Agave Kitchen offers artisanal farm-to-table Baja-Med cuisine prepared in a custom wood-fired oven. Enjoy sustainably sourced seafood, seasonal organic produce, live cooking sessions, and craft mezcal cocktails for an elevated yet relaxed dining experience.",
+        "kitchen": "Baja-Med / Seafood / Organic",
+        "openingTimes": "Daily 11:00 am- 11:00 pm",
+        "address": "Agave Kitchen\nMorelos Esq. Álvaro Obregón, Gallery District\nSan José del Cabo, BCS 23400\nMexico",
+        "price": "MXN 500 and over",
+        "dressCode": "Smart casual"
+      },
+      "es": {
+        "title": "Agave Kitchen",
+        "description": "Ubicado en una azotea con vista al Distrito del Arte de San José del Cabo, Agave Kitchen ofrece cocina artesanal Baja-Med de la granja a la mesa, preparada en un horno de leña personalizado. Disfrute de mariscos sostenibles, productos orgánicos de temporada, cocina en vivo y coctelería de mezcal artesanal, en un ambiente sofisticado y relajado.",
+        "kitchen": "Baja-Med / Mariscos / Orgánica",
+        "openingTimes": "Todos los días, 11:00 am-11:00 pm.",
+        "address": "Agave Kitchen\nMorelos Esq. Álvaro Obregón, Gallery District\nSan José del Cabo, BCS 23400\nMéxico",
+        "price": "MXN 500 y más",
+        "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Agave Kitchen",
+        "description": "Auf einer Dachterrasse mit Blick auf das Art District in San José del Cabo serviert Agave Kitchen handwerkliche Baja-Med-Küche von der Farm-to-Table, zubereitet im maßgeschneiderten Holzofen. Genießen Sie nachhaltig bezogenen Fisch, saisonale Bio-Produkte, Live-Cooking und kreative Mezcal-Cocktails in entspannter, gehobener Atmosphäre.",
+        "Kitchen": "Baja-Med / Meeresfrüchte / Bio",
+        "openingTimes": "Täglich 11:00 - 23:00 Uhr",
+        "address": "Agave Kitchen\nMorelos Ecke Álvaro Obregón, Gallery District\nSan José del Cabo, BCS 23400\nMexiko",
+        "price": "ab MXN 500",
+        "dressCode": "Smart Casual"
+      }
+    }
+  },
+  {
+    "id": "pencaCocina",
+    "name": "Penca Cocina de Brasa",
+    "category": "San José del Cabo",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/pencaCocina/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/pencaCocina/1.jpg",
+        "/cabos/assets/images/restaurants/pencaCocina/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon": "",
+    "translations": {
+      "en": {
+        "title": "Penca Cocina de Brasa",
+        "description": "Penca Cocina de Brasa delivers contemporary Mexican cuisine cooked on a wood-fired grill, featuring local ingredients such as grilled octopus, yellowtail, and prime beef, along with signature cocktails, weekend brunch buffet, and a relaxed yet refined ambiance.",
+        "kitchen": "Contemporary Mexican / Grill / Farm-to-table",
+        "openingTimes": "Daily, 8:00 am - 10:00 pm",
+        "address": "Penca Cocina de Brasa\nPaseo Malecón San José, Calle Retorno Puntagorda MZ 7 LT 1\nSan José del Cabo, BCS 23400\nMexico",
+        "price": "MXN 310-500 per person",
+        "dressCode": "Smart casual"
+      },
+      "es": {
+      "title": "Penca Cocina de Brasa",
+      "description": "Penca Cocina de Brasa ofrece cocina mexicana contemporánea a la parrilla de leña, con ingredientes locales como pulpo y cortes selectos, además de cócteles emblemáticos, buffet de brunch los fines de semana y un ambiente relajado pero refinado.",
+      "kitchen": "Mexicana contemporánea / Parrilla / De la granja a la mesa",
+      "openingTimes": "Diario, 8:00 am - 10:00 pm",
+      "address": "Penca Cocina de Brasa\nPaseo Malecón San José, Calle Retorno Puntagorda MZ 7 LT 1\nSan José del Cabo, BCS 23400\nMéxico",
+      "price": "MXN 310-500 por persona",
+      "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Penca Cocina de Brasa",
+        "description": "Penca Cocina de Brasa bietet zeitgenössische mexikanische Küche vom Holzgrill mit lokalen Spezialitäten wie gegrilltem Oktopus und Prime-Fleisch, dazu charakteristische Cocktails, Wochenend-Brunch-Buffet und ein entspanntes, dennoch stilvolles Ambiente.",
+        "kitchen": "Zeitgenössische Mexikanische Küche / Grill / Farm-to-table",
+        "openingTimes": "Täglich, 8:00-22:00 Uhr",
+        "address": "Penca Cocina de Brasa\nPaseo Malecón San José, Calle Retorno Puntagorda MZ 7 LT 1\nSan José del Cabo, BCS 23400\nMexiko",
+        "price": "MXN 310-500 pro Person",
+        "dressCode": "Smart casual"
+      }
+    }
+  },
+  {
+    "id": "limonetto",
+    "name": "Limonetto",
+    "category": "San José del Cabo",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/limonetto/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/limonetto/1.jpg",
+        "/cabos/assets/images/restaurants/limonetto/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon": "",
+    "translations": {
+      "en": {
+        "title": "Limonetto",
+        "description": "Limonetto is a charming Italian restaurant in the heart of San José del Cabo, offering artisan pastas, wood-fired pizzas, fresh seafood, and a wide selection of wines in an elegant yet cozy setting. Ideal for a romantic dinner or a relaxed evening with friends.",
+        "kitchen": "Italian / Mediterranean",
+        "openingTimes": "Daily, 5:00 pm - 11:00 pm",
+        "address": "Limonetto\nBoulevard Mijares, Centro Histórico\nSan José del Cabo, BCS 23400\nMexico",
+        "price": "MXN 300-600 per person",
+        "dressCode": "Smart casual"
+      },
+      "es": {
+        "title": "Limonetto",
+        "description": "Limonetto es un encantador restaurante italiano en el corazón de San José del Cabo, que ofrece pastas artesanales, pizzas al horno de leña, mariscos frescos y una amplia selección de vinos en un ambiente elegante y acogedor. Ideal para una cena romántica o una velada tranquila con amigos.",
+        "kitchen": "Italiana / Mediterránea",
+        "openingTimes": "Diario, 5:00 pm - 11:00 pm",
+        "address": "Limonetto\nBoulevard Mijares, Centro Histórico\nSan José del Cabo, BCS 23400\nMéxico",
+        "price": "MXN 300-600 por persona",
+        "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Limonetto",
+        "description": "Limonetto ist ein charmantes italienisches Restaurant im Herzen von San José del Cabo. Es bietet handgemachte Pasta, Holzofenpizza, frische Meeresfrüchte und eine große Auswahl an Weinen in einem eleganten, aber gemütlichen Ambiente. Ideal für ein romantisches Abendessen oder einen entspannten Abend mit Freunden.",
+        "kitchen": "Italienisch / Mediterran",
+        "openingTimes": "Täglich, 17:00-23:00 Uhr",
+        "address": "Limonetto\nBoulevard Mijares, Centro Histórico\nSan José del Cabo, BCS 23400\nMexiko",
+        "price": "MXN 300-600 pro Person",
+        "dressCode": "Smart casual"
+      }
+    }
+  },
+  {
+    "id": "jardinSecreto",
+    "name": "Jardín Secreto",
+    "category": "San José del Cabo",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/jardinSecreto/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/jardinSecreto/1.jpg",
+        "/cabos/assets/images/restaurants/jardinSecreto/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon": "",
+    "translations": {
+      "en": {
+        "title": "Jardín Secreto",
+        "description": "Jardín Secreto is a hidden-gem restaurant in the art district of San José del Cabo, blending Mediterranean and contemporary Mexican cuisine in a lush, secret-garden atmosphere. Features weekend brunch, brick-oven pizzas, live music, and crafted cocktails.",
+        "kitchen": "Mediterranean / Contemporary Mexican",
+        "openingTimes": "Fri-Sun breakfast 10 am-3 pm; Daily dinner 5 pm-10:30 pm; Bar until 10:45 pm",
+        "address": "Jardín Secreto\nCalle Morelos Lote 3 (Jose Maria Morelos 103), Centro, Gallery District\nSan José del Cabo, BCS 23400\nMexico",
+        "price": "MXN 500+ per person",
+        "dressCode": "Smart casual"
+      },
+      "es": {
+        "title": "Jardín Secreto",
+        "description": "Jardín Secreto es un restaurante escondido en el distrito de arte de San José del Cabo, que fusiona cocina mediterránea y mexicana contemporánea en un ambiente tipo jardín secreto. Ofrece brunch de fin de semana, pizzas al horno de ladrillo, música en vivo y coctelería artesanal.",
+        "kitchen": "Mediterránea / Mexicana contemporánea",
+        "openingTimes": "Vie-Dom desayuno 10:00-15:00; Cena diario 17:00-22:30; Bar hasta 22:45",
+        "address": "Jardín Secreto\nCalle Morelos Lote 3 (Jose Maria Morelos 103), Centro, Distrito de Galerías\nSan José del Cabo, BCS 23400\nMéxico",
+        "price": "MXN 500+ por persona",
+        "dressCode": "Casual elegante"
+      },
+      "de": {
+        "title": "Jardín Secreto",
+        "description": "Jardín Secreto ist ein verstecktes Juwel im Kunstviertel von San José del Cabo und vereint mediterrane und zeitgenössische mexikanische Küche in einer üppigen, geheimen Gartenatmosphäre. Bietet am Wochenende Brunch, Steinofen-Pizzen, Live-Musik und handwerkliche Cocktails.",
+        "kitchen": "Mediterran / Zeitgenössisch Mexikanisch",
+        "openingTimes": "Fr-So Frühstück 10:00-15:00; Täglich Abendessen 17:00-22:30; Bar bis 22:45",
+        "address": "Jardín Secreto\nCalle Morelos Lote 3 (Jose María Morelos 103), Centro, Galerienviertel\nSan José del Cabo, BCS 23400\nMexiko",
+        "price": "MXN 500+ pro Person",
+        "dressCode": "Smart casual"
+      }
+    }
+  },	
+  {
+    "id": "chamuyo",
+    "name": "Chamuyo",
+    "category": "San José del Cabo",
+    "images": {
+      "portrait": "/cabos/assets/images/restaurants/chamuyo/portrait.jpg",
+      "gallery": [
+        "/cabos/assets/images/restaurants/chamuyo/1.jpg",
+        "/cabos/assets/images/restaurants/chamuyo/1.jpg"
+      ]
+    },
+    "status": "active",
+    "icon": "",
+    "translations": {
+      "en": {
+        "title": "Chamuyo",
+        "description": "Chamuyo is an Argentine steakhouse in downtown San José del Cabo, renowned for its slow-grilled prime beef ribs, empanadas, wood-fired pizzas, and authentic cuts over mesquite. Stylish yet relaxed atmosphere with resort-casual dressCode.",
+        "kitchen": "Argentine / Steakhouse / Grill",
+        "openingTimes": "Daily, 4:30 pm - 10:00 pm",
+        "address": "Chamuyo\nCalle Morelos, Esq. Comonfort, Col. Centro\nSan José del Cabo, BCS 23400\nMexico",
+        "price": "MXN 500+ per person",
+        "dressCode": "Resort casual"
+      },
+      "es": {
+      "title": "Chamuyo",
+      "description": "Chamuyo es una steakhouse argentina en el centro de San José del Cabo, reconocida por sus costillas de res prime cocinadas lentamente, empanadas, pizzas al horno de leña y cortes auténticos al mezquite. Ambiente elegante pero relajado con código resort casual.",
+      "kitchen": "Argentina / Steakhouse / Parrilla",
+      "openingTimes": "Diario, 16:30 - 22:00",
+      "address": "Chamuyo\nCalle Morelos, Esq. Comonfort, Col. Centro\nSan José del Cabo, BCS 23400\nMéxico",
+      "price": "MXN 500+ por persona",
+      "dressCode": "Resort casual"
+      },
+      "de": {
+        "title": "Chamuyo",
+        "description": "Chamuyo ist ein argentinisches Steakhouse im Zentrum von San José del Cabo, bekannt für langsam gegrillte Prime-Rinderrippen, Empanadas, Holzofenpizzen und authentische Fleischstücke über Mesquite-Holz. Stilvoll, aber entspannt; Resort-Casual Dresscode.",
+        "kitchen": "Argentinisch / Steakhouse / Grill",
+        "openingTimes": "Täglich, 16:30-22:00 Uhr",
+        "address": "Chamuyo\nCalle Morelos, Ecke Comonfort, Col. Centro\nSan José del Cabo, BCS 23400\nMexiko",
+        "price": "MXN 500+ pro Person",
+        "dressCode": "Resort-Casual"
+      }
+    }
+  }
+]
+}

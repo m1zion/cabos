@@ -10,6 +10,7 @@ import Home from '../Home/'
 import NotFound from '../NotFound/'
 import Accommodation from '../Accommodation/'
 import Tours from '../Tours/'
+import Restaurants from '../Restaurants/'
 import TourDetail from '../Tours/tourDetail'
 import BookTour from '../Tours/bookTour'
 const AppRoutes = () =>{
@@ -18,7 +19,8 @@ const AppRoutes = () =>{
     { path: 'Accommodation/:id',  element: <Accommodation/> },
     { path: 'Tours/:id',  element: <Tours/> },
     { path: 'TourDetail/:id',  element: <TourDetail/> },
-    { path: 'BookTour/:id',  element: <BookTour/> },
+    { path: 'BookTour/:id',  element: <BookTour/> },    
+    { path: 'Restaurants',  element: <Restaurants/> },
     { path: '*',  element: <NotFound/> },
   ]);
   return routes;
