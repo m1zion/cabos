@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 import { ToursContext } from "../../Context";
 import "leaflet/dist/leaflet.css";
 import 'react-multi-carousel/lib/styles.css';
-import { createClient } from "@supabase/supabase-js";
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
@@ -21,9 +20,12 @@ Create EmailJS Account https://www.emailjs.com
 */
 import bgImage from '../../assets/icons/bg2.svg'; 
 import WhatsApp from "../../Components/WhatsApp";
+
+/*import { createClient } from "@supabase/supabase-js";
 const supabaseUrl = "https://qzjipxehwcrgqmjzeqbv.supabase.co"; // your URL
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF6amlweGVod2NyZ3FtanplcWJ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI4ODE5ODcsImV4cCI6MjA2ODQ1Nzk4N30.Ay5OCwOOFS_9tpouzMhipHCz40Fz0tZb5EKyV0NvGbU";
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(supabaseUrl, supabaseKey);*/
+import { supabase } from '../../supabaseClient';
 function BookTour() {  
     const navigate = useNavigate();
     const { language } = useContext(ToursContext);
@@ -183,7 +185,7 @@ function BookTour() {
                 <input {...register("discount")} type="hidden" id="discount" name="discount" value={discount}/> 
                 <input {...register("discountMoney")} type="hidden" id="discountMoney" name="discountMoney" value={discountMoney}/> 
                 <div className="flex flex-col">
-                    <label htmlFor="email" className="mb-1 text-sm font-medium text-gray-600">*{content.name}</label>
+                    <label htmlFor="name" className="mb-1 text-sm font-medium text-gray-600">*{content.name}</label>
                     <input
                     {...register("name", { required: true })}
                     type="text"
@@ -193,7 +195,6 @@ function BookTour() {
                     />
                     {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
                 </div>
-
                 <div className="flex flex-col">
                     <label htmlFor="email" className="mb-1 text-sm font-medium text-gray-600">*Email</label>
                     <input

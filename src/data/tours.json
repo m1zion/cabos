@@ -247,10 +247,7 @@
         "portrait": "/cabos/assets/images/tours/snorkelPirate/portrait.jpg",
         "gallery": [
           "/cabos/assets/images/tours/snorkelPirate/1.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/2.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/3.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/4.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/5.jpg"
+          "/cabos/assets/images/tours/snorkelPirate/2.jpg"
         ]
       },
       "status": "active",

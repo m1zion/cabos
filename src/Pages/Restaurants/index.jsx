@@ -77,8 +77,8 @@ function restaurants() {
                             <span className="text-sm"> {t.price}</span>
                             </div>
                           )}                                  
-                        </div>                                    
-                        <Link to={`/Restaurants`} >
+                        </div>                                  
+                        <Link to={`/bookRestaurant/${restaurant.id}`} >
                               <button className="hover:bg-[#ffffff1a] text-[#F9E9C8] cursor-pointer border border-[#F9E9C8] h-10 p-1 w-full sm:w-[140px] rounded-md">
                                   View More
                               </button>

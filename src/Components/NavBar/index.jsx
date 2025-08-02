@@ -3,7 +3,7 @@ import navTexts from '../../i18n/navTexts.json'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ToursContext } from "../../Context"
-import logo from '/src/assets/icons/logo4.svg'
+import logo from '/src/assets/icons/logo13.png'
 import Flag from 'react-world-flags'
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -74,7 +74,7 @@ export default function NavBar() {
                 <img
                 alt="Your Company"
                 src={logo}
-                className="h-12 w-auto"
+                className="h-13 w-auto"
                 />
               </a>
             </div>

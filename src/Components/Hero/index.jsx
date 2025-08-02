@@ -31,8 +31,11 @@ const Hero = () =>{
   
                 >
                     <div className='flex items-end gap-3'>
-                        <h1 className="text-4xl text-end sm:text-5xl font mb-4 ">Welcome to</h1>
-                        <h1 className="text-5xl sm:text-6xl font-bold mb-4 ">Los Cabos</h1>
+                        <h1 className="text-3xl text-end sm:text-5xl font mb-4 ">Welcome to</h1>
+                    </div> 
+                    <div className='flex items-end flex-wrap gap-2 sm:gap-3 '>
+                          <h1 className="text-5xl sm:text-6xl font-bold mb-4 ">Los Cabos</h1>
+                          <h1 style={{ fontFamily: 'Julee, cursive' }} className="text-5xl sm:text-6xl font-bold mb-[12px] ">Moments</h1>
                     </div>             
                 </motion.div>     
                 <motion.p
