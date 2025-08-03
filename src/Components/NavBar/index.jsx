@@ -3,7 +3,7 @@ import navTexts from '../../i18n/navTexts.json'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ToursContext } from "../../Context"
-import logo from '/src/assets/icons/logo13.png'
+import logo from '/src/assets/icons/logo5.jpg'
 import Flag from 'react-world-flags'
 import { useNavigate, useLocation } from 'react-router-dom';
 

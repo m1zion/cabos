@@ -48,7 +48,7 @@ function BookRestaurant() {
 
     const sendEmail = (data) => {
         emailjs
-            .send('service_eab0n6c', 'template_6dgwgrz', data, 'jPOZt81yZmLW-1dWi')
+            .send('service_fa73aip', 'template_es3is5k', data, '21k3wzHormHRFrx_5')
             .then((result) => {
             console.log(result.text);
             alert("Your request was sent successfully!");

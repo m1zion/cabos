@@ -140,7 +140,8 @@ function BookTour() {
     const sendEmail = (data) => {
         //console.log(data);
         emailjs
-            .send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
+            //.send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
+            .send('service_eab0n6c', 'template_14wde1c', data, 'jPOZt81yZmLW-1dWi')            
             .then((result) => {
             console.log(result.text);
             alert("Your booking request was sent successfully!");
@@ -298,6 +299,17 @@ function BookTour() {
                     >
                         {content.apply}
                     </button>
+                </div>
+                <div className="flex flex-col">
+                    <label htmlFor="reference" className="mb-1 text-sm font-medium text-gray-600">{content.reference}</label>
+                    <input
+                    {...register("reference")}
+                    type="text"
+                    id="reference"
+                    name="reference"
+                    placeholder={content.reference2}
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                    />
                 </div>
 
                 <div className="flex flex-col">

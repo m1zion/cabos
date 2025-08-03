@@ -30,13 +30,13 @@ function Home() {
       <Hero />
       <Suspense fallback={<div>Loading...</div>}>
         <About/>
-        <Accomodation/>
         <Tours />
+        <Experiences />
+        <Accomodation/>
         <Restaurants/>        
         <Transportation/>
         <WhatsApp/>
       </Suspense>
-      {/*<Footer />*/}
     </Layout>
   )
 }

@@ -38,14 +38,14 @@ const Hero = () =>{
                           <h1 style={{ fontFamily: 'Julee, cursive' }} className="text-5xl sm:text-6xl font-bold mb-[12px] ">Moments</h1>
                     </div>             
                 </motion.div>     
-                <motion.p
+                <motion.div
                     className="text-lg"
                     initial={{ opacity: 0, x: -40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
                 >       
                     <p className="text-lg">Discover with us our amazing experiences, <br></br>let us plan everything for you</p>
-                </motion.p>
+                </motion.div>
 
                 <motion.ul
                     className="flex items-center gap-2 pt-4 list-none"
