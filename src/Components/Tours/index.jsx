@@ -14,16 +14,43 @@ const categories = [
   { key: 'dayTrip', image: '/cabos/assets/images/land.jpg' },
 ];
 
-//#03A6A6  #07bcbc
-//#64a2ad
-//#d3c199
+const themes = {
+  sand: {
+    background: '#F4EFDF',
+    accent: '#BDA268',
+    cardText: '#BDA268',
+    cardBg: '#FFFFFF',
+  },
+  blue: {
+    background: '#E6ECEB',
+    accent: '#5C7687',
+    cardText: '#5C7687',
+    cardBg: '#FFFFFF',
+  },
+  darkBlue: {
+    background: '#728E9F',
+    accent: '#E6ECEB',
+    cardText: '#728E9F',
+    cardBg: '#FFFFFF',
+  },
+};
 const Tours = () =>{    
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
+
+    //OPCION DE COLORES 2
+//  #E0E7E6
+//  #BAD1D9 #E6ECEB
+//  #728E9F   #5C7687
+//  #F4EFDF
+//  #F4DEB9
+//  #C8B58B #BDA268
+    const theme = themes.darkBlue; // Try themes.blue or themes.darkBlue
     return (     
         <section 
             id="tours" 
-            className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden bg-[#eaf8f8]"
+            className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
+            style={{ backgroundColor: theme.background }}
         >               
             <motion.div
                 className="container py-8 z-[2]"
@@ -32,7 +59,7 @@ const Tours = () =>{
                 transition={{ duration: 1.1 }}
                 viewport={{ once: true }}
             >
-                <h2 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-[#049DBF] text-center sm:text-left">{content.toursTitle}</h2>
+                <h2 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left" style={{ color: theme.accent }}>{content.toursTitle}</h2>
             </motion.div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-4">
                 {categories.map((category, index) => (
@@ -47,7 +74,12 @@ const Tours = () =>{
                             className="w-full h-[80%] object-cover transform group-hover:scale-105 transition duration-500"
                         />
                         <div className="absolute inset-0 flex items-end justify-center">
-                            <div className="w-full bg-white bg-opacity-90 text-center py-3 text-[#03A6A6] font-semibold text-xl">
+                            <div className="w-full bg-white bg-opacity-90 text-center py-3 font-semibold text-xl"
+                             style={{
+                    backgroundColor: theme.cardBg,
+                    color: theme.cardText,
+                    opacity: 0.9
+                  }}>
                                 {content.categories[category.key]}
                             </div>
                         </div>

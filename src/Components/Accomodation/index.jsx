@@ -25,14 +25,14 @@ const Accomodation = () =>{
     const ParkingIcon = icons['../../assets/icons/parking.svg'];
 
     return (
-        <section id="accomodation" className="flex-column p-10 scroll-mt-20 w-full bg-[#eaf8f8]">
+        <section id="accomodation" className="flex-column p-10 scroll-mt-20 w-full  bg-gradient-to-t from-[#E6ECEB ] to-[#E6ECEB ]">
               <motion.div
                     className="container py-8 z-[2]"
                     initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.1 }}
                     viewport={{ once: true }}
-                > <h1 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-[#03A6A6]">
+                > <h1 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-[#728E9F]">
                 {content.accomodationTitle}
             </h1></motion.div>           
             <h1>
@@ -46,7 +46,7 @@ const Accomodation = () =>{
                         <img src={accomodation.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
                         <div className="p-4 space-y-2">
                             <div className="flex justify-between pr-[5px] items-center">                               
-                                <h3 className="text-md md:text-xl font-semibold text-[#049DBF]">{t.title}</h3>    
+                                <h3 className="text-md md:text-xl font-semibold text-[#728E9F]">{t.title}</h3>    
                             </div>
                             <div className="flex gap-2"> 
                                 <MapPinIcon  className="block size-5" />
@@ -74,7 +74,7 @@ const Accomodation = () =>{
                                 )}
                             </div>   
                             <Link to={`/Accommodation/${accomodation.id}`}>
-                                <button className="hover:bg-[#f2fdff] mt-2 px-4 py-2 border border-[#049DBF] text-[#049DBF] rounded-md cursor-pointer">
+                                <button className="hover:bg-[#f2fdff] mt-2 px-4 py-2 border border-[#728E9F] text-[#728E9F] rounded-md cursor-pointer">
                                     View listing
                                 </button>
                             </Link>

@@ -3,7 +3,7 @@ import navTexts from '../../i18n/navTexts.json'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ToursContext } from "../../Context"
-import logo from '/src/assets/icons/logo5.jpg'
+import logo from '/src/assets/icons/logo17.png'
 import Flag from 'react-world-flags'
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -49,18 +49,24 @@ export default function NavBar() {
         scrollToTarget();
       }
     };
-    //#087d7d
-    //#03A6A6
+//OPCION DE COLORES 2
+//  #E0E7E6
+//  #BAD1D9
+//  #728E9F   #5C7687
+//  #F4EFDF
+//  #F4DEB9
+//  #C8B58B 
+//  #573808
     return (
     <Disclosure as="nav" 
-    className="bg-[#03A6A6]/80 backdrop-blur-md backdrop-saturate-150 fixed z-10 w-full top-0 shadow-md"
+    className=" bg-[#728E9F]/80 backdrop-blur-md backdrop-saturate-150 fixed z-10 w-full top-0 shadow-md"
     >
-      <div className="mx-auto w-full px-2 sm:px-6 lg:px-8">
+      <div className=" mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-17 items-center justify-between">
 
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-[#087d7d] hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-[#BAD1D9] hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-6 open:hidden" />
@@ -87,7 +93,7 @@ export default function NavBar() {
                     onClick={(e) => handleNavClick(e, item.href)}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-[#087d7d] hover:text-white',
+                      item.current ? 'bg-gray-900 text-[#ffffff]' : 'text-[#fff] hover:bg-[#5C7687]',
                       'rounded-md px-3 py-2 text-md md:text-lg whitespace-nowrap',
                     )}
                   >
@@ -98,7 +104,7 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">          
+          <div className=" absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">          
            <ul className="flex items-center gap-2">
                 {['en', 'es', 'de'].map((lang) => (
                 <li className="flex" key={lang}>
@@ -127,7 +133,7 @@ export default function NavBar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-100 hover:bg-[#087d7d] hover:text-white',
+                item.current ? 'bg-gray-900 text-white' : 'text-gray-100 hover:bg-[#5C7687] hover:text-white',
                 'block rounded-md px-3 py-2 text-base',
               )}
             >

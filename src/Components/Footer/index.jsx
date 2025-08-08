@@ -7,7 +7,7 @@ const Footer = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     return (
-        <footer className="bg-[#003939] text-white px-6 py-10 mt-16 w-[100%]">
+        <footer className="bg-[#40525F] text-white px-6 py-10 mt-16 w-[100%]">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
                 {/* Contact Section */}
                 <div className="flex-1">
