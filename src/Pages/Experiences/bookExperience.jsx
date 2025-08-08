@@ -9,10 +9,15 @@ import 'react-multi-carousel/lib/styles.css';
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
-
 import bgImage from '../../assets/icons/bg2.svg'; 
 import WhatsApp from "../../Components/WhatsApp";
 import { supabase } from '../../supabaseClient';
+
+//OPCION DE COLORES 2.1
+//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
+//Hover #286A77
+//Hover bright #EEF4F3
+//text #256A77
 function BookExperience() {  
     const navigate = useNavigate();
     const { language } = useContext(ToursContext);
@@ -96,8 +101,8 @@ function BookExperience() {
     const sendEmail = (data) => {
         //console.log(data);
         emailjs
-            //.send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
-            .send('service_eab0n6c', 'template_14wde1c', data, 'jPOZt81yZmLW-1dWi')            
+            .send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
+            //.send('service_eab0n6c', 'template_14wde1c', data, 'jPOZt81yZmLW-1dWi')            
             .then((result) => {
             console.log(result.text);
             alert("Your booking request was sent successfully!");
@@ -128,7 +133,7 @@ function BookExperience() {
         <div 
             className="w-full sm:pl-[2rem] mt-[2rem] bg-white bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative"
             style={{ backgroundImage: `url(${bgImage})` }}>
-            <h3 className="text-2xl font-semibold text-[#728E9F] mb-4 pl-4 sm:pl-6">{content.bookTitle}</h3>
+            <h3 className="text-2xl font-semibold text-[#256A77] mb-4 pl-4 sm:pl-6">{content.experienceTitle}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base ">
 
             <form onSubmit={handleSubmit(sendEmail)}  className="space-y-4 sm:space-y-6 sm:border sm:border-gray-200 sm:rounded-xl sm:shadow-lg p-4 sm:p-6 bg-white">
@@ -148,7 +153,7 @@ function BookExperience() {
                     type="text"
                     id="name"
                     name="name"
-                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                     />
                     {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
                 </div>
@@ -162,7 +167,7 @@ function BookExperience() {
                     type="email"
                     id="email"
                     name="email"
-                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                     />
                     {errors.email && <span className="text-red-500 text-sm">This field is required</span>}
                 </div>
@@ -173,7 +178,7 @@ function BookExperience() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                     />
                     {errors.phone && <span className="text-red-500 text-sm">This field is required</span>}
                 </div>
@@ -185,7 +190,7 @@ function BookExperience() {
                         type="date"
                         id="date"
                         name="date"
-                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                         />
                         {errors.date && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
@@ -193,7 +198,7 @@ function BookExperience() {
                         <label htmlFor="hour" className="mb-1 text-sm font-medium text-gray-600">{content.hour || "Preferred Time"}</label>
                         <select
                         {...register("hour", { required: true })}
-                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                         >
                             <option value="">-- Select a time --</option>
                             <option value="08:00">08:00</option>
@@ -209,7 +214,7 @@ function BookExperience() {
                         {errors.hour && <span className="text-red-500 text-sm">Please select a time</span>}
                     </div>
                 </div>    
-                <div className="flex flex-row justify-between text-md text-[#728E9F]">
+                <div className="flex flex-row justify-between text-md text-[#256A77]">
                     {(experience.adultPrice === '-' && experience.childPrice === '-') && ('*This tour requieres additional data to calculate the price please provide it in the description: ' + t.price)}
                 </div>
                 <div className="flex flex-row justify-between">
@@ -219,7 +224,7 @@ function BookExperience() {
                         <input
                             type="number"
                             {...register("adults", { required: true, min: 1 })}
-                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                             min="1"
                         />
                         {errors.adults && <span className="text-red-500 text-sm">Please enter at least 1 adult</span>}
@@ -233,7 +238,7 @@ function BookExperience() {
                         <input
                             type="number"
                             {...register("children", { required: true, min: 0 })}
-                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                             min="0"
                             disabled = {experience.childPrice == '-' ? true : false}
                         />                        
@@ -246,7 +251,7 @@ function BookExperience() {
                         placeholder={content.promoCode}
                         value={promoCode}
                         onChange={(e) => setPromoCode(e.target.value)}
-                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                     />
                     <button
                         type="button"
@@ -264,7 +269,7 @@ function BookExperience() {
                     id="reference"
                     name="reference"
                     placeholder={content.reference2}
-                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F]"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                     />
                 </div>
 
@@ -275,19 +280,19 @@ function BookExperience() {
                     id="message"
                     name="message"
                     rows="4"
-                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#728E9F] resize-none"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77] resize-none"
                     placeholder={content.requirements}
                     ></textarea>
                 </div>
                 <div className="flex flex-col-reverse align-center lg:flex-row justify-between">
                     <button
                     type="submit"
-                    className="w-full lg:w-[200px] mt-4 px-6 py-3 bg-[#728E9F] text-white font-medium rounded-md shadow hover:bg-[#028b8b] transition duration-200"
+                    className="w-full lg:w-[200px] mt-4 px-6 py-3 bg-[#378BA1] text-white font-medium rounded-md shadow hover:bg-[#286A77] transition duration-200"
                     >
                     {content.bookButton}
                     </button>
                     <div className="h-100% sm:pl-4 flex flex-col justify-center">
-                        <p className="text-md text-[#728E9F]">{content.priceTour}: {content.adults} {experience.adultPrice} USD, {content.children} {experience.childPrice} USD </p>
+                        <p className="text-md text-[#256A77]">{content.priceTour}: {content.adults} {experience.adultPrice} USD, {content.children} {experience.childPrice} USD </p>
                         <p className="font-semibold text-xl text-[#F2A516]">Total: {totalPrice} USD</p>
                     </div>
                 </div>

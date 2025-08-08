@@ -56,7 +56,7 @@ function ExperienceDetail() {
                 </div>      
             </div>
         </div>
-        <div style={{ fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-600 whitespace-pre-line">
+        <div style={{ fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-700 whitespace-pre-line">
             {t.description}
         </div>
         <div style={{ fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem]">

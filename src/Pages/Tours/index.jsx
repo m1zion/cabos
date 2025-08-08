@@ -11,7 +11,11 @@ import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/reac
 import { Link } from "react-router-dom";
 import WhatsApp from "../../Components/WhatsApp";
 
-
+//OPCION DE COLORES 2.1
+//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
+//Hover #286A77
+//Hover bright #EEF4F3
+//text #256A77
 const categories = [
   { key: 'sunsetCruises', image: '/cabos/assets/images/sunset.jpg' },
   { key: 'waterExperiences', image: '/cabos/assets/images/snorkel.jpg' },
@@ -57,10 +61,10 @@ function tours() {
                       className="w-full h-60 object-cover"
                     />
                     <div className="p-4 space-y-2">
-                      <h2 className="text-lg font-semibold text-[#03A6A6]">{t.title}</h2>
-                      <div className="flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.duration}</p></div>
-                      <div className="flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.period}</p></div>
-                      <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#03A6A6]"/><p className="text-sm text-gray-600">{t.price}</p></div>
+                      <h2 className="text-lg font-semibold text-[#256A77]">{t.title}</h2>
+                      <div className="flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.duration}</p></div>
+                      <div className="flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.period}</p></div>
+                      <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.price}</p></div>
                     </div>
                   </div>
                 </Link>

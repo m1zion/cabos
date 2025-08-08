@@ -5,8 +5,11 @@ import { ToursContext } from "../../Context";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-
-
+//OPCION DE COLORES 2.1
+//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
+//Hover #286A77
+//Hover bright #EEF4F3
+//text #256A77
 const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
   import: 'default',
@@ -18,24 +21,23 @@ const Accomodation = () =>{
     useEffect(() => {
         const activeAccomodations = accomodationData.accomodations.filter(accomodation => accomodation.status === "active");
         setAccomodations(activeAccomodations);
-     }, []);
-    
+     }, []);    
     const RoomIcon = icons['../../assets/icons/bed.svg'];
     const BathIcon = icons['../../assets/icons/bathroom.svg'];
     const ParkingIcon = icons['../../assets/icons/parking.svg'];
 
     return (
-        <section id="accomodation" className="flex-column p-10 scroll-mt-20 w-full  bg-gradient-to-t from-[#E6ECEB ] to-[#E6ECEB ]">
+        <section id="accomodation" className="flex-column p-10 scroll-mt-20 w-full  bg-gradient-to-t from-[#DDE7E6] to-[#fff]">
               <motion.div
-                    className="container py-8 z-[2]"
+                    className="container py-4 z-[2]"
                     initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.1 }}
                     viewport={{ once: true }}
-                > <h1 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-[#728E9F]">
+                > <h1 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-[#256A77]">
                 {content.accomodationTitle}
             </h1></motion.div>           
-            <h1>
+            <h1 className="text-[1.1rem] text-[#256A77]">
                 {content.accomodationContent}
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 justify-items-center">
@@ -46,7 +48,7 @@ const Accomodation = () =>{
                         <img src={accomodation.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
                         <div className="p-4 space-y-2">
                             <div className="flex justify-between pr-[5px] items-center">                               
-                                <h3 className="text-md md:text-xl font-semibold text-[#728E9F]">{t.title}</h3>    
+                                <h3 className="text-md md:text-xl font-semibold text-[#256A77]">{t.title}</h3>    
                             </div>
                             <div className="flex gap-2"> 
                                 <MapPinIcon  className="block size-5" />
@@ -74,7 +76,7 @@ const Accomodation = () =>{
                                 )}
                             </div>   
                             <Link to={`/Accommodation/${accomodation.id}`}>
-                                <button className="hover:bg-[#f2fdff] mt-2 px-4 py-2 border border-[#728E9F] text-[#728E9F] rounded-md cursor-pointer">
+                                <button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer">
                                     View listing
                                 </button>
                             </Link>

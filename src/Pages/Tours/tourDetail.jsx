@@ -66,36 +66,36 @@ function TourDetail() {
                 </div>      
             </div>
         </div>
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-600 whitespace-pre-line">
+        <div style={{  fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-700 whitespace-pre-line">
             {t.description}
         </div>
 
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem]">
-            <h3 className="text-2xl font-semibold text-[#03A6A6] mb-4">Tour Details</h3>
+        <div style={{  fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem]">
+            <h3 className="text-2xl font-semibold text-[#256A77] mb-4">Tour Details</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-base">
             <div className="flex flex-col">
-                <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.duration}:</span>
+                <span className="font-medium text-lg text-[#256A77] flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.duration}:</span>
                 <span>{t.duration}</span>
             </div>
             <div className="flex flex-col">
-                <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.period}:</span>
+                <span className="font-medium text-lg text-[#256A77] flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.period}:</span>
                 <span>{t.period}</span>
             </div>
             <div className="flex flex-col">
-                <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1"><UserGroupIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.age}:</span>
+                <span className="font-medium text-lg text-[#256A77] flex items-center gap-1"><UserGroupIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.age}:</span>
                 <span>{t.age}</span>
             </div>
             <div className="flex flex-col">
-                <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.price}:</span>
+                <span className="font-medium text-lg text-[#256A77] flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.price}:</span>
                 <span>{t.price}</span>
             </div>
             <div className="flex flex-col">
-                <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1"><TruckIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.rounTripTransportation}:</span>
+                <span className="font-medium text-lg text-[#256A77] flex items-center gap-1"><TruckIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.rounTripTransportation}:</span>
                 <span>{t.rounTripTransportation}</span>
             </div>
             {t.additionalData && (
                 <div className="flex flex-col sm:col-span-2">
-                <span className="font-medium v text-[#03A6A6]">📌 {content.additionalData}:</span>
+                <span className="font-medium v text-[#256A77]">📌 {content.additionalData}:</span>
                 <span>{t.additionalData}</span>
                 </div>
             )}
@@ -105,7 +105,7 @@ function TourDetail() {
         
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
             <Link to={`/bookTour/${tour.id}`}>
-                <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#03A6A6] text-white font-medium rounded-sm shadow hover:bg-[#028b8b] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
+                <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#378BA1] text-white font-medium rounded-sm shadow hover:bg-[#256A77] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
             </Link>
         </div>
        <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%]" id="images">

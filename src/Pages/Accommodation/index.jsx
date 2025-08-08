@@ -122,11 +122,11 @@ function accommodation() {
                 )}
             </div> 
         </div>
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[1rem] text-gray-600 whitespace-pre-line">
+        <div style={{  fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[1rem] text-gray-700 whitespace-pre-line">
             {t.description}
         </div>
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
-            <button className="w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#03A6A6] text-white font-medium rounded-sm shadow hover:bg-[#028b8b] transition duration-200">Reservar</button>  
+            <button className="cursor-pointer w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#378BA1] text-white font-medium rounded-sm shadow hover:bg-[#256A77] transition duration-200">Reservar</button>  
         </div> 
         <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%] h-[400px] gap-1 flex flex-col md:flex-row" id ="images"> 
             <div className="w-full md:w-1/2 h-[400px] cursor-pointer">

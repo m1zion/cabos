@@ -5,22 +5,16 @@ import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
 import experiencesData from '../../data/experiences.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
-  //OPCION DE COLORES 2
-//  #E0E7E6
-//  #BAD1D9 #E6ECEB
-//  #728E9F   #5C7687
-//  #F4EFDF
-//  #F4DEB9
-//  #C8B58B #BDA268 #A88E54	#927B46	#7A683A
-//#D9CCB6
-//#573808
-
+//OPCION DE COLORES 2.1
+//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
+//Hover #286A77
+//text #256A77
 
 const themes = {
   sand: {
-    background: '#C8B58B',
-    titleText: '#F4EFDF',
-    cardText: '#F4EFDF',
+    background: '#D2B387',
+    titleText: '#F8EEDD',
+    cardText: '#F8EEDD',
     cardBg: '#927B46'
   },
   sandBright: {
@@ -46,7 +40,7 @@ const Experiences = () =>{
               backgroundRepeat: 'no-repeat', }}
         >  
             <motion.div
-                className="container py-8 z-[2]"
+                className="container py-4 z-[2]"
                 initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.1 }}

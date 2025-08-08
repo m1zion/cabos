@@ -86,7 +86,7 @@ function BookRestaurant() {
                         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] pt-4">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-base">
                                 <div className="flex flex-col">
-                                    <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1">                                        
+                                    <span className="font-medium text-lg text-[#256A77] flex items-center gap-1">                                        
                                         {FoodIcon && (
                                             <div className="flex items-center gap-2">
                                             <img src={FoodIcon} alt="food" className="w-5 h-5" />
@@ -96,15 +96,15 @@ function BookRestaurant() {
                                     <span>{t.kitchen}</span>
                                 </div>                                
                                 <div className="flex flex-col">
-                                    <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.openingTimes}:</span>
+                                    <span className="font-medium text-lg text-[#256A77] flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.openingTimes}:</span>
                                     <span>{t.openingTimes}</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.price}:</span>
+                                    <span className="font-medium text-lg text-[#256A77] flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.price}:</span>
                                     <span>{t.price}</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="font-medium text-lg text-[#03A6A6] flex items-center gap-1">
+                                    <span className="font-medium text-lg text-[#256A77] flex items-center gap-1">
                                          {DressIcon && (
                                             <div className="flex items-center gap-2">
                                             <img src={DressIcon} alt="food" className="w-5 h-5" />
@@ -133,7 +133,7 @@ function BookRestaurant() {
                         </div>
                     </div>
                     <form onSubmit={handleSubmit(sendEmail)}  className="space-y-4 sm:space-y-6 sm:border sm:border-gray-200 sm:rounded-xl sm:shadow-lg p-4 sm:p-6 bg-white">
-                        <h3 className="text-2xl font-semibold text-[#03A6A6] mb-4 ">{content.restaurantTitle}</h3>
+                        <h3 className="text-2xl font-semibold text-[#256A77] mb-4 ">{content.restaurantTitle}</h3>
                         <input {...register("restaurant")} type="hidden" id="restaurant" name="restaurant" value={id}/> 
                         <div className="flex flex-col">
                             <label htmlFor="name" className="mb-1 text-sm font-medium text-gray-600">*{content.name}</label>
@@ -142,7 +142,7 @@ function BookRestaurant() {
                             type="text"
                             id="name"
                             name="name"
-                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                             />
                             {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
                         </div>
@@ -156,7 +156,7 @@ function BookRestaurant() {
                             type="email"
                             id="email"
                             name="email"
-                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                             />
                             {errors.email && <span className="text-red-500 text-sm">This field is required</span>}
                         </div>
@@ -167,7 +167,7 @@ function BookRestaurant() {
                             type="tel"
                             id="phone"
                             name="phone"
-                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                             />
                             {errors.phone && <span className="text-red-500 text-sm">This field is required</span>}
                         </div>
@@ -179,7 +179,7 @@ function BookRestaurant() {
                                 type="date"
                                 id="date"
                                 name="date"
-                                className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                                className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                                 />
                                 {errors.date && <span className="text-red-500 text-sm">This field is required</span>}
                             </div>
@@ -187,7 +187,7 @@ function BookRestaurant() {
                                 <label htmlFor="hour" className="mb-1 text-sm font-medium text-gray-600">{content.hour || "Preferred Time"}</label>
                                 <select
                                 {...register("hour", { required: true })}
-                                className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                                className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                                 >
                                     <option value="">-- Select a time --</option>
                                     <option value="08:00">08:00</option>
@@ -210,7 +210,7 @@ function BookRestaurant() {
                                 <input
                                     type="number"
                                     {...register("adults", { required: true, min: 1 })}
-                                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6]"
+                                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                                     min="1"
                                 />
                                 {errors.adults && <span className="text-red-500 text-sm">Please enter at least 1 person</span>}
@@ -222,37 +222,37 @@ function BookRestaurant() {
                         <div className="flex flex-row justify-between">                      
                             <div className="flex flex-col w-[48%]">
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="birthday" name="event"  {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="birthday" name="event"  {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.birthday}</label>
                                 </div>
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="anniversary" name="event" {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="anniversary" name="event" {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.anniversary}</label>
                                 </div>
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="honeyMoon" name="event" {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="honeyMoon" name="event" {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.honeyMoon}</label>
                                 </div>
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="graduation" name="event" {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="graduation" name="event" {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.graduation}</label>
                                 </div>
                             </div>
                             <div className="flex flex-col w-[48%]">
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="romantic" name="event" {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="romantic" name="event" {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.romantic}</label>
                                 </div>
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="family" name="event" {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="family" name="event" {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.family}</label>
                                 </div>
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="business" name="event" {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="business" name="event" {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.business}</label>
                                 </div>
                                 <div className="flex items-center mb-4">
-                                    <input id="event" type="radio" value="bachelor" name="event" {...register("event")} className="w-4 h-4 text-[#03A6A6] bg-gray-100 border-gray-300 focus:ring-[#03A6A6]-500 focus:ring-2"/>
+                                    <input id="event" type="radio" value="bachelor" name="event" {...register("event")} className="w-4 h-4 text-[#256A77] bg-gray-100 border-gray-300 focus:ring-[#256A77]-500 focus:ring-2"/>
                                     <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-600">{content.bachelor}</label>
                                 </div>
                             </div>   
@@ -264,7 +264,7 @@ function BookRestaurant() {
                             id="message"
                             name="message"
                             rows="4"
-                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#03A6A6] resize-none"
+                            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77] resize-none"
                             placeholder={content.requirements}
                             ></textarea>
                         </div>

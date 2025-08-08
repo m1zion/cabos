@@ -3,7 +3,10 @@ import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import Logo2  from '../../assets/icons/bg3.svg?react';
 import { motion } from "framer-motion";
-
+//OPCION DE COLORES 2.1
+//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
+//Hover #286A77
+//text #256A77
 const About = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
@@ -20,7 +23,7 @@ const About = () =>{
     const [maxHeight, setMaxHeight] = useState("0px");
     return (
       <div id="aboutUs" className="flex w-full min-h-[300px] scroll-mt-20">
-        <div className="relative  w-full bg-gradient-to-t from-[#E6ECEB ] to-[#E6ECEB ]  flex flex-col justify-center">
+        <div className="relative  w-full bg-gradient-to-t from-[#DDE7E6 ] to-[#DDE7E6 ]  flex flex-col justify-center">
             <Logo2
                 className="absolute inset-0 w-full h-full opacity-25 text-white pointer-events-none select-none"
    
@@ -30,24 +33,24 @@ const About = () =>{
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5, ease: 'easeOut', delay: .9  }}
             >
-                <h1 className=" pl-10 pr-10 pt-5 font-[outfit]  text-[2.5rem] sm:text-[3.5rem] text-[#728E9F]">
+                <h1 className=" pl-10 pr-10 pt-5 font-[outfit]  text-[2.5rem] sm:text-[3.5rem] text-[#256A77]">
                 {content.aboutUsTitle}
                 </h1>
              </motion.div>
-            <h2 className=" pl-10 pr-10 font-[quicksand] text-[#728E9F] text-justify  font-medium">{content.aboutUsContent}</h2>
+            <h2 className=" pl-10 pr-10 font-[quicksand] text-[1.1rem]  text-[#256A77] text-justify  font-medium">{content.aboutUsContent}</h2>
             {/* Collapsible section */}
             <div
                 ref={contentRef}
                 className="overflow-hidden transition-all duration-700 ease-in-out"
                 style={{ maxHeight }}
             >
-                <p className=" pl-10 pr-10 pt-5 font-[quicksand] text-[#728E9F] text-justify  whitespace-pre-line font-medium">
+                <p className=" pl-10 pr-10 pt-5 font-[quicksand] text-[1.1rem] text-[#256A77] text-justify  whitespace-pre-line font-medium">
                 {content.aboutUsContent2}
                 </p>
             </div>
             <button
                 onClick={toggleExpanded}
-                className=" pl-10 pr-10 pb-10 mt-3 text-sm text-[#728E9F] underline self-start"
+                className=" pl-10 pr-10 pb-10 mt-3 text-sm text-[#256A77] underline self-start"
             >
                 {isExpanded ? "Read less" : "Read more"}
             </button>     

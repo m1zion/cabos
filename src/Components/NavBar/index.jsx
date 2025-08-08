@@ -50,16 +50,14 @@ export default function NavBar() {
       }
     };
 //OPCION DE COLORES 2
-//  #E0E7E6
-//  #BAD1D9
-//  #728E9F   #5C7687
-//  #F4EFDF
-//  #F4DEB9
-//  #C8B58B 
-//  #573808
+//  #E0E7E6  #BAD1D9  #728E9F   #5C7687  #F4EFDF  #F4DEB9  #C8B58B   #573808
+//OPCION DE COLORES 2.1
+//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
+//Hover #286A77
+//text #256A77
     return (
     <Disclosure as="nav" 
-    className=" bg-[#728E9F]/80 backdrop-blur-md backdrop-saturate-150 fixed z-10 w-full top-0 shadow-md"
+    className="bg-gradient-to-r from-[#378BA1]/80 to-[#75ACC6]/80 backdrop-blur-md backdrop-saturate-150 fixed z-10 w-full top-0 shadow-md"
     >
       <div className=" mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-17 items-center justify-between">
@@ -93,7 +91,7 @@ export default function NavBar() {
                     onClick={(e) => handleNavClick(e, item.href)}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-[#ffffff]' : 'text-[#fff] hover:bg-[#5C7687]',
+                      item.current ? 'bg-gray-900 text-[#ffffff]' : 'text-[#fff] hover:bg-[#286A77]',
                       'rounded-md px-3 py-2 text-md md:text-lg whitespace-nowrap',
                     )}
                   >
@@ -133,7 +131,7 @@ export default function NavBar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-100 hover:bg-[#5C7687] hover:text-white',
+                item.current ? 'bg-gray-900 text-white' : 'text-gray-100 hover:bg-[#286A77] hover:text-white',
                 'block rounded-md px-3 py-2 text-base',
               )}
             >

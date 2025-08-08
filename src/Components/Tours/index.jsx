@@ -13,7 +13,10 @@ const categories = [
   { key: 'atvRazors', image: '/cabos/assets/images/utv.jpg' },
   { key: 'dayTrip', image: '/cabos/assets/images/land.jpg' },
 ];
-
+//OPCION DE COLORES 2.1
+//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
+//Hover #286A77
+//text #256A77
 const themes = {
   sand: {
     background: '#F4EFDF',
@@ -21,16 +24,10 @@ const themes = {
     cardText: '#BDA268',
     cardBg: '#FFFFFF',
   },
-  blue: {
-    background: '#E6ECEB',
-    accent: '#5C7687',
-    cardText: '#5C7687',
-    cardBg: '#FFFFFF',
-  },
   darkBlue: {
-    background: '#728E9F',
-    accent: '#E6ECEB',
-    cardText: '#728E9F',
+    background: '#378BA1',
+    accent: '#ffffff',
+    cardText: '#256A77',
     cardBg: '#FFFFFF',
   },
 };
@@ -38,20 +35,13 @@ const Tours = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
 
-    //OPCION DE COLORES 2
-//  #E0E7E6
-//  #BAD1D9 #E6ECEB
-//  #728E9F   #5C7687
-//  #F4EFDF
-//  #F4DEB9
-//  #C8B58B #BDA268
     const theme = themes.darkBlue; // Try themes.blue or themes.darkBlue
     return (     
         <section 
             id="tours" 
             className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
             style={{ 
-                backgroundImage: "url('./public/assets/icons/abstract-envelope.svg')" ,
+                backgroundImage: "url('./public/assets/icons/abstract-envelope-sand.svg')" ,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',}}
             //style={{ backgroundColor: theme.background }}
@@ -72,18 +62,18 @@ const Tours = () =>{
                         className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer"
                     >
                         <Link to={`/Tours/${category.key}`}>
-                        <img
-                            src={category.image}
-                            alt={content.categories[category.key]}
-                            className="w-full h-[80%] object-cover transform group-hover:scale-105 transition duration-500"
-                        />
-                        <div className="absolute inset-0 flex items-end justify-center">
+                            <img
+                                src={category.image}
+                                alt={content.categories[category.key]}
+                                className="w-full h-[80%] object-cover transform group-hover:scale-105 transition duration-500"
+                            />
+                            <div className="absolute inset-0 flex items-end justify-center">
                             <div className="w-full bg-white bg-opacity-90 text-center py-3 font-semibold text-xl"
                              style={{
-                    backgroundColor: theme.cardBg,
-                    color: theme.cardText,
-                    opacity: 0.9
-                  }}>
+                                backgroundColor: theme.cardBg,
+                                color: theme.cardText,
+                                opacity: 0.9
+                            }}>
                                 {content.categories[category.key]}
                             </div>
                         </div>

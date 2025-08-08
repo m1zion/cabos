@@ -43,8 +43,8 @@ const Hero = () =>{
                     initial={{ opacity: 0, x: -40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
-                >       
-                    <p className="text-lg">Discover with us our amazing experiences, <br></br>let us plan everything for you</p>
+                >      
+                    <p style={{ fontFamily: 'Great Vibes, cursive' }} className="text-[1.8rem]">We create memories for life, in Paradise</p>
                 </motion.div>
 
                 <motion.ul
