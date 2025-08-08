@@ -39,7 +39,11 @@ const Experiences = () =>{
         <section 
             id="experiences" 
             className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
-            style={{ backgroundColor: theme.background }}
+            //style={{ backgroundColor: theme.background }}
+            style={{ 
+              backgroundImage: "url('./public/assets/icons/slanted-gradient.svg')",
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat', }}
         >  
             <motion.div
                 className="container py-8 z-[2]"

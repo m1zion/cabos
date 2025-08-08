@@ -50,7 +50,11 @@ const Tours = () =>{
         <section 
             id="tours" 
             className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
-            style={{ backgroundColor: theme.background }}
+            style={{ 
+                backgroundImage: "url('./public/assets/icons/abstract-envelope.svg')" ,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',}}
+            //style={{ backgroundColor: theme.background }}
         >               
             <motion.div
                 className="container py-8 z-[2]"
