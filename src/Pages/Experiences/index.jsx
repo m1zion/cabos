@@ -26,16 +26,15 @@ L.Icon.Default.mergeOptions({
 function ExperienceDetail() {  
     const { language } = useContext(ToursContext);
     const { id } = useParams();
-    const tour = experienceData.experiences.find(a => a.id === id);
+    const experience = experienceData.experiences.find(a => a.id === id);
     const [showModal, setShowModal] = useState(false);
     const content = contentData[language] || contentData['en']; 
-    if (!tour) {
-        return <div>Tour not found</div>;
+    if (!experience) {
+        return <div>Experience not found</div>;
     }
-    //console.log(tour);
-    const allImages = [tour.images.portrait, ...tour.images.gallery];
+    const allImages = [experience.images.portrait, ...experience.images.gallery];
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-    const t = tour.translations[language] || tour.translations.en;
+    const t = experience.translations[language] || experience.translations.en;
     const handleImageClick = (index) => {
         setSelectedImageIndex(index);
         setShowModal(true);
@@ -44,7 +43,7 @@ function ExperienceDetail() {
         <Layout >
         <div className="relative h-[270px] w-full"> {/**/}            
             <img
-            src={tour.images.portrait}
+            src={experience.images.portrait}
             alt="Background"
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             />            
@@ -57,12 +56,12 @@ function ExperienceDetail() {
                 </div>      
             </div>
         </div>
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-600 whitespace-pre-line">
+        <div style={{ fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-600 whitespace-pre-line">
             {t.description}
         </div>
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem]">
+        <div style={{ fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem]">
        {/*} <div className="w-[100%] sm:w-[100%] xl:w-[100%] mb-[3rem]" style={{ backgroundImage: "url('./public/assets/icons/tortoise-shell.svg')" }}>*/}
-            <h3 className="text-2xl font-semibold text-[#728E9F] mb-4">Tour Details</h3>
+            <h3 className="text-2xl font-semibold text-[#728E9F] mb-4">Experience Details</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-base">
             <div className="flex flex-col">
                 <span className="font-medium text-lg text-[#728E9F] flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5"/>{content.duration}:</span>
@@ -95,8 +94,8 @@ function ExperienceDetail() {
 
         
         <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
-            <Link to={`/bookTour/${tour.id}`}>
-                <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#728E9F] text-white font-medium rounded-sm shadow hover:bg-[#028b8b] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
+            <Link to={`/bookExperience/${experience.id}`}>
+                <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#728E9F] text-white font-medium rounded-sm shadow hover:bg-[#5E7890] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
             </Link>
         </div>
        <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%]" id="images">
