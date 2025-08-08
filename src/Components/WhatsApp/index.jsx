@@ -2,8 +2,8 @@ import { ChevronLeftIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 const WhatsApp = () =>{
     const [isOpen, setIsOpen] = useState(true);
-    const phone = "525537525072";
-    const message = encodeURIComponent("Hi! I'm interested in your services.");
+    const phone = "526241378282";
+    const message = encodeURIComponent("Hola! me gustaria reservar un tour.");
     return (
       <div className="fixed bottom-3 right-4 flex items-center gap-1 z-50">
       {isOpen && (
