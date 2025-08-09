@@ -3,6 +3,8 @@ import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
+import bgImage from '../../assets/icons/abstract-envelope-sand.svg?react';
+//import Logo2  from '../../assets/icons/bg3.svg?react';
 
 const categories = [
   { key: 'sunsetCruises', image: '/cabos/assets/images/sunset.jpg' },
@@ -41,7 +43,7 @@ const Tours = () =>{
             id="tours" 
             className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
             style={{ 
-                backgroundImage: "url('./public/assets/icons/abstract-envelope-sand.svg')" ,
+                backgroundImage: "url('./assets/icons/abstract-envelope-sand.svg')" ,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',}}
             //style={{ backgroundColor: theme.background }}
