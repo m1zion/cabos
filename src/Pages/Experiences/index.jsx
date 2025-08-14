@@ -56,10 +56,10 @@ function ExperienceDetail() {
                 </div>      
             </div>
         </div>
-        <div style={{ fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-700 whitespace-pre-line">
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mt-[2rem] mb-[1rem] text-gray-700 whitespace-pre-line">
             {t.description}
         </div>
-        <div style={{ fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem]">
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem]">
        {/*} <div className="w-[100%] sm:w-[100%] xl:w-[100%] mb-[3rem]" style={{ backgroundImage: "url('./public/assets/icons/tortoise-shell.svg')" }}>*/}
             <h3 className="text-2xl font-semibold text-[#728E9F] mb-4">Experience Details</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-base">
@@ -93,7 +93,7 @@ function ExperienceDetail() {
         </div>
 
         
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
             <Link to={`/bookExperience/${experience.id}`}>
                 <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#728E9F] text-white font-medium rounded-sm shadow hover:bg-[#5E7890] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
             </Link>

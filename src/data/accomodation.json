@@ -21,6 +21,7 @@
       "status": "active",
       "coordinateX":"23.0344784",
       "coordinateY":"-109.7148714",
+      "airbnb": "https://www.airbnb.mx/rooms/31385382", 
       "translations": {
         "en": {
           "title": "Ocean View Escape: Infinity Pool & Private Balcony",
@@ -80,7 +81,7 @@
         },
         "es": {
           "title": "Escape vista el mar, Alberca Infinita, Balcon Privado",
-          "description": "Disfruta de este hermoso apartamento con balcón privado e impresionantes vistas al mar. Relájete en la piscina infinita o pasee hasta la playa Costa Azul, un verdadero paraíso para los amantes del surf. \n\nUbicado en una exclusiva villa privada con seguridad 24/7, jardines impecables y estacionamiento gratuito.\n\nEstaremos encantados de atenderte para que disfrutes de una estancia cómoda y llena de momentos inolvidables. \n¡Reserva hoy y viva el sueño de despertar con mágicos amaneceres e impresionantes vistas al mar!",
+          "description": "Disfruta de este hermoso departamento con balcón privado y espectacular vista al mar. Relájate en la alberca infinita o camina a la playa Costa Azul, un paraíso para amantes del surf. \n\nUbicado en una exclusiva comunidad privada con seguridad 24/7, jardines impecables y estacionamiento gratuito. \n\nEstaremos encantados de asistirte para que vivas una estancia cómoda, divertida y llena de momentos inolvidables. \nReserva hoy y vive el sueño de despertar viendo el mar y amaneceres mágicos!",
           "location": "San Jose del Cabo",
           "beds": "1 king bed",
           "bathrooms": "1 bath",
@@ -214,6 +215,7 @@
       "status": "active",
       "coordinateX":"23.0605365",
       "coordinateY":"-109.6952224",
+      "airbnb": "https://www.airbnb.mx/rooms/818993655199146611", 
       "translations": {
         "en": {
           "title": "Cozy Art District Studio with Rooftop, Pool & Views",
@@ -259,7 +261,7 @@
         },
         "es": {
           "title": "Acogedor estudio en el distrito artístico con azotea, piscina y vistas",
-          "description": "Sumérgete en el corazón del Distrito de las Artes y el centro de San José del Cabo, a solo unos pasos del famoso Paseo del Arte, restaurantes, tiendas de artesanía y galerías. Disfruta de las impresionantes vistas del océano, las montañas y la ciudad desde la terraza con piscina en la azotea.\n\nIdeal para parejas y viajeros solitarios que buscan cultura y relajación.\n\nCon gusto te ayudaremos con consejos y reservas de tours.\n\n¡Reserva tu escapada inolvidable hoy mismo! ¡Te esperamos!",
+          "description": "Sumérgete en el corazón del distrito de arte y el centro de San José del Cabo, a solo unos pasos del famoso Art Walk, restaurantes, tiendas de artesanía y galerías. Disfruta de la vista espectacular al mar, las montañas y la ciudad desde la terraza con alberca. \n\nIdeal para parejas y viajeros solos que buscan cultura y relajación. \n\nCon gusto te apoyamos con recomendaciones y reservaciones de tours. \n\nReserva hoy tu viaje inolvidable, estamos encantados de recibirte!",
           "location": "Centro San Jose del Cabo",
           "beds": "1 Cama Queen",
           "bathrooms": "1 baño",
@@ -360,6 +362,7 @@
       "status": "active",
       "coordinateX":"23.0638512",
       "coordinateY":"-109.7007607",
+      "airbnb": "https://www.airbnb.mx/rooms/1224680194535758064", 
       "translations": {
         "en": {
           "title": "Unique Camper Stay in Art District & Downtown",
@@ -401,7 +404,7 @@
         },
         "es": {
           "title": "Estancia única en camper en el distrito artístico y el centro de la ciudad",
-          "description": "Disfruta de una estancia única en nuestro camper renovado y una experiencia extraordinaria, a solo 5 minutos a pie del centro de la ciudad y del distrito artístico de San José del Cabo.\n\nNuestro camper te ofrece una recámara, baño completo con agua caliente, cocina, comedor, aire acondicionado, una amplia terraza y una zona exterior con hamaca para disfrutar de las tardes al aire libre.\n\nTambién estaremos encantados de ayudarte a reservar tus tours y restaurantes.\n\n¡No dudes en empezar tu próxima aventura inolvidable y reserva hoy mismo!",
+          "description": "Pasa una estancia única en nuestro camper renovado y disfruta de una experiencia extraordinaria, a sólo 5 minutos a pie del centro de la ciudad y del distrito artístico de San José del Cabo. \n\nEl camper te ofrece un dormitorio, baño con agua caliente, cocina, comedor, aire acondicionado, una terraza y espacio al aire libre con hamaca. \n\nTambién estamos encantados de ayudarte a reservar excursiones y restaurantes.\n\nNo dudes en comenzar tu próxima aventura excepcional y reserva hoy mismo!",               
           "location": "Downtown San Jose del Cabo",
           "beds": "1 Cama doble",
           "bathrooms": "1 bath",

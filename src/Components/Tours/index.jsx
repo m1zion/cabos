@@ -47,13 +47,13 @@ const Tours = () =>{
             //style={{ backgroundColor: theme.background }}
         >               
             <motion.div
-                className="container py-8 z-[2]"
+                className="container py-7 z-[2]"
                 initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.1 }}
                 viewport={{ once: true }}
             >
-                <h2 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left" style={{ color: theme.accent }}>{content.toursTitle}</h2>
+                <h2 className=" font-[quicksand] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left" style={{ color: theme.accent }}>{content.toursTitle}</h2>
             </motion.div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-4">
                 {categories.map((category, index) => (
@@ -68,7 +68,7 @@ const Tours = () =>{
                                 className="w-full h-[80%] object-cover transform group-hover:scale-105 transition duration-500"
                             />
                             <div className="absolute inset-0 flex items-end justify-center">
-                            <div className="w-full bg-white bg-opacity-90 text-center py-3 font-semibold text-xl"
+                            <div className="w-full bg-white bg-opacity-90 text-center py-3 font-semibold font-[quicksand] text-[1.1rem]"
                              style={{
                                 backgroundColor: theme.cardBg,
                                 color: theme.cardText,

@@ -4,7 +4,7 @@
     "transportation": "Transportation",
     "restaurants":"Restaurants",
     "experiences": "Experiences",
-    "accomodation": "Accomodation",
+    "accomodation": "Accommodation",
     "tours": "Tours",
     "aboutUs": "About Us"
   },
@@ -22,7 +22,7 @@
     "transportation": "Transport",
     "restaurants":"Restaurants",
     "experiences": "Erlebnisse",
-    "accomodation": "Unterkunft",
+    "accomodation": "Unterkünfte",
     "tours": "Touren",
     "aboutUs": "Über uns"
   }

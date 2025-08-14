@@ -89,17 +89,17 @@ function accommodation() {
             <div className="bg-black/20 px-3 py-1 rounded-sm backdrop-blur-5 absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent"></div>
             <div className="absolute inset-0 flex flex-col justify-center items-start text-start">
                 <div className="w-[95%] sm:w-[90%] xl:w-[85%] mx-auto">
-                    <h2 className="text-white text-5xl sm:text-6xl font-semibold drop-shadow-md mb-2">
-                        {accomodation.id}
+                    <h2 className="text-white text-5xl sm:text-6xl font-semibold drop-shadow-md">
+                        {/*accomodation.id*/}
                     </h2>
-                    <h1 className=" text-[1.5rem] text-white">
+                    <h1 className="text-3xl sm:text-4xl drop-shadow-md text-white">
                         {t.title}
                     </h1>           
                 </div>      
             </div>
         </div>
         {/*px-3 sm:px-10 */}
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mt-[1rem] mb-[2rem] flex-column items-left">
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mt-[1rem] mb-[2rem] flex-column items-left">
             {/*<h1 className="text-[2rem]">{t.title}</h1>*/}
             <div className="flex items-center gap-4 text-gray-500 text-sm mt-2">
                 {RoomIcon && (
@@ -122,11 +122,13 @@ function accommodation() {
                 )}
             </div> 
         </div>
-        <div style={{  fontFamily: 'Tuffy' }} className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[1rem] text-gray-700 whitespace-pre-line">
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[1rem] text-gray-700 whitespace-pre-line">
             {t.description}
         </div>
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
-            <button className="cursor-pointer w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#378BA1] text-white font-medium rounded-sm shadow hover:bg-[#256A77] transition duration-200">Reservar</button>  
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
+            <a href={accomodation.airbnb} target="_blank"  rel="noopener noreferrer">
+                <button className="cursor-pointer w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#378BA1] text-white font-medium rounded-sm shadow hover:bg-[#256A77] transition duration-200">Reservar</button>  
+            </a>
         </div> 
         <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%] h-[400px] gap-1 flex flex-col md:flex-row" id ="images"> 
             <div className="w-full md:w-1/2 h-[400px] cursor-pointer">
@@ -148,10 +150,10 @@ function accommodation() {
                 ))}
             </div>
         </div>        
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[1rem] text-[2rem]">
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[1rem] text-[2rem]">
             {t.amenities}
         </div>
-        <div className="w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] mt-4 text-left space-y-6">
+        <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] mt-4 text-left space-y-6">
         {Object.entries(groupedAmenities).map(([category, amenities]) => (
         <div key={category}
          className="border border-gray-300 rounded-2xl p-4 bg-gray-50 shadow-sm">

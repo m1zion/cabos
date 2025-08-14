@@ -1,9 +1,14 @@
 
+import { useContext } from "react";
 import videoSrc from '../../assets/videos/video.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
-const Hero = () =>{
+import { ToursContext } from "../../Context";
+import contentData from '../../data/content.json';
+const Hero = () =>{  
+    const { language } = useContext(ToursContext);
+    const content = contentData[language] || contentData['en']; // fallback to English
     return (
         <div className="relative w-full max-h-[500px] h-[60vh] flex items-start justify-start overflow-hidden shadow-lg">
             {/* Video Background */}
@@ -31,11 +36,11 @@ const Hero = () =>{
   
                 >
                     <div className='flex items-end gap-3'>
-                        <h1 className="text-3xl text-end sm:text-5xl font mb-4 ">Welcome to</h1>
+                        <h1 className="text-3xl text-end sm:text-5xl font mb-4 ">{content.welcome}</h1>
                     </div> 
                     <div className='flex items-end flex-wrap gap-2 sm:gap-3 '>
                           <h1 className="text-5xl sm:text-6xl font-bold mb-4 ">Los Cabos</h1>
-                          <h1 style={{ fontFamily: 'Julee, cursive' }} className="text-5xl sm:text-6xl font-bold mb-[12px] ">Moments</h1>
+                          <h1 className="text-5xl sm:text-6xl font-bold mb-[12px] ">Moments</h1> {/*style={{ fontFamily: 'Julee, cursive' }} */}
                     </div>             
                 </motion.div>     
                 <motion.div
@@ -44,7 +49,7 @@ const Hero = () =>{
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
                 >      
-                    <p style={{ fontFamily: 'Great Vibes, cursive' }} className="text-[1.8rem]">We create memories for life, in Paradise</p>
+                    <p style={{ fontFamily: 'Great Vibes, cursive' }} className="text-[1.8rem]">{content.slogan}</p>
                 </motion.div>
 
                 <motion.ul

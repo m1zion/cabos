@@ -131,7 +131,7 @@ function BookExperience() {
             </div>
         </div>
         <div 
-            className="w-full sm:pl-[2rem] mt-[2rem] bg-white bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative"
+            className="font-[quicksand] w-full sm:pl-[2rem] mt-[2rem] bg-white bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative"
             style={{ backgroundImage: `url(${bgImage})` }}>
             <h3 className="text-2xl font-semibold text-[#256A77] mb-4 pl-4 sm:pl-6">{content.experienceTitle}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base ">

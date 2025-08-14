@@ -359,7 +359,7 @@
         "en": {
         "title": "Agave Kitchen",
         "description": "Set on a rooftop overlooking San José del Cabo's Art District, Agave Kitchen offers artisanal farm-to-table Baja-Med cuisine prepared in a custom wood-fired oven. Enjoy sustainably sourced seafood, seasonal organic produce, live cooking sessions, and craft mezcal cocktails for an elevated yet relaxed dining experience.",
-        "kitchen": "Baja-Med / Seafood / Organic",
+        "kitchen": "Mexican",
         "openingTimes": "Daily 11:00 am- 11:00 pm",
         "address": "Agave Kitchen\nMorelos Esq. Álvaro Obregón, Gallery District\nSan José del Cabo, BCS 23400\nMexico",
         "price": "MXN 500 and over",
@@ -368,7 +368,7 @@
       "es": {
         "title": "Agave Kitchen",
         "description": "Ubicado en una azotea con vista al Distrito del Arte de San José del Cabo, Agave Kitchen ofrece cocina artesanal Baja-Med de la granja a la mesa, preparada en un horno de leña personalizado. Disfrute de mariscos sostenibles, productos orgánicos de temporada, cocina en vivo y coctelería de mezcal artesanal, en un ambiente sofisticado y relajado.",
-        "kitchen": "Baja-Med / Mariscos / Orgánica",
+        "kitchen": "Mexicana",
         "openingTimes": "Todos los días, 11:00 am-11:00 pm.",
         "address": "Agave Kitchen\nMorelos Esq. Álvaro Obregón, Gallery District\nSan José del Cabo, BCS 23400\nMéxico",
         "price": "MXN 500 y más",
@@ -377,7 +377,7 @@
       "de": {
         "title": "Agave Kitchen",
         "description": "Auf einer Dachterrasse mit Blick auf das Art District in San José del Cabo serviert Agave Kitchen handwerkliche Baja-Med-Küche von der Farm-to-Table, zubereitet im maßgeschneiderten Holzofen. Genießen Sie nachhaltig bezogenen Fisch, saisonale Bio-Produkte, Live-Cooking und kreative Mezcal-Cocktails in entspannter, gehobener Atmosphäre.",
-        "Kitchen": "Baja-Med / Meeresfrüchte / Bio",
+        "kitchen": "Mexikanische",
         "openingTimes": "Täglich 11:00 - 23:00 Uhr",
         "address": "Agave Kitchen\nMorelos Ecke Álvaro Obregón, Gallery District\nSan José del Cabo, BCS 23400\nMexiko",
         "price": "ab MXN 500",

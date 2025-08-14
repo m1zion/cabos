@@ -26,8 +26,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Sunset Partyboat with Mexican dinner",
-          "description": "Sail aboard a double-decker catamaran at sunset for breathtaking 360° views of Cabo’s iconic landmarks—like El Arco, Lover’s Beach, and a sea lion colony—while enjoying chicken or beef fajita buffet and bottomless open bar. \n\nThe evening concludes with lively music, dancing on the upper deck, and a festive atmosphere perfect for groups and couples alike.",
+          "title": "Paseo en barco al atardecer con cena mexicana",
+          "description": "Navegue a bordo de un catamarán de dos niveles al atardecer y disfrute de impresionantes vistas panorámicas de 360° de los lugares más emblemáticos de Cabo San Lucas, como El Arco, Playa del Amor y una colonia de lobos marinos, mientras degusta un buffet de fajitas de pollo o res acompañado de barra libre ilimitada. \n\nLa experiencia culmina con música en vivo, baile en la cubierta superior y un ambiente festivo ideal para grupos y parejas.",
           "duration": "2 hours", 
           "period": "Daily, at 5:00pm in winter, at 6:00pm in summer",
           "age": "All ages",
@@ -37,12 +37,12 @@
         },
         "de": {          
           "title": "Sunset-Partyboot mit mexikanischem Abendessen",
-          "description": "Segeln Sie an Bord eines zweistöckigen Katamarans in den Sonnenuntergang und genießen Sie atemberaubende 360°-Aussichten auf die Wahrzeichen von Cabo – darunter El Arco, Playa del Amor und Playa dekl Divorcio – während Sie ein Buffet mit Hähnchen- oder Rindfleisch-Fajitas und eine unbegrenzte Open Bar genießen.\n\n Der Abend endet mit Musik, Tanz auf dem Oberdeck und einer festlichen Atmosphäre – perfekt für Gruppen und Paare.",
+          "description": "Segeln Sie an Bord eines zweistöckigen Katamarans in den Sonnenuntergang und genießen Sie atemberaubende 360°-Aussichten auf die Wahrzeichen von Cabo – darunter El Arco, Playa del Amor und eine Seelöwenkolonie, während Sie ein Buffet mit Hähnchen- oder Rindfleisch-Fajitas und eine unbegrenzte Open Bar genießen.\n\n Der Abend endet mit Musik, Tanz auf dem Oberdeck und einer festlichen Atmosphäre – perfekt für Gruppen und Paare.",
           "duration": "2 Stunden",
           "period": "Täglich, um 17:00 Uhr im Winter, um 18:00 Uhr im Sommer", 
           "age": "Für alle Altersgruppen geeignet",
           "price": "75 USD pro Erwachsenen, 38 USD pro Kind", 
-          "roundtripTransportation": "20 USD pro Gast", 
+          "rounTripTransportation": "20 USD pro Gast", 
           "additionalData": ""
         }
       }
@@ -74,8 +74,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Sunset Dinner & Pirate Show Tour",
-          "description": "Step aboard the wooden pirate ship and become part of the crew during a hands-on pirate adventure where you’ll hoist sails, hear legendary tales of Cabo’s seafaring past, and enjoy the windswept Baja sunset. Feast on our galley’s BBQ ribs and chicken, sip wine, beer, and grog from the open bar, and join the crew in chanting, dancing, and shouting your way through an unforgettable pirate celebration.",
+          "title": "Tour Pirata al Atardecer con Cena",
+          "description": "Suba a bordo de un auténtico barco pirata de madera y forme parte de la tripulación en una experiencia interactiva única, en la que tendrá la oportunidad de izar las velas, escuchar fascinantes relatos del pasado marinero de Cabo y contemplar un atardecer inolvidable en Baja California. Disfrute de una cena con costillas BBQ y pollo preparados en nuestra cocina, acompañada de vino, cerveza y grog de la barra libre, y viva una animada celebración con música, baile y un ambiente festivo que recordará por siempre.",
           "duration": "2 hours", 
           "period": "Daily, at 5:00pm in winter, at 6:00pm in summer",
           "age": "All ages",
@@ -90,7 +90,7 @@
           "period": "Täglich, um 17:00 Uhr im Winter, um 18:00 Uhr im Sommer", 
           "age": "Für alle Altersgruppen geeignet",
           "price": "75 USD pro Erwachsenen, 38 USD pro Kind", 
-          "roundtripTransportation": "20 USD pro Gast", 
+          "rounTripTransportation": "20 USD pro Gast", 
           "additionalData": ""
         }
       }
@@ -122,8 +122,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Sunset Jazz & Wine Tour",
-          "description": "Sail into the Pacific aboard the elegant 65-foot Tropicat for a smooth and scenic sunset experience accompanied by contemporary jazz music, free bar and snacks. Enjoy views of Cabo’s iconic landmarks—Lover’s Beach, Land’s End, and the Arch—while sipping wine and relaxing.",
+          "title": "Paseo al Atardecer con Jazz y Vino",
+          "description": "Navega por el Pacífico a bordo del elegante Tropicat de 20 metros y disfruta de un atardecer suave y escénico acompañado de música jazz contemporánea, barra libre y bocadillos. Contempla los lugares más emblemáticos de Cabo —Playa del Amor, Fin de la Tierra y El Arco— mientras disfrutas una copa de vino y te relajas.",
           "duration": "2 hours", 
           "period": "Daily, at 5:00pm in winter, at 6:00pm in summer",
           "age": "All ages",
@@ -138,7 +138,7 @@
           "period": "Täglich, um 17:00 Uhr im Winter, um 18:00 Uhr im Sommer", 
           "age": "Für alle Altersgruppen geeignet",
           "price": "100 USD pro Erwachsenen, 70 USD pro Kind", 
-          "roundtripTransportation": "20 USD pro Gast", 
+          "rounTripTransportation": "20 USD pro Gast", 
           "additionalData": ""
         }
       }
@@ -170,8 +170,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Romantic sunset sailing tour",
-          "description": "Sail into the sunset aboard a luxurious adults-only yacht offering a romantic and intimate experience with stunning views of the Sea of Cortez, rock formations, and the golden Baja horizon. Enjoy a gourmet dinner, premium open bar, and barefoot elegance on deck, all starting with a signature cocktail and antipasto platter from the moment you board at the private La Terminal dock.",
+          "title": "Paseo Romántico al Atardecer en Velero",
+          "description": "Navegue hacia el atardecer a bordo de un lujoso yate exclusivo para adultos, y disfrute de una experiencia íntima y romántica con impresionantes vistas al Mar de Cortés, formaciones rocosas y el dorado horizonte de Baja. Disfrute de una cena gourmet, barra libre premium y elegancia descalza en cubierta, comenzando con un cóctel de bienvenida y una tabla de antipastos desde el momento en que sube a bordo en el muelle privado La Terminal.",
           "duration": "3 hours", 
           "period": "Daily, at 4:00pm in winter, at 5:00pm in summer",
           "age": "Adults only",
@@ -181,12 +181,12 @@
         },
         "de": {          
           "title": "Sonnenuntergangs-Bootstour mit Jazz & Wein",
-          "description": "Segeln Sie dem Sonnenuntergang entgegen an Bord einer luxuriösen Adults-only-Yacht – eine romantische und intime Erfahrung mit atemberaubenden Ausblicken auf das Meer von Cortez, die Felsformationen und den goldenen Horizont von Baja. Genießen Sie ein Gourmet-Dinner, eine Premium-Open-Bar und elegante Barfuß-Atmosphäre an Deck – alles beginnt mit einem Signature-Cocktail und einer Antipasto-Platte beim Einstieg am privaten Dock 'La Terminal'.",
+          "description": "Segeln Sie dem Sonnenuntergang entgegen an Bord einer luxuriösen Adults-only-Yacht - eine romantische und intime Erfahrung mit atemberaubenden Ausblicken auf das Meer von Cortez, die Felsformationen und den goldenen Horizont von Baja. Genießen Sie ein Gourmet-Dinner, eine Premium-Open-Bar und elegante Barfuß-Atmosphäre an Deck - alles beginnt mit einem Signature-Cocktail und einer Antipasto-Platte beim Einstieg am privaten Dock 'La Terminal'.",
           "duration": "3 Stunden",
           "period": "Täglich, um 16:00 Uhr im Winter, um 17:00 Uhr im Sommer", 
           "age": "Nur für Erwachsene",
           "price": "179 USD pro Erwachsenen", 
-          "roundtripTransportation": "20 USD pro Gast", 
+          "rounTripTransportation": "20 USD pro Gast", 
           "additionalData": ""
         }
       }
@@ -209,7 +209,7 @@
       "translations": {
         "en": {
           "title": "Snorkel adventure with lunch",
-          "description": "Join us for an unforgettable adventure to Cabo’s famous Arch and vibrant Chileno Bay for snorkeling in crystal-clear waters. Enjoy a lively party on board with delicious food, an open bar, music, and non-stop fun—don’t miss the ultimate Cabo experience!",
+          "description": "Join us for an unforgettable adventure to Cabo’s famous Arch and vibrant Chileno Bay for snorkeling in crystal-clear waters. Enjoy a lively party on board with delicious food, an open bar, music, and non-stop fun—don't miss the ultimate Cabo experience!",
           "duration": "3.5 hours", 
           "period": "Daily, at 12:00pm",
           "age": "All ages",
@@ -218,8 +218,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Snorkel Pirate ship with lunche",
-          "description": "Join us for an unforgettable adventure to Cabo’s famous Arch and vibrant Chileno Bay for snorkeling in crystal-clear waters. Enjoy a lively party on board with delicious food, an open bar, music, and non-stop fun—don’t miss the ultimate Cabo experience!",
+          "title": "Aventura de snorkel con almuerzo",
+          "description": "Acompañenos en una experiencia inolvidable hacia el emblemático Arco de Cabo San Lucas y la vibrante Bahía Chileno, donde podrá practicar snorkel en aguas cristalinas. Disfrute de un ambiente animado a bordo, con comida deliciosa, barra libre, música y entretenimiento continuo — no se pierda esta experiencia única en Los Cabos.",
           "duration": "3.5 hours", 
           "period": "Daily, at 12:00pm",
           "age": "All ages",
@@ -229,12 +229,12 @@
         },
         "de": {          
           "title": "Piraten-Schiff Schnorchelausflug mit Mittagessen",
-          "description": "Begleiten Sie uns auf ein unvergessliches Abenteuer zum berühmten Arco von Cabo und zur farbenfrohen Chileno-Bucht, wo Sie im kristallklaren Wasser schnorcheln können. An Bord erwartet Sie eine lebhafte Party mit köstlichem Essen, offener Bar, Musik und jeder Menge Spaß – verpassen Sie nicht das ultimative Cabo-Erlebnis!",
+          "description": "Begleiten Sie uns auf ein unvergessliches Abenteuer zum berühmten Arco von Cabo und zur farbenfrohen Chileno-Bucht, wo Sie im kristallklaren Wasser schnorcheln können. An Bord erwartet Sie eine lebhafte Party mit köstlichem Essen, offener Bar, Musik und jeder Menge Spaß - verpassen Sie nicht das ultimative Cabo-Erlebnis!",
           "duration": "3.5 Stunden",
           "period": "Täglich, um 12:00 Uhr", 
           "age": "Alle Altersgruppen",
           "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
-          "roundtripTransportation": "20 USD pro Gast", 
+          "rounTripTransportation": "20 USD pro Gast", 
           "additionalData": ""
         }
       }
@@ -266,8 +266,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Pirate Ship Snorkel experience with lunche",
-          "description": "Sail on a 100-foot pirate ship, explore the famous Arch, hear pirate tales, and snorkel with tropical fish. Enjoy burritos, drinks from the open bar, and fun pirate-themed activities for the whole family.",
+          "title": "Experiencia de snorkel en barco pirata con almuerzo",
+          "description": "Navegue a bordo de un barco pirata de 30 metros, explore el famoso Arco de Cabo San Lucas, escuche historias de piratas y practique snorkel junto a peces tropicales. Disfrute de burritos, bebidas de la barra libre y divertidas actividades temáticas para toda la familia.",
           "duration": "3.5 hours", 
           "period": "Daily, at 12:00pm",
           "age": "All ages",
@@ -282,7 +282,7 @@
           "period": "Täglich, um 12:00 Uhr", 
           "age": "Alle Altersgruppen",
           "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
-          "roundtripTransportation": "20 USD pro Gast", 
+          "rounTripTransportation": "20 USD pro Gast", 
           "additionalData": ""
         }
       }
@@ -317,8 +317,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Scuba Diving Beginner Experience",
-          "description": "This beginner-friendly experience lets you explore the underwater world alongside a certified instructor, starting with easy-to-learn skills in protected waters before heading to a nearby dive site for your first unforgettable adventure beneath the surface. You'll receive full guidance on equipment, communication, and safety, making it a safe and exciting introduction to scuba diving.",
+          "title": "Experiencia de buceo para principiantes",
+          "description": "Esta experiencia introductoria le permite explorar el mundo submarino acompañado por un instructor certificado, comenzando con habilidades básicas fáciles de aprender en aguas protegidas, antes de dirigirse a un sitio de buceo cercano para su primera aventura inolvidable bajo la superficie. Recibirá orientación completa sobre el uso del equipo, comunicación y medidas de seguridad, lo que convierte esta actividad en una forma segura y emocionante de iniciarse en el buceo.",
           "duration": "3 hours", 
           "period": "Monday to Saturday at 8:30am and 12:30pm",
           "age": "10+ years",
@@ -327,13 +327,13 @@
           "additionalData": ""
         },
         "de": {          
-          "title": "Taucherlebenis für Anfänger",
+          "title": "Taucherlebnis für Anfänger",
           "description": "Dieses einsteigerfreundliche Erlebnis ermöglicht es Ihnen, gemeinsam mit einem zertifizierten Tauchlehrer die Unterwasserwelt zu erkunden – zunächst mit leicht erlernbaren Übungen in geschütztem Gewässer, bevor es zu einem nahegelegenen Tauchplatz für Ihr erstes unvergessliches Unterwasserabenteuer geht. Sie erhalten eine vollständige Einführung in Ausrüstung, Kommunikation und Sicherheitsmaßnahmen – für einen sicheren und spannenden Einstieg ins Tauchen.",
           "duration": "3 Stunden",
           "period": "Montag bis Samstag um 8:30 Uhr und 12:30 Uhr", 
           "age": "Ab 10 Jahren",
           "price": "130 USD pro Erwachsener", 
-          "roundtripTransportation": "20 USD", 
+          "rounTripTransportation": "20 USD", 
           "additionalData": ""
         }
       }
@@ -368,8 +368,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Surf Lessons at Costa Azul",
-          "description": "Learn to ride the waves at the iconic Costa Azul Beach, one of the best surf spots in Los Cabos. Whether you're a beginner or looking to improve your skills, enjoy personalized instruction, warm waters, and consistent waves in a safe and fun environment.",
+          "title": "Clases de surf en Costa Azul",
+          "description": "Aprenda a dominar las olas en la icónica Playa Costa Azul, uno de los mejores lugares para surfear en Los Cabos. Ya sea que sea principiante o desee mejorar su técnica, disfrute de instrucción personalizada, aguas cálidas y olas constantes en un entorno seguro y divertido.",
           "duration": "upon request", 
           "period": "Daily”",
           "age": "",
@@ -378,13 +378,13 @@
           "additionalData": ""
         },
         "de": {          
-          "title": "Taucherlebenis für Anfänger",
+          "title": "Surfunterricht am Strand Costa Azul",
           "description": "Lernen Sie das Wellenreiten am legendären Strand Costa Azul – einem der besten Surfspots in Los Cabos. Ob Anfänger oder mit Vorkenntnissen: Freuen Sie sich auf individuellen Unterricht, warmes Wasser und gleichmäßige Wellen in einer sicheren und unterhaltsamen Umgebung.",
           "duration": "auf Anfrage",
           "period": "Täglich", 
           "age": "",
           "price": "auf Anfrage", 
-          "roundtripTransportation": "nicht inbegriffen", 
+          "rounTripTransportation": "nicht inbegriffen", 
           "additionalData": ""
         }
       }
@@ -515,8 +515,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Visit the Arch of Cabo San Lucas in a transparent boat",
-          "description": "Experience Cabo’s iconic Arch from a transparent boat. Admire the breathtaking rock formations, vibrant tropical fish, coral reefs, and visit the famous Lovers and Divorce Beaches — as well as other world-renowned coastal landmarks — all in one unforgettable excursion.",
+          "title": "Visita el Arco de Cabo San Lucas en un barco transparente",
+          "description": "Viva la experiencia de conocer el emblemático Arco de Cabo a bordo de un barco con fondo transparente. Admire las impresionantes formaciones rocosas, peces tropicales de colores, arrecifes de coral y visite las famosas playas del Amor y del Divorcio, así como otros icónicos paisajes costeros en una excursión inolvidable.",
           "duration": "45 minutes",
           "period": "Daily, every hour from 9:00am until 5:00pm",
           "age": "All ages",
@@ -564,8 +564,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Private Boat and Yacht Tours Cabo San Lucas",
-          "description": "Enjoy a luxurious day on the water with private boat and yacht tours in Cabo San Lucas—perfect for private events, romantic getaways, or simply soaking in breathtaking ocean views. Choose from top-tier vessels for an unforgettable sailing experience.",
+          "title": "Tours Privados en Barco y Yate en Cabo San Lucas",
+          "description": "Disfrute de un día de lujo en el mar con tours privados en barco y yate en Cabo San Lucas — ideales para eventos privados, escapadas románticas o simplemente para contemplar las impresionantes vistas del océano. Elija entre embarcaciones de primer nivel para vivir una experiencia de navegación inolvidable.",
           "duration": "Upon request", 
           "period": "Upon request",
           "age": "4+ years",
@@ -580,7 +580,7 @@
           "period": "Auf Anfrage", 
           "age": "Ab 4 Jahren",
           "price": "Ab 400 USD für 2 Stunden, je nach Bootstyp und Dauer",
-          "roundtripTransportation": "Inklusive", 
+          "rounTripTransportation": "Inklusive", 
           "additionalData":""
         }
       }
@@ -615,8 +615,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Fishing boat rental",
-          "description": "Set off on an unforgettable adventure with a fishing boat rental in Cabo San Lucas—home to some of the best sport fishing in the world. Whether you're chasing marlin or just enjoying the open sea, it's the perfect way to experience the Pacific.",
+          "title": "Renta de barco para pesca",
+          "description": "Embárquese en una aventura inolvidable con la renta de un barco para pesca en Cabo San Lucas, reconocido mundialmente por su pesca deportiva de primer nivel. Ya sea que vaya en busca de marlín o simplemente a disfrutar del mar abierto, es la forma perfecta de vivir el Pacífico.",
           "duration": "Upon request", 
           "period": "Upon request",
           "age": "",
@@ -631,7 +631,7 @@
           "period": "Auf Anfrage", 
           "age": "",
           "price": "Ab 700 USD für einen halben Tag, abhängig von Bootsgröße und Dauer",
-          "roundtripTransportation": "Inklusive", 
+          "rounTripTransportation": "Inklusive", 
           "additionalData":"Nicht inbegriffen"
         }
       }
@@ -662,8 +662,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Whale Watching breakfast",
-          "description": "Get ready for the ultimate ocean adventure—watch massive humpback whales leap from the water right before your eyes in Cabo’s stunning bay! Cruise past the famous Arch, enjoy a delicious breakfast and open bar, and feel the thrill of nature up close—book now and be part of the magic!",
+          "title": "Avistamiento de ballenas con desayuno",
+          "description": "Prepárese para la máxima aventura en el océano: observe cómo enormes ballenas jorobadas saltan fuera del agua justo frente a sus ojos en la impresionante bahía de Cabo! Navegue pasando por el famoso Arco, disfrute de un delicioso desayuno y barra libre, y sienta la emoción de la naturaleza de cerca — reserve ahora y sea parte de esta experiencia mágica!",
           "duration": "2 hours", 
           "period": "From December 15th until April 15th, daily, 9:00am",
           "age": "All ages",
@@ -678,7 +678,7 @@
           "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
           "age": "Alle Altersgruppen",
           "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
-          "roundtripTransportation": "20 USD", 
+          "rounTripTransportation": "20 USD", 
           "additionalData": ""
         }
       }
@@ -707,8 +707,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Whale Watching breakfast",
-          "description": "Join a legendary pirate voyage and chase mighty humpback whales across the wild seas of Cabo—feel the thrill as these ocean giants leap into the air before your eyes! Cruise on a real pirate ship past the famous Arch and sea lions while enjoying breakfast and free open bar, with your fearless crew guiding the hunt—book now and live the adventure you’ll never forget!",
+          "title": "Avistamiento de ballenas con desayuno en barco pirata",
+          "description": "Únase a una travesía pirata legendaria y persiga a las imponentes ballenas jorobadas por los mares salvajes de Cabo — sienta la emoción mientras estos gigantes del océano saltan frente a sus ojos! Navegue en un auténtico barco pirata pasando por el famoso Arco y lobos marinos, mientras disfruta de un desayuno delicioso y barra libre, guiado por una valiente tripulación — reserve ahora y viva una aventura que nunca olvidará!",
           "duration": "2 hours", 
           "period": "From December 15th until April 15th, daily, 9:00am",
           "age": "All ages",
@@ -723,7 +723,7 @@
           "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
           "age": "Alle Altersgruppen",
           "price": "69 USD pro Erwachsenen, 37 USD pro Kind", 
-          "roundtripTransportation": "20 USD", 
+          "rounTripTransportation": "20 USD", 
           "additionalData": ""
         }
       }
@@ -754,8 +754,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Whale Watching dinner cruise",
-          "description": "Experience the magic of whale watching in Cabo San Lucas as majestic whales grace the warm waters of the Pacific and Sea of Cortez with breathtaking jumps and dives during their mating and birthing season. Departing from Dock #4, this unforgettable journey takes you past iconic landmarks like the Arch and Lovers Beach, while you enjoy Mexican dinner, refreshing drinks, and expert guidance in spotting and capturing amazing moments with these gentle giants.",
+          "title": "Paseo al atardecer con cena y avistamiento de ballenas",
+          "description": "Viva la magia del avistamiento de ballenas en Cabo San Lucas, donde estos majestuosos gigantes marinos adornan las cálidas aguas del Pacífico y el Mar de Cortés con impresionantes saltos y zambullidas durante su temporada de apareamiento y alumbramiento. Zarpando desde el Muelle #4, este paseo inolvidable lo llevará por lugares icónicos como el Arco y Playa del Amor, mientras disfruta de una cena mexicana, bebidas refrescantes y la orientación de expertos para observar y capturar momentos únicos con estas criaturas tan especiales.",
           "duration": "2.5 hours", 
           "period": "From December 15th until April 15th, daily, 9:00am",
           "age": "All ages",
@@ -770,7 +770,7 @@
           "period": "Vom 15. Dezember bis 15. April, täglich um 9:00 Uhr", 
           "age": "Alle Altersgruppen",
           "price": "100 USD pro Erwachsenen, 55 USD pro Kind", 
-          "roundtripTransportation": "20 USD", 
+          "rounTripTransportation": "20 USD", 
           "additionalData": ""
         }
       }
@@ -805,8 +805,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Beach & Dunes Camel Ride Experience",
-          "description": "Embark on one of the most unique experiences in Los Cabos—a peaceful camel ride along a Pacific beach, guided by bilingual experts and surrounded by stunning ocean views, with the chance to spot humpback whales in winter. Your adventure includes a desert safari, time at a rescued camel sanctuary, a walk through native cacti, a Mexican buffet, tequila tasting, and professional photos to remember it all—plus free round-trip transportation for a truly unforgettable day.",
+          "title": "Experiencia de paseo en camello por playa y dunas",
+          "description": "Viva una de las experiencias más únicas en Los Cabos: un tranquilo paseo en camello por una playa del Pacífico, guiado por expertos bilingües y rodeado de impresionantes vistas al océano, con la posibilidad de avistar ballenas jorobadas en invierno. Su aventura incluye un recorrido por el desierto, visita a un santuario de camellos rescatados, caminata entre cactus nativos, buffet mexicano y degustación de tequila para recordar el momento — además de transporte redondo gratuito para un día verdaderamente inolvidable.",
           "duration": "2 hours", 
           "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
           "age": "5+ years",
@@ -821,7 +821,7 @@
           "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
           "age": "Ab 5 Jahren",
           "price": "95 USD pro Erwachsener, 45 USD pro Kind + 25 USD Eintrittsgebühr", 
-          "roundtripTransportation": "Inklusive", 
+          "rounTripTransportation": "Inklusive", 
           "additionalData": ""
         }
       }
@@ -856,8 +856,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Beach Horseback Riding",
-          "description": "Experience the magic of beach horseback riding in San Jose del Cabo as you trot along golden sands with ocean waves at your side. Perfect for couples, families, or solo travelers—this unforgettable ride blends adventure and breathtaking views.",
+          "title": "Paseo a caballo por la playa",
+          "description": "Viva la magia de un paseo a caballo por la playa en San José del Cabo, cabalgando sobre arenas doradas con las olas del mar a su lado. Ideal para parejas, familias o viajeros solitarios, esta experiencia inolvidable combina aventura con vistas espectaculares.",
           "duration": "1-2 hours", 
           "period": "Daily, 9:00am | 10:30am|3:00pm | 4:30pm",
           "age": "4+ years",
@@ -866,13 +866,13 @@
           "additionalData": ""
         },
         "de": {          
-          "title": "Ausritt am Strand",
+          "title": "Kamelreiten am Strand",
           "description": "Erleben Sie den Zauber eines Ausritts am Strand von San José del Cabo, während Sie auf goldenen Sandwegen reiten und die Meereswellen an Ihrer Seite genießen. Ideal für Paare, Familien oder Alleinreisende – dieses unvergessliche Erlebnis vereint Abenteuer mit atemberaubenden Ausblicken.",
           "duration": "1-2 Stunden",
           "period": "Täglich, 9:00 Uhr | 10:30 Uhr | 15:00 Uhr | 16:30 Uhr", 
           "age": "Ab 4 Jahren",
           "price": "1 Stunde 65 USD, 1,5 Stunden 90 USD, 2 Stunden 120 USD",
-          "roundtripTransportation": "Inklusive innerhalb von San José del Cabo", 
+          "rounTripTransportation": "Inklusive innerhalb von San José del Cabo", 
           "additionalData":""
         }
       }
@@ -903,8 +903,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Beach & Dunes ATV Tour",
-          "description": "Embark on an adrenaline-filled ATV adventure through the stunning desert trails of Los Cabos, surrounded by unique landscapes and native flora. Your journey begins with free air-conditioned transportation, followed by a quick check-in and safety briefing before hitting the trails with a bilingual guide.",
+          "title": "Tour en cuatrimoto por playa y dunas",
+          "description": "Embárquese en una aventura en cuatrimoto llena de adrenalina a través de impresionantes senderos desérticos en Los Cabos, rodeado de paisajes únicos y flora nativa. Su recorrido comienza con transporte gratuito con aire acondicionado, seguido de un rápido registro e inducción de seguridad antes de salir a los caminos acompañado por un guía bilingüe.",
           "duration": "2 hours", 
           "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
           "age": "5+ years",
@@ -919,7 +919,7 @@
           "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
           "age": "Ab 7 Jahren",
           "price": "Einzelfahrer ATV 95 USD, Doppelfahrer ATV 150 USD + 25 USD Eintrittsgebühr", 
-          "roundtripTransportation": "Inklusive", 
+          "rounTripTransportation": "Inklusive", 
           "additionalData": ""
         }
       }
@@ -950,8 +950,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Beach & Dunes UTV Razor Toure",
-          "description": "Get ready for the most thrilling off-road tour in Cabo! This Side by Side UTV adventure is perfect for adrenaline lovers. Start your excursion by hopping on the free air-conditioned shuttle. After a quick check-in and safety briefing from your expert bilingual guide, you’ll be all set to explore Cabo’s beaches and deserts while feeling the rush of driving or riding in a Side by Side UTV.",
+          "title": "Tour en UTV Razor por playa y dunas",
+          "description": "Prepárese para el tour todoterreno más emocionante de Cabo! Esta aventura en vehículo Side by Side (UTV) es perfecta para los amantes de la adrenalina. Comience su excursión abordando el transporte gratuito con aire acondicionado. Después de un rápido registro y una charla de seguridad impartida por su guía bilingüe, estará listo para explorar las playas y desiertos de Cabo mientras disfruta de la emoción de conducir o viajar en un UTV.",
           "duration": "2 hours", 
           "period": "Daily, 9:00am | 10:00am | 11:00am | 12:00pm | 1:00pm | 2:00pm |3:00pm | 4:00pm",
           "age": "7+ years",
@@ -966,7 +966,7 @@
           "period": "Täglich, 9:00 Uhr | 10:00 Uhr | 11:00 Uhr | 12:00 Uhr | 13:00 Uhr | 14:00 Uhr | 15:00 Uhr | 16:00 Uhr", 
           "age": "Ab 7 Jahren",
           "price": "Fahrer 160 USD, 1 Fahrer & 1 Mitfahrer 225 USD, 1 Fahrer & 2 Mitfahrer 270 USD, 1 Fahrer & 3 Mitfahrer 320 USD + 25 USD Eintrittsgebühr",
-          "roundtripTransportation": "Inklusive", 
+          "rounTripTransportation": "Inklusive", 
           "additionalData":""
         }
       }
@@ -978,7 +978,8 @@
       "images": {
         "portrait": "/cabos/assets/images/tours/balandraBeach/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/balandraBeach/1.jpg"
+          "/cabos/assets/images/tours/balandraBeach/1.jpg",
+          "/cabos/assets/images/tours/balandraBeach/2.jpg"
         ]
       },
       "status": "active",
@@ -997,8 +998,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Balandra Beach, City Tour La Paz & Todos Santos",
-          "description": "Escape Los Cabos for the day and discover the stunning beauty of Balandra Beach, the vibrant charm of La Paz, and the artistic vibes of Todos Santos. This unforgettable road trip blends crystal-clear waters, local culture, and breathtaking scenery all in one experience.",
+          "title": "Playa Balandra, City Tour La Paz y Todos Santos",
+          "description": "Escápese de Los Cabos por un día y descubra la impresionante belleza de Playa Balandra, el encanto vibrante de La Paz y el ambiente artístico de Todos Santos. Este inolvidable recorrido por carretera combina aguas cristalinas, cultura local y paisajes espectaculares en una sola experiencia.",
           "duration": "approx. 13 hours", 
           "period": "Daily, departure around 5:00am",
           "age": "",
@@ -1045,8 +1046,8 @@
           "additionalData": ""
         },
         "es": {
-          "title": "Espiritu Santo Island Boat and Snorkel Experience",
-          "description": "Embark on a breathtaking day tour to Espíritu Santo Island, a UNESCO-protected paradise known for its crystal-clear waters and unique biodiversity. This 4–5 hour boat adventure includes a thrilling 35–45 minute snorkeling experience with playful sea lions, along with sightings of tropical birds, native flora, and marine life. Enjoy a scenic stop in the charming town of Todos Santos for photos and local flavor. The tour includes lunch and comfortable roundtrip transportation from Los Cabos, making it a perfect escape into nature.",
+          "title": "Tour en barco y snorkel a la Isla Espíritu Santo",
+          "description": "Embárquese en una espectacular excursión de un día a la Isla Espíritu Santo, un paraíso protegido por la UNESCO, conocido por sus aguas cristalinas y su biodiversidad única. Esta aventura en barco de 4 a 5 horas incluye una emocionante sesión de snorkel de 35 a 45 minutos junto a juguenosos lobos marinos, además de avistamientos de aves tropicales, flora nativa y vida marina. Disfrute también de una parada escénica en el encantador pueblo de Todos Santos para tomar fotos y descubrir su esencia local. El tour incluye almuerzo y transporte redondo desde Los Cabos, siendo una escapada perfecta a la naturaleza.",
           "duration": "approx. 10-12 hours", 
           "period": "Daily, departure around 5:00am",
           "age": "",
@@ -1090,6 +1091,26 @@
             "price": "200 USD per person",
             "rounTripTransportation": "included",
             "additionalData": ""
+          },
+          "es": {
+            "title": "Snorkel con tiburón ballena en La Paz",
+            "description": "Viva la emoción de nadar junto al pez más grande del mundo en este inolvidable tour de snorkel con tiburón ballena en La Paz. Partiendo desde Los Cabos, disfrutará de transporte redondo cómodo, un paseo guiado en lancha en La Paz y la rara oportunidad de hacer snorkel muy cerca de estos gentiles gigantes en su hábitat natural. El tour incluye un delicioso almuerzo, una parada fotográfica en Todos Santos y guías expertos para garantizar una experiencia segura y asombrosa.",
+            "duration": "aprox. 8 horas",
+            "period": "del 15 de noviembre al 15 de abril, diariamente",
+            "age": "",
+            "price": "200 USD por persona",
+            "rounTripTransportation": "incluido",
+            "additionalData": ""
+          },
+          "de": {
+            "title": "Schnorcheln mit Walhaien in La Paz",
+            "description": "Erleben Sie den Nervenkitzel, Seite an Seite mit dem größten Fisch der Welt zu schwimmen – bei dieser unvergesslichen Schnorcheltour mit Walhaien in La Paz. Die Tour startet in Los Cabos und beinhaltet einen komfortablen Hin- und Rücktransport, eine geführte Bootsfahrt in La Paz sowie die seltene Gelegenheit, diesen sanften Riesen in ihrem natürlichen Lebensraum ganz nah zu kommen. Ein köstliches Mittagessen, ein Fotostopp in Todos Santos sowie erfahrene Guides sorgen für ein sicheres und beeindruckendes Abenteuer.",
+            "duration": "ca. 8 Stunden",
+            "period": "Täglich vom 15. November bis 15. April",
+            "age": "",
+            "price": "200 USD pro Person",
+            "rounTripTransportation": "inbegriffen",
+            "additionalData": ""
           }
       }
     },
@@ -1117,6 +1138,26 @@
             "price": "200 USD per person",
             "rounTripTransportation": "included",
             "additionalData": ""
+          },
+          "es": {
+            "title": "Snorkel en el Parque Marino Cabo Pulmo",
+            "description": "Descubra la belleza intacta de Cabo Pulmo en esta inolvidable excursión de un día desde Los Cabos. Viaje con comodidad gracias al transporte redondo incluido y suba a bordo de una lancha para explorar uno de los parques marinos con mayor biodiversidad del mundo. Pase hasta 3 horas practicando snorkel entre vibrantes arrecifes de coral, observando peces tropicales, tortugas marinas y mucho más. El tour incluye guías expertos y una caja de almuerzo para disfrutar durante su aventura en la naturaleza.",
+            "duration": "aproximadamente 8 horas",
+            "period": "Diariamente, salida por la mañana",
+            "age": "",
+            "price": "200 USD por persona",
+            "rounTripTransportation": "incluido",
+            "additionalData": ""
+          },
+          "de": {
+            "title": "Schnorcheln im Meerespark Cabo Pulmo",
+            "description": "Entdecken Sie die unberührte Schönheit von Cabo Pulmo bei diesem unvergesslichen Tagesausflug ab Los Cabos. Reisen Sie bequem mit Hin- und Rücktransport und steigen Sie dann in ein Boot, um einen der artenreichsten Meeresparks der Welt zu erkunden. Verbringen Sie bis zu 3 Stunden mit Schnorcheln in lebendigen Korallenriffen und beobachten Sie tropische Fische, Meeresschildkröten und vieles mehr. Die Tour beinhaltet erfahrene Guides sowie eine Lunchbox, die Sie während Ihres Naturabenteuers genießen können.",
+            "duration": "ca. 8 Stunden",
+            "period": "Täglich, Abfahrt am frühen Morgen",
+            "age": "",
+            "price": "200 USD pro Person",
+            "rounTripTransportation": "inbegriffen",
+            "additionalData": ""
           }
       }
     },
@@ -1141,6 +1182,26 @@
             "age": "-",
             "price": "100 USD per person",
             "rounTripTransportation": "included",
+            "additionalData": ""
+          },
+          "es": {
+            "title": "Cascada de Santiago",
+            "description": "Escápese de la ciudad y conéctese con la naturaleza en un recorrido escénico desde Los Cabos hacia la hermosa Cascada de Santiago. \n\nDisfrute de transporte redondo, una caminata corta de 15 minutos entre paisajes naturales y hasta 3 horas en la cascada para nadar, relajarse y explorar. Se incluye agua y un refrigerio ligero para una experiencia refrescante y revitalizante en este oasis escondido.",
+            "duration": "7-8 horas",
+            "period": "Diariamente, salida por la mañana",
+            "age": "-",
+            "price": "100 USD por persona",
+            "rounTripTransportation": "incluido",
+            "additionalData": ""
+          },
+          "de": {
+            "title": "Santiago Wasserfall",
+            "description": "Entfliehen Sie der Stadt und verbinden Sie sich mit der Natur bei einem landschaftlich reizvollen Ausflug von Los Cabos zum wunderschönen Santiago-Wasserfall. \n\nGenießen Sie den Hin- und Rücktransport, einen kurzen 15-minütigen Spaziergang durch üppige Vegetation und bis zu 3 Stunden am Wasserfall zum Schwimmen, Entspannen und Erkunden. Wasser und ein leichter Snack sind inklusive – für ein erfrischendes und belebendes Erlebnis in diesem versteckten Naturparadies.",
+            "duration": "7-8 Stunden",
+            "period": "Täglich, Abfahrt am frühen Morgen",
+            "age": "-",
+            "price": "100 USD pro Person",
+            "rounTripTransportation": "inbegriffen",
             "additionalData": ""
           }
       }

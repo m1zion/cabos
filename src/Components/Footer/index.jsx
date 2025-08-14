@@ -3,33 +3,55 @@ import { ToursContext } from "../../Context";
 import contentData from '../../data/content.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate, useLocation } from 'react-router-dom';
 const Footer = () =>{
-    const { language } = useContext(ToursContext);
+    const { language } = useContext(ToursContext);  
+    //PARA LA NAVEGACION ENTRE LAS SECCIONES
+    const navigate = useNavigate();
+    const location = useLocation();
     const content = contentData[language] || contentData['en']; 
+     const handleNavClick = (e, href) => {
+      e.preventDefault();
+      console.log("Entro");
+      const targetId = href.replace('#', '');
+      const scrollToTarget = () => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+      if (location.pathname !== "/") {
+        navigate("/", { replace: false }); // Go to home
+        // Delay scroll to wait for the home page to load
+        setTimeout(scrollToTarget, 200);
+      } else {
+        scrollToTarget();
+      }
+    };
     return (
-        <footer className="bg-[#286A77] text-white px-6 py-10 mt-16 w-[100%]">
+        <footer className="font-[quicksand] bg-[#286A77] text-white px-6 py-10 mt-16 w-[100%]">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
                 {/* Contact Section */}
                 <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-4">{content.contact}</h3>
-                    <p>Email: loscabos.lajolla@gmail.com</p>
-                    <p>{content.phone}: +52 123 456 7890</p>
+                    <p>Email: loscabosmoments@gmail.com</p>
+                    <p>{content.phone}: +52 6241378282</p>
                     <p>{content.location}: Cabo San Lucas, Mexico</p>
                 </div>
                 {/* Info Section */}
                 <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-4">Information</h3>
-                    <p>About Us</p>
-                    <p>Privacy Policy</p>
+                    <p className="pb-1">About Us</p>
+                    <p className="pb-1">Privacy Policy</p>
                     <p>Terms & Conditions</p>
                 </div>
 
                 {/* Links Section */}
                 <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-                    <p>Tours</p>
-                    <p>Experiences</p>
-                    <p>Accomodation</p>
+                    <a onClick={(e) => handleNavClick(e, '#tours')}><p className="pb-1 cursor-pointer">Tours</p></a>
+                    <a onClick={(e) => handleNavClick(e, '#experiences')}><p className="pb-1 cursor-pointer">Experiences</p></a>
+                    <a onClick={(e) => handleNavClick(e, '#accomodation')}><p className="pb-1 cursor-pointer">Accommodation</p></a>
                 </div>
             </div>
             <div className="text-center text-sm mt-10 text-gray-400">

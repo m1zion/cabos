@@ -51,7 +51,7 @@ function restaurants() {
                 return (                
                     <div
                       key={restaurant.id}
-                      className="border border-[#ffffff22] rounded-xl bg-gradient-to-br from-[#4A3623] to-[#3b2b1f] sm:flex justify-between sm:flex-row-reverse w-[330px] sm:w-full lg:w-full/2 rounded-xl shadow-lg overflow-hidden"
+                      className="font-[quicksand] border border-[#ffffff22] rounded-xl bg-gradient-to-br from-[#4A3623] to-[#3b2b1f] sm:flex justify-between sm:flex-row-reverse w-[330px] sm:w-full lg:w-full/2 rounded-xl shadow-lg overflow-hidden"
                     >                      
                       <img
                         src={restaurant.images.portrait}

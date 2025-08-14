@@ -15,20 +15,29 @@ const themes = {
     background: '#D2B387',
     titleText: '#F8EEDD',
     cardText: '#F8EEDD',
+    iconColor: '#F4EFDF',
     cardBg: '#927B46'
   },
   sandBright: {
     background: '#F4EFDF',
     titleText: '#927B46',
     cardText: '#F4EFDF',
+    iconColor: '#F4EFDF',
     cardBg: '#927B46'
+  }, 
+  sandWhite: {
+    background: '#F4EFDF',
+    titleText: '#927B46',
+    cardText: '#3d3d3d',
+    iconColor: '#927B46',
+    cardBg: '#FFFFFF'
   }
 };
 const Experiences = () =>{    
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     const experiences = experiencesData.experiences;
-    const theme = themes.sandBright; // Try themes.blue or themes.darkBlue
+    const theme = themes.sandWhite; // Try themes.blue or themes.darkBlue
     return (     
         <section 
             id="experiences" 
@@ -46,7 +55,7 @@ const Experiences = () =>{
                 transition={{ duration: 1.1 }}
                 viewport={{ once: true }}
             >
-                <h2 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left"
+                <h2 className="font-[quicksand]] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left"
                 style={{ color: theme.titleText }}>{content.experiencesTitle}</h2>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"> {/*justify-items-center */}
@@ -67,11 +76,11 @@ const Experiences = () =>{
                       alt={t.title}
                       className="w-full h-60 object-cover"
                     />
-                    <div className="p-4 space-y-2" style={{ color: theme.cardText }}>
-                      <h2 className="text-lg font-semibold">{t.title}</h2>
-                      <div className="flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5 "/><p className="text-sm ">{t.duration}</p></div>
-                      <div className="flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5 "/><p className="text-sm ">{t.period}</p></div>
-                      <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 "/><p className="text-sm ">{t.price}</p></div>
+                    <div className="font-[quicksand] p-4 space-y-2">
+                      <h2 className="text-lg font-semibold  text-[1.1rem]" style={{ color: theme.cardText }}>{t.title}</h2>
+                      <div className="flex items-center gap-2"><ClockIcon           aria-hidden="true" className="shrink-[0] block size-5" style={{ color: theme.iconColor }}/><p className="text-sm" style={{ color: theme.cardText }}>{t.duration}</p></div>
+                      <div className="flex items-center gap-2"><CalendarDaysIcon    aria-hidden="true" className="shrink-[0] block size-5" style={{ color: theme.iconColor }}/><p className="text-sm" style={{ color: theme.cardText }}>{t.period}</p></div>
+                      <div className="flex items-center gap-2"><CurrencyDollarIcon  aria-hidden="true" className="shrink-[0] block size-5" style={{ color: theme.iconColor }}/><p className="text-sm" style={{ color: theme.cardText }}>{t.price}</p></div>
                     </div>
                   </div>
                   </Link>

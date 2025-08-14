@@ -46,7 +46,7 @@ function tours() {
               {content.categories[categoryData.key]}
             </h1>
           </div>
-          <div className="px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="font-[quicksand] px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {filteredTours.map((tour) => {
               const t = tour.translations[language] || tour.translations.en;
               return (                
@@ -61,7 +61,7 @@ function tours() {
                       className="w-full h-60 object-cover"
                     />
                     <div className="p-4 space-y-2">
-                      <h2 className="text-lg font-semibold text-[#256A77]">{t.title}</h2>
+                      <h2 className="text-[1.1rem] font-semibold text-[#256A77]">{t.title}</h2>
                       <div className="flex items-center gap-1"><ClockIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.duration}</p></div>
                       <div className="flex items-center gap-1"><CalendarDaysIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.period}</p></div>
                       <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.price}</p></div>

@@ -77,8 +77,8 @@ function BookRestaurant() {
                 </div>
             </div>
             <div 
-                className="w-full sm:pl-[2rem] mt-[2rem] bg-white bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative"
-                style={{ backgroundImage: `url(${bgImage})'`, fontFamily: 'Tuffy' }}>                    
+                className="font-[quicksand] w-full sm:pl-[2rem] mt-[2rem] bg-white bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative"
+                style={{ backgroundImage: `url(${bgImage})'` }}>                    
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base ">
                     <div className="sm:border sm:border-gray-200 sm:rounded-xl sm:shadow-lg p-4 sm:p-6">
                         <div className="font-semibold text-lg mb-2">{t.title}</div>
