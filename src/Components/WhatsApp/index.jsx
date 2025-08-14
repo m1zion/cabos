@@ -13,7 +13,7 @@ const WhatsApp = () =>{
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white px-2 py-2 rounded-full flex items-center gap-2 shadow-lg transition-all"
         >
-          <img src="/cabos/public/assets/icons/WhatsApp.svg" alt="WhatsApp" className="w-8 h-8" />
+          <img src="./assets/icons/WhatsApp.svg" alt="WhatsApp" className="w-8 h-8" />
         </a>
       )}
         <button
