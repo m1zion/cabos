@@ -51,13 +51,13 @@ const About = () =>{
             >
                 {isExpanded ? "Read less" : "Read more"}
             </button>     
-            <img className="md:hidden absolute left-[40%] -translate-x-1/2  ml-[5rem] opacity-12 w-[100%] max-w-[450px] h-auto"src="/cabos/assets/images/Logo.png"/>
+            <img className="md:hidden absolute left-[29%] sm:left-[40%] -translate-x-1/2  ml-[5rem] opacity-12 w-[100%] max-w-[450px] h-auto"src="/cabos/assets/images/Logo.png"/>
         </div>     
         
         <div className="bg-[#fdfcee] w-[0%] md:w-[50%] flex justify-center items-center pt-15  pb-5">
              <motion.img
         src="/cabos/assets/images/Logo.png"
-        className="w-[90%] max-w-[400px] h-auto"
+        className="w-[90%] max-w-[300px] h-auto"
         alt="Logo"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
