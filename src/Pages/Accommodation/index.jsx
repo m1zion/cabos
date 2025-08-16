@@ -15,6 +15,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import WhatsApp from '../../Components/WhatsApp';
+import contentData from '../../data/content.json';
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -27,7 +28,6 @@ const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
   import: 'default',
 });
-
 const responsive = {
   desktop: {breakpoint: { max: 3000, min: 1024 }, items: 1, },
   tablet: {breakpoint: { max: 1024, min: 464 }, items: 1, },
@@ -42,6 +42,7 @@ function accommodation() {
     const [showModal, setShowModal] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
     const [currentSlide, setCurrentSlide] = useState(startIndex);
+    const content = contentData[language] || contentData['en']; 
     const accomodation = accomodationData.accomodations.find(a => a.id === id);
     if (!accomodation) {
         return <div>Accommodation not found</div>;
@@ -111,13 +112,7 @@ function accommodation() {
                 {BathIcon && (
                     <div className="flex items-center gap-1">
                     <img src={BathIcon} alt="bathrooms" className="w-4 h-4" />
-                    <span>{t.bathrooms} •</span>
-                    </div>
-                )}
-                {ParkingIcon && (
-                    <div className="flex items-center gap-1">
-                    <img src={ParkingIcon} alt="parking" className="w-4 h-4" />
-                    <span>{t.parking}</span>
+                    <span>{t.bathrooms} </span>
                     </div>
                 )}
             </div> 
@@ -127,7 +122,7 @@ function accommodation() {
         </div>
         <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
             <a href={accomodation.airbnb} target="_blank"  rel="noopener noreferrer">
-                <button className="cursor-pointer w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#378BA1] text-white font-medium rounded-sm shadow hover:bg-[#256A77] transition duration-200">Reservar</button>  
+                <button className="cursor-pointer w-[100%] sm:w-[9rem] mt-6 py-3 bg-[#378BA1] text-white font-medium rounded-sm shadow hover:bg-[#256A77] transition duration-200">{content.bookButton}</button>  
             </a>
         </div> 
         <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%] h-[400px] gap-1 flex flex-col md:flex-row" id ="images"> 
