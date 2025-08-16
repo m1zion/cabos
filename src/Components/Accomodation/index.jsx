@@ -5,6 +5,8 @@ import { ToursContext } from "../../Context";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+
+
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
@@ -22,9 +24,9 @@ const Accomodation = () =>{
         const activeAccomodations = accomodationData.accomodations.filter(accomodation => accomodation.status === "active");
         setAccomodations(activeAccomodations);
      }, []);    
-    const RoomIcon = icons['../../assets/icons/bed.svg'];
-    const BathIcon = icons['../../assets/icons/bathroom.svg'];
-    const ParkingIcon = icons['../../assets/icons/parking.svg'];
+    const RoomIcon = icons['../../assets/icons/bed_color.svg'];
+    const BathIcon = icons['../../assets/icons/bathroom_color.svg'];
+    const ParkingIcon = icons['../../assets/icons/parking_color.svg'];
 
     return (
         <section id="accomodation" className="font-[quicksand] flex-column p-10 scroll-mt-20 w-full  bg-gradient-to-t from-[#DDE7E6] to-[#fff]">
@@ -52,9 +54,8 @@ const Accomodation = () =>{
                             <div className="flex gap-2"> 
                                 <MapPinIcon  className="block size-5" />
                                 <p className="text-gray-600">{t.location}</p> 
-                            </div>
-                            
-                           <div className="flex items-center gap-4 text-gray-500 text-[1rem] mt-2">
+                            </div>                            
+                           <div className="pl-[3px] flex items-center gap-4 text-gray-500 text-[1rem] mt-2">
                                 {RoomIcon && (
                                     <div className="flex items-center gap-1">
                                     <img src={RoomIcon} alt="rooms" className="w-4 h-4" />

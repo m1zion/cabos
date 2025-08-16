@@ -168,7 +168,7 @@ function accommodation() {
             {amenities.map((amenity, index) => (
                 <div key={index} className="flex items-center gap-2">
                 <img
-                    src={`/cabos/public/assets/icons/amenities/${amenity.icon}`}
+                    src={`./assets/icons/amenities/${amenity.icon}`}
                     //src={`/cabos/src/assets/icons/amenities/${amenity.icon}`}
                     alt={amenity.name}
                     className="w-6 h-6 object-contain"
