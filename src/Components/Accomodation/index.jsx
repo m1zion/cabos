@@ -30,14 +30,15 @@ const Accomodation = () =>{
 
     return (
         <section id="accomodation" className="font-[quicksand] flex-column p-10 scroll-mt-20 w-full  bg-gradient-to-t from-[#DDE7E6] to-[#fff]">
-              <motion.div
-                    className="container py-4 z-[2]"
-                    initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1.1 }}
-                    viewport={{ once: true }}
-                >                  
-                <h1 className="text-[2.5rem] sm:text-[3.5rem] text-[#256A77] text-center sm:text-left">{content.accomodationTitle}</h1></motion.div>           
+            <motion.div
+                className="container py-4 z-[2]"
+                initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.1 }}
+                viewport={{ once: true }}
+            >                  
+            <h1 className="text-[2.5rem] sm:text-[3.5rem] text-[#256A77] text-center sm:text-left">{content.accomodationTitle}</h1>
+            </motion.div>           
             <h1 className="text-[1rem] text-[#256A77]">
                 {content.accomodationContent}
             </h1>
@@ -49,7 +50,7 @@ const Accomodation = () =>{
                         <img src={accomodation.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
                         <div className="text-[#256A77] p-4 space-y-2">
                             <div className="flex justify-between pr-[5px] items-center">                               
-                                <h3 className="text-md md:text-xl font-semibold text-[1.1rem] ">{t.title}</h3>    
+                                <h3 className="text-md md:text-xl font-semibold text-[1.1rem]">{t.title}</h3>    
                             </div>
                             <div className="flex gap-2"> 
                                 <MapPinIcon  className="block size-5" />

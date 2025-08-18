@@ -26,20 +26,37 @@ const responsive = {
 };
 const images = [
   '/cabos/assets/images/transportation/car1.png',
-  '/cabos/assets/images/transportation/car2.png',
-  '/cabos/assets/images/transportation/car3.png',
-  '/cabos/assets/images/transportation/car4.png'
+  '/cabos/assets/images/transportation/car2.png'
 ];
 
 const Transportation = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
     return (
-        <div id="transportation" className="flex-column p-10 scroll-mt-20 h-[500px] w-full">
-            <h1 className="font-[outfit] text-[2.5rem] sm:text-[3.5rem] text-[#03A6A6]">
+        <div id="transportation" className="font-[quicksand] flex-col p-10 scroll-mt-20  w-full"> {/*h-[500px]*/}
+            <h1 className="text-center sm:text-left text-[2.5rem] sm:text-[3.5rem] text-[#03A6A6]">
                 {content.transportationTitle}
             </h1>
-            <Carousel className="" responsive={responsive}>
+            <div className="flex flex-wrap w-full justify-center text-[#256A77] font-semibold text-[1.1rem] ">
+              <div className="w-[full] md:w-1/2 h-full flex justify-center flex-col mb-5">
+                <img
+                  src='/cabos/assets/images/transportation/car1.png'
+                  alt={`Car1`}
+                  className="h-64 object-contain"
+                /> 
+                <p className="text-center mt-3">Toyota Sienna</p>
+              </div>
+              <div className="w-[full] md:w-1/2 h-full flex justify-center flex-col">
+                <img
+                  src='/cabos/assets/images/transportation/car2.png'
+                  alt={`Car2`}
+                  className="h-64 object-contain"
+                />
+                <p className="text-center mt-3">Chevrolet Suburban</p>
+              </div>             
+            </div>
+            {/*Dejamos el Carousel cuando hayan mas de 2 autos*/}
+            {/*<Carousel className="" responsive={responsive}>
                 {images.map((src, index) => (
                 <div key={index} className="p-4 flex justify-center">
                     <img
@@ -50,6 +67,7 @@ const Transportation = () =>{
                 </div>
                 ))}
             </Carousel>
+            */}
         </div>
 ) 
 }
