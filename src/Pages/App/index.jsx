@@ -16,6 +16,7 @@ import ExperienceDetail from '../Experiences/'
 import BookTour from '../Tours/bookTour'
 import BookExperience from '../Experiences/bookExperience'
 import BookRestaurant from '../Restaurants/bookRestaurant'
+import BookTransportation from '../Transportation/bookTransportation'
 const AppRoutes = () =>{
   let routes = useRoutes([
     { path: '',  element: <Home/> },
@@ -25,7 +26,8 @@ const AppRoutes = () =>{
     { path: 'ExperienceDetail/:id',  element: <ExperienceDetail/> },
     { path: 'BookTour/:id',  element: <BookTour/> },    
     { path: 'BookExperience/:id',  element: <BookExperience/> },    
-    { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },   
+    { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },     
+    { path: 'BookTransportation/:id',  element: <BookTransportation/> }, 
     { path: 'Restaurants',  element: <Restaurants/> },
     { path: '*',  element: <NotFound/> },
   ]);

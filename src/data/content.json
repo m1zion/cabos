@@ -65,7 +65,13 @@
     "romantic":"Romantic dinner",
     "family":"Family dinner",
     "business":"Business dinner",
-    "bachelor":"Friends dinner"
+    "bachelor":"Friends dinner",
+    "viewMore": "View More",
+    "viewListing": "View Listing",
+    "from": "From",
+    "to": "To",
+    "flightNumber": "Flight Number",
+    "transportationBookTitle": "Get a ride"
   },
   "es": {
     "welcome": "Bienvenido a",
@@ -87,7 +93,7 @@
     "age": "Edad",
     "price": "Precio",
     "rounTripTransportation": "Transporte",
-    "numberPeople":"Númmero de Personas",
+    "numberPeople":"Número de Personas",
     "numberAdults":"Nummero de Adultos",
     "numberChildren":"Numero de Niños",
     "apply":"Apply",
@@ -101,7 +107,7 @@
     "dressCode":"Codigo Vestimenta",
     "categories": {
       "sunsetCruises": "Cruceros al atardecer",
-      "waterExperiences": "Experiencias en agua",
+      "waterExperiences": "Experiencias en el agua",
       "boatYatch": "Paseos y alquiler de barcos y yates",
       "whaleWatching": "Avistamiento de ballenas",
       "camelHorse": "Paseos en camello y caballo",
@@ -133,7 +139,13 @@
     "romantic":"Cena romantica",
     "family":"Cena familiar",
     "business":"Cena de negocios",
-    "bachelor":"Cena amigos"
+    "bachelor":"Cena amigos",
+    "viewMore": "Ver Mas",
+    "viewListing": "Ver Lista",
+    "from": "De",
+    "to": "Hacia",
+    "flightNumber": "Número de Vuelo",
+    "transportationBookTitle": "Reserva un Viaje"
   },
   "de": {
     "welcome": "Willkommen bei",
@@ -159,7 +171,7 @@
     "numberAdults":"Anzahl der Erwachsenen",
     "numberChildren":"Anzahl der Kinder",
     "apply":"Anwenden",
-    "requirements":"¿Besondere Anforderungen?",
+    "requirements":"Besondere Anforderungen?",
     "priceTour":"Preis für diese Tour",
     "adults":"Erwachsene",
     "children":"Kinder",
@@ -185,14 +197,14 @@
     "date": "Datum",
     "hour": "Uhrzeit",
     "name": "Name",
-    "reference": "Verwiesen",
+    "reference": "Empfohlen von",
     "reference2": "Person, die empfohlen hat",
     "promoCode": "Aktionscode",
     "noPeople": "Anzahl der Personen",
     "noChild": "Anzahl Kinder",
     "bookTitle": "Eine Tour buchen",
     "experienceTitle": "Eine Erfahrung buchen",
-    "restaurantTitle": "Eine Restaurant buchen",
+    "restaurantTitle": "Restaurant buchen",
     "event": "Feiern Sie etwas Besonderes?",
     "birthday":"Geburtstag",
     "anniversary":"Jubiläum",
@@ -201,6 +213,12 @@
     "romantic":"Romantisches Abendessen",
     "family":"Familienessen",
     "business":"Geschäftsessen",
-    "bachelor":"Abendessen mit Freunden"
+    "bachelor":"Abendessen mit Freunden",
+    "viewMore": "Weitere Informationen",
+    "viewListing": "Weitere Informationen",
+    "from": "Aus",
+    "to": "Zu",
+    "flightNumber": "Flugnummer",
+    "transportationBookTitle": "Eine Reise buchen"
   }
 }

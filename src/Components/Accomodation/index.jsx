@@ -60,25 +60,26 @@ const Accomodation = () =>{
                                 {RoomIcon && (
                                     <div className="flex items-center gap-1">
                                     <img src={RoomIcon} alt="rooms" className="w-4 h-4" />
-                                    <span>{t.beds} •</span>
+                                    <span>{t.beds}</span>
+                                    <span className="pl-2">•</span>
                                     </div>
                                 )}
                                 {BathIcon && (
                                     <div className="flex items-center gap-1">
                                     <img src={BathIcon} alt="bathrooms" className="w-4 h-4" />
-                                    <span>{t.bathrooms} •</span>
+                                    <span>{t.bathrooms}</span>
                                     </div>
                                 )}
-                                {ParkingIcon && (
+                                {(ParkingIcon && t.parking != '') && (
                                     <div className="flex items-center gap-1">
-                                    <img src={ParkingIcon} alt="parking" className="w-4 h-4" />
+                                    <span className="pr-2">•</span> <img src={ParkingIcon} alt="parking" className="w-4 h-4" />
                                     <span>{t.parking}</span>
                                     </div>
                                 )}
                             </div>   
                             <Link to={`/Accommodation/${accomodation.id}`}>
                                 <button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer">
-                                    View listing
+                                    {content.viewListing}
                                 </button>
                             </Link>
                         </div>
