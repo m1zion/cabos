@@ -4,11 +4,12 @@ import tailwindcss from '@tailwindcss/vite'
 import svgr from "vite-plugin-svgr"; //Para colorear los svg
 
 // https://vite.dev/config/
+const isGithubPages = process.env.GITHUB_PAGES === 'true'
 export default defineConfig({
   plugins: [
     tailwindcss(),
     svgr(),
     react()
   ],
-  base: '/',
+  base: isGithubPages ? '/cabos/' : '/',
 })
