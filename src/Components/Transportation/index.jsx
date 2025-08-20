@@ -48,7 +48,7 @@ const Transportation = () =>{
                 <p className="text-center mt-3 font-semibold text-[1.1rem]">Toyota Sienna</p>
                 <div className="text-center mt-3">
                   <Link to={`/bookTransportation/sienna`}>
-                    <button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer w-[90%] md:w-[150px]">Reservar</button>
+                    <button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer w-[90%] md:w-[150px]">{content.bookButton}</button>
                   </Link>
                 </div>
               </div>
@@ -59,7 +59,11 @@ const Transportation = () =>{
                   className="h-64 object-contain"
                 />
                 <p className="text-center mt-3 font-semibold text-[1.1rem]">Chevrolet Suburban</p>
-                <div className="text-center mt-3"><button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer w-[90%] md:w-[150px]">Reservar</button></div>
+                <div className="text-center mt-3">
+                  <Link to={`/bookTransportation/suburban`}>
+                  <button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer w-[90%] md:w-[150px]">{content.bookButton}</button>
+                  </Link>
+                </div>
               </div>             
             </div>
             {/*Dejamos el Carousel cuando hayan mas de 2 autos*/}

@@ -57,19 +57,19 @@ const Footer = () =>{
             <div className="text-center text-sm mt-10 text-gray-400">
            
                 <ul className="flex justify-center gap-2 pt-4 list-none">
-                    <li>
+                    {/*<li>
                     <a
-                        href="https://www.facebook.com/cabos"
+                        href="https://www.facebook.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-[42px] h-[42px] text-[25px] leading-[41px] text-[#818a91] bg-[#eceeef] rounded-full text-center inline-block transition-all duration-200 hover:text-white hover:bg-[#3b5998]"
                     >
                         <FontAwesomeIcon icon={faFacebook} />
                     </a>
-                    </li>
+                    </li>*/}
                     <li>
                     <a
-                        href="https://www.instagram.com/cabos/"
+                        href="https://www.instagram.com/loscabos_moments/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-[42px] h-[42px] text-[25px] leading-[40px] text-[#818a91] bg-[#eceeef] rounded-full text-center inline-block transition-all duration-200 hover:text-white hover:bg-[linear-gradient(to_right,_#833ab4,_#fd1d1d,_#fcb045)]"

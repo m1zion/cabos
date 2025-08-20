@@ -34,42 +34,11 @@ function BookTransportation() {
         watch,
         formState: { errors },
     } = useForm();
-
-
-
-    const [query, setQuery] = useState("");
-    const [suggestions, setSuggestions] = useState([]);
-    const fetchSuggestions = async (value) => {
-        if (value.length < 3) {
-            setSuggestions([]);
-            return;
-        }
-        const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(value)}&format=json&addressdetails=1&limit=5&viewbox=-115.37,28.00,-109.41,22.17&bounded=1&countrycodes=mx`;
-        const res = await fetch(url, {headers: {"Accept-Language": "es",},});
-        const data = await res.json();
-        setSuggestions(data);
-    };
-
-    const handleChange = (e) => {
-        const value = e.target.value;
-        console.log(value);
-        setQuery(value);
-        fetchSuggestions(value);
-    };
-
-    const handleSelect = (place) => {
-        setQuery(place.display_name);
-        setSuggestions([]);
-        console.log("Selected:", place); // place.lat, place.lon
-    };
-
     const sendEmail = (data) => {
-        //console.log(data);
-        emailjs
-            //.send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
-            .send('service_eab0n6c', 'template_14wde1c', data, 'jPOZt81yZmLW-1dWi')            
+        console.log(data);
+        emailjs            
+            .send('service_eab0n6c', 'template_6dgwgrz', data, 'jPOZt81yZmLW-1dWi') //MLD service template public_key          
             .then((result) => {
-            console.log(result.text);
             alert("Your ride request was sent successfully!");
             reset(); // Reset the form
             navigate("/"); 
@@ -81,18 +50,20 @@ function BookTransportation() {
     return (
         <Layout>       
         <div 
-            className="font-[quicksand] w-full sm:pl-[2rem] mt-[2rem] bg-white bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative">
+            className="font-[quicksand] w-full sm:pl-[2rem] pt-[2rem] bg-[#EEF4F3] bg-no-repeat bg-cover bg-center pb-[4rem] mb-[-4rem] z-[1] relative">
             {/*style={{ backgroundImage: `url(${bgImage})` }}*/}
             <h3 className="text-2xl font-semibold text-[#256A77] mb-4 pl-4 sm:pl-6">{content.transportationBookTitle}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base ">
             <form onSubmit={handleSubmit(sendEmail)}  className="space-y-4 sm:space-y-6 sm:border sm:border-gray-200 sm:rounded-xl sm:shadow-lg p-4 sm:p-6 bg-white">
                 <div className="flex flex-col">
+                    <input {...register("vehicle")} type="hidden" id="vehicle" name="vehicle" value={id}/> 
                     <label htmlFor="name" className="mb-1 text-sm font-medium text-gray-600">*{content.name}</label>
                     <input
                     {...register("name", { required: true })}
                     type="text"
                     id="name"
                     name="name"
+                    maxLength="5"
                     className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                     />
                     {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
@@ -118,6 +89,7 @@ function BookTransportation() {
                     type="tel"
                     id="phone"
                     name="phone"
+                    maxLength="12"
                     className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                     />
                     {errors.phone && <span className="text-red-500 text-sm">This field is required</span>}
@@ -190,6 +162,7 @@ function BookTransportation() {
                     id="from"
                     name="from"
                     rows="2"
+                    maxLength="150"
                     className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77] resize-none"
                     ></textarea>
                     {errors.from && <span className="text-red-500 text-sm">This field is required</span>}
@@ -201,26 +174,9 @@ function BookTransportation() {
                     id="to"
                     name="to"
                     rows="2"
-                    value={query}
-                    onChange={handleChange}
+                    maxLength="150"
                     className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77] resize-none"
                     ></textarea>
-
-                    {suggestions.length > 0 && (
-                        <div className="border border-gray-300 rounded-md mt-1 bg-white shadow-md max-h-40 overflow-y-auto">
-                        {suggestions.map((place) => (
-                            <div
-                            key={place.place_id}
-                            onClick={() => handleSelect(place)}
-                            className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-                            >
-                            {place.display_name}
-                            </div>
-                        ))}
-                        </div>
-                    )}
-
-
                     {errors.to && <span className="text-red-500 text-sm">This field is required</span>}
                 </div>              
                 <div className="flex flex-col-reverse align-center lg:flex-row justify-between">

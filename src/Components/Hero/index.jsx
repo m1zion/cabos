@@ -58,19 +58,19 @@ const Hero = () =>{
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.9, duration: 0.9 }}
                 >   
-                    <li>
+                    {/*<li>
                         <a
-                            href="https://www.facebook.com/cabos"
+                            href="https://www.facebook.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-[32px] h-[32px] text-[20px] leading-[30px] text-[#818a91] bg-[#eceeef] rounded-full text-center inline-block transition-all duration-200 hover:text-white hover:bg-[#3b5998]"
                         >
                             <FontAwesomeIcon icon={faFacebook} />
                         </a>
-                    </li>
+                    </li>*/}
                     <li>
                     <a
-                        href="https://www.instagram.com/cabos/"
+                        href="https://www.instagram.com/loscabos_moments/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-[32px] h-[32px] text-[20px] leading-[30px] text-[#818a91] bg-[#eceeef] rounded-full text-center inline-block transition-all duration-200 hover:text-white hover:bg-[linear-gradient(to_right,_#833ab4,_#fd1d1d,_#fcb045)]"
