@@ -5,9 +5,9 @@
       "name": "Sunset Partyboat with Mexican dinner",
       "category": "sunsetCruises",
       "images": {
-        "portrait": "/cabos/assets/images/tours/sunsetPartyboat/portrait.jpg",
+        "portrait": "/assets/images/tours/sunsetPartyboat/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/sunsetPartyboat/1.jpg"
+          "/assets/images/tours/sunsetPartyboat/1.jpg"
         ]
       },
       "status": "active",
