@@ -2,6 +2,7 @@ import { useContext } from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import Carousel from 'react-multi-carousel';
+import { withBase } from '../../utils/path';
 
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
@@ -54,7 +55,7 @@ const Transportation = () =>{
               </div>
               <div className="w-[full] md:w-1/2 h-full flex justify-center flex-col">
                 <img
-                  src='/assets/images/transportation/car2.png'
+                  src={withBase('/assets/images/transportation/car2.png')}
                   alt={`Car2`}
                   className="h-64 object-contain"
                 />

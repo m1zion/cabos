@@ -5,10 +5,10 @@
     "name": "Harry's Steakhouse & Raw Bar",
     "category": "Cabo San Lucas",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/harry/portrait.jpg",
+      "portrait": "/assets/images/restaurants/harry/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/harry/1.jpg",
-        "/cabos/assets/images/restaurants/harry/2.jpg"
+        "/assets/images/restaurants/harry/1.jpg",
+        "/assets/images/restaurants/harry/2.jpg"
       ]
     },
     "status": "active",
@@ -48,10 +48,10 @@
     "name": "Ilios Greek Restaurant",
     "category": "Cabo San Lucas",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/ilios/portrait.jpg",
+      "portrait": "/assets/images/restaurants/ilios/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/ilios/1.jpg",
-        "/cabos/assets/images/restaurants/ilios/2.jpg"
+        "/assets/images/restaurants/ilios/1.jpg",
+        "/assets/images/restaurants/ilios/2.jpg"
       ]
     },
     "status": "active",
@@ -91,9 +91,9 @@
     "name": "Bagatelle",
     "category": "Cabo San Lucas",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/bagatelle/portrait.jpg",
+      "portrait": "/assets/images/restaurants/bagatelle/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/bagatelle/1.jpg"
+        "/assets/images/restaurants/bagatelle/1.jpg"
       ]
     },
     "status": "active",
@@ -133,10 +133,10 @@
     "name": "Rosa Negra",
     "category": "Cabo San Lucas",
       "images": {
-      "portrait": "/cabos/assets/images/restaurants/rosaNegra/portrait.jpg",
+      "portrait": "/assets/images/restaurants/rosaNegra/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/rosaNegra/1.jpg",
-        "/cabos/assets/images/restaurants/rosaNegra/1.jpg"
+        "/assets/images/restaurants/rosaNegra/1.jpg",
+        "/assets/images/restaurants/rosaNegra/1.jpg"
       ]
       },
       "status": "active",
@@ -176,9 +176,9 @@
     "name": "Taboo Cabo",
     "category": "Cabo San Lucas",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/tabooCabo/portrait.jpg",
+      "portrait": "/assets/images/restaurants/tabooCabo/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/tabooCabo/1.jpg"
+        "/assets/images/restaurants/tabooCabo/1.jpg"
       ]
     },
     "status": "active",
@@ -218,10 +218,10 @@
     "name": "Craft Cabo",
     "category": "Cabo San Lucas",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/craftCabo/portrait.jpg",
+      "portrait": "/assets/images/restaurants/craftCabo/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/craftCabo/1.jpg",
-        "/cabos/assets/images/restaurants/craftCabo/1.jpg"
+        "/assets/images/restaurants/craftCabo/1.jpg",
+        "/assets/images/restaurants/craftCabo/1.jpg"
       ]
     },
     "status": "active",
@@ -261,10 +261,10 @@
     "name": "Torote",
     "category": "Cabo San Lucas",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/toroteCabo/portrait.jpg",
+      "portrait": "/assets/images/restaurants/toroteCabo/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/toroteCabo/1.jpg",
-        "/cabos/assets/images/restaurants/toroteCabo/1.jpg"
+        "/assets/images/restaurants/toroteCabo/1.jpg",
+        "/assets/images/restaurants/toroteCabo/1.jpg"
       ]
     },
     "status": "active",
@@ -304,10 +304,10 @@
       "name": "Chambao",
       "category": "San José del Cabo",
       "images": {
-        "portrait": "/cabos/assets/images/restaurants/chambaoCabo/portrait.jpg",
+        "portrait": "/assets/images/restaurants/chambaoCabo/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/restaurants/chambaoCabo/1.jpg",
-          "/cabos/assets/images/restaurants/chambaoCabo/1.jpg"
+          "/assets/images/restaurants/chambaoCabo/1.jpg",
+          "/assets/images/restaurants/chambaoCabo/1.jpg"
         ]
       },
       "status": "active",
@@ -347,10 +347,10 @@
       "name": "Agave Kitchen",
       "category": "San José del Cabo",
       "images": {
-        "portrait": "/cabos/assets/images/restaurants/agaveKitchen/portrait.jpg",
+        "portrait": "/assets/images/restaurants/agaveKitchen/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/restaurants/agaveKitchen/1.jpg",
-          "/cabos/assets/images/restaurants/agaveKitchen/1.jpg"
+          "/assets/images/restaurants/agaveKitchen/1.jpg",
+          "/assets/images/restaurants/agaveKitchen/1.jpg"
         ]
       },
       "status": "active",
@@ -390,10 +390,10 @@
     "name": "Penca Cocina de Brasa",
     "category": "San José del Cabo",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/pencaCocina/portrait.jpg",
+      "portrait": "/assets/images/restaurants/pencaCocina/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/pencaCocina/1.jpg",
-        "/cabos/assets/images/restaurants/pencaCocina/1.jpg"
+        "/assets/images/restaurants/pencaCocina/1.jpg",
+        "/assets/images/restaurants/pencaCocina/1.jpg"
       ]
     },
     "status": "active",
@@ -433,10 +433,10 @@
     "name": "Limonetto",
     "category": "San José del Cabo",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/limonetto/portrait.jpg",
+      "portrait": "/assets/images/restaurants/limonetto/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/limonetto/1.jpg",
-        "/cabos/assets/images/restaurants/limonetto/1.jpg"
+        "/assets/images/restaurants/limonetto/1.jpg",
+        "/assets/images/restaurants/limonetto/1.jpg"
       ]
     },
     "status": "active",
@@ -476,10 +476,10 @@
     "name": "Jardín Secreto",
     "category": "San José del Cabo",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/jardinSecreto/portrait.jpg",
+      "portrait": "/assets/images/restaurants/jardinSecreto/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/jardinSecreto/1.jpg",
-        "/cabos/assets/images/restaurants/jardinSecreto/1.jpg"
+        "/assets/images/restaurants/jardinSecreto/1.jpg",
+        "/assets/images/restaurants/jardinSecreto/1.jpg"
       ]
     },
     "status": "active",
@@ -519,10 +519,10 @@
     "name": "Chamuyo",
     "category": "San José del Cabo",
     "images": {
-      "portrait": "/cabos/assets/images/restaurants/chamuyo/portrait.jpg",
+      "portrait": "/assets/images/restaurants/chamuyo/portrait.jpg",
       "gallery": [
-        "/cabos/assets/images/restaurants/chamuyo/1.jpg",
-        "/cabos/assets/images/restaurants/chamuyo/1.jpg"
+        "/assets/images/restaurants/chamuyo/1.jpg",
+        "/assets/images/restaurants/chamuyo/1.jpg"
       ]
     },
     "status": "active",

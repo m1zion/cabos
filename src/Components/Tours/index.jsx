@@ -3,6 +3,7 @@ import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
+import { withBase } from '../../utils/path';
 import bgImage from '../../assets/icons/abstract-envelope-sand.svg?react';
 //import Logo2  from '../../assets/icons/bg3.svg?react';
 
@@ -42,10 +43,11 @@ const Tours = () =>{
         <section 
             id="tours" 
             className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
-            style={{ 
-                backgroundImage: "url('/assets/icons/abstract-envelope-sand.svg')" ,
+            style={{
+                backgroundImage: `url(${withBase('/assets/icons/abstract-envelope-sand.svg')})`,
                 backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',}}
+                backgroundRepeat: 'no-repeat',
+            }}
             //style={{ backgroundColor: theme.background }}
         >               
             <motion.div
@@ -65,7 +67,9 @@ const Tours = () =>{
                     >
                         <Link to={`/Tours/${category.key}`}>
                             <img
-                                src={category.image}
+                            
+                                src={withBase(category.image)} 
+                                //src={category.image}
                                 alt={content.categories[category.key]}
                                 className="w-full h-[80%] object-cover transform group-hover:scale-105 transition duration-500"
                             />

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
 import experiencesData from '../../data/experiences.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
+import { withBase } from '../../utils/path';
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
@@ -44,7 +45,7 @@ const Experiences = () =>{
             className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
             //style={{ backgroundColor: theme.background }}
             style={{ 
-              backgroundImage: "url('./assets/icons/slanted-gradient.svg')",
+              backgroundImage: `url(${withBase('/assets/icons/slanted-gradient.svg')})`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat', }}
         >  
@@ -72,7 +73,8 @@ const Experiences = () =>{
                     style={{ backgroundColor: theme.cardBg }}
                   >
                     <img
-                      src={experience.images.portrait}
+                      src={withBase(experience.images.portrait)} 
+                      //src={experience.images.portrait}
                       alt={t.title}
                       className="w-full h-60 object-cover"
                     />

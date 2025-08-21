@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import bgImage from '../../assets/icons/bg2.svg';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon, TruckIcon, UserGroupIcon } from '@heroicons/react/24/outline' 
 import WhatsApp from "../../Components/WhatsApp";
+import { withBase } from '../../utils/path';
 const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
   import: 'default',
@@ -63,7 +64,7 @@ function BookRestaurant() {
         <Layout>
             <div className="relative h-[270px] w-full "> {/**/}            
                 <img
-                src={restaurant.images.portrait}
+                src={withBase(restaurant.images.portrait)}
                 alt="Background"
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
                 />            
@@ -124,7 +125,7 @@ function BookRestaurant() {
                             >
                                 <img
                                 onClick={() => handleImageClick(index)}
-                                src={img}
+                                src={withBase(img)}
                                 alt={`Gallery ${index}`}
                                 className="w-full h-full object-cover cursor-pointer"
                                 />
@@ -292,7 +293,7 @@ function BookRestaurant() {
             </button>
             <div className="w-full max-w-4xl">
                 <img
-                    src={allImages[selectedImageIndex]}
+                    src={withBase(allImages[selectedImageIndex])}
                     alt={`Modal ${selectedImageIndex}`}
                     className="w-full h-auto rounded-md shadow-lg object-contain max-h-[80vh]"
                 />

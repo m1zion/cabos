@@ -10,6 +10,7 @@ import WhatsApp from "../../Components/WhatsApp";
 import { Link } from "react-router-dom";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
+import { withBase } from '../../utils/path';
 const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
   import: 'default',
@@ -24,7 +25,7 @@ function restaurants() {
     return (
         <Layout>              
           <div className="relative h-[270px] w-full flex items-center justify-start bg-cover bg-center"  
-          style={{ backgroundImage: `url('/cabos/assets/images/restaurants/collage/collage.jpg')` }}>
+          style={{ backgroundImage: `url(${withBase('/assets/images/restaurants/collage/collage.jpg')})` }}>
             <div className="absolute inset-0 bg-black/20">
               <div
                 className="w-full h-full"
@@ -54,7 +55,7 @@ function restaurants() {
                       className="font-[quicksand] border border-[#ffffff22] rounded-xl bg-gradient-to-br from-[#4A3623] to-[#3b2b1f] sm:flex justify-between sm:flex-row-reverse w-[330px] sm:w-full lg:w-full/2 rounded-xl shadow-lg overflow-hidden"
                     >                      
                       <img
-                        src={restaurant.images.portrait}
+                        src={withBase(restaurant.images.portrait)}
                         alt={t.title}
                         className="w-full sm:w-[300px] md:w[300px] h-60 object-cover"
                       />

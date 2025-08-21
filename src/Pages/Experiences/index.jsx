@@ -15,6 +15,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from "react-router-dom";
 import WhatsApp from "../../Components/WhatsApp";
+import { withBase } from '../../utils/path';
 
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
@@ -43,7 +44,7 @@ function ExperienceDetail() {
         <Layout >
         <div className="relative h-[270px] w-full"> {/**/}            
             <img
-            src={experience.images.portrait}
+            src={withBase(experience.images.portrait)}
             alt="Background"
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             />            
@@ -107,7 +108,7 @@ function ExperienceDetail() {
             >
                 <img
                 onClick={() => handleImageClick(index)}
-                src={img}
+                src={withBase(img)}
                 alt={`Gallery ${index}`}
                 className="w-full h-full object-cover cursor-pointer"
                 />
@@ -125,7 +126,7 @@ function ExperienceDetail() {
           </button>
           <div className="w-full max-w-4xl">
             <img
-                src={allImages[selectedImageIndex]}
+                src={withBase(allImages[selectedImageIndex])}
                 alt={`Modal ${selectedImageIndex}`}
                 className="w-full h-auto rounded-md shadow-lg object-contain max-h-[80vh]"
             />

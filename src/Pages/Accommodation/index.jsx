@@ -16,6 +16,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import WhatsApp from '../../Components/WhatsApp';
 import contentData from '../../data/content.json';
+import { withBase } from '../../utils/path';
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -83,7 +84,7 @@ function accommodation() {
         <Layout>
         <div className="relative h-[270px] w-full"> {/**/}            
             <img
-            src={accomodation.images.background}
+            src={withBase(accomodation.images.background)}
             alt="Background"
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             />
@@ -128,7 +129,7 @@ function accommodation() {
         <div className="mb-[2rem] w-[95%] sm:w-[90%] xl:w-[85%] h-[400px] gap-1 flex flex-col md:flex-row" id ="images"> 
             <div className="w-full md:w-1/2 h-[400px] cursor-pointer">
                 <img
-                src={accomodation.images.portrait}
+                src={withBase(accomodation.images.portrait)}
                 alt="Main"
                 onClick={() => handleImageClick(0)}
                 className="w-full h-full object-cover"
@@ -138,7 +139,7 @@ function accommodation() {
                  {accomodation.images.gallery.slice(0, 4).map((img, index) => (
                     <img
                         key={index}
-                        src={img}
+                        src={withBase(img)}
                         alt={`Gallery ${index}`}
                         className="w-full h-full object-cover"
                     />
@@ -168,13 +169,13 @@ function accommodation() {
             {amenities.map((amenity, index) => (
                 <div key={index} className="flex items-center gap-2">
                 <img
-                    src={`./assets/icons/amenities/${amenity.icon}`}
+                    src={withBase(`/assets/icons/amenities/${amenity.icon}`)}
                     //src={`/cabos/src/assets/icons/amenities/${amenity.icon}`}
                     alt={amenity.name}
                     className="w-6 h-6 object-contain"
                     onError={(e) => {
                     e.currentTarget.onerror = null;
-                    e.currentTarget.src = "/src/assets/icons/amenities/default.svg";
+                    e.currentTarget.src = withBase("/src/assets/icons/amenities/default.svg");
                     }}
                 />
                 <span className="text-sm text-gray-700">{amenity.name}</span>
@@ -229,7 +230,7 @@ function accommodation() {
               {allImages.map((img, index) => (
                 <div key={index} className="h-[80vh] flex justify-center items-center">
                   <img
-                    src={img}
+                    src={withBase(img)}
                     alt={`Gallery ${index}`}
                     className="max-h-full max-w-full object-contain"
                   />

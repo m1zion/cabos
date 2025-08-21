@@ -5,7 +5,7 @@ import { ToursContext } from "../../Context";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-
+import { withBase } from '../../utils/path';
 
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
@@ -47,7 +47,7 @@ const Accomodation = () =>{
                 const t = accomodation.translations[language] || accomodation.translations.en;
                 return (
                     <div key={accomodation.id} className="w-[100%]  border border-gray-100 bg-white rounded-sm shadow-lg overflow-hidden transform transition duration-400 hover:-translate-y-1">
-                        <img src={accomodation.images.portrait} alt={t.title} className="w-full h-60 object-cover" />
+                        <img src={withBase(accomodation.images.portrait)} alt={t.title} className="w-full h-60 object-cover" />
                         <div className="text-[#256A77] p-4 space-y-2">
                             <div className="flex justify-between pr-[5px] items-center">                               
                                 <h3 className="text-md md:text-xl font-semibold text-[1.1rem]">{t.title}</h3>    

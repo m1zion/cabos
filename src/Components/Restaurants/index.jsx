@@ -2,6 +2,7 @@ import { useContext} from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import { Link } from "react-router-dom";
+import { withBase } from '../../utils/path';
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
@@ -28,7 +29,7 @@ const Restaurants = () =>{
         <div
         className="absolute right-[0px] w-[100%] sm:w-[70%] h-full bg-cover bg-center flex items-center"
         style={{
-            backgroundImage: `linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url('/assets/images/restaurants/portrait.jpg')`,
+            backgroundImage: `linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),url(${withBase('/assets/images/restaurants/portrait.jpg')})`,
             backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}

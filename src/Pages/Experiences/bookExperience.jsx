@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import bgImage from '../../assets/icons/bg2.svg'; 
 import WhatsApp from "../../Components/WhatsApp";
 import { supabase } from '../../supabaseClient';
+import { withBase } from '../../utils/path';
 
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
@@ -117,7 +118,7 @@ function BookExperience() {
         <Layout>
         <div className="relative h-[270px] w-full"> {/**/}            
             <img
-            src={experience.images.portrait}
+            src={withBase(experience.images.portrait)}
             alt="Background"
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             />            
