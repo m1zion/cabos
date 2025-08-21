@@ -10,14 +10,14 @@ import contentData from '../../data/content.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-router-dom";
 import WhatsApp from "../../Components/WhatsApp";
-
+import { withBase } from '../../utils/path'
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
 //Hover bright #EEF4F3
 //text #256A77
 const categories = [
-  { key: 'sunsetCruises', image: '/cabos/assets/images/sunset.jpg' },
+  { key: 'sunsetCruises', image: '/assets/images/sunset.jpg' },
   { key: 'waterExperiences', image: '/cabos/assets/images/snorkel.jpg' },
   { key: 'boatYatch', image: '/cabos/assets/images/boat.jpg' },
   { key: 'whaleWatching', image: '/cabos/assets/images/sea.jpg' },
@@ -56,7 +56,8 @@ function tours() {
                     className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"
                   >
                     <img
-                      src={tour.images.portrait}
+                      //src={tour.images.portrait}
+                      src={withBase(tour.images.portrait)} 
                       alt={t.title}
                       className="w-full h-60 object-cover"
                     />
