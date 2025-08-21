@@ -52,10 +52,10 @@
       "name": "Sunset Dinner & Pirate Show Tour",
       "category": "sunsetCruises",
       "images": {
-        "portrait": "/cabos/assets/images/tours/sunsetDinnerPirate/portrait.jpg",
+        "portrait": "/assets/images/tours/sunsetDinnerPirate/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/sunsetDinnerPirate/1.jpg",
-          "/cabos/assets/images/tours/sunsetDinnerPirate/2.jpg"
+          "/assets/images/tours/sunsetDinnerPirate/1.jpg",
+          "/assets/images/tours/sunsetDinnerPirate/2.jpg"
         ]
       },
       "status": "active",
@@ -100,10 +100,10 @@
       "name": "Sunset Jazz & Wine Tour",
       "category": "sunsetCruises",
       "images": {
-        "portrait": "/cabos/assets/images/tours/sunsetJazz/portrait.jpg",
+        "portrait": "/assets/images/tours/sunsetJazz/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/sunsetJazz/1.jpg",
-          "/cabos/assets/images/tours/sunsetJazz/2.jpg"
+          "/assets/images/tours/sunsetJazz/1.jpg",
+          "/assets/images/tours/sunsetJazz/2.jpg"
         ]
       },
       "status": "active",
@@ -148,10 +148,10 @@
       "name": "Romantic sunset sailing tour",
       "category": "sunsetCruises",
       "images": {
-        "portrait": "/cabos/assets/images/tours/romanticSunset/portrait.jpg",
+        "portrait": "/assets/images/tours/romanticSunset/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/romanticSunset/1.jpg",
-          "/cabos/assets/images/tours/romanticSunset/2.jpg"
+          "/assets/images/tours/romanticSunset/1.jpg",
+          "/assets/images/tours/romanticSunset/2.jpg"
         ]
       },
       "status": "active",
@@ -196,10 +196,10 @@
       "name": "Snorkel adventure with lunch",
       "category": "waterExperiences",
       "images": {
-        "portrait": "/cabos/assets/images/tours/snorkelAdventure/portrait.jpg",
+        "portrait": "/assets/images/tours/snorkelAdventure/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/snorkelAdventure/1.jpg",
-          "/cabos/assets/images/tours/snorkelAdventure/2.jpg"
+          "/assets/images/tours/snorkelAdventure/1.jpg",
+          "/assets/images/tours/snorkelAdventure/2.jpg"
         ]
       },
       "status": "active",
@@ -244,10 +244,10 @@
       "name": "Pirate Ship Snorkel experience with lunch",
       "category": "waterExperiences",
       "images": {
-        "portrait": "/cabos/assets/images/tours/snorkelPirate/portrait.jpg",
+        "portrait": "/assets/images/tours/snorkelPirate/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/snorkelPirate/1.jpg",
-          "/cabos/assets/images/tours/snorkelPirate/2.jpg"
+          "/assets/images/tours/snorkelPirate/1.jpg",
+          "/assets/images/tours/snorkelPirate/2.jpg"
         ]
       },
       "status": "active",
@@ -292,13 +292,13 @@
       "name": "Scuba Diving Beginner Experience",
       "category": "waterExperiences",
       "images": {
-        "portrait": "/cabos/assets/images/tours/scubaDiving/portrait.jpg",
+        "portrait": "/assets/images/tours/scubaDiving/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/scubaDiving/1.jpg",
-          "/cabos/assets/images/tours/scubaDiving/2.jpg",
-          "/cabos/assets/images/tours/scubaDiving/3.jpg",
-          "/cabos/assets/images/tours/scubaDiving/4.jpg",
-          "/cabos/assets/images/tours/scubaDiving/5.jpg"
+          "/assets/images/tours/scubaDiving/1.jpg",
+          "/assets/images/tours/scubaDiving/2.jpg",
+          "/assets/images/tours/scubaDiving/3.jpg",
+          "/assets/images/tours/scubaDiving/4.jpg",
+          "/assets/images/tours/scubaDiving/5.jpg"
         ]
       },
       "status": "active",
@@ -343,13 +343,13 @@
       "name": "Surf Lessons at Costa Azul",
       "category": "waterExperiences",
       "images": {
-        "portrait": "/cabos/assets/images/tours/surfLessons/portrait.jpg",
+        "portrait": "/assets/images/tours/surfLessons/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/surfLessons/1.jpg",
-          "/cabos/assets/images/tours/surfLessons/2.jpg",
-          "/cabos/assets/images/tours/surfLessons/3.jpg",
-          "/cabos/assets/images/tours/surfLessons/4.jpg",
-          "/cabos/assets/images/tours/surfLessons/5.jpg"
+          "/assets/images/tours/surfLessons/1.jpg",
+          "/assets/images/tours/surfLessons/2.jpg",
+          "/assets/images/tours/surfLessons/3.jpg",
+          "/assets/images/tours/surfLessons/4.jpg",
+          "/assets/images/tours/surfLessons/5.jpg"
         ]
       },
       "status": "active",
@@ -394,10 +394,10 @@
       "name": "Jet Ski",
       "category": "waterExperiences",
       "images": {
-        "portrait": "/cabos/assets/images/tours/jetSki/portrait.jpg",
+        "portrait": "/assets/images/tours/jetSki/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/jetSki/1.jpg",
-          "/cabos/assets/images/tours/jetSki/2.jpg"
+          "/assets/images/tours/jetSki/1.jpg",
+          "/assets/images/tours/jetSki/2.jpg"
         ]
       },
       "status": "active",
@@ -442,9 +442,9 @@
       "name": "Parasailing",
       "category": "waterExperiences",
       "images": {
-        "portrait": "/cabos/assets/images/tours/paraSailing/portrait.jpg",
+        "portrait": "/assets/images/tours/paraSailing/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/paraSailing/1.jpg"
+          "/assets/images/tours/paraSailing/1.jpg"
         ]
       },
       "status": "active",
@@ -489,13 +489,13 @@
       "name": "Visit the Arch of Cabo San Lucas in a transparent boat",
       "category": "boatYatch",
       "images": {
-        "portrait": "/cabos/assets/images/tours/archOfCabo/portrait.jpg",
+        "portrait": "/assets/images/tours/archOfCabo/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/archOfCabo/1.jpg",
-          "/cabos/assets/images/tours/archOfCabo/2.jpg",
-          "/cabos/assets/images/tours/archOfCabo/3.jpg",
-          "/cabos/assets/images/tours/archOfCabo/4.jpg",
-          "/cabos/assets/images/tours/archOfCabo/5.jpg"
+          "/assets/images/tours/archOfCabo/1.jpg",
+          "/assets/images/tours/archOfCabo/2.jpg",
+          "/assets/images/tours/archOfCabo/3.jpg",
+          "/assets/images/tours/archOfCabo/4.jpg",
+          "/assets/images/tours/archOfCabo/5.jpg"
         ]
       },
       "status": "active",
@@ -541,10 +541,10 @@
       "name": "Private Boat and Yacht Tours Cabo San Lucas",
       "category": "boatYatch",
       "images": {
-        "portrait": "/cabos/assets/images/tours/privateBoat/portrait.jpg",
+        "portrait": "/assets/images/tours/privateBoat/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/privateBoat/1.jpg",
-          "/cabos/assets/images/tours/privateBoat/2.jpg"
+          "/assets/images/tours/privateBoat/1.jpg",
+          "/assets/images/tours/privateBoat/2.jpg"
         ]
       },
       "status": "active",
@@ -589,13 +589,13 @@
       "name": "Fishing boat rental",
       "category": "boatYatch",
       "images": {
-        "portrait": "/cabos/assets/images/tours/fishing/portrait.jpg",
+        "portrait": "/assets/images/tours/fishing/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/fishing/1.jpg",
-          "/cabos/assets/images/tours/fishing/2.jpg",
-          "/cabos/assets/images/tours/fishing/3.jpg",
-          "/cabos/assets/images/tours/fishing/4.jpg",
-          "/cabos/assets/images/tours/fishing/5.jpg"
+          "/assets/images/tours/fishing/1.jpg",
+          "/assets/images/tours/fishing/2.jpg",
+          "/assets/images/tours/fishing/3.jpg",
+          "/assets/images/tours/fishing/4.jpg",
+          "/assets/images/tours/fishing/5.jpg"
         ]
       },
       "status": "active",
@@ -640,9 +640,9 @@
       "name": "Whale Watching breakfast",
       "category": "whaleWatching",
       "images": {
-        "portrait": "/cabos/assets/images/tours/whaleWatching/portrait.jpg",
+        "portrait": "/assets/images/tours/whaleWatching/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/whaleWatching/1.jpg"
+          "/assets/images/tours/whaleWatching/1.jpg"
         ]
       },
       "status": "active",
@@ -687,7 +687,7 @@
       "name": "Pirate Ship Whale Watching breakfast",
       "category": "whaleWatching",
       "images": {
-        "portrait": "/cabos/assets/images/tours/pirateWhaleWatching/portrait.jpg",
+        "portrait": "/assets/images/tours/pirateWhaleWatching/portrait.jpg",
         "gallery": [ ]
       },
       "status": "active",
@@ -732,9 +732,9 @@
       "name": "Whale Watching dinner cruise",
       "category": "whaleWatching",
       "images": {
-        "portrait": "/cabos/assets/images/tours/whaleWatchingSunset/portrait.jpg",
+        "portrait": "/assets/images/tours/whaleWatchingSunset/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/whaleWatchingSunset/1.jpg"
+          "/assets/images/tours/whaleWatchingSunset/1.jpg"
         ]
       },
       "status": "active",
@@ -779,13 +779,13 @@
       "name": "Beach & Dunes Camel Ride Experience",
       "category": "camelHorse",
       "images": {
-        "portrait": "/cabos/assets/images/tours/dunesCamel/portrait.jpg",
+        "portrait": "/assets/images/tours/dunesCamel/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/dunesCamel/1.jpg",
-          "/cabos/assets/images/tours/dunesCamel/2.jpg",
-          "/cabos/assets/images/tours/dunesCamel/3.jpg",
-          "/cabos/assets/images/tours/dunesCamel/4.jpg",
-          "/cabos/assets/images/tours/dunesCamel/5.jpg"
+          "/assets/images/tours/dunesCamel/1.jpg",
+          "/assets/images/tours/dunesCamel/2.jpg",
+          "/assets/images/tours/dunesCamel/3.jpg",
+          "/assets/images/tours/dunesCamel/4.jpg",
+          "/assets/images/tours/dunesCamel/5.jpg"
         ]
       },
       "status": "active",
@@ -830,13 +830,13 @@
       "name": "Beach Horseback Riding",
       "category": "camelHorse",
       "images": {
-        "portrait": "/cabos/assets/images/tours/beachHorse/portrait.jpg",
+        "portrait": "/assets/images/tours/beachHorse/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/beachHorse/1.jpg",
-          "/cabos/assets/images/tours/beachHorse/2.jpg",
-          "/cabos/assets/images/tours/beachHorse/3.jpg",
-          "/cabos/assets/images/tours/beachHorse/4.jpg",
-          "/cabos/assets/images/tours/beachHorse/5.jpg"
+          "/assets/images/tours/beachHorse/1.jpg",
+          "/assets/images/tours/beachHorse/2.jpg",
+          "/assets/images/tours/beachHorse/3.jpg",
+          "/assets/images/tours/beachHorse/4.jpg",
+          "/assets/images/tours/beachHorse/5.jpg"
         ]
       },
       "status": "active",
@@ -881,9 +881,9 @@
       "name": "Beach & Dunes ATV Tour",
       "category": "atvRazors",
       "images": {
-        "portrait": "/cabos/assets/images/tours/dunesATV/portrait.jpg",
+        "portrait": "/assets/images/tours/dunesATV/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/dunesATV/1.jpg"
+          "/assets/images/tours/dunesATV/1.jpg"
         ]
       },
       "status": "active",
@@ -928,9 +928,9 @@
       "name": "Beach & Dunes UTV Razor Tour",
       "category": "atvRazors",
       "images": {
-        "portrait": "/cabos/assets/images/tours/dunesUTV/portrait.jpg",
+        "portrait": "/assets/images/tours/dunesUTV/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/dunesUTV/1.jpg"
+          "/assets/images/tours/dunesUTV/1.jpg"
         ]
       },
       "status": "active",
@@ -975,10 +975,10 @@
       "name": "Balandra Beach, City Tour La Paz & Todos Santos",
       "category": "dayTrip",
       "images": {
-        "portrait": "/cabos/assets/images/tours/balandraBeach/portrait.jpg",
+        "portrait": "/assets/images/tours/balandraBeach/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/balandraBeach/1.jpg",
-          "/cabos/assets/images/tours/balandraBeach/2.jpg"
+          "/assets/images/tours/balandraBeach/1.jpg",
+          "/assets/images/tours/balandraBeach/2.jpg"
         ]
       },
       "status": "active",
@@ -1023,10 +1023,10 @@
       "name": "Espiritu Santo Island Boat and Snorkel Experience",
       "category": "dayTrip",
       "images": {
-        "portrait": "/cabos/assets/images/tours/espirituSanto/portrait.jpg",
+        "portrait": "/assets/images/tours/espirituSanto/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/tours/espirituSanto/1.jpg",
-          "/cabos/assets/images/tours/espirituSanto/2.jpg"
+          "/assets/images/tours/espirituSanto/1.jpg",
+          "/assets/images/tours/espirituSanto/2.jpg"
         ]
       },
       "status": "active",
@@ -1071,9 +1071,9 @@
       "name": "Whale Shark Snorkeling in La Paz",
       "category": "dayTrip",
       "images": {
-          "portrait": "/cabos/assets/images/tours/whaleSharkPaz/portrait.jpg",
+          "portrait": "/assets/images/tours/whaleSharkPaz/portrait.jpg",
           "gallery": [
-            "/cabos/assets/images/tours/whaleSharkPaz/1.jpg"
+            "/assets/images/tours/whaleSharkPaz/1.jpg"
           ]
       },
       "status": "active",
@@ -1118,9 +1118,9 @@
       "name": "Snorkel in Cabo Pulmo Marine Park",
       "category": "dayTrip",
       "images": {
-          "portrait": "/cabos/assets/images/tours/snorkelCaboPulmo/portrait.jpg",
+          "portrait": "/assets/images/tours/snorkelCaboPulmo/portrait.jpg",
           "gallery": [
-            "/cabos/assets/images/tours/snorkelCaboPulmo/1.jpg"
+            "/assets/images/tours/snorkelCaboPulmo/1.jpg"
           ]
       },
       "status": "active",
@@ -1165,7 +1165,7 @@
       "name": "Santiago Waterfall",
       "category": "dayTrip",
       "images": {
-          "portrait": "/cabos/assets/images/tours/santiago/portrait.jpg",
+          "portrait": "/assets/images/tours/santiago/portrait.jpg",
           "gallery": []
       },
       "status": "active",
@@ -1210,11 +1210,11 @@
       "name": "Todos Santos Day Tour",
       "category": "dayTrip",
       "images": {
-          "portrait": "/cabos/assets/images/tours/todosSantos/portrait.jpg",
+          "portrait": "/assets/images/tours/todosSantos/portrait.jpg",
           "gallery": [
-            "/cabos/assets/images/tours/todosSantos/1.jpg",
-            "/cabos/assets/images/tours/todosSantos/2.jpg",
-            "/cabos/assets/images/tours/todosSantos/3.jpg"
+            "/assets/images/tours/todosSantos/1.jpg",
+            "/assets/images/tours/todosSantos/2.jpg",
+            "/assets/images/tours/todosSantos/3.jpg"
           ]
       },
       "status": "active",

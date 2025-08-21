@@ -26,8 +26,8 @@ const responsive = {
   }
 };
 const images = [
-  '/cabos/assets/images/transportation/car1.png',
-  '/cabos/assets/images/transportation/car2.png'
+  '/assets/images/transportation/car1.png',
+  '/assets/images/transportation/car2.png'
 ];
 
 const Transportation = () =>{
@@ -41,7 +41,7 @@ const Transportation = () =>{
             <div className="flex flex-wrap w-full justify-center text-[#256A77]">
               <div className="w-[full] md:w-1/2 h-full flex justify-center flex-col mb-5">
                 <img
-                  src='/cabos/assets/images/transportation/car1.png'
+                  src='/assets/images/transportation/car1.png'
                   alt={`Car1`}
                   className="h-64 object-contain"
                 /> 
@@ -54,7 +54,7 @@ const Transportation = () =>{
               </div>
               <div className="w-[full] md:w-1/2 h-full flex justify-center flex-col">
                 <img
-                  src='/cabos/assets/images/transportation/car2.png'
+                  src='/assets/images/transportation/car2.png'
                   alt={`Car2`}
                   className="h-64 object-contain"
                 />

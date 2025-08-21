@@ -3,19 +3,19 @@
     {
       "id": "Jolla",
       "images": {
-        "portrait": "/cabos/assets/images/accomodation/jolla/portrait.jpg",
-        "background": "/cabos/assets/images/accomodation/jolla/background.png",
+        "portrait": "/assets/images/accomodation/jolla/portrait.jpg",
+        "background": "/assets/images/accomodation/jolla/background.png",
         "gallery": [
-          "/cabos/assets/images/accomodation/jolla/1.jpg",
-          "/cabos/assets/images/accomodation/jolla/2.jpg",
-          "/cabos/assets/images/accomodation/jolla/3.jpg",
-          "/cabos/assets/images/accomodation/jolla/4.jpg",
-          "/cabos/assets/images/accomodation/jolla/5.jpg",
-          "/cabos/assets/images/accomodation/jolla/6.jpg",
-          "/cabos/assets/images/accomodation/jolla/7.jpg",
-          "/cabos/assets/images/accomodation/jolla/8.jpg",
-          "/cabos/assets/images/accomodation/jolla/9.jpg",
-          "/cabos/assets/images/accomodation/jolla/10.jpg"
+          "/assets/images/accomodation/jolla/1.jpg",
+          "/assets/images/accomodation/jolla/2.jpg",
+          "/assets/images/accomodation/jolla/3.jpg",
+          "/assets/images/accomodation/jolla/4.jpg",
+          "/assets/images/accomodation/jolla/5.jpg",
+          "/assets/images/accomodation/jolla/6.jpg",
+          "/assets/images/accomodation/jolla/7.jpg",
+          "/assets/images/accomodation/jolla/8.jpg",
+          "/assets/images/accomodation/jolla/9.jpg",
+          "/assets/images/accomodation/jolla/10.jpg"
         ]
       },
       "status": "active",
@@ -197,19 +197,19 @@
     {
       "id": "Cardinal",
       "images": {
-        "portrait": "/cabos/assets/images/accomodation/cardinal/portrait.jpg",
-        "background": "/cabos/assets/images/accomodation/cardinal/background.png",
+        "portrait": "/assets/images/accomodation/cardinal/portrait.jpg",
+        "background": "/assets/images/accomodation/cardinal/background.png",
         "gallery": [ 
-          "/cabos/assets/images/accomodation/cardinal/1.jpg",
-          "/cabos/assets/images/accomodation/cardinal/2.jpg",
-          "/cabos/assets/images/accomodation/cardinal/3.jpg",
-          "/cabos/assets/images/accomodation/cardinal/4.jpg",
-          "/cabos/assets/images/accomodation/cardinal/5.jpg",
-          "/cabos/assets/images/accomodation/cardinal/6.jpg",
-          "/cabos/assets/images/accomodation/cardinal/7.jpg",
-          "/cabos/assets/images/accomodation/cardinal/8.jpg",
-          "/cabos/assets/images/accomodation/cardinal/9.jpg",
-          "/cabos/assets/images/accomodation/cardinal/10.jpg"
+          "/assets/images/accomodation/cardinal/1.jpg",
+          "/assets/images/accomodation/cardinal/2.jpg",
+          "/assets/images/accomodation/cardinal/3.jpg",
+          "/assets/images/accomodation/cardinal/4.jpg",
+          "/assets/images/accomodation/cardinal/5.jpg",
+          "/assets/images/accomodation/cardinal/6.jpg",
+          "/assets/images/accomodation/cardinal/7.jpg",
+          "/assets/images/accomodation/cardinal/8.jpg",
+          "/assets/images/accomodation/cardinal/9.jpg",
+          "/assets/images/accomodation/cardinal/10.jpg"
         ]
       },
       "status": "active",
@@ -348,15 +348,15 @@
     {
       "id": "Camper",
       "images": {
-        "portrait": "/cabos/assets/images/accomodation/camper/portrait.jpg",
-        "background": "/cabos/assets/images/accomodation/camper/background.png",
+        "portrait": "/assets/images/accomodation/camper/portrait.jpg",
+        "background": "/assets/images/accomodation/camper/background.png",
         "gallery": [
-          "/cabos/assets/images/accomodation/camper/1.jpg",
-          "/cabos/assets/images/accomodation/camper/2.jpg",
-          "/cabos/assets/images/accomodation/camper/3.jpg",
-          "/cabos/assets/images/accomodation/camper/4.jpg",
-          "/cabos/assets/images/accomodation/camper/5.jpg",
-          "/cabos/assets/images/accomodation/camper/5.jpg"
+          "/assets/images/accomodation/camper/1.jpg",
+          "/assets/images/accomodation/camper/2.jpg",
+          "/assets/images/accomodation/camper/3.jpg",
+          "/assets/images/accomodation/camper/4.jpg",
+          "/assets/images/accomodation/camper/5.jpg",
+          "/assets/images/accomodation/camper/5.jpg"
         ]
       },
       "status": "active",

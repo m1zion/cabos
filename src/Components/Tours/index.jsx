@@ -7,13 +7,13 @@ import bgImage from '../../assets/icons/abstract-envelope-sand.svg?react';
 //import Logo2  from '../../assets/icons/bg3.svg?react';
 
 const categories = [
-  { key: 'sunsetCruises', image: '/cabos/assets/images/sunset.jpg' },
-  { key: 'waterExperiences', image: '/cabos/assets/images/snorkel.jpg' },
-  { key: 'boatYatch', image: '/cabos/assets/images/boat.jpg' },
-  { key: 'whaleWatching', image: '/cabos/assets/images/sea.jpg' },
-  { key: 'camelHorse', image: '/cabos/assets/images/camel.jpg' },
-  { key: 'atvRazors', image: '/cabos/assets/images/utv.jpg' },
-  { key: 'dayTrip', image: '/cabos/assets/images/land.jpg' },
+  { key: 'sunsetCruises', image: '/assets/images/sunset.jpg' },
+  { key: 'waterExperiences', image: '/assets/images/snorkel.jpg' },
+  { key: 'boatYatch', image: '/assets/images/boat.jpg' },
+  { key: 'whaleWatching', image: '/assets/images/sea.jpg' },
+  { key: 'camelHorse', image: '/assets/images/camel.jpg' },
+  { key: 'atvRazors', image: '/assets/images/utv.jpg' },
+  { key: 'dayTrip', image: '/assets/images/land.jpg' },
 ];
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
@@ -43,7 +43,7 @@ const Tours = () =>{
             id="tours" 
             className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
             style={{ 
-                backgroundImage: "url('./assets/icons/abstract-envelope-sand.svg')" ,
+                backgroundImage: "url('/assets/icons/abstract-envelope-sand.svg')" ,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',}}
             //style={{ backgroundColor: theme.background }}

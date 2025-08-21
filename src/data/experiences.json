@@ -5,9 +5,9 @@
       "name": "Private Tequila & Mezcal Tasting",
       "category": "Experiences",
       "images": {
-          "portrait": "/cabos/assets/images/experiences/tequilaMezcalTasting/portrait.jpg",
+          "portrait": "/assets/images/experiences/tequilaMezcalTasting/portrait.jpg",
           "gallery": [
-            "/cabos/assets/images/experiences/tequilaMezcalTasting/1.jpg"
+            "/assets/images/experiences/tequilaMezcalTasting/1.jpg"
           ]
       },
       "status": "active",
@@ -52,10 +52,10 @@
       "name": "Pizza-Making Experience",
       "category": "Experiences",
       "images": {
-        "portrait": "/cabos/assets/images/experiences/pizzaMakingExperience/portrait.jpg",
+        "portrait": "/assets/images/experiences/pizzaMakingExperience/portrait.jpg",
         "gallery": [
-          "/cabos/assets/images/experiences/pizzaMakingExperience/1.jpg",
-          "/cabos/assets/images/experiences/pizzaMakingExperience/2.jpg"
+          "/assets/images/experiences/pizzaMakingExperience/1.jpg",
+          "/assets/images/experiences/pizzaMakingExperience/2.jpg"
         ]
       },
       "status": "active",

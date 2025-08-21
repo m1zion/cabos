@@ -28,7 +28,7 @@ const Restaurants = () =>{
         <div
         className="absolute right-[0px] w-[100%] sm:w-[70%] h-full bg-cover bg-center flex items-center"
         style={{
-            backgroundImage: `linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url('/cabos/assets/images/restaurants/portrait.jpg')`,
+            backgroundImage: `linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url('/assets/images/restaurants/portrait.jpg')`,
             backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
