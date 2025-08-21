@@ -10,7 +10,7 @@ import contentData from '../../data/content.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-router-dom";
 import WhatsApp from "../../Components/WhatsApp";
-import { withBase } from '../../utils/path'
+import { withBase } from '../../utils/path';
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
@@ -18,12 +18,12 @@ import { withBase } from '../../utils/path'
 //text #256A77
 const categories = [
   { key: 'sunsetCruises', image: '/assets/images/sunset.jpg' },
-  { key: 'waterExperiences', image: '/cabos/assets/images/snorkel.jpg' },
-  { key: 'boatYatch', image: '/cabos/assets/images/boat.jpg' },
-  { key: 'whaleWatching', image: '/cabos/assets/images/sea.jpg' },
-  { key: 'camelHorse', image: '/cabos/assets/images/camel.jpg' },
-  { key: 'atvRazors', image: '/cabos/assets/images/utv.jpg' },
-  { key: 'dayTrip', image: '/cabos/assets/images/land.jpg' },
+  { key: 'waterExperiences', image: '/assets/images/snorkel.jpg' },
+  { key: 'boatYatch', image: '/assets/images/boat.jpg' },
+  { key: 'whaleWatching', image: '/assets/images/sea.jpg' },
+  { key: 'camelHorse', image: '/assets/images/camel.jpg' },
+  { key: 'atvRazors', image: '/assets/images/utv.jpg' },
+  { key: 'dayTrip', image: '/assets/images/land.jpg' },
 ];
 
 function tours() {  
