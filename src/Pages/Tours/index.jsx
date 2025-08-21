@@ -17,9 +17,9 @@ import { withBase } from '../../utils/path';
 //Hover bright #EEF4F3
 //text #256A77
 const categories = [
-  { key: 'sunsetCruises', image: '../assets/images/sunset.jpg' },
+  { key: 'sunsetCruises', image: './assets/images/sunset.jpg' },
   { key: 'waterExperiences', image: '../assets/images/snorkel.jpg' },
-  { key: 'boatYatch', image: '../assets/images/boat.jpg' },
+  { key: 'boatYatch', image: '/assets/images/boat.jpg' },
   { key: 'whaleWatching', image: '../assets/images/sea.jpg' },
   { key: 'camelHorse', image: '../assets/images/camel.jpg' },
   { key: 'atvRazors', image: '../assets/images/utv.jpg' },
