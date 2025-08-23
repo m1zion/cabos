@@ -12,6 +12,7 @@ const Experiences = lazy(() => import('../../Components/Experiences'))
 const Accomodation = lazy(() => import('../../Components/Accomodation'))
 const Restaurants = lazy(() => import('../../Components/Restaurants'))
 const Transportation = lazy(() => import('../../Components/Transportation'))
+const Medical = lazy(() => import('../../Components/Medical'))
 function Home() {  
   const location = useLocation();
   useEffect(() => {
@@ -32,6 +33,7 @@ function Home() {
         <About/>
         <Tours />
         <Experiences />
+        <Medical/>
         <Accomodation/>
         <Restaurants/>        
         <Transportation/>

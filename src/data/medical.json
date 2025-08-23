@@ -1,0 +1,175 @@
+{
+  "medical": [
+    {
+      "images": {
+          "portrait": "/assets/images/experiences/tequilaMezcalTasting/portrait.jpg",
+          "gallery": [
+            "/assets/images/experiences/tequilaMezcalTasting/1.jpg"
+          ]
+      },
+      "translations": {
+        "en": {
+            "title":"Arte Médico Los Cabos",
+            "text1":"Catálogo de Servicios - Arte Médico Los Cabos",
+            "text2":"Dr. Shagreel Reyna - Médico Estético Certificado",
+            "text3":"Especialista en armonización facial, hilos de tracción, Toxina botulinica técnicas avanzadas y Armonización corporal con tecnología láser ENDOLYSE.",
+            "text4":"En Arte Médico Los Cabos ofrecemos tratamientos de medicina estética de alta especialización, con un enfoque en la seguridad, confianza y resultados naturales.",
+            "text5":"El Dr. Shagreel Reyna, certificado a nivel nacional e internacional, se mantiene en constante capacitación para brindar a cada paciente técnicas avanzadas, utilizando las mejores marcas reconocidas en el mundo.",
+            "brand1":"Toxina Botulínica: Botox® · Dysport®", 
+            "brand2":"Rellenos de Ácido Hialurónico (Fillers): Restylane® · Juvederm®",
+            "brand3":"Biestimuladores de Colágeno: Radiesse® · Sculptra® · PROFHILO® · HArmonyCa®",
+            "text6":"✨ Servicios Estéticos",
+            "text7":"1. Rellenos con Ácido Hialurónico",
+            "text8":"Redefine y armoniza los rasgos faciales con técnicas avanzadas de diseño personalizado.",
+            "list1": [
+                "Diseño de labios",
+                "Rinomodelación no quirúrgica",
+                "Proyección de mentón",
+                "Proyección de pómulos",
+                "Marcaje mandibular",
+                "Relleno de ojeras"
+            ],
+            "text9":"Biestimuladores Faciales y Corporales",
+            "text10":"Tratamientos que regeneran la piel desde el interior, estimulando la producción natural de colágeno y elastina.",
+            "list2":[
+                "Rejuvenecimiento facial",
+                "Mejora de calidad de piel",
+                "Recuperación de firmeza corporal"
+            ],
+            "text11":"3. Hilos de Tracción",
+            "text12":"Procedimiento médico avanzado para reposicionar tejidos y lograr un efecto lifting inmediato y natural.",
+            "list3":[
+                "Elevación de pómulos y tercio medio",
+                "Corrección de surcos nasogenianos"
+            ],
+            "text13":"4. Toxina Botulínica",
+            "text14":"Aplicación segura y precisa con resultados naturales para prevenir y suavizar líneas de expresión.",
+            "list4":[
+                "Frente",
+                "Entrecejo",
+                "Líneas nasales ('bunny lines')",
+                "Patas de gallo",
+                "Relajación de maseteros (bruxismo / afinamiento facial)",
+                "Hiperhidrosis axilar (sudoración excesiva)"
+            ],
+            "text15":"5. Remodelación Corporal con Láser ENDOLYSE",
+            "text16":"Tecnología de última generación para armonizar el contorno corporal y mejorar la firmeza de la piel.",
+            "text17":"🌍 Experiencia Internacional · Atención Local",
+            "text18":"La clínica Arte Médico Los Cabos es un espacio creado para pacientes que buscan un trato cálido y profesional, con tecnología de vanguardia y técnicas actualizadas en los congresos más importantes del mundo en medicina estética.",
+            "text19":"Nuestro compromiso es ofrecer resultados seguros, naturales y elegantes, adaptados tanto a pacientes locales como internacionales que buscan lo mejor en Los Cabos."
+        },
+        "es": {
+            "title":"Arte Médico Los Cabos",
+            "text1":"Catálogo de Servicios - Arte Médico Los Cabos",
+            "text2":"Dr. Shagreel Reyna - Médico Estético Certificado",
+            "text3":"Especialista en armonización facial, hilos de tracción, Toxina botulinica técnicas avanzadas y Armonización corporal con tecnología láser ENDOLYSE.",
+            "text4":"En Arte Médico Los Cabos ofrecemos tratamientos de medicina estética de alta especialización, con un enfoque en la seguridad, confianza y resultados naturales.",
+            "text5":"El Dr. Shagreel Reyna, certificado a nivel nacional e internacional, se mantiene en constante capacitación para brindar a cada paciente técnicas avanzadas, utilizando las mejores marcas reconocidas en el mundo.",
+            "brand1":"Toxina Botulínica: Botox® · Dysport®", 
+            "brand2":"Rellenos de Ácido Hialurónico (Fillers): Restylane® · Juvederm®",
+            "brand3":"Biestimuladores de Colágeno: Radiesse® · Sculptra® · PROFHILO® · HArmonyCa®",
+            "text6":"✨ Servicios Estéticos",
+            "text7":"1. Rellenos con Ácido Hialurónico",
+            "text8":"Redefine y armoniza los rasgos faciales con técnicas avanzadas de diseño personalizado.",
+            "list1": [
+                "Diseño de labios",
+                "Rinomodelación no quirúrgica",
+                "Proyección de mentón",
+                "Proyección de pómulos",
+                "Marcaje mandibular",
+                "Relleno de ojeras"
+            ],
+            "text9":"Biestimuladores Faciales y Corporales",
+            "text10":"Tratamientos que regeneran la piel desde el interior, estimulando la producción natural de colágeno y elastina.",
+            "list2":[
+                "Rejuvenecimiento facial",
+                "Mejora de calidad de piel",
+                "Recuperación de firmeza corporal"
+            ],
+            "text11":"3. Hilos de Tracción",
+            "text12":"Procedimiento médico avanzado para reposicionar tejidos y lograr un efecto lifting inmediato y natural.",
+            "list3":[
+                "Elevación de pómulos y tercio medio",
+                "Corrección de surcos nasogenianos"
+            ],
+            "text13":"4. Toxina Botulínica",
+            "text14":"Aplicación segura y precisa con resultados naturales para prevenir y suavizar líneas de expresión.",
+            "list4":[
+                "Frente",
+                "Entrecejo",
+                "Líneas nasales ('bunny lines')",
+                "Patas de gallo",
+                "Relajación de maseteros (bruxismo / afinamiento facial)",
+                "Hiperhidrosis axilar (sudoración excesiva)"
+            ],
+            "text15":"5. Remodelación Corporal con Láser ENDOLYSE",
+            "text16":"Tecnología de última generación para armonizar el contorno corporal y mejorar la firmeza de la piel.",
+            "text17":"🌍 Experiencia Internacional · Atención Local",
+            "text18":"La clínica Arte Médico Los Cabos es un espacio creado para pacientes que buscan un trato cálido y profesional, con tecnología de vanguardia y técnicas actualizadas en los congresos más importantes del mundo en medicina estética.",
+            "text19":"Nuestro compromiso es ofrecer resultados seguros, naturales y elegantes, adaptados tanto a pacientes locales como internacionales que buscan lo mejor en Los Cabos."
+ 
+        },
+        "de": {
+            "title":"Arte Médico Los Cabos",
+            "text1":"Catálogo de Servicios - Arte Médico Los Cabos",
+            "text2":"Dr. Shagreel Reyna - Médico Estético Certificado",
+            "text3":"Especialista en armonización facial, hilos de tracción, Toxina botulinica técnicas avanzadas y Armonización corporal con tecnología láser ENDOLYSE.",
+            "text4":"En Arte Médico Los Cabos ofrecemos tratamientos de medicina estética de alta especialización, con un enfoque en la seguridad, confianza y resultados naturales.",
+            "text5":"El Dr. Shagreel Reyna, certificado a nivel nacional e internacional, se mantiene en constante capacitación para brindar a cada paciente técnicas avanzadas, utilizando las mejores marcas reconocidas en el mundo.",
+            "brand1":"Toxina Botulínica: Botox® · Dysport®", 
+            "brand2":"Rellenos de Ácido Hialurónico (Fillers): Restylane® · Juvederm®",
+            "brand3":"Biestimuladores de Colágeno: Radiesse® · Sculptra® · PROFHILO® · HArmonyCa®",
+            "text6":"✨ Servicios Estéticos",
+            "text7":"1. Rellenos con Ácido Hialurónico",
+            "text8":"Redefine y armoniza los rasgos faciales con técnicas avanzadas de diseño personalizado.",
+            "list1": [
+                "Diseño de labios",
+                "Rinomodelación no quirúrgica",
+                "Proyección de mentón",
+                "Proyección de pómulos",
+                "Marcaje mandibular",
+                "Relleno de ojeras"
+            ],
+            "text9":"Biestimuladores Faciales y Corporales",
+            "text10":"Tratamientos que regeneran la piel desde el interior, estimulando la producción natural de colágeno y elastina.",
+            "list2":[
+                "Rejuvenecimiento facial",
+                "Mejora de calidad de piel",
+                "Recuperación de firmeza corporal"
+            ],
+            "text11":"3. Hilos de Tracción",
+            "text12":"Procedimiento médico avanzado para reposicionar tejidos y lograr un efecto lifting inmediato y natural.",
+            "list3":[
+                "Elevación de pómulos y tercio medio",
+                "Corrección de surcos nasogenianos"
+            ],
+            "text13":"4. Toxina Botulínica",
+            "text14":"Aplicación segura y precisa con resultados naturales para prevenir y suavizar líneas de expresión.",
+            "list4":[
+                "Frente",
+                "Entrecejo",
+                "Líneas nasales ('bunny lines')",
+                "Patas de gallo",
+                "Relajación de maseteros (bruxismo / afinamiento facial)",
+                "Hiperhidrosis axilar (sudoración excesiva)"
+            ],
+            "text15":"5. Remodelación Corporal con Láser ENDOLYSE",
+            "text16":"Tecnología de última generación para armonizar el contorno corporal y mejorar la firmeza de la piel.",
+            "text17":"🌍 Experiencia Internacional · Atención Local",
+            "text18":"La clínica Arte Médico Los Cabos es un espacio creado para pacientes que buscan un trato cálido y profesional, con tecnología de vanguardia y técnicas actualizadas en los congresos más importantes del mundo en medicina estética.",
+            "text19":"Nuestro compromiso es ofrecer resultados seguros, naturales y elegantes, adaptados tanto a pacientes locales como internacionales que buscan lo mejor en Los Cabos."
+        }
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
