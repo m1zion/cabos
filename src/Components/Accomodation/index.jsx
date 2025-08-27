@@ -27,22 +27,33 @@ const Accomodation = () =>{
     const RoomIcon = icons['../../assets/icons/bed_color.svg'];
     const BathIcon = icons['../../assets/icons/bathroom_color.svg'];
     const ParkingIcon = icons['../../assets/icons/parking_color.svg'];
-
-    return (
-        <section id="accomodation" className="font-[quicksand] flex-column p-10 scroll-mt-20 w-full  bg-gradient-to-t from-[#DDE7E6] to-[#fff]">
-            <motion.div
+/*   <motion.div
                 className="container py-4 z-[2]"
                 initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.1 }}
                 viewport={{ once: true }}
             >                  
-            <h1 className="text-[2.5rem] sm:text-[3.5rem] text-[#256A77] text-center sm:text-left">{content.accomodationTitle}</h1>
-            </motion.div>           
-            <h1 className="text-[1rem] text-[#256A77]">
-                {content.accomodationContent}
+                <h1 className="pl-10 pr-10text-[2.5rem] sm:text-[3.5rem] text-[#256A77] text-center sm:text-left">{content.accomodationTitle}</h1>
+            </motion.div> */
+    return (
+        <section id="accomodation" className="pb-10 font-[quicksand] flex-column  scroll-mt-20 w-full  bg-gradient-to-t from-[#DDE7E6] to-[#fff]">
+            <div className="bg-gradient-to-r from-[#256A77] to-[#256A77]/90 ">
+                <motion.div
+                    className="container py-4 z-[2] flex items-center"
+                    initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1.1 }}
+                    viewport={{ once: true }}
+                >                  
+                    <h1 className="pl-10 pr-10text-[2.5rem] sm:text-[3.5rem] text-[white] font-light text-center sm:text-left">{content.accomodationTitle}</h1>
+                    <div className="hidden md:block mt-[1rem] ml-[1rem] h-[1px] w-[30%] bg-[white] bg-gradient-to-r from-[#ffffff] to-[#256A77] "></div>
+                </motion.div> 
+            </div>          
+            <h1 className="pl-10 pr-10 text-[1rem] text-[#256A77]">
+                {/*content.accomodationContent*/}
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 justify-items-center">
+            <div className="pl-10 pr-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 justify-items-center">
             {accomodations.map((accomodation) => {
                 const t = accomodation.translations[language] || accomodation.translations.en;
                 return (

@@ -37,20 +37,8 @@ const themes = {
 const Tours = () =>{    
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
-
     const theme = themes.darkBlue; // Try themes.blue or themes.darkBlue
-    return (     
-        <section 
-            id="tours" 
-            className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
-            style={{
-                backgroundImage: `url(${withBase('/assets/icons/abstract-envelope-sand.svg')})`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-            }}
-            //style={{ backgroundColor: theme.background }}
-        >               
-            <motion.div
+    /*   <motion.div
                 className="container py-7 z-[2]"
                 initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                 whileInView={{ opacity: 1, x: 0 }}
@@ -58,8 +46,32 @@ const Tours = () =>{
                 viewport={{ once: true }}
             >
                 <h2 className=" font-[quicksand] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left" style={{ color: theme.accent }}>{content.toursTitle}</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-4">
+            </motion.div>*/
+    return (     
+        <section 
+            id="tours" 
+            className="w-full scroll-mt-20 relative z-[1] overflow-hidden"
+            style={{
+                backgroundImage: `url(${withBase('/assets/icons/abstract-envelope-sand.svg')})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+            }}
+            //style={{ backgroundColor: theme.background }}
+        >         
+            <div className="px-10 bg-gradient-to-r from-[#256A77] to-[#256A77]/90 ">
+                 <motion.div
+                className="container z-[2] flex items-center"
+                initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.1 }}
+                viewport={{ once: true }}
+                >
+                    <h2 className="font-light font-[quicksand] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left" style={{ color: theme.accent }}>{content.toursTitle}</h2>
+                    <div className="hidden md:block mt-[1rem] ml-[1rem] h-[1px] w-[30%] bg-[white] bg-gradient-to-r from-[#ffffff] to-[#256A77] "></div>
+                </motion.div>
+            </div>      
+           
+            <div className="px-10 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-4">
                 {categories.map((category, index) => (
                     <div
                         key={index}

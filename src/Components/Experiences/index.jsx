@@ -32,34 +32,45 @@ const themes = {
     cardText: '#3d3d3d',
     iconColor: '#927B46',
     cardBg: '#FFFFFF'
+  },
+   sandWhite2: {
+    background: '#F4EFDF',
+    titleText: '#FFFFFF',
+    cardText: '#3d3d3d',
+    iconColor: '#927B46',
+    cardBg: '#FFFFFF'
   }
 };
 const Experiences = () =>{    
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     const experiences = experiencesData.experiences;
-    const theme = themes.sandWhite; // Try themes.blue or themes.darkBlue
+    const theme = themes.sandWhite2; // Try themes.blue or themes.darkBlue
     return (     
         <section 
             id="experiences" 
-            className="w-full px-10 py-5 scroll-mt-20 relative z-[1] overflow-hidden"
+            className="w-full scroll-mt-20 relative z-[1] overflow-hidden "
             //style={{ backgroundColor: theme.background }}
             style={{ 
               backgroundImage: `url(${withBase('/assets/icons/slanted-gradient.svg')})`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat', }}
         >  
+          <div className="bg-gradient-to-r from-[#256A77] to-[#256A77]/90">
             <motion.div
-                className="container py-4 z-[2]"
+                className="container px-10 py-1 z-[2] flex items-center"
                 initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.1 }}
                 viewport={{ once: true }}
             >
-                <h2 className="font-[quicksand]] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left"
+                <h2 className="font-[quicksand]] font-light text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left"
                 style={{ color: theme.titleText }}>{content.experiencesTitle}</h2>
+                <div className="hidden md:block mt-[1rem] ml-[1rem] h-[1px] w-[40%] bg-[white] bg-gradient-to-r from-[#ffffff] to-[#256A77] "></div>
             </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"> {/*justify-items-center */}
+          </div>
+            
+            <div className="px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"> {/*justify-items-center */}
             {experiences.map((experience) => {
               const t = experience.translations[language] || experience.translations.en;
               return (                
