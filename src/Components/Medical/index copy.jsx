@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import contentData from '../../data/medical.json';
 import { ToursContext } from "../../Context";
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 //OPCION DE COLORES 2.1

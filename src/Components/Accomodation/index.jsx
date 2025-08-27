@@ -5,7 +5,7 @@ import { ToursContext } from "../../Context";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387

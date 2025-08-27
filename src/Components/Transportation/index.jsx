@@ -2,7 +2,7 @@ import { useContext } from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import Carousel from 'react-multi-carousel';
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";

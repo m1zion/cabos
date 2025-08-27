@@ -3,7 +3,7 @@ import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 import bgImage from '../../assets/icons/abstract-envelope-sand.svg?react';
 //import Logo2  from '../../assets/icons/bg3.svg?react';
 

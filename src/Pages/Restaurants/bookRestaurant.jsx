@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import bgImage from '../../assets/icons/bg2.svg';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon, TruckIcon, UserGroupIcon } from '@heroicons/react/24/outline' 
 import WhatsApp from "../../Components/WhatsApp";
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
   import: 'default',

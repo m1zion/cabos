@@ -16,7 +16,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import WhatsApp from '../../Components/WhatsApp';
 import contentData from '../../data/content.json';
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({

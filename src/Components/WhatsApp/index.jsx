@@ -1,6 +1,6 @@
 import { ChevronLeftIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 const WhatsApp = () =>{
     const [isOpen, setIsOpen] = useState(true);
     const phone = "526241378282";

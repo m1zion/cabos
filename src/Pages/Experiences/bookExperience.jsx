@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import bgImage from '../../assets/icons/bg2.svg'; 
 import WhatsApp from "../../Components/WhatsApp";
 import { supabase } from '../../supabaseClient';
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387

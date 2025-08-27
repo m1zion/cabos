@@ -15,7 +15,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from "react-router-dom";
 import WhatsApp from "../../Components/WhatsApp";
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 
 // Set default icon manually
 delete L.Icon.Default.prototype._getIconUrl;

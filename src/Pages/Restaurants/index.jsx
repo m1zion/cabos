@@ -10,7 +10,7 @@ import WhatsApp from "../../Components/WhatsApp";
 import { Link } from "react-router-dom";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
-import { withBase } from '../../utils/path';
+import { withBase } from '../../Utils/path';
 const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
   import: 'default',
