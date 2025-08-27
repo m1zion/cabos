@@ -10,7 +10,7 @@ import contentData from '../../data/content.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-router-dom";
 import WhatsApp from "../../Components/WhatsApp";
-import { withBase } from '../../utils/path';
+//import { withBase } from "../../utils/path";
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
@@ -39,7 +39,7 @@ function tours() {
         <Layout>              
           <div
           className="relative h-[270px] w-full flex items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${withBase(categoryData?.image)})` }}          
+          /*style={{ backgroundImage: `url(${withBase(categoryData?.image)})` }}          */
           >
             <div className="absolute inset-0 bg-black/40"></div>
             <h1 className="relative z-10 text-white text-4xl font-semibold uppercase">
@@ -57,7 +57,7 @@ function tours() {
                   >
                     <img
                       //src={tour.images.portrait}
-                      src={withBase(tour.images.portrait)} 
+                      //src={withBase(tour.images.portrait)} 
                       alt={t.title}
                       className="w-full h-60 object-cover"
                     />
