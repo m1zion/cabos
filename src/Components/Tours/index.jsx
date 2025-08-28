@@ -60,7 +60,7 @@ const Tours = () =>{
         >         
             <div className="px-10 bg-gradient-to-r from-[#256A77] to-[#256A77]/90 ">
                  <motion.div
-                className="container z-[2] flex items-center"
+                className="container py-1 z-[2] flex items-center"
                 initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.1 }}

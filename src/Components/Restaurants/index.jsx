@@ -14,7 +14,10 @@ const Restaurants = () =>{
     return (
       <section id="restaurants" className="font-[quicksand] relative flex justify-start scroll-mt-20 h-[400px] w-full bg-[#eaf8f8]">    
         <div className="overflow-visible absolute left-[0px] w-0 sm:w-[30%] h-[100%] text-white z-1 bg-[black]">
-            <h3 className="mt-10 text-[2.5rem] sm:text-[3.5rem] pl-10"> {content.restaurantsTitle}</h3>
+            <div className="mt-10 flex items-center">
+                <h3 className="text-[2.5rem] sm:text-[3.5rem] pl-10 relative"> {content.restaurantsTitle}</h3>
+                <div className="absolute left-90 hidden md:block mt-[1rem] ml-[1rem] h-[1px] w-[300px] bg-[white] bg-gradient-to-r from-[#ffffff] to-[black] "></div>
+            </div>
             <div className="w-[350px] sm:w-[600px]">
                 <p className="text-justify mt-6 text-[1rem]  pl-10">
                     {content.restaurantsContent}

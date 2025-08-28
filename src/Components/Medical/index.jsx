@@ -28,7 +28,7 @@ const Medical = () =>{
             <p className="text-justify mt-6 text-[1.2rem]">{t.text2}</p>
             <p className="text-justify mt-1 text-[.9rem]">{t.text3}</p>
             <p className="text-justify mt-5 text-[1rem]">{t.text4}</p>
-            <Link to={`/Restaurants`}>
+            <Link to={`/Medical`}>
               <button className="hover:bg-[#ADD2DA]/20 cursor-pointer mt-8 border border-[#256A77] p-1 w-[120px] rounded-md">
                 Conoce Mas
               </button>
@@ -51,11 +51,6 @@ const Medical = () =>{
 
           </div>
         </section>
-) 
+  ) 
 }
 export default Medical
-
-
-     {/*0% → 20% = solid white (so the far left is covered).
-        20% → 50% = smooth fade from white to transparent.
-        50% → 100% = fully transparent (showing the image).*/}

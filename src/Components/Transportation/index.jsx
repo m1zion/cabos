@@ -3,7 +3,7 @@ import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import Carousel from 'react-multi-carousel';
 import { withBase } from '../../Utils/path';
-
+import { motion } from 'framer-motion'
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 
@@ -35,11 +35,21 @@ const Transportation = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
     return (
-        <div id="transportation" className="font-[quicksand] flex-col p-10 scroll-mt-20  w-full"> {/*h-[500px]*/}
-            <h1 className="text-center sm:text-left text-[2.5rem] sm:text-[3.5rem] text-[#03A6A6]">
-                {content.transportationTitle}
-            </h1>
-            <div className="flex flex-wrap w-full justify-center text-[#256A77]">
+        <div id="transportation" className="font-[quicksand] flex-col scroll-mt-20  w-full">
+            <div className="pr-10 pl-10 bg-gradient-to-r from-[#256A77] to-[#256A77]/90 ">
+              <motion.div
+                  className="container py-1 z-[2] flex items-center"
+                  initial={{ x: -120 , opacity: 0 }} //si lo ponia en 100 ampliaba el viewport y se veia mal el navbar
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1.1 }}
+                  viewport={{ once: true }}
+              >                  
+                  <h1 className="text-[2.5rem] sm:text-[3.5rem] text-[white] font-light text-center sm:text-left">{content.transportationTitle}</h1>
+                  <div className="hidden md:block mt-[1rem] ml-[1rem] h-[1px] w-[30%] bg-[white] bg-gradient-to-r from-[#ffffff] to-[#256A77] "></div>
+              </motion.div> 
+          </div>   
+
+            <div className="p-10 flex flex-wrap w-full justify-center text-[#256A77]">
               <div className="w-[full] md:w-1/2 h-full flex justify-center flex-col mb-5">
                 <img
                   src={withBase('/assets/images/transportation/car1.png')}
