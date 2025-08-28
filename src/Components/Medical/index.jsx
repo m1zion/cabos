@@ -16,7 +16,7 @@ const Medical = () =>{
     const t = medical[0].translations[language] || medical[0].translations.en;
     return (
         <section 
-        id="restaurants" 
+        id="Medical" 
         className="font-[quicksand] relative flex justify-start scroll-mt-20 h-[550px] w-full">    
           <div 
           className="w-[100%] sm:w-[70%] h-[100%]  text-[#256A77] bg-[white]/0 relative z-10 p-10">
