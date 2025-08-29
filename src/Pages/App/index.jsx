@@ -18,6 +18,8 @@ import BookExperience from '../Experiences/bookExperience'
 import BookRestaurant from '../Restaurants/bookRestaurant'
 import BookTransportation from '../Transportation/bookTransportation'
 import Medical from '../Medical/'
+import Terms from '../Terms/'
+import Privacy from '../Privacy/'
 //import Medical from '../Medical/'
 const AppRoutes = () =>{
   let routes = useRoutes([
@@ -31,7 +33,8 @@ const AppRoutes = () =>{
     { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },     
     { path: 'BookTransportation/:id',  element: <BookTransportation/> }, 
     { path: 'Medical',  element: <Medical/> }, 
-    //{ path: 'Medical',  element: <Medical/> }, 
+    { path: 'Terms',  element: <Terms/> }, 
+    { path: 'Privacy',  element: <Privacy/> }, 
     { path: 'Restaurants',  element: <Restaurants/> },
     { path: '*',  element: <NotFound/> },
   ]);

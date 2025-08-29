@@ -4,6 +4,7 @@ import contentData from '../../data/content.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const Footer = () =>{
     const { language } = useContext(ToursContext);  
     //PARA LA NAVEGACION ENTRE LAS SECCIONES
@@ -41,9 +42,9 @@ const Footer = () =>{
                 {/* Info Section */}
                 <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-4">Information</h3>
-                    <p className="pb-1">About Us</p>
-                    <p className="pb-1">Privacy Policy</p>
-                    <p>Terms & Conditions</p>
+                    <a onClick={(e) => handleNavClick(e, '#aboutUs')}><p className="pb-1 cursor-pointer">About Us</p></a>
+                    <Link to={`/Privacy`}><p className="pb-1">Privacy Policy</p></Link>
+                    <Link to={`/Terms`}><p>Terms & Conditions</p></Link>
                 </div>
 
                 {/* Links Section */}

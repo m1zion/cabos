@@ -14,10 +14,12 @@ const Medical = () =>{
     const { language } = useContext(ToursContext);
     const medical = contentData.medical;
     const t = medical[0].translations[language] || medical[0].translations.en;
-    return (
+    /*<div className="flex justify-center w-[100%] h-[580px] bg-[#E8E1CE]">
+        <div className="bg-[white] w-[95%] h-[95%]  rounded-lg">*/
+    return (      
         <section 
         id="Medical" 
-        className="font-[quicksand] relative flex justify-start scroll-mt-20 h-[550px] w-full">    
+        className="font-[quicksand] relative flex justify-start scroll-mt-20 h-[550px] w-[100%] ">    
           <div 
           className="w-[100%] sm:w-[70%] h-[100%]  text-[#256A77] bg-[white]/0 relative z-10 p-10">
             <div className="flex gap-3 mt-10 text-[1.5rem] sm:text-[2.5rem]">
@@ -48,7 +50,6 @@ const Medical = () =>{
             alt="Logo"
             />
             <div className="absolute hidden sm:block inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,1)_20%,rgba(255,255,255,1)_20%,rgba(255,255,255,0)_50%,rgba(255,255,255,0)_100%)]"></div>
-
           </div>
         </section>
   ) 

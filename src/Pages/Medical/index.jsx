@@ -90,7 +90,7 @@ UCCP 	VTAS 	2025	6*/}
                       <img
                       src={src}
                       alt={`Car ${index + 1}`}
-                      className="w-[100%] h-[600px] xl:h-[700px] object-contain" 
+                      className={`w-[100%] h-[600px] xl:h-[700px] ${index === 0 ? "object-cover" : "object-contain" }`}
                       />
                   </div>
                   ))}
