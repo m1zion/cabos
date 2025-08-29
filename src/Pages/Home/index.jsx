@@ -33,7 +33,7 @@ function Home() {
         <About/>
         <Tours />
         <Experiences />
-        <Medical/>
+        {/*<Medical/>*/}
         <Accomodation/>
         <Restaurants/>        
         <Transportation/>

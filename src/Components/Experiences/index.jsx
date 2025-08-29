@@ -1,11 +1,13 @@
 import { useContext } from "react";
 import contentData from '../../data/content.json';
+import medicalData from '../../data/medical.json';
 import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
 import experiencesData from '../../data/experiences.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { withBase } from '../../Utils/path';
+import Logo from '/assets/images/medical/portrait.jpg'
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
@@ -46,6 +48,8 @@ const Experiences = () =>{
     const content = contentData[language] || contentData['en']; 
     const experiences = experiencesData.experiences;
     const theme = themes.sandWhite2; // Try themes.blue or themes.darkBlue
+    const medical = medicalData.medical;
+    const m = medical[0].translations[language] || medical[0].translations.en;
     return (     
         <section 
             id="experiences" 
@@ -99,6 +103,42 @@ const Experiences = () =>{
                   </Link>
               );
             })}
+            </div>
+
+            <div className="w-full flex justify-center pb-10 rounded-xl ">  
+              <div    className="w-[100%] h-[680px] md:h-[640px] lg:h-[480px] py-10 rounded-xl bg-[white] relative ml-10 mr-10 grid grid-cols-1 ">               
+                <div  className="w-[100%] md:w-[70%] xl:w-[60%] h-[100%]  text-[#256A77] bg-[white]/0 relative z-10 px-10">
+                  <div className="flex gap-3 mt-1 text-[1.5rem] sm:text-[2rem] md:text-[2.5rem]">
+                    <img  className="h-15 w-auto"
+                    src={withBase('/assets/images/arteMedico.png')} alt="artemedico"></img>
+                    <p>{m.title}</p>
+                  </div>
+                  <p className="text-justify mt-2 text-[1.2rem]">{m.text2}</p>
+                  <p className="text-justify mt-1 text-[.9rem]">{m.text3}</p>
+                  <p className="text-justify mt-5 text-[1rem]">{m.intro1}</p>
+                  <p className="text-justify mt-1 text-[1rem]">{m.intro2}</p>
+                  <Link to={`/Medical`}>
+                    <button className="mt-10 h-[3rem] bg-[#DDE7E6]/70  hover:bg-[#ADD2DA]/70 cursor-pointer mt-5 border border-[#256A77] p-1 w-full md:w-[250px] rounded-md">
+                      Conoce Mas
+                    </button>
+                  </Link>
+                </div>
+                <div
+                  className="w-[100%] md:w-[51%] h-full absolute top-0 right-0"
+                >
+                  <img
+                  src={Logo}
+                  className="h-[100%] w-full object-cover  hidden md:block rounded-xl "
+                  alt="Logo"
+                  />
+                  <img
+                  src={Logo}
+                  className="h-[100%] w-full object-cover opacity-14 block md:hidden rounded-xl "
+                  alt="Logo"
+                  />
+                  <div className="absolute hidden md:block inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,1)_20%,rgba(255,255,255,1)_20%,rgba(255,255,255,0)_50%,rgba(255,255,255,0)_100%)]"></div>
+                </div>
+              </div>      
             </div>
         </section>
     )
