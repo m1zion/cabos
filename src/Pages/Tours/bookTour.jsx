@@ -142,10 +142,13 @@ function BookTour() {
         }
     };
     const sendEmail = (data) => {
-        //console.log(data);
         emailjs
-            //.send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
-            .send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')            
+            .send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            data,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )            
             .then((result) => {
             console.log(result.text);
             alert("Your booking request was sent successfully!");
@@ -280,7 +283,7 @@ function BookTour() {
                         >{content.children || "Number of Children"} {tour.childPrice == '-' && '(Adults only)'}</label>
                         <input
                             type="number"
-                            {...register("children", { required: true, min: 0 })}
+                            {...register("children", { min: 0 })}
                             className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                             min="0"
                             disabled = {tour.childPrice == '-' ? true : false}
