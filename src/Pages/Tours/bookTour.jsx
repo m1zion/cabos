@@ -145,7 +145,7 @@ function BookTour() {
         //console.log(data);
         emailjs
             //.send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
-            .send('service_eab0n6c', 'template_14wde1c', data, 'jPOZt81yZmLW-1dWi')            
+            .send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')            
             .then((result) => {
             console.log(result.text);
             alert("Your booking request was sent successfully!");
