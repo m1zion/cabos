@@ -106,7 +106,7 @@ const Experiences = () =>{
             </div>
 
             <div className="w-full flex justify-center pb-10 rounded-xl ">  
-              <div    className="w-[100%] h-[680px] md:h-[640px] lg:h-[480px] py-10 rounded-xl bg-[white] relative ml-10 mr-10 grid grid-cols-1 ">               
+              <div    className="w-[100%] h-full  md:h-[640px] lg:h-[480px] py-10 rounded-xl bg-[white] relative ml-10 mr-10 grid grid-cols-1 ">               
                 <div  className="w-[100%] md:w-[70%] xl:w-[60%] h-[100%]  text-[#256A77] bg-[white]/0 relative z-10 px-10">
                   <div className="flex gap-3 mt-1 text-[1.5rem] sm:text-[2rem] md:text-[2.5rem]">
                     <img  className="h-15 w-auto"
@@ -119,7 +119,7 @@ const Experiences = () =>{
                   <p className="text-justify mt-1 text-[1rem]">{m.intro2}</p>
                   <Link to={`/Medical`}>
                     <button className="mt-10 h-[3rem] bg-[#DDE7E6]/70  hover:bg-[#ADD2DA]/70 cursor-pointer mt-5 border border-[#256A77] p-1 w-full md:w-[250px] rounded-md">
-                      Conoce Mas
+                      {content.viewMore}
                     </button>
                   </Link>
                 </div>
