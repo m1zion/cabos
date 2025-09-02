@@ -49,7 +49,12 @@ function BookRestaurant() {
 
     const sendEmail = (data) => {
         emailjs
-            .send('service_fa73aip', 'template_es3is5k', data, '21k3wzHormHRFrx_5')
+            .send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE2_ID,
+            data,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            ) 
             .then((result) => {
             console.log(result.text);
             alert("Your request was sent successfully!");

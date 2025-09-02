@@ -35,9 +35,13 @@ function BookTransportation() {
         formState: { errors },
     } = useForm();
     const sendEmail = (data) => {
-        console.log(data);
         emailjs            
-            .send('service_eab0n6c', 'template_6dgwgrz', data, 'jPOZt81yZmLW-1dWi') //MLD service template public_key          
+            .send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE2_ID,
+                data,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )          
             .then((result) => {
             alert("Your ride request was sent successfully!");
             reset(); // Reset the form

@@ -101,9 +101,13 @@ function BookExperience() {
     };
     const sendEmail = (data) => {
         //console.log(data);
-        emailjs
-            //.send('service_eab0n6c', 'template_hxk3b34', data, 'jPOZt81yZmLW-1dWi')
-            .send('service_eab0n6c', 'template_14wde1c', data, 'jPOZt81yZmLW-1dWi')            
+            emailjs
+            .send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            data,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )       
             .then((result) => {
             console.log(result.text);
             alert("Your booking request was sent successfully!");

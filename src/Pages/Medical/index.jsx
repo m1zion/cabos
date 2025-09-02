@@ -150,9 +150,9 @@ UCCP 	VTAS 	2025	6*/}
           <p className="text-justify mt-5 text-[1rem]">{t.text17}</p>
           <p className="text-justify mt-2 text-[1rem]">{t.text18}</p>
           <p className="text-justify mt-2 text-[1rem]">{t.text19}</p>     
-          <div className="flex gap-2">
+          {/*<div className="flex gap-2">
             <a
-                href="https://www.facebook.com/artemedicoloscabos/"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 w-[40px] h-[40px] text-[25px] leading-[39px] text-[#818a91] bg-[#eceeef] rounded-full text-center inline-block transition-all duration-200 hover:text-white hover:bg-[#3b5998]"
@@ -160,14 +160,14 @@ UCCP 	VTAS 	2025	6*/}
                 <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a
-                href="https://www.instagram.com/artemedico.loscabos/"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 w-[40px] h-[40px] text-[25px] leading-[39px] text-[#818a91] bg-[#eceeef] rounded-full text-center inline-block transition-all duration-200 hover:text-white hover:bg-[linear-gradient(to_right,_#833ab4,_#fd1d1d,_#fcb045)]"
             >
                 <FontAwesomeIcon icon={faInstagram} />
             </a>
-          </div>        
+          </div>  */}      
         </div>        
         <WhatsApp/>
         </Layout>
