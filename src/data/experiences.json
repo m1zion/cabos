@@ -94,6 +94,194 @@
           "additionalData": "Mindestens 2 Gäste"
         }
       }
+    },
+    {
+      "id": "salsa",
+      "name": "Private Salsa or Bachata class",
+      "category": "Experiences",
+      "images": {
+        "portrait": "/assets/images/experiences/salsa/portrait.jpg",
+        "gallery": [
+          "/assets/images/experiences/salsa/1.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "adultPrice":"65",
+      "childPrice":"65",
+      "translations": {
+        "en": {
+          "title": "Private Salsa/Bachata class",
+          "description": "Enjoy a private salsa or bachata class with a professional instructor, tailored to your pace and level. Experience a fun and engaging activity, perfect for couples or small groups who want to learn and connect through dance.",
+          "duration": "1 hour", 
+          "period": "Daily, upon request",
+          "age": "", 
+          "price": "65 USD per couple" ,
+          "rounTripTransportation": "not included"   ,   
+          "additionalData": " "
+        },
+        "es": {
+          "title": "Clase privada de salsa/bachata",
+          "description": "Disfruten de una clase privada de salsa o bachata con un instructor profesional, adaptada a su ritmo y nivel. Vivan una actividad divertida y dinámica, perfecta para parejas o grupos pequeños que quieran aprender y conectar a través del baile.",
+          "duration": "1 hora",
+          "period": "Diariamente, bajo solicitud",
+          "age": "",
+          "price": "65 USD por pareja",
+          "rounTripTransportation": "no incluido",
+          "additionalData": " "
+        },
+        "de": {
+          "title": "Private Salsa-/Bachata-Stunde",
+          "description": "Genießen Sie eine private Salsa- oder Bachata-Stunde mit einem professionellen Lehrer, abgestimmt auf Ihr Tempo und Niveau. Erleben Sie eine unterhaltsame und mitreißende Aktivität, ideal für Paare oder kleine Gruppen, die durch Tanz lernen und sich verbinden möchten.",
+          "duration": "1 Stunde",
+          "period": "Täglich, auf Anfrage",
+          "age": "",
+          "price": "65 USD pro Paar",
+          "rounTripTransportation": "nicht inbegriffen",
+          "additionalData": " "
+        }
+      }      
+    },
+    {
+      "id": "decorations",
+      "name": "Special Occasion Decorations & Gifts",
+      "category": "Experiences",
+      "images": {
+        "portrait": "/assets/images/experiences/decoration/portrait.jpg",
+        "gallery": [
+          "/assets/images/experiences/decoration/1.jpg",
+          "/assets/images/experiences/decoration/2.jpg",
+          "/assets/images/experiences/decoration/3.jpg"
+        ]
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "adultPrice":"-",
+      "childPrice":"-",
+      "translations": {
+        "en": {
+          "title": "Special Occasion Decorations & Gifts",
+          "description": "Make your stay unforgettable with personalized decorations and gifts for birthdays, anniversaries, or romantic surprises. We can arrange flowers, balloons, chocolates, champagne and more, tailored to your preferences and delivered directly to your villa or accommodation. If you stay at one of our properties, we can also arrange beautiful in-room decorations.",
+          "duration": "Flexible, upon request",
+          "period": "Daily, upon request",
+          "age": "",
+          "price": "Prices vary depending on request",
+          "rounTripTransportation": "not applicable",
+          "additionalData": " "
+        },
+        "es": {
+          "title": "Decoraciones y regalos para ocasiones especiales",
+          "description": "Haga que su estancia sea inolvidable con decoraciones y regalos personalizados para cumpleaños, aniversarios o sorpresas románticas. Podemos organizar flores, globos, chocolates, champagne y más, adaptados a sus preferencias y entregados directamente en su villa o alojamiento. Si se hospeda en una de nuestras propiedades, también podemos preparar hermosas decoraciones en la habitación.",
+          "duration": "Flexible, bajo solicitud",
+          "period": "Diariamente, bajo solicitud",
+          "age": "",
+          "price": "Los precios varían según la solicitud",
+          "rounTripTransportation": "no aplica",
+          "additionalData": " "
+        },
+        "de": {
+          "title": "Dekorationen & Geschenke für besondere Anlässe",
+          "description": "Gestalten Sie Ihren Aufenthalt unvergesslich mit individuellen Dekorationen und Geschenken für Geburtstage, Jubiläen oder romantische Überraschungen. Wir arrangieren Blumen, Luftballons, Pralinen, Champagner und mehr – ganz nach Ihren Wünschen und direkt in Ihre Villa oder Unterkunft geliefert. Wenn Sie in einer unserer Unterkünfte übernachten, können wir auch wunderschöne Zimmeredekorationen arrangieren.",
+          "duration": "Flexibel, auf Anfrage",
+          "period": "Täglich, auf Anfrage",
+          "age": "",
+          "price": "Preise variieren je nach Anfrage",
+          "rounTripTransportation": "nicht zutreffend",
+          "additionalData": " "
+        }
+      }
+    },
+    {
+      "id": "butler",
+      "name": "Personal Butler Service",
+      "category": "Experiences",
+      "images": {
+        "portrait": "/assets/images/experiences/butler/portrait.jpg",
+        "gallery": []
+      },
+      "status": "active",
+      "icon":"snorkel.svg",
+      "adultPrice":"-",
+      "childPrice":"-",
+      "translations": {
+        "en": {
+        "title": "Personal Butler Service",
+        "description": "Enhance your stay with the comfort of a personal butler, available to take care of every detail during your vacation. From restaurant reservations and private tours to in-villa arrangements, our butler ensures a seamless and personalized experience tailored to your needs.",
+        "duration": "Flexible, upon request",
+        "period": "Daily, upon request",
+        "age": "",
+        "price": "Prices vary depending on request",
+        "rounTripTransportation": "not applicable",
+        "additionalData": " "
+      },
+      "es": {
+        "title": "Servicio de mayordomo personal",
+        "description": "Mejora tu estancia con la comodidad de un mayordomo personal, disponible para encargarse de cada detalle durante tus vacaciones. Desde reservas en restaurantes y tours privados hasta arreglos en la villa, nuestro mayordomo garantiza una experiencia fluida y personalizada adaptada a tus necesidades.",
+        "duration": "Flexible, bajo solicitud",
+        "period": "Diariamente, bajo solicitud",
+        "age": "",
+        "price": "Los precios varían según la solicitud",
+        "rounTripTransportation": "no aplica",
+        "additionalData": " "
+      },
+      "de": {
+        "title": "Persönlicher Butlerservice",
+        "description": "Genießen Sie den Luxus eines persönlichen Butlers, der während Ihres Aufenthalts jedes Detail für Sie organisiert. Ob Restaurantreservierungen, private Ausflüge oder Arrangements in der Villa – unser Butler sorgt für ein reibungsloses und individuelles Erlebnis, das ganz auf Ihre Wünsche abgestimmt ist.",
+        "duration": "Flexibel, auf Anfrage",
+        "period": "Täglich, auf Anfrage",
+        "age": "",
+        "price": "Preise variieren je nach Anfrage",
+        "rounTripTransportation": "nicht zutreffend",
+        "additionalData": " "
+      }
     }
-  ]
+  },
+  {
+    "id": "fireworks",
+    "name": "Private Fireworks Service",
+    "category": "Experiences",
+    "images": {
+      "portrait": "/assets/images/experiences/fireworks/portrait.jpg",
+      "gallery": [
+        "/assets/images/experiences/fireworks/2.jpg"
+      ]
+    },
+    "status": "active",
+    "icon":"snorkel.svg",
+    "adultPrice":"-",
+    "childPrice":"-",
+    "translations": {
+      "en": {
+        "title": "Private Fireworks Service",
+        "description": "Add a spectacular highlight to your stay with a private fireworks display, arranged exclusively for your special occasion. Upon request, we work with our trusted partner who organizes the show and takes care of all necessary permits and arrangements.",
+        "duration": "Flexible, upon request",
+        "period": "Available upon request",
+        "age": "",
+        "price": "Prices vary depending on request",
+        "rounTripTransportation": "not applicable",
+        "additionalData": " "
+      },
+      "es": {
+        "title": "Servicio de fuegos artificiales privados",
+        "description": "Agrega un toque espectacular a tu estancia con un show privado de fuegos artificiales, organizado exclusivamente para tu ocasión especial. Bajo solicitud, trabajamos con nuestro socio de confianza que se encarga de todo el espectáculo y de los permisos necesarios.",
+        "duration": "Flexible, bajo solicitud",
+        "period": "Disponible bajo solicitud",
+        "age": "",
+        "price": "Los precios varían según la solicitud",
+        "rounTripTransportation": "no aplica",
+        "additionalData": " "
+      },
+      "de": {
+        "title": "Privater Feuerwerksservice",
+        "description": "Setzen Sie Ihrem Aufenthalt ein spektakuläres Highlight mit einem privaten Feuerwerk, das exklusiv für Ihren besonderen Anlass arrangiert wird. Auf Anfrage arbeiten wir mit unserem zuverlässigen Partner zusammen, der die gesamte Show organisiert und alle erforderlichen Genehmigungen einholt.",
+        "duration": "Flexibel, auf Anfrage",
+        "period": "Auf Anfrage verfügbar",
+        "age": "",
+        "price": "Preise variieren je nach Anfrage",
+        "rounTripTransportation": "nicht zutreffend",
+        "additionalData": " "
+      }
+    } 
+  }
+]
 }
