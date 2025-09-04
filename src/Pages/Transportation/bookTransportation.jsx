@@ -119,6 +119,8 @@ function BookTransportation() {
                         className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                         >
                             <option value="">-- Select a time --</option>
+                            <option value="08:00">06:00</option>
+                            <option value="08:00">07:00</option>
                             <option value="08:00">08:00</option>
                             <option value="09:00">09:00</option>
                             <option value="10:00">10:00</option>
@@ -128,6 +130,13 @@ function BookTransportation() {
                             <option value="14:00">14:00</option>
                             <option value="15:00">15:00</option>
                             <option value="16:00">16:00</option>
+                            <option value="14:00">17:00</option>
+                            <option value="15:00">18:00</option>
+                            <option value="16:00">19:00</option>
+                            <option value="16:00">20:00</option>
+                            <option value="16:00">21:00</option>
+                            <option value="16:00">22:00</option>
+                            <option value="16:00">23:00</option>
                         </select>
                         {errors.hour && <span className="text-red-500 text-sm">Please select a time</span>}
                     </div>

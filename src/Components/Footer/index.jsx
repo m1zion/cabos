@@ -41,18 +41,18 @@ const Footer = () =>{
                 </div>
                 {/* Info Section */}
                 <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-4">Information</h3>
-                    <a onClick={(e) => handleNavClick(e, '#aboutUs')}><p className="pb-1 cursor-pointer">About Us</p></a>
-                    <Link to={`/Privacy`}><p className="pb-1">Privacy Policy</p></Link>
-                    <Link to={`/Terms`}><p>Terms & Conditions</p></Link>
+                    <h3 className="text-lg font-semibold mb-4">{content.information}</h3>
+                    <a onClick={(e) => handleNavClick(e, '#aboutUs')}><p className="pb-1 cursor-pointer">{content.aboutUsTitle}</p></a>
+                    <Link to={`/Privacy`}><p className="pb-1">{content.privacy}</p></Link>
+                    <Link to={`/Terms`}><p>{content.terms}</p></Link>
                 </div>
 
                 {/* Links Section */}
                 <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-                    <a onClick={(e) => handleNavClick(e, '#tours')}><p className="pb-1 cursor-pointer">Tours</p></a>
-                    <a onClick={(e) => handleNavClick(e, '#experiences')}><p className="pb-1 cursor-pointer">Experiences</p></a>
-                    <a onClick={(e) => handleNavClick(e, '#accomodation')}><p className="pb-1 cursor-pointer">Accommodation</p></a>
+                    <h3 className="text-lg font-semibold mb-4">{content.quick}</h3>
+                    <a onClick={(e) => handleNavClick(e, '#tours')}><p className="pb-1 cursor-pointer">{content.toursTitle}</p></a>
+                    <a onClick={(e) => handleNavClick(e, '#experiences')}><p className="pb-1 cursor-pointer">{content.experiencesTitle}</p></a>
+                    <a onClick={(e) => handleNavClick(e, '#accomodation')}><p className="pb-1 cursor-pointer">{content.accomodationTitle}</p></a>
                 </div>
             </div>
             <div className="text-center text-sm mt-10 text-gray-400">

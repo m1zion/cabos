@@ -492,10 +492,7 @@
         "portrait": "/assets/images/tours/archOfCabo/portrait.jpg",
         "gallery": [
           "/assets/images/tours/archOfCabo/1.jpg",
-          "/assets/images/tours/archOfCabo/2.jpg",
-          "/assets/images/tours/archOfCabo/3.jpg",
-          "/assets/images/tours/archOfCabo/4.jpg",
-          "/assets/images/tours/archOfCabo/5.jpg"
+          "/assets/images/tours/archOfCabo/2.jpg"
         ]
       },
       "status": "active",
@@ -590,13 +587,7 @@
       "category": "boatYatch",
       "images": {
         "portrait": "/assets/images/tours/fishing/portrait.jpg",
-        "gallery": [
-          "/assets/images/tours/fishing/1.jpg",
-          "/assets/images/tours/fishing/2.jpg",
-          "/assets/images/tours/fishing/3.jpg",
-          "/assets/images/tours/fishing/4.jpg",
-          "/assets/images/tours/fishing/5.jpg"
-        ]
+        "gallery": []
       },
       "status": "active",
       "icon":"snorkel.svg",

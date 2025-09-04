@@ -204,7 +204,12 @@ function BookRestaurant() {
                                     <option value="13:00">13:00</option>
                                     <option value="14:00">14:00</option>
                                     <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
+                                    <option value="16:00">16:00</option>        
+                                    <option value="14:00">17:00</option>
+                                    <option value="15:00">18:00</option>
+                                    <option value="16:00">19:00</option>
+                                    <option value="16:00">20:00</option>
+                                    <option value="16:00">21:00</option>
                                 </select>
                                 {errors.hour && <span className="text-red-500 text-sm">Please select a time</span>}
                             </div>

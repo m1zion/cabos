@@ -215,12 +215,17 @@ function BookExperience() {
                             <option value="14:00">14:00</option>
                             <option value="15:00">15:00</option>
                             <option value="16:00">16:00</option>
+                            <option value="14:00">17:00</option>
+                            <option value="15:00">18:00</option>
+                            <option value="16:00">19:00</option>
+                            <option value="16:00">20:00</option>
+                            <option value="16:00">21:00</option>
                         </select>
                         {errors.hour && <span className="text-red-500 text-sm">Please select a time</span>}
                     </div>
                 </div>    
                 <div className="flex flex-row justify-between text-md text-[#256A77]">
-                    {(experience.adultPrice === '-' && experience.childPrice === '-') && ('*This tour requieres additional data to calculate the price please provide it in the description: ' + t.price)}
+                    {(experience.adultPrice === '-' && experience.childPrice === '-') && ('*This experience requires additional data to calculate the price please provide it in the description: ' + t.price)}
                 </div>
                 <div className="flex flex-row justify-between">
                     <div className="flex flex-col w-[48%]">
