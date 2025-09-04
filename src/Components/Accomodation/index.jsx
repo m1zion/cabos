@@ -59,8 +59,8 @@ const Accomodation = () =>{
                 return (
                     <div key={accomodation.id} className="w-[100%]  border border-gray-100 bg-white rounded-sm shadow-lg overflow-hidden transform transition duration-400 hover:-translate-y-1">
                         <img src={withBase(accomodation.images.portrait)} alt={t.title} className="w-full h-60 object-cover" />
-                        <div className="flex-column h-full text-[#256A77] p-4 space-y-2">
-                            <div >
+                        <div className="flex flex-col h-56 justify-between text-[#256A77] p-4 space-y-2">
+                            <div className="">
                                 <div className="justify-between pr-[5px] items-center">                               
                                     <h3 className="text-md md:text-xl font-semibold text-[1.1rem]">{t.title}</h3>    
                                 </div>
@@ -89,12 +89,17 @@ const Accomodation = () =>{
                                         </div>
                                     )}
                                 </div>  
-                            </div>                             
-                            <Link to={`/Accommodation/${accomodation.id}`}>
-                                <button className="w-full hover:bg-[#EEF4F3] mt-2 px-4 py-3 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer">
+                            </div>   
+                            <div className="w-[full]" >
+                                <Link to={`/Accommodation/${accomodation.id}`}>
+                                <button className="w-full hover:bg-[#EEF4F3] px-4 py-3 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer">
                                     {content.viewListing}
                                 </button>
-                            </Link>
+                                </Link>
+                            </div>                          
+                            {/*<Link to={`/Accommodation/${accomodation.id}`}>
+                                
+                            </Link>*/}
                         </div>
                     </div>
                 );

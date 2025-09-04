@@ -51,11 +51,20 @@ const Tours = () =>{
         <section 
             id="tours" 
             className="w-full scroll-mt-20 relative z-[1] overflow-hidden"
-            style={{
+            /*style={{               
                 backgroundImage: `url(${withBase('/assets/icons/abstract-envelope-sand.svg')})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-            }}
+            }}*/
+
+
+         style={{
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(${withBase('/assets/images/backtest.jpg')})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+  }}
             //style={{ backgroundColor: theme.background }}
         >         
             <div className="px-10 bg-gradient-to-r from-[#256A77] to-[#256A77]/90 ">

@@ -24,9 +24,9 @@ const Restaurants = () =>{
                 </p>
             </div>
             <Link to={`/Restaurants`}>
-            <button className="ml-15 hover:bg-white/20 cursor-pointer mt-8 border border-[white] p-1 w-[120px] rounded-md">
-                {content.exploreButton}
-            </button>
+                <button className="ml-10 hover:bg-white/20 cursor-pointer mt-8 border border-[white] p-1 w-[260px] h-12 rounded-md">
+                    {content.exploreButton}
+                </button>
             </Link>
         </div>
         <div

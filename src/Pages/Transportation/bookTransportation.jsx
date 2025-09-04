@@ -119,6 +119,12 @@ function BookTransportation() {
                         className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#256A77]"
                         >
                             <option value="">-- Select a time --</option>
+                            <option value="08:00">00:00</option>
+                            <option value="08:00">01:00</option>
+                            <option value="08:00">02:00</option>
+                            <option value="08:00">03:00</option>
+                            <option value="08:00">04:00</option>
+                            <option value="08:00">05:00</option>
                             <option value="08:00">06:00</option>
                             <option value="08:00">07:00</option>
                             <option value="08:00">08:00</option>
