@@ -88,7 +88,7 @@
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities": "Servicios",
+          "amenities":"Servicios",
           "amenitiesList": [
             { "category": "Dormitorio", "name": "Cama King size", "icon": "doubleBed.svg" },
             { "category": "Dormitorio", "name": "Aire acondicionado", "icon": "ac.svg" },
@@ -144,7 +144,7 @@
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities": "Ausstattung",
+          "amenities":"Ausstattung",
           "amenitiesList": [
             { "category": "Schlafzimmer", "name": "Kingsize-Bett", "icon": "doubleBed.svg" },
             { "category": "Schlafzimmer", "name": "Klimaanlage", "icon": "ac.svg" },
@@ -268,7 +268,7 @@
           "parking":"",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities": "Amenidades",
+          "amenities":"Amenidades",
           "amenitiesList": [
             { "category": "Dormitorio", "name": "Cama queen size", "icon": "doubleBed.svg" },
             { "category": "Dormitorio", "name": "Clóset", "icon": "closet.svg" },
@@ -310,7 +310,7 @@
           "parking":"",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities": "Ausstattung",
+          "amenities":"Ausstattung",
           "amenitiesList": [
             { "category": "Schlafzimmer", "name": "Queensize-Bett", "icon": "doubleBed.svg" },
             { "category": "Schlafzimmer", "name": "Kleiderschrank", "icon": "closet.svg" },
@@ -449,7 +449,7 @@
           "parking":"1",
           "size":"60 m2",          
           "additionalData": "",
-          "amenities":"Annehmlichkeiten",
+          "amenities":"Ausstattung",
           "amenitiesList": [
             { "category": "Schlafzimmer", "name": "Doppelbett", "icon": "doubleBed.svg" },
             { "category": "Schlafzimmer", "name": "Kleiderschrank", "icon": "closet.svg" },
