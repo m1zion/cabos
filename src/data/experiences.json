@@ -64,7 +64,7 @@
       "childPrice":"75",
       "translations": {
         "en": {
-          "title": "Privates Pizza-Making Experience",
+          "title": "Private Pizza-Making Experience",
           "description": "Savor a private pizza-making experience by the beach, guided by a professional chef. Craft your own dough, select your favorite toppings, and create a personalized masterpiece — then relax and enjoy your freshly baked pizza at a beautifully set table right on the sand.",
           "duration": "2-3 hours", 
           "period": "Daily, upon request",
@@ -84,7 +84,7 @@
           "additionalData": "Mínimo 2 personas"
         },        
         "de": {
-          "title": "Private Pizza-Erlebnis am Strand",
+          "title": "Privates Pizza-Erlebnis am Strand",
           "description": "Genießen Sie ein privates Pizza-Erlebnis am Strand, begleitet von einem professionellen Koch. Bereiten Sie Ihren eigenen Teig zu, wählen Sie Ihre Lieblingszutaten und kreieren Sie Ihre persönliche Pizza - anschließend genießen Sie Ihr frisch gebackenes Werk an einem liebevoll gedeckten Tisch direkt im Sand.",
           "duration": "2-3 Stunden",
           "period": "Täglich, auf Anfrage",
