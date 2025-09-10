@@ -39,32 +39,6 @@ function medical() {
     
     return (
         <Layout>
-
-
-{/*Empresa	Rama	Ejercicio	Periodo
-UCCP 	CXC  	2025	2
-UCCP 	CXC  	2025	3
-UCCP 	CXC  	2025	4
-UCCP 	CXC  	2025	5
-UCCP 	CXC  	2025	6
-UCCP 	CXP  	2025	2
-UCCP 	CXP  	2025	3
-UCCP 	CXP  	2025	4
-UCCP 	CXP  	2025	5
-UCCP 	CXP  	2025	6
-UCCP 	VTAS 	2025	2
-UCCP 	VTAS 	2025	3
-UCCP 	VTAS 	2025	4
-UCCP 	VTAS 	2025	5
-UCCP 	VTAS 	2025	6*/}
-
-        {/*<div className="flex justify-center w-[100%]">
-          <img
-          src={Logo}
-          className="h-[600px] w-[100%]  object-cover"
-          alt="Logo"
-          />           
-        </div>*/}
         <div className="hidden md:block w-[100%] h-[600px] xl:h-[700px]">
           <Carousel 
             infinite              

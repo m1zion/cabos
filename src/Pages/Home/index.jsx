@@ -2,7 +2,7 @@ import React, { Suspense, lazy, useState, useEffect } from 'react'
 import { useLocation } from 'react-router'
 import { ChevronLeftIcon} from "@heroicons/react/24/solid"; // or use any icon you like
 import Hero from '../../Components/Hero'
-import Footer from '../../Components/Footer'
+import Cabos from '../../Components/Cabos'
 import Layout from '../../Components/Layout'
 import About from '../../Components/About'
 import WhatsApp from '../../Components/WhatsApp';
@@ -30,6 +30,7 @@ function Home() {
     <Layout>
       <Hero />
       <Suspense fallback={<div>Loading...</div>}>
+        {/*<Cabos/>*/}
         <About/>
         <Tours />
         <Experiences />
