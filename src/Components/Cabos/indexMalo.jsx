@@ -53,7 +53,7 @@ const Cabos = () =>{
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-10"></div>
                     <div className="flex h-[100%] items-center absolute top-0 z-20 text-white text-start">
-                        <div className='pl-14 pr-14 pt-5 pb-5 bg-black/50 flex items-end justify-center flex-wrap gap-2 sm:gap-3 '>
+                        <div className='pl-14 pr-14 pt-2 pb-5 bg-black/50 flex items-end justify-center flex-wrap gap-2 sm:gap-3 '>
                             <h1 className="text-2xl sm:text-3xl font-bold mb-5 ">Descubra Los Cabos & Baja California Sur</h1>
                             <h1 className=" mb-[12px] ">¡Bienvenido a Los Cabos, uno de los destinos más fascinantes de México!
                                 Aquí, en el extremo sur de la península de Baja California Sur, el desierto se encuentra con el mar azul profundo, y formaciones rocosas espectaculares como el famoso Arco de Los Cabos emergen del agua - un paisaje que nunca deja de impresionar.

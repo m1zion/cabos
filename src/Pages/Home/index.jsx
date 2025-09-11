@@ -28,9 +28,9 @@ function Home() {
   }, [location]);
   return (
     <Layout>
-      <Hero />
+      {/*<Hero />*/}
+      <Cabos/>
       <Suspense fallback={<div>Loading...</div>}>
-        {/*<Cabos/>*/}
         <About/>
         <Tours />
         <Experiences />
