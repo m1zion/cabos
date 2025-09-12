@@ -35,6 +35,16 @@ function tours() {
         return <div>Tours not found</div>;
     }
     const categoryData = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
+    console.log(categoryData);
+    if(categoryData === undefined){
+      return(
+        <Layout>
+        <div className="w-[300px]">
+          Pagina no Encontrada
+        </div>
+        </Layout>
+      )
+    }
     return (
         <Layout>              
           <div

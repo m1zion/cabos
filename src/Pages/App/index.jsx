@@ -10,6 +10,7 @@ import Home from '../Home/'
 import NotFound from '../NotFound/'
 import Accommodation from '../Accommodation/'
 import Tours from '../Tours/'
+import Places from '../Places/'
 import Restaurants from '../Restaurants/'
 import TourDetail from '../Tours/tourDetail'
 import ExperienceDetail from '../Experiences/'
@@ -26,6 +27,7 @@ const AppRoutes = () =>{
     { path: '',  element: <Home/> },
     { path: 'Accommodation/:id',  element: <Accommodation/> },
     { path: 'Tours/:id',  element: <Tours/> },
+    { path: 'Places/:id',  element: <Places/> },
     { path: 'TourDetail/:id',  element: <TourDetail/> },
     { path: 'ExperienceDetail/:id',  element: <ExperienceDetail/> },
     { path: 'BookTour/:id',  element: <BookTour/> },    
