@@ -5,6 +5,7 @@ import Hero from '../../Components/Hero'
 import Cabos from '../../Components/Cabos'
 import Layout from '../../Components/Layout'
 import About from '../../Components/About'
+import Places from '../../Components/Places'
 import WhatsApp from '../../Components/WhatsApp';
 // Lazy load for animations/scroll-sensitive components
 const Tours = lazy(() => import('../../Components/Tours'))
@@ -32,6 +33,7 @@ function Home() {
       <Cabos/>
       <Suspense fallback={<div>Loading...</div>}>
         <About/>
+        <Places/>
         <Tours />
         <Experiences />
         {/*<Medical/>*/}

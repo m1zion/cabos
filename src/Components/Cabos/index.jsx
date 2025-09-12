@@ -60,7 +60,7 @@ const Cabos = () =>{
                     Your browser does not support the video tag.
                 </video>        
                 {/* Overlay Content */}
-                <div className="h-[90%] flex flex-col relative z-10 text-white text-start pl-8 pt-5 sm:pt-17">
+                <div className="h-[90%] flex flex-col relative z-10 text-white text-start pl-8 pr-2 pt-5 sm:pt-17">
                     <motion.div
                         initial={{ scale: 0.5, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
@@ -124,11 +124,11 @@ const Cabos = () =>{
             {/*=====================CONTENIDO 2=====================*/}
             <div key="1" className="flex w-[100%] h-[600px] xl:h-[650px] text-[white] sm:text-[black]"> 
                 <div className='z-10 bg-[black]/10 sm:bg-[#DDE7E6]/50 text-[1rem] w-[100%] sm:w-[60%] flex-col items-start justify-center p-15'>
-                    <div className="flex  overflow-visible">
-                        <h1 className="font-bold text-[2rem] mb-3 pr-2 whitespace-nowrap">Descubre la</h1>                        
+                    <div className="flex flex-col sm:flex-row  overflow-visible">
+                        <h1 className="font-bold text-[2rem] mb-1 sm:mb-3 pr-2 whitespace-nowrap">Descubre la</h1>                        
                         <h1 className="text-[#DDE7E6] sm:text-[#378BA1] font-bold text-[2rem] mb-3 whitespace-nowrap overflow-visible">Vida Salvaje</h1>
                     </div>
-                    <div className="mb-[.5rem] h-[2px] w-[60%] bg-[white] bg-gradient-to-r from-[#378BA1] to-[#DDE7E6]/50 "></div>
+                    <div className="mb-[.5rem] h-[2px] w-[99%] sm:w-[70%] bg-[white] bg-gradient-to-r from-[#378BA1] to-[#DDE7E6]/50 "></div>
                     <h1 className="pt-5 text-justify">Los Cabos es uno de los pocos lugares en el mundo donde usted puede observar ballenas de cerca de diciembre a abril – una experiencia verdaderamente inolvidable.</h1>
                     <h1 className="pt-1 text-justify">Entre octubre y marzo, también tiene la oportunidad de nadar con los gentiles tiburones ballena en La Paz.</h1>
                     <h1 className="pt-1 text-justify">La región es hogar de delfines, tortugas marinas y peces de colores, y es considerada uno de los mejores sitios de buceo y esnórquel de México.</h1>
