@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
@@ -28,17 +28,21 @@ const Places = () =>{
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     const theme = themes.darkBlue; 
+    const [showModal, setShowModal] = useState(false);
+    const handleImageClick = () => {
+        setShowModal(true);
+    };
     return (     
         <section 
             id="tours" 
-            className="w-full scroll-mt-20 relative z-[1] overflow-hidden"
+            className="w-full scroll-mt-20 relative z-[1] overflow-hidden  z-[999]"
             style={{
                 backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.6)), url(${withBase('/assets/images/cabos/cabos7.jpg')})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',
-            }}> 
+        }}> 
             <div className="px-10 bg-gradient-to-r from-[#256A77] to-[#256A77]/90 ">
                 <motion.div
                 className="container py-1 z-[2] flex items-center"
@@ -51,6 +55,13 @@ const Places = () =>{
                     <div className="hidden md:block mt-[1rem] ml-[1rem] h-[1px] w-[30%] bg-[white] bg-gradient-to-r from-[#ffffff] to-[#256A77] "></div>
                 </motion.div>
             </div>    
+            <div className="w-full px-10">
+                <div className="px-3 mt-3 text-[#256A77] font-semibold bg-[white]/50 rounded-md w-[100%] sm:w-[250px] h-[40px] flex items-center justify-start sm:justify-between gap-5">
+                    ¿Donde Esta?
+                    <img  onClick={() => handleImageClick()} src={withBase("/assets/icons/map.svg")} alt="map" className="w-8 h-8 cursor-pointer"/>
+                </div>
+            </div>
+            
             <div className="px-10 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 mt-4">
                 {categories.map((category, index) => (
                     <div key="1" className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer">        
@@ -76,6 +87,27 @@ const Places = () =>{
                     </div>
                 ))}
             </div>
+
+
+            {showModal && (
+            <div className="fixed inset-0 bg-black/90 bg-opacity-50 z-[999] flex items-center justify-center p-4">
+                <button
+                className="absolute top-4 right-4 text-white text-2xl cursor-pointer"
+                onClick={() => setShowModal(false)}
+                >
+                ✕
+                </button>
+                <div className="w-full max-w-4xl">
+                <img
+                    src={withBase('/assets/images/cabos/Picture0.png')}
+                    onClick={() => setShowModal(false)}
+                    alt={`Mapa`}
+                    className="w-full h-auto rounded-md shadow-lg object-contain max-h-[80vh]"
+                />
+                </div>
+            </div>
+            )}
+
         </section>
     )
 }

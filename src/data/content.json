@@ -74,7 +74,19 @@
     "from": "From",
     "to": "To",
     "flightNumber": "Flight Number",
-    "transportationBookTitle": "Get a ride"
+    "transportationBookTitle": "Get a ride",
+    "place1":"Discover Los Cabos & Baja California Sur",
+    "place2":"Welcome to Los Cabos, one of Mexico's most captivating destinations!",
+    "place3":"Here, at the southern tip of the Baja California Sur peninsula, endless desert landscapes meet the deep blue sea, and dramatic rock formations like the world-famous El Arco rise out of the water – a sight that never fails to impress.",
+    "place4":"Dicover",
+    "place5":"Wild life",
+    "place6":"Los Cabos is one of the few places in the world where you can watch whales up close from December to April – an unforgettable experience.",
+    "place7":"Between October and March, you can also snorkel with gentle whale sharks in La Paz. The region is home to countless dolphins, sea turtles, and colorful fish species and is considered one of Mexico’s best diving and snorkeling spots.",
+    "place8":"Between October and March, you can also snorkel with gentle whale sharks in La Paz. ",
+    "place9":"The region is home to countless dolphins, sea turtles, and colorful fish species and is considered one of Mexico’s best diving and snorkeling spots.",
+    "place10":
+
+
   },
   "es": {
     "welcome": "Bienvenido a",
