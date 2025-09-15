@@ -48,7 +48,7 @@ const Cabos = () =>{
             responsive={responsive}
         >       
             {/*=====================HERO=====================*/}
-            <div className="relative w-full h-[600px] xl:h-[650px] flex items-start justify-start overflow-hidden shadow-lg">
+            <div className="relative w-full h-[600px] xl:h-[650px] flex items-start justify-start overflow-hidden">
                 <video
                     autoPlay
                     loop
@@ -112,11 +112,9 @@ const Cabos = () =>{
                 <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-10"></div>
                 <div className="flex h-[100%] items-center absolute top-0 z-20 text-white text-start">
                     <div className='text-justify pl-14 pr-14 pt-2 pb-5 bg-black/50 flex items-end justify-center flex-wrap gap-2 sm:gap-3 '>
-                        <h1 className="text-2xl sm:text-3xl font-bold mb-5 ">Descubra Los Cabos & Baja California Sur</h1>
-                        <h1 className=" mb-[12px] ">¡Bienvenido a Los Cabos, uno de los destinos más fascinantes de México!
-                            Aquí, en el extremo sur de la península de Baja California Sur, el desierto se encuentra con el mar azul profundo, y formaciones rocosas espectaculares como el famoso Arco de Los Cabos emergen del agua - un paisaje que nunca deja de impresionar.
-                        </h1>
-                        <h1 className=" mb-[12px] ">Lo que hace a Los Cabos tan especial es su mezcla única de naturaleza virgen, resorts de lujo, gastronomía de primer nivel y experiencias auténticas. A diferencia de Cancún, conocido por sus grandes zonas hoteleras, Los Cabos ofrece la combinación perfecta de lujo, autenticidad y aventura.
+                        <h1 className="text-2xl sm:text-3xl font-bold mb-5 ">{content.place1}</h1>
+                        <h1 className=" mb-[12px] ">{content.place2} {content.place3}</h1>
+                        <h1 className=" mb-[12px] ">{content.place10}
                         </h1>
                     </div>                      
                 </div>
@@ -125,13 +123,13 @@ const Cabos = () =>{
             <div key="1" className="flex w-[100%] h-[600px] xl:h-[650px] text-[white] sm:text-[black]"> 
                 <div className='z-10 bg-[black]/10 sm:bg-[#DDE7E6]/50 text-[1rem] w-[100%] sm:w-[60%] flex-col items-start justify-center p-15'>
                     <div className="flex flex-col sm:flex-row  overflow-visible">
-                        <h1 className="font-bold text-[2rem] mb-1 sm:mb-3 pr-2 whitespace-nowrap">Descubra la</h1>                        
-                        <h1 className="text-[#DDE7E6] sm:text-[#378BA1] font-bold text-[2rem] mb-3 whitespace-nowrap overflow-visible">Vida Salvaje</h1>
+                        <h1 className="font-bold text-[2rem] mb-1 sm:mb-3 pr-2 whitespace-nowrap">{content.place4}</h1>                        
+                        <h1 className="text-[#DDE7E6] sm:text-[#378BA1] font-bold text-[2rem] mb-3 whitespace-nowrap overflow-visible">{content.place5}</h1>
                     </div>
                     <div className="mb-[.5rem] h-[2px] w-[99%] sm:w-[70%] bg-[white] bg-gradient-to-r from-[#378BA1] to-[#DDE7E6]/50 "></div>
-                    <h1 className="pt-5 text-justify">Los Cabos es uno de los pocos lugares en el mundo donde usted puede observar ballenas de cerca de diciembre a abril – una experiencia verdaderamente inolvidable.</h1>
-                    <h1 className="pt-1 text-justify">Entre octubre y marzo, también tiene la oportunidad de nadar con los gentiles tiburones ballena en La Paz.</h1>
-                    <h1 className="pt-1 text-justify">La región es hogar de delfines, tortugas marinas y peces de colores, y es considerada uno de los mejores sitios de buceo y esnórquel de México.</h1>
+                    <h1 className="pt-5 text-justify">{content.place6}</h1>
+                    <h1 className="pt-1 text-justify">{content.place7}</h1>
+                    <h1 className="pt-1 text-justify">{content.place8}</h1>
                 </div>
                 <div className="w-[0%] sm:w-[40%] z-0">
                     <img
@@ -151,18 +149,18 @@ const Cabos = () =>{
                 <div className="overflow-visible lg:bg-[#F7FDFF] h-[100%] w-[100%] lg:w-[60%] ">
                     <div className="overflow-visible flex flex-col h-[100%] relative px-14 pt-5">
                         <div className="z-10 font-bold text-[1.5rem] lg:text-[2rem] overflow-visible">
-                            <h1 className="pr-2 inline-block whitespace-nowrap">Sus Experiencias con</h1>    
-                            <h1 className="mb-3 pr-2 inline-block whitespace-nowrap">Los Cabos Moments</h1>   
+                            <h1 className="pr-2 inline-block whitespace-nowrap">{content.place11}</h1>    
+                            <h1 className="mb-3 pr-2 inline-block whitespace-nowrap">{content.place12}</h1>   
                         </div>                        
-                        <h1 className="pt-2 lg:pt-4 text-justify">En Los Cabos Moments no solo le inspiramos, sino que le ayudamos a convertir su viaje en realidad. Puede reservar todo con nosotros de manera sencilla y personalizada:</h1>
+                        <h1 className="pt-2 lg:pt-4 text-justify">{content.place13}</h1>
                         <ul className="pl-4 lg:pl-10 pt-[1rem] list-disc text-justify">
-                            <li>Alojamientos en Airbnb con excelentes reseñas</li>
-                            <li>Transporte privado desde y hacia el aeropuerto</li>
-                            <li>Tours y experiencias: avistamiento de ballenas, esnórquel, paseos en barco, talleres de pizza, clases de salsa y bachata</li>
-                            <li>Servicios exclusivos: organización de mayordomo, regalos y decoraciones, incluso fuegos artificiales privados</li>
-                            <li>Reservaciones en los restaurantes más destacados de la región</li>
+                            <li>{content.list1a}</li>
+                            <li>{content.list1b}</li>
+                            <li>{content.list1c}</li>
+                            <li>{content.list1d}</li>
+                            <li>{content.list1e}</li>
                         </ul> 
-                        <h1 className="hidden sm:block pt-5 text-justify">Ya sea que busque aventura, relajación o experiencias gastronómicas – nosotros nos encargamos de cada detalle para que su estancia en Los Cabos sea inolvidable.</h1>
+                        <h1 className="hidden sm:block pt-5 text-justify">{content.place14}</h1>
                         <img
                             src={bgImage}
                             alt="Wave Divider"
@@ -177,44 +175,7 @@ const Cabos = () =>{
                     className="absolute  inset-0 w-full h-full object-cover"
                     />                      
                 </div>
-            </div>          
-
-
-
-              {/*=====================CONTENIDO 4=====================*/}
-           {/*} <div className="relative w-[100%] h-[600px] xl:h-[650px] text-[#378BA1] flex ">
-                <div className="flex z-2 overflow-visible  h-[100%] w-[70%] ">
-                    <div className="bg-[#F7FDFF]/85 overflow-visible flex flex-col h-[100%] w-[80%] px-14 pt-5">
-                        <div className="font-bold text-[1.5rem] lg:text-[2rem] overflow-visible">
-                            <h1 className="pr-2 inline-block whitespace-nowrap">Sus Experiencias con</h1>    
-                            <h1 className="mb-3 pr-2 inline-block whitespace-nowrap">Los Cabos Moments</h1>   
-                        </div>                        
-                        <h1 className="pt-2 lg:pt-4 text-justify">En Los Cabos Moments no solo le inspiramos, sino que le ayudamos a convertir su viaje en realidad. Puede reservar todo con nosotros de manera sencilla y personalizada:</h1>
-                        <ul className="pl-4 lg:pl-10 pt-[1rem] list-disc text-justify">
-                            <li>Alojamientos en Airbnb con excelentes reseñas</li>
-                            <li>Transporte privado desde y hacia el aeropuerto</li>
-                            <li>Tours y experiencias: avistamiento de ballenas, esnórquel, paseos en barco, talleres de pizza, clases de salsa y bachata</li>
-                            <li>Servicios exclusivos: organización de mayordomo, regalos y decoraciones, incluso fuegos artificiales privados</li>
-                            <li>Reservaciones en los restaurantes más destacados de la región</li>
-                        </ul> 
-                        <h1 className="hidden sm:block pt-5 text-justify">Ya sea que busque aventura, relajación o experiencias gastronómicas – nosotros nos encargamos de cada detalle para que su estancia en Los Cabos sea inolvidable.</h1>
-                        
-                    </div>   
-                    <img
-                        src={bgImage2}
-                        alt="Wave Divider"
-                        className="object-cover h-[100%]"
-                    />                                          
-                </div>                       
-                <div className="w-[100%] absolute overflow-hidden z-1">
-                    <img
-                    src={Logo6}
-                    alt="Hero"
-                    className=" inset-0 w-full h-full object-cover"
-                    />                      
-                </div>
-            </div>      */}
-
+            </div>     
         </Carousel>
     )
 }
