@@ -153,7 +153,7 @@ const Cabos = () =>{
                             <h1 className="mb-3 pr-2 inline-block whitespace-nowrap">{content.place12}</h1>   
                         </div>                        
                         <h1 className="pt-2 lg:pt-4 text-justify">{content.place13}</h1>
-                        <ul className="pl-4 lg:pl-10 pt-[1rem] list-disc text-justify">
+                        <ul className="pl-4 lg:pl-10 pt-[1rem] list-disc text-left">
                             <li>{content.list1a}</li>
                             <li>{content.list1b}</li>
                             <li>{content.list1c}</li>

@@ -17,8 +17,8 @@ import { withBase } from "../../Utils/path";
 //Hover bright #EEF4F3
 //text #256A77
 const categories = [
-  { key: 'sanJose', name: 'San José del Cabo', image: '/assets/images/cabos/Picture8.png' },
-  { key: 'losCabos', name: 'Cabo San Lucas', image: '/assets/images/cabos/Picture13.png' },
+  { key: 'sanJose', name: 'San José del Cabo', image: '/assets/images/city.jpg' },
+  { key: 'losCabos', name: 'Cabo San Lucas', image: '/assets/images/cabos/cabos1.jpg' },
   { key: 'laPaz', name: 'La Paz', image: '/assets/images/cabos/Picture6.jpg' },
   { key: 'todosSantos', name: 'Todos Santos', image: '/assets/images/cabos/Picture15.png' }
 ];
@@ -31,31 +31,48 @@ function places() {
         return <div>Tours not found</div>;
     }
     const place = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
-    console.log(place);
+    console.log(place.key);
+    var texto1 = "1";
+    var texto2 = ""
+    switch (place.key) {
+      case 'sanJose':
+        texto1 = content.place16;
+        texto2 = content.place17;
+      break;
+      case 'losCabos':
+        texto1 = content.place18;
+        texto2 = content.place19;
+      break;
+      case 'laPaz':
+        texto1 = content.place20;
+        texto2 = content.place21;
+      break;
+      case 'todosSantos':
+        texto1 = content.place22;
+        texto2 = content.place23;
+      break;
+    }
     return (
         <Layout>
-          <div className="relative h-[270px] w-full"> {/**/}            
-            <img
-            src={withBase(place.image)}
-            alt="Background"
-            className="absolute top-0 left-0 w-full h-full object-cover z-0"
-            />            
-            <div className="bg-black/20 px-3 py-1 rounded-sm backdrop-blur-5 absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent"></div>            
-            <div className="absolute inset-0 flex flex-col justify-center items-start text-start">
-                <div className="w-[95%] sm:w-[90%] xl:w-[85%] mx-auto">
-                    <h2 className="text-white text-5xl sm:text-6xl font-semibold drop-shadow-md mb-2">
-                        {place.name}
-                    </h2>         
-                </div>      
+          <div className="font-[quicksand] w-full bg-gradient-to-b from-[#256A77]/15 to-[#fff]/90  flex flex-col justifty-center items-center">            
+            <div className='mb-4 h-screen bg-[white] pt-8 max-w-[800px] pl-4 pr-4 sm:pl-8 sm:pr-8 flex flex-col justifty-center items-center'>
+              <img
+                src={withBase(place.image)}
+                className="w-[100%] h-auto object-contain"
+              />
+              <h2 className="w-full text-3xl mt-6 pb-1 sm:text-4xl font-semibold drop-shadow-md mb-2">
+                  {place.name}
+              </h2>  
+              <div className="mb-4  mt-[2px] h-[1px] w-[100%] bg-[white] bg-gradient-to-l from-[#ffffff] to-[#256A77] "></div>
+              <h2 className="mb-10">{texto1}{texto2}</h2>
             </div>
-          </div>              
-          <div>
-            Pagina en construcción
           </div>
+         
+           
+          
           <WhatsApp/>
         </Layout>
     )
 }
 export default places
-
 
