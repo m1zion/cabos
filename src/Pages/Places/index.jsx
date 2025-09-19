@@ -64,12 +64,9 @@ function places() {
                   {place.name}
               </h2>  
               <div className="mb-4  mt-[2px] h-[1px] w-[100%] bg-[white] bg-gradient-to-l from-[#ffffff] to-[#256A77] "></div>
-              <h2 className="mb-10">{texto1}{texto2}</h2>
+              <h2 className="mb-10">{texto2}</h2>
             </div>
-          </div>
-         
-           
-          
+          </div>         
           <WhatsApp/>
         </Layout>
     )

@@ -51,13 +51,13 @@ const Places = () =>{
                 transition={{ duration: 1.1 }}
                 viewport={{ once: true }}
                 >
-                    <h2 className="font-light font-[quicksand] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left" style={{ color: theme.accent }}>Destinos</h2>
+                    <h2 className="font-light font-[quicksand] text-[2.5rem] sm:text-[3.5rem] text-center sm:text-left" style={{ color: theme.accent }}>{content.destiny}</h2>
                     <div className="hidden md:block mt-[1rem] ml-[1rem] h-[1px] w-[30%] bg-[white] bg-gradient-to-r from-[#ffffff] to-[#256A77] "></div>
                 </motion.div>
             </div>    
             <div className="w-full px-10">
                 <div className="px-3 mt-3 text-[#256A77] font-semibold bg-[white]/50 rounded-md w-[100%] sm:w-[250px] h-[40px] flex items-center justify-start sm:justify-between gap-5">
-                    ¿Donde Esta?
+                    {content.where}
                     <img  onClick={() => handleImageClick()} src={withBase("/assets/icons/map.svg")} alt="map" className="w-8 h-8 cursor-pointer"/>
                 </div>
             </div>
