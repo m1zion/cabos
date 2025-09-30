@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
@@ -24,6 +24,7 @@ const themes = {
     cardBg: '#FFFFFF',
   },
 };
+
 const Places = () =>{    
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
@@ -32,10 +33,20 @@ const Places = () =>{
     const handleImageClick = () => {
         setShowModal(true);
     };
+    /*useEffect(() => {
+        if (showModal) {
+            document.body.style.overflow = "hidden"; // disable scroll
+        } else {
+            document.body.style.overflow = "auto"; // restore scroll
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [showModal]);*/
     return (     
         <section 
             id="tours" 
-            className="w-full scroll-mt-20 relative z-[1] overflow-hidden"
+            className="w-full scroll-mt-20 relative z-[2] overflow-hidden"
             style={{
                 backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.6)), url(${withBase('/assets/images/cabos/cabos7.jpg')})`,
                 backgroundSize: 'cover',
@@ -90,7 +101,7 @@ const Places = () =>{
 
 
             {showModal && (
-            <div className="fixed inset-0 bg-black/90 bg-opacity-50 z-[999] flex items-center justify-center p-4">
+            <div  onClick={() => setShowModal(false)} className="fixed inset-0 bg-black/90 bg-opacity-50 z-[9999] flex items-center justify-center p-4">
                 <button
                 className="absolute top-4 right-4 text-white text-2xl cursor-pointer"
                 onClick={() => setShowModal(false)}
@@ -107,7 +118,6 @@ const Places = () =>{
                 </div>
             </div>
             )}
-
         </section>
     )
 }
