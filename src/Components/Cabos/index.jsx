@@ -124,7 +124,7 @@ const Cabos = () =>{
                 <div className='z-10 bg-[black]/10 sm:bg-[#DDE7E6]/50 text-[1rem] w-[100%] sm:w-[60%] flex-col items-start justify-center p-15'>
                     <div className="flex flex-col sm:flex-row  overflow-visible">
                         <h1 className="font-bold text-[2rem] mb-1 sm:mb-3 pr-2 whitespace-nowrap">{content.place4}</h1>                        
-                        <h1 className="text-[#DDE7E6] sm:text-[#378BA1] font-bold text-[2rem] mb-3 whitespace-nowrap overflow-visible">{content.place5}</h1>
+                        <h1 className="text-[#DDE7E6] sm:text-[#378BA1] font-bold text-[2rem] mb-3  overflow-visible">{content.place5}</h1>
                     </div>
                     <div className="mb-[.5rem] h-[2px] w-[99%] sm:w-[70%] bg-[white] bg-gradient-to-r from-[#378BA1] to-[#DDE7E6]/50 "></div>
                     <h1 className="pt-5 text-justify">{content.place6}</h1>
