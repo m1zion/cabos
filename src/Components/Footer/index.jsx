@@ -81,7 +81,7 @@ const Footer = () =>{
                 </ul>                   
             </div>
             <div className="text-center text-sm mt-10 text-gray-400">
-                &copy; {new Date().getFullYear()} Cabos. All rights reserved.
+                &copy; {new Date().getFullYear()} Cabos. All rights reserved. v1.1
             </div>
     </footer>
     )
