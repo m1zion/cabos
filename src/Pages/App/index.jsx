@@ -1,6 +1,7 @@
 import { useState } from 'react'
 //I was using BrowserRouter  but GitHub Pages does not support server-side routing
-import { useRoutes, HashRouter  } from 'react-router-dom'
+//import { useRoutes, HashRouter  } from 'react-router-dom'
+import { useRoutes, BrowserRouter } from 'react-router-dom'
 import { ShoppingCartProvider } from '../../Context'
 import './App.css'
 import NavBar from '../../Components/NavBar/'
@@ -24,20 +25,20 @@ import Privacy from '../Privacy/'
 //import Medical from '../Medical/'
 const AppRoutes = () =>{
   let routes = useRoutes([
-    { path: '',  element: <Home/> },
-    { path: 'Accommodation/:id',  element: <Accommodation/> },
-    { path: 'Tours/:id',  element: <Tours/> },
-    { path: 'Places/:id',  element: <Places/> },
-    { path: 'TourDetail/:id',  element: <TourDetail/> },
-    { path: 'ExperienceDetail/:id',  element: <ExperienceDetail/> },
-    { path: 'BookTour/:id',  element: <BookTour/> },    
-    { path: 'BookExperience/:id',  element: <BookExperience/> },    
-    { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },     
-    { path: 'BookTransportation/:id',  element: <BookTransportation/> }, 
-    { path: 'Medical',  element: <Medical/> }, 
-    { path: 'Terms',  element: <Terms/> }, 
-    { path: 'Privacy',  element: <Privacy/> }, 
-    { path: 'Restaurants',  element: <Restaurants/> },
+    { path: '/',  element: <Home/> },
+    { path: '/Accommodation/:id',  element: <Accommodation/> },
+    { path: '/Tours/:id',  element: <Tours/> },
+    { path: '/Places/:id',  element: <Places/> },
+    { path: '/TourDetail/:id',  element: <TourDetail/> },
+    { path: '/ExperienceDetail/:id',  element: <ExperienceDetail/> },
+    { path: '/BookTour/:id',  element: <BookTour/> },    
+    { path: '/BookExperience/:id',  element: <BookExperience/> },    
+    { path: '/BookRestaurant/:id',  element: <BookRestaurant/> },     
+    { path: '/BookTransportation/:id',  element: <BookTransportation/> }, 
+    { path: '/Medical',  element: <Medical/> }, 
+    { path: '/Terms',  element: <Terms/> }, 
+    { path: '/Privacy',  element: <Privacy/> }, 
+    { path: '/Restaurants',  element: <Restaurants/> },
     { path: '*',  element: <NotFound/> },
   ]);
   return routes;
@@ -45,12 +46,12 @@ const AppRoutes = () =>{
 const App = () => {
   return (
     <ShoppingCartProvider>
-      <HashRouter  >
+      <BrowserRouter  >
         <ScrollToTop />
         <AppRoutes/>
         <NavBar/>
         <Footer />
-      </HashRouter > 
+      </BrowserRouter > 
     </ShoppingCartProvider>
   )
 }
