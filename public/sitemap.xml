@@ -5,5 +5,32 @@
     <loc>https://loscabosmoments.com/</loc>
     <priority>1.0</priority>
   </url>
+  <!-- Tours overview -->
+  <url>
+    <loc>https://loscabosmoments.com/Tours/sunsetCruises</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tour detail pages -->
+  <url>
+    <loc>https://loscabosmoments.com/tourDetail/sunsetPartyboat</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://loscabosmoments.com/tourDetail/sunsetDinnerPirate</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://loscabosmoments.com/tourDetail/sunsetJazz</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://loscabosmoments.com/tourDetail/romanticSunset</loc>
+    <priority>0.7</priority>
+  </url>
+
 
 </urlset>
