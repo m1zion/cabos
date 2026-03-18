@@ -1,8 +1,9 @@
 import { useState } from 'react'
 //I was using BrowserRouter  but GitHub Pages does not support server-side routing
 //import { useRoutes, HashRouter  } from 'react-router-dom'
-import { useRoutes, BrowserRouter } from 'react-router-dom'
+import { useRoutes, BrowserRouter, Outlet } from 'react-router-dom'
 import { ShoppingCartProvider } from '../../Context'
+import LanguageRedirect from '../../Utils/LanguageRedirect'
 import './App.css'
 import NavBar from '../../Components/NavBar/'
 import ScrollToTop from "../../Components/scrollToTop";
@@ -23,23 +24,53 @@ import Medical from '../Medical/'
 import Terms from '../Terms/'
 import Privacy from '../Privacy/'
 //import Medical from '../Medical/'
+
+
+const Layout = () => {
+  return (
+    <>
+      <NavBar />
+      <ScrollToTop />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
+
+
+
 const AppRoutes = () =>{
   let routes = useRoutes([
-    { path: '/',  element: <Home/> },
-    { path: '/Accommodation/:id',  element: <Accommodation/> },
-    { path: '/Tours/:id',  element: <Tours/> },
-    { path: '/Places/:id',  element: <Places/> },
-    { path: '/TourDetail/:id',  element: <TourDetail/> },
-    { path: '/ExperienceDetail/:id',  element: <ExperienceDetail/> },
-    { path: '/BookTour/:id',  element: <BookTour/> },    
-    { path: '/BookExperience/:id',  element: <BookExperience/> },    
-    { path: '/BookRestaurant/:id',  element: <BookRestaurant/> },     
-    { path: '/BookTransportation/:id',  element: <BookTransportation/> }, 
-    { path: '/Medical',  element: <Medical/> }, 
-    { path: '/Terms',  element: <Terms/> }, 
-    { path: '/Privacy',  element: <Privacy/> }, 
-    { path: '/Restaurants',  element: <Restaurants/> },
+    { path: '/', element: <LanguageRedirect/> },
+    {
+      path: '/:lang',
+      element: <Layout />, //wrap everything
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'Tours/:id', element: <Tours /> },
+        { path: 'TourDetail/:id', element: <TourDetail /> },
+        { path: 'ExperienceDetail/:id', element: <ExperienceDetail /> },
+        { path: 'BookTour/:id', element: <BookTour /> },
+
+        { path: 'Accommodation/:id', element: <Accommodation /> },
+        { path: 'Places/:id', element: <Places /> },
+
+        { path: 'BookExperience/:id',  element: <BookExperience/> },    
+        { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },     
+        { path: 'BookTransportation/:id',  element: <BookTransportation/> },
+
+        { path: 'Restaurants', element: <Restaurants /> },
+        { path: 'Medical', element: <Medical /> },
+        { path: 'Terms', element: <Terms /> },
+        { path: 'Privacy', element: <Privacy /> },
+      ]
+    },
+    //{ path: '/:lang', element: <Home/> },
+    //{ path: '/:lang',  element: <Home/> },
+    //{ path: '/Accommodation/:id',  element: <Accommodation/> },
     { path: '*',  element: <NotFound/> },
+    {/*<Route path="/:lang/tours/:id" element={<Tours />} />
+<Route path="/:lang/tourDetail/:slug" element={<TourDetail />} />*/}
   ]);
   return routes;
 };
@@ -47,14 +78,13 @@ const App = () => {
   return (
     <ShoppingCartProvider>
       <BrowserRouter  >
-        <ScrollToTop />
+        {/*<ScrollToTop />*/}
         <AppRoutes/>
-        <NavBar/>
-        <Footer />
+        {/*<NavBar/>
+        <Footer />*/}
       </BrowserRouter > 
     </ShoppingCartProvider>
   )
 }
 export default App
-
-      {/*basename={import.meta.env.BASE_URL}*/}
+  {/*basename={import.meta.env.BASE_URL}*/}

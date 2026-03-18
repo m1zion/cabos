@@ -1,5 +1,6 @@
 import { useContext} from "react";
 import contentData from '../../data/content.json';
+import { useParams } from 'react-router-dom';
 import { ToursContext } from "../../Context";
 import { Link } from "react-router-dom";
 import { withBase } from '../../Utils/path';
@@ -9,7 +10,9 @@ import { withBase } from '../../Utils/path';
 //Hover bright #EEF4F3
 //text #256A77
 const Restaurants = () =>{
-    const { language } = useContext(ToursContext);
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
     const content = contentData[language] || contentData['en'];
     return (
       <section id="restaurants" className="font-[quicksand] relative flex justify-start scroll-mt-20 h-[400px] w-full bg-[#eaf8f8]">    
@@ -23,7 +26,7 @@ const Restaurants = () =>{
                     {content.restaurantsContent}
                 </p>
             </div>
-            <Link to={`/Restaurants`}>
+            <Link to={`/${language}/Restaurants`}>
                 <button className="ml-10 hover:bg-white/20 cursor-pointer mt-8 border border-[white] p-1 w-[260px] h-12 rounded-md">
                     {content.exploreButton}
                 </button>
@@ -42,8 +45,6 @@ const Restaurants = () =>{
     )
 }
 export default Restaurants
-
-
 /*TEXTO ENCIMA DE LA IMAGEN */
 /*<section id="restaurants" className="font-[quicksand] relative flex justify-start scroll-mt-20 h-[400px] w-full bg-[#eaf8f8]">    
     <div className="overflow-visible absolute left-[0px] w-0 sm:w-[30%] h-[100%] text-white z-1 bg-[#286A77]">

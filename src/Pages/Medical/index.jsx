@@ -10,6 +10,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Logo from '/assets/images/medical/portrait2.jpg'
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 // Set default icon manually
@@ -33,7 +34,9 @@ const responsive = {
 };
 
 function medical() {  
-    const { language } = useContext(ToursContext);
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
     const medical = contentData.medical;
     const t = medical[0].translations[language] || medical[0].translations.en;
     

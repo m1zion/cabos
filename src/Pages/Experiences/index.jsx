@@ -25,8 +25,9 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 function ExperienceDetail() {  
-    const { language } = useContext(ToursContext);
-    const { id } = useParams();
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();
+    const language = lang || 'en';
     const experience = experienceData.experiences.find(a => a.id === id);
     const [showModal, setShowModal] = useState(false);
     const content = contentData[language] || contentData['en']; 
@@ -95,7 +96,7 @@ function ExperienceDetail() {
 
         
         <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
-            <Link to={`/bookExperience/${experience.id}`}>
+            <Link to={`/${language}/bookExperience/${experience.id}`}>
                 <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#728E9F] text-white font-medium rounded-sm shadow hover:bg-[#5E7890] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
             </Link>
         </div>

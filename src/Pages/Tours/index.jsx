@@ -11,13 +11,9 @@ import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/reac
 import { Link } from "react-router-dom";
 import WhatsApp from "../../Components/WhatsApp";
 import { withBase } from "../../Utils/path";
-//OPCION DE COLORES 2.1
-//#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
-//Hover #286A77
-//Hover bright #EEF4F3
-//text #256A77
+import { Helmet } from "react-helmet-async";
 const categories = [
-  { key: 'sunsetCruises', image: '../assets/images/sunset.jpg' },
+  { key: 'sunsetCruises', image: '../assets/images/sunset.jpg',title:'Sunset & Luxury Tours in Los Cabos | Los Cabos Moments ',content:'Discover sunset cruises, luxury tours and unique experiences in Los Cabos. Private and premium tours curated by local experts.'},
   { key: 'waterExperiences', image: '../assets/images/snorkel.jpg' },
   { key: 'boatYatch', image: '../assets/images/boat.jpg' },
   { key: 'whaleWatching', image: '../assets/images/sea.jpg' },
@@ -25,17 +21,17 @@ const categories = [
   { key: 'atvRazors', image: '../assets/images/utv.jpg' },
   { key: 'dayTrip', image: '../assets/images/land.jpg' },
 ];
-
-function tours() {  
-    const { language } = useContext(ToursContext);
+function tours() {      
+    //We use to take the language from the context
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
     const content = contentData[language] || contentData['en']; 
-    const { id } = useParams();  
     const filteredTours = toursData.tours.filter(tour => tour.category === id);
     if (!filteredTours) {
         return <div>Tours not found</div>;
     }
     const categoryData = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
-    console.log(categoryData);
     if(categoryData === undefined){
       return(
         <Layout>
@@ -46,7 +42,15 @@ function tours() {
       )
     }
     return (
-        <Layout>              
+      <>
+      <Helmet>
+        <title>{categoryData.title}</title>
+        <meta
+          name="description"
+          content={categoryData.content}
+        />
+      </Helmet>
+      <Layout>              
           <div
           className="relative h-[270px] w-full flex items-center justify-center bg-cover bg-center"
           style={{ backgroundImage: `url(${withBase(categoryData?.image)})` }}          
@@ -60,13 +64,12 @@ function tours() {
             {filteredTours.map((tour) => {
               const t = tour.translations[language] || tour.translations.en;
               return (                
-                <Link to={`/tourDetail/${tour.id}`} key={tour.id}>
+                <Link to={`/${language}/tourDetail/${tour.id}`} key={tour.id}>
                   <div
                     key={tour.id}
                     className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"
                   >
                     <img
-                      //src={tour.images.portrait}
                       src={withBase(tour.images.portrait)} 
                       alt={t.title}
                       className="w-full h-60 object-cover"
@@ -84,6 +87,7 @@ function tours() {
           </div>
           <WhatsApp/>
         </Layout>
+      </>        
     )
 }
 export default tours

@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import contentData from '../../data/content.json';
+import { useParams } from 'react-router-dom';
 import accomodationData from '../../data/accomodation.json';
 import { ToursContext } from "../../Context";
 import { MapPinIcon  } from '@heroicons/react/24/outline'
@@ -17,7 +18,9 @@ const icons = import.meta.glob('../../assets/icons/*.svg', {
   import: 'default',
 });
 const Accomodation = () =>{
-    const { language } = useContext(ToursContext);
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
     const [accomodations, setAccomodations] = useState([]);
     const content = contentData[language] || contentData['en']; // fallback to English
     useEffect(() => {
@@ -91,7 +94,7 @@ const Accomodation = () =>{
                                 </div>  
                             </div>   
                             <div className="w-[full]" >
-                                <Link to={`/Accommodation/${accomodation.id}`}>
+                                <Link to={`/${language}/Accommodation/${accomodation.id}`}>
                                 <button className="w-full hover:bg-[#EEF4F3] px-4 py-3 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer">
                                     {content.viewListing}
                                 </button>

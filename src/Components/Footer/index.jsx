@@ -5,15 +5,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 const Footer = () =>{
-    const { language } = useContext(ToursContext);  
+    //const { language } = useContext(ToursContext);  
+    const { lang } = useParams();  
+    const language = lang || 'en';
+    console.log("Footer");
+    console.log(language);
     //PARA LA NAVEGACION ENTRE LAS SECCIONES
     const navigate = useNavigate();
     const location = useLocation();
     const content = contentData[language] || contentData['en']; 
      const handleNavClick = (e, href) => {
-      e.preventDefault();
-      console.log("Entro");
+      e.preventDefault();      
       const targetId = href.replace('#', '');
       const scrollToTarget = () => {
         const element = document.getElementById(targetId);
@@ -43,8 +47,8 @@ const Footer = () =>{
                 <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-4">{content.information}</h3>
                     <a onClick={(e) => handleNavClick(e, '#aboutUs')}><p className="pb-1 cursor-pointer hover:text-[#DDE7E6]">{content.aboutUsTitle}</p></a>
-                    <Link to={`/Privacy`}><p className="pb-1 hover:text-[#DDE7E6]">{content.privacy}</p></Link>
-                    <Link to={`/Terms`}><p className="hover:text-[#DDE7E6]">{content.terms}</p></Link>
+                    <Link to={`/${language}/Privacy`}><p className="pb-1 hover:text-[#DDE7E6]">{content.privacy}</p></Link>
+                    <Link to={`/${language}/Terms`}><p className="hover:text-[#DDE7E6]">{content.terms}</p></Link>
                 </div>
 
                 {/* Links Section */}

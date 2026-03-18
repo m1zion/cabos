@@ -34,8 +34,9 @@ const responsive = {
   mobile: {breakpoint: { max: 464, min: 0 }, items: 1, },
 };
 function TourDetail() {  
-    const { language } = useContext(ToursContext);
-    const { id } = useParams();
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();
+    const language = lang || 'en';
     const tour = tourData.tours.find(a => a.id === id);
     const [showModal, setShowModal] = useState(false);
     const content = contentData[language] || contentData['en']; 
@@ -103,7 +104,7 @@ function TourDetail() {
             </div>
         </div>        
         <div className="font-[quicksand] w-[95%] sm:w-[90%] xl:w-[85%] mb-[3rem] text-gray-600 whitespace-pre-line">
-            <Link to={`/bookTour/${tour.id}`}>
+            <Link to={`/${language}/bookTour/${tour.id}`}>
                 <button className="w-[100%] sm:w-[14rem] mt-6 py-3 bg-[#378BA1] text-white font-medium rounded-sm shadow hover:bg-[#256A77] transition duration-200 cursor-pointer"> {content.bookButton}</button>  
             </Link>
         </div>

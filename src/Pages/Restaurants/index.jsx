@@ -79,7 +79,7 @@ function restaurants() {
                             </div>
                           )}                                  
                         </div>                                  
-                        <Link to={`/bookRestaurant/${restaurant.id}`} >
+                        <Link to={`/${language}/bookRestaurant/${restaurant.id}`} >
                               <button className="hover:bg-[#ffffff1a] text-[#F9E9C8] cursor-pointer border border-[#F9E9C8] h-10 p-1 w-full sm:w-[200px] rounded-md">
                                 {content.viewMore}
                               </button>

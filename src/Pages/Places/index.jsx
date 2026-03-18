@@ -30,15 +30,16 @@ const categories = [
 ];
 
 function places() {  
-    const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
+    //const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
-    const { id } = useParams();  
     const filteredTours = toursData.tours.filter(tour => tour.category === id);
     if (!filteredTours) {
         return <div>Tours not found</div>;
     }
     const place = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
-    console.log(place.image);
+    //console.log(place.image);
     var texto1 = "1";
     var texto2 = ""
     switch (place.key) {

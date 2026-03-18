@@ -6,6 +6,7 @@ import { withBase } from '../../Utils/path';
 import { motion } from 'framer-motion'
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
 
 const responsive = {
@@ -32,7 +33,9 @@ const images = [
 ];
 
 const Transportation = () =>{
-    const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
+    //const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
     return (
         <div id="transportation" className="font-[quicksand] flex-col scroll-mt-20  w-full">
@@ -58,7 +61,7 @@ const Transportation = () =>{
                 /> 
                 <p className="text-center mt-3 font-semibold text-[1.1rem]">Toyota Sienna</p>
                 <div className="text-center mt-3">
-                  <Link to={`/bookTransportation/sienna`}>
+                  <Link to={`/${language}/bookTransportation/sienna`}>
                     <button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer w-[90%] md:w-[150px]">{content.bookButton}</button>
                   </Link>
                 </div>
@@ -71,7 +74,7 @@ const Transportation = () =>{
                 />
                 <p className="text-center mt-3 font-semibold text-[1.1rem]">Chevrolet Suburban</p>
                 <div className="text-center mt-3">
-                  <Link to={`/bookTransportation/suburban`}>
+                  <Link to={`/${language}/bookTransportation/suburban`}>
                   <button className="hover:bg-[#EEF4F3] mt-2 px-4 py-2 border border-[#256A77] text-[#256A77] rounded-md cursor-pointer w-[90%] md:w-[150px]">{content.bookButton}</button>
                   </Link>
                 </div>

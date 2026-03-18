@@ -32,8 +32,9 @@ const supabase = createClient(supabaseUrl, supabaseKey);*/
 import { supabase } from '../../supabaseClient';
 function BookTour() {  
     const navigate = useNavigate();
-    const { language } = useContext(ToursContext);
-    const { id } = useParams();    
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
     const tour = tourData.tours.find(a => a.id === id);
     const content = contentData[language] || contentData['en']; 
     if (!tour) {

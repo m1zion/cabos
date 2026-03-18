@@ -4,6 +4,7 @@ import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
 import { withBase } from '../../Utils/path';
+import { useParams } from 'react-router-dom';
 const categories = [
   { key: 'sanJose', name: 'San José del Cabo', image: '/assets/images/cabos/Picture8.png' },
   { key: 'losCabos', name: 'Cabo San Lucas', image: '/assets/images/cabos/Picture13.png' },
@@ -26,7 +27,9 @@ const themes = {
 };
 
 const Places = () =>{    
-    const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
+    //const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     const theme = themes.darkBlue; 
     const [showModal, setShowModal] = useState(false);
@@ -76,7 +79,7 @@ const Places = () =>{
             <div className="px-10 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 mt-4">
                 {categories.map((category, index) => (
                     <div key="1" className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer">        
-                        <Link to={`/Places/${category.key}`}>
+                        <Link to={`/${language}/Places/${category.key}`}>
                             <img                            
                                 src={withBase(category.image)} 
                                 alt="lugar1"

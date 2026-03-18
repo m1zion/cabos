@@ -8,6 +8,7 @@ import experiencesData from '../../data/experiences.json';
 import { CalendarDaysIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { withBase } from '../../Utils/path';
 import Logo from '/assets/images/medical/portrait.jpg'
+import { useParams } from 'react-router-dom';
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
 //Hover #286A77
@@ -43,8 +44,10 @@ const themes = {
     cardBg: '#FFFFFF'
   }
 };
-const Experiences = () =>{    
-    const { language } = useContext(ToursContext);
+const Experiences = () =>{  
+    const { lang, id } = useParams();  
+    const language = lang || 'en';  
+    //const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     const experiences = experiencesData.experiences;
     const theme = themes.sandWhite2; // Try themes.blue or themes.darkBlue
@@ -79,7 +82,7 @@ const Experiences = () =>{
               const t = experience.translations[language] || experience.translations.en;
               return (                
                 <Link 
-                  to={`/experienceDetail/${experience.id}`} 
+                  to={`/${language}/experienceDetail/${experience.id}`} 
                   key={experience.id}
                 >                
                   <div
@@ -117,7 +120,7 @@ const Experiences = () =>{
                   <p className="text-justify mt-1 text-[.9rem]">{m.text3}</p>
                   <p className="text-justify mt-5 text-[1rem]">{m.intro1}</p>
                   <p className="text-justify mt-1 text-[1rem]">{m.intro2}</p>
-                  <Link to={`/Medical`}>
+                  <Link to={`/${language}/Medical`}>
                     <button className="mt-10 h-[3rem] bg-[#DDE7E6]/70  hover:bg-[#ADD2DA]/70 cursor-pointer mt-5 border border-[#256A77] p-1 w-full md:w-[250px] rounded-md">
                       {content.viewMore}
                     </button>

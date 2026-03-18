@@ -11,7 +11,10 @@ import Logo from '/assets/images/medical/portrait.jpg'
 //Hover bright #EEF4F3
 //text #256A77
 const Medical = () =>{
-    const { language } = useContext(ToursContext);
+  
+    const { lang, id } = useParams();  
+    const language = lang || 'en';  
+    //const { language } = useContext(ToursContext);
     const medical = contentData.medical;
     const t = medical[0].translations[language] || medical[0].translations.en;
     /*<div className="flex justify-center w-[100%] h-[580px] bg-[#E8E1CE]">

@@ -1,5 +1,6 @@
 import { useContext ,useState, useRef } from "react";
 import contentData from '../../data/content.json';
+import { useParams } from 'react-router-dom';
 import { ToursContext } from "../../Context";
 import { motion } from "framer-motion";
 import Logo from '/assets/images/Logo.png'
@@ -8,7 +9,9 @@ import Logo from '/assets/images/Logo.png'
 //Hover #286A77
 //text #256A77
 const About = () =>{
-    const { language } = useContext(ToursContext);
+    const { lang } = useParams();
+     const language = lang || 'en';
+    //const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
     const [isExpanded, setIsExpanded] = useState(false);
     const contentRef = useRef(null);  

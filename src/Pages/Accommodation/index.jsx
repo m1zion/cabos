@@ -35,8 +35,9 @@ const responsive = {
   mobile: {breakpoint: { max: 464, min: 0 }, items: 1, },
 };
 function accommodation() {  
-    const { language } = useContext(ToursContext);
-    const { id } = useParams();
+    //const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
     const RoomIcon = icons['../../assets/icons/bed.svg'];
     const BathIcon = icons['../../assets/icons/bathroom.svg'];
     const ParkingIcon = icons['../../assets/icons/parking.svg'];

@@ -18,12 +18,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
 import { withBase } from '../../Utils/path';
+import { useParams } from 'react-router-dom';
 const Cabos = () =>{  
     //OPCION DE COLORES 2.1
     //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
     //Hover #286A77
     //text #256A77
-    const { language } = useContext(ToursContext);
+    const { lang } = useParams();  
+    const language = lang || 'en';
+
     const content = contentData[language] || contentData['en']; // fallback to English
     const responsive = {
         desktop: {breakpoint: { max: 3500, min: 1024 }, items: 1, },

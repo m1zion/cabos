@@ -4,6 +4,7 @@ import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
 import { withBase } from '../../Utils/path';
+import { useParams } from 'react-router-dom';
 import bgImage from '../../assets/icons/abstract-envelope-sand.svg?react';
 //import Logo2  from '../../assets/icons/bg3.svg?react';
 
@@ -35,7 +36,9 @@ const themes = {
   },
 };
 const Tours = () =>{    
-    const { language } = useContext(ToursContext);
+    const { lang, id } = useParams();  
+    const language = lang || 'en';
+    //const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     const theme = themes.darkBlue; // Try themes.blue or themes.darkBlue
     /*   <motion.div
@@ -84,9 +87,8 @@ const Tours = () =>{
                         key={index}
                         className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer"
                     >
-                        <Link to={`/Tours/${category.key}`}>
-                            <img
-                            
+                        <Link to={`/${language}/Tours/${category.key}`}>
+                            <img                            
                                 src={withBase(category.image)} 
                                 //src={category.image}
                                 alt={content.categories[category.key]}

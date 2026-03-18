@@ -6,6 +6,7 @@ import { ToursContext } from "../../Context"
 import logo from '/src/assets/icons/logo17.png'
 import Flag from 'react-world-flags'
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -18,7 +19,9 @@ function classNames(...classes) {
 //text #256A77
 
 export default function NavBar() {
-    const {language, setLanguage} = useContext(ToursContext);
+    //const {language, setLanguage} = useContext(ToursContext);
+    const { lang } = useParams();  
+    const language = lang || 'en';
     const t = navTexts[language] || navTexts.en;
     const navigation = [
         { name: t.tours, href: '#tours', current: false },
@@ -52,7 +55,13 @@ export default function NavBar() {
       } else {
         scrollToTarget();
       }
-      
+    };
+    
+    const changeLanguage = (lang) => {
+      const segments = location.pathname.split('/');
+      segments[1] = lang;
+      const newPath = segments.join('/');
+      navigate(newPath);
     };
     return (
     <Disclosure as="nav" 
@@ -125,7 +134,8 @@ export default function NavBar() {
                     {['en', 'es', 'de'].map((lang) => (
                     <li className="flex" key={lang}>
                         <button
-                        onClick={() => setLanguage(lang)}
+                        //onClick={() => setLanguage(lang)} //This is when we were using context
+                        onClick={() => changeLanguage(lang)} 
                         className={`uppercase cursor-pointer ${language === lang ? 'font-bold underline' : ''}`}
                         >
                             <Flag code={langToCountry[lang]} style={{ width: 24, height: 16 }} />                            
