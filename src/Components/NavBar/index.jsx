@@ -101,7 +101,7 @@ export default function NavBar() {
 
               <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
                 <div className="flex shrink-0 items-center">
-                  <a href="./">
+                  <a href={`/${language}`}>
                     <img
                     alt="Los cabos moments"
                     src={logo}

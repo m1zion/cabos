@@ -33,7 +33,7 @@ const Medical = () =>{
             <p className="text-justify mt-6 text-[1.2rem]">{t.text2}</p>
             <p className="text-justify mt-1 text-[.9rem]">{t.text3}</p>
             <p className="text-justify mt-5 text-[1rem]">{t.text4}</p>
-            <Link to={`/Medical`}>
+            <Link to={`/${language}/Medical`}>
               <button className="hover:bg-[#ADD2DA]/20 cursor-pointer mt-8 border border-[#256A77] p-1 w-[120px] rounded-md">
                 Conoce Mas
               </button>
