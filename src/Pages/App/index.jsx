@@ -23,9 +23,6 @@ import BookTransportation from '../Transportation/bookTransportation'
 import Medical from '../Medical/'
 import Terms from '../Terms/'
 import Privacy from '../Privacy/'
-//import Medical from '../Medical/'
-
-
 const Layout = () => {
   return (
     <>
@@ -36,9 +33,6 @@ const Layout = () => {
     </>
   );
 };
-
-
-
 const AppRoutes = () =>{
   let routes = useRoutes([
     { path: '/', element: <LanguageRedirect/> },
