@@ -19,14 +19,14 @@ const images = [
   '/assets/images/medical/portrait3.jpg',
   '/assets/images/medical/portrait4.jpg'
 ];
-const CustomRightArrow = ({ onClick, ...rest }) => {
+/*const CustomRightArrow = ({ onClick, ...rest }) => {
   const {
     onMove,
     carouselState: { currentSlide, deviceType }
   } = rest;
   // onMove means if dragging or swiping in progress.
   return <button onClick={() => onClick()} />;
-};
+};*/
 const responsive = {
   desktop: {breakpoint: { max: 3500, min: 1024 }, items: 1, },
   tablet: {breakpoint: { max: 1024, min: 464 }, items: 1, },

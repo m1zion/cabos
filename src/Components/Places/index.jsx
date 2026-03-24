@@ -78,7 +78,7 @@ const Places = () =>{
             
             <div className="px-10 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 mt-4">
                 {categories.map((category, index) => (
-                    <div key="1" className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer">        
+                    <div key={index} className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer">        
                         <Link to={`/${language}/Places/${category.key}`}>
                             <img                            
                                 src={withBase(category.image)} 

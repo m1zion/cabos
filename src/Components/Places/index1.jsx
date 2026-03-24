@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+{/*import { useContext, useState } from "react";
 import contentData from '../../data/content.json';
 import { ToursContext } from "../../Context";
 import { motion } from 'framer-motion'
@@ -104,4 +104,4 @@ const Places = () =>{
         </section>
     )
 }
-export default Places
+export default Places9*/}

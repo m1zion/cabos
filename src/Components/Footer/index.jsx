@@ -10,8 +10,6 @@ const Footer = () =>{
     //const { language } = useContext(ToursContext);  
     const { lang } = useParams();  
     const language = lang || 'en';
-    console.log("Footer");
-    console.log(language);
     //PARA LA NAVEGACION ENTRE LAS SECCIONES
     const navigate = useNavigate();
     const location = useLocation();

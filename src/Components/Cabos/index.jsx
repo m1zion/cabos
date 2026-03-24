@@ -33,21 +33,40 @@ const Cabos = () =>{
         tablet: {breakpoint: { max: 1024, min: 464 }, items: 1, },
         mobile: {breakpoint: { max: 464, min: 0 }, items: 1, },
     };
+
+    const isRTL = language === 'ar';
+
+    const CustomRightArrow = ({ onClick }) => {
+    return (
+        <button
+        onClick={onClick}
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#ADD2DA]/50 text-white p-2 w-[45px] rounded-full shadow-lg hover:bg-[#ADD2DA] cursor-pointer"
+        >
+        <ChevronRightIcon size={18} />
+        </button>
+    );
+    };
+
+    const CustomLeftArrow = ({ onClick }) => {
+    return (
+        <button
+        onClick={onClick}
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#ADD2DA]/50 text-white w-[45px] p-2 rounded-full shadow-lg hover:bg-[#ADD2DA] cursor-pointer"
+        >
+        <ChevronLeftIcon size={20} />
+        </button>
+    );
+    };
+
+
     return (
         <Carousel 
+            {...(isRTL ? { rtl: true } : {})}
             infinite              
             autoPlay={false}
             className="w-[100%] h-[600px] xl:h-[650px]"            
-            customRightArrow={
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#ADD2DA]/50 text-white p-2 w-[45px] rounded-full shadow-lg hover:bg-[#ADD2DA] cursor-pointer">
-                    <ChevronRightIcon size={18} />
-                </button>
-            }
-            customLeftArrow={
-            <button className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#ADD2DA]/50 text-white w-[45px] p-2 rounded-full shadow-lg hover:bg-[#ADD2DA] cursor-pointer">
-                <ChevronLeftIcon size={20} />
-            </button>
-            }
+            customRightArrow={<CustomRightArrow />}
+            customLeftArrow={<CustomLeftArrow />}
             responsive={responsive}
         >       
             {/*=====================HERO=====================*/}
