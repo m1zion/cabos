@@ -41,7 +41,7 @@ const AppRoutes = () =>{
       element: <Layout />, //wrap everything
       children: [
         { index: true, element: <Home /> },
-        { path: 'Tours/:id', element: <Tours /> },
+        { path: 'tours/:id', element: <Tours /> },
         { path: 'TourDetail/:id', element: <TourDetail /> },
         { path: 'ExperienceDetail/:id', element: <ExperienceDetail /> },
         { path: 'BookTour/:id', element: <BookTour /> },

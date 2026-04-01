@@ -53,7 +53,7 @@ function tours() {
       <Layout>              
           <div
           className="relative h-[270px] w-full flex items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${withBase(categoryData?.image)})` }}          
+          style={{ backgroundImage: `url(${withBase(categoryData && categoryData.image)})` }} 
           >
             <div className="absolute inset-0 bg-black/40"></div>
             <h1 className="relative z-10 text-white text-4xl font-semibold uppercase">

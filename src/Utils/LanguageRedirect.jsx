@@ -1,3 +1,4 @@
+/*import { useEffect } from "react";
 import { Navigate } from "react-router-dom";
 
 const LanguageRedirect = () => {
@@ -7,4 +8,18 @@ const LanguageRedirect = () => {
   return <Navigate to={`/${lang}`} replace />;
 };
 
+export default LanguageRedirect;*/
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+const LanguageRedirect = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    //prevent redirect during prerender
+    if (navigator.userAgent.includes("ReactSnap")) return;
+    const lang = navigator.language.startsWith("es") ? "es" : "en";
+    navigate(`/${lang}`);
+  }, []);
+
+  return null;
+};
 export default LanguageRedirect;

@@ -14,5 +14,13 @@ export default defineConfig({
     svgr(),
     react()
   ],
+   build: {
+    outDir: 'build',
+    target: 'es2015' // 👈 THIS IS THE FIX
+  },
   base: isGithubPages ? '/cabos/' : '/',
 })
+
+
+
+

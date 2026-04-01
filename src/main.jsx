@@ -4,10 +4,21 @@ import { HelmetProvider } from 'react-helmet-async'
 import './index.css'
 import App from './Pages/App/'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+const rootElement = document.getElementById('root')
+const isSnap = navigator.userAgent === 'ReactSnap'
+
+if (isSnap) {
+  createRoot(rootElement).render(
     <HelmetProvider>
       <App />
     </HelmetProvider>
-  </StrictMode>,
-)
+  )
+} else {
+  createRoot(rootElement).render(
+    <StrictMode>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </StrictMode>
+  )
+}
