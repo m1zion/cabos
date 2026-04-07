@@ -28,10 +28,15 @@ function tours() {
     const language = lang || 'en';
     const content = contentData[language] || contentData['en']; 
     const filteredTours = toursData.tours.filter(tour => tour.category === id);
-    if (!filteredTours) {
+    if (!filteredTours.length) {
         return <div>Tours not found</div>;
     }
-    const categoryData = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
+
+
+    //const categoryData = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
+    const categoryData = categories.find(cat => cat.key.toLowerCase() === (id || '').toLowerCase());
+
+
     if(categoryData === undefined){
       return(
         <Layout>
@@ -50,7 +55,7 @@ function tours() {
           content={categoryData.content}
         />
       </Helmet>
-      <Layout>              
+      <>              
           <div
           className="relative h-[270px] w-full flex items-center justify-center bg-cover bg-center"
           style={{ backgroundImage: `url(${withBase(categoryData && categoryData.image)})` }} 
@@ -86,7 +91,7 @@ function tours() {
             })}
           </div>
           <WhatsApp/>
-        </Layout>
+        </>
       </>        
     )
 }

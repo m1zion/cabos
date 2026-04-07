@@ -42,21 +42,21 @@ const AppRoutes = () =>{
       children: [
         { index: true, element: <Home /> },
         { path: 'tours/:id', element: <Tours /> },
-        { path: 'TourDetail/:id', element: <TourDetail /> },
-        { path: 'ExperienceDetail/:id', element: <ExperienceDetail /> },
-        { path: 'BookTour/:id', element: <BookTour /> },
+        { path: 'tourDetail/:id', element: <TourDetail /> },
+        { path: 'experienceDetail/:id', element: <ExperienceDetail /> },
+        { path: 'bookTour/:id', element: <BookTour /> },
 
-        { path: 'Accommodation/:id', element: <Accommodation /> },
-        { path: 'Places/:id', element: <Places /> },
+        { path: 'accommodation/:id', element: <Accommodation /> },
+        { path: 'places/:id', element: <Places /> },
 
-        { path: 'BookExperience/:id',  element: <BookExperience/> },    
-        { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },     
-        { path: 'BookTransportation/:id',  element: <BookTransportation/> },
+        { path: 'bookExperience/:id',  element: <BookExperience/> },    
+        { path: 'bookRestaurant/:id',  element: <BookRestaurant/> },     
+        { path: 'bookTransportation/:id',  element: <BookTransportation/> },
 
-        { path: 'Restaurants', element: <Restaurants /> },
-        { path: 'Medical', element: <Medical /> },
-        { path: 'Terms', element: <Terms /> },
-        { path: 'Privacy', element: <Privacy /> },
+        { path: 'restaurants', element: <Restaurants /> },
+        { path: 'medical', element: <Medical /> },
+        { path: 'terms', element: <Terms /> },
+        { path: 'privacy', element: <Privacy /> },
       ]
     },
     //{ path: '/:lang', element: <Home/> },

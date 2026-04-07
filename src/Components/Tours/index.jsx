@@ -87,7 +87,7 @@ const Tours = () =>{
                         key={index}
                         className="relative w-full h-60 rounded-xl overflow-hidden shadow-lg group cursor-pointer"
                     >
-                        <Link to={`/${language}/Tours/${category.key}`}>
+                        <Link to={`/${language}/tours/${category.key}`}>
                             <img                            
                                 src={withBase(category.image)} 
                                 //src={category.image}
