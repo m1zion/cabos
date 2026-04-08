@@ -1,8 +1,5 @@
-import { useContext } from "react";
-import Layout from '../../Components/Layout'
 import toursData from '../../data/tours.json';
 import { useParams } from 'react-router-dom';
-import { ToursContext } from "../../Context";
 import "leaflet/dist/leaflet.css";
 import "leaflet/dist/leaflet.css";
 import 'react-multi-carousel/lib/styles.css';
@@ -22,29 +19,20 @@ const categories = [
   { key: 'dayTrip', image: '../assets/images/land.jpg' },
 ];
 function tours() {      
-    //We use to take the language from the context
-    //const { language } = useContext(ToursContext);
-    const { lang, id } = useParams();  
-    const language = lang || 'en';
+    const { lang, category } = useParams();  
+    const language = ['en', 'es', 'de'].includes(lang) ? lang : 'en';
+    //const language = lang || 'en';
+    
     const content = contentData[language] || contentData['en']; 
-    const filteredTours = toursData.tours.filter(tour => tour.category === id);
+    const filteredTours = toursData.tours.filter(tour => tour.category === category);
     if (!filteredTours.length) {
-        return <div>Tours not found</div>;
+         console.warn("Invalid category:", category);
+        return <div></div>; 
     }
-
-
-    //const categoryData = categories.find(cat => cat.key.toLowerCase() === id.toLowerCase());
-    const categoryData = categories.find(cat => cat.key.toLowerCase() === (id || '').toLowerCase());
-
-
+    const categoryData = categories.find(cat => cat.key.toLowerCase() === (category || '').toLowerCase());
     if(categoryData === undefined){
-      return(
-        <Layout>
-        <div className="w-[300px]">
-          Pagina no Encontrada
-        </div>
-        </Layout>
-      )
+      console.warn("Invalid category:", category);
+      return <div></div>;
     }
     return (
       <>
@@ -69,7 +57,7 @@ function tours() {
             {filteredTours.map((tour) => {
               const t = tour.translations[language] || tour.translations.en;
               return (                
-                <Link to={`/${language}/tourDetail/${tour.id}`} key={tour.id}>
+                <div key={tour.id}> {/*to={`/${language}/tourDetail/${tour.id}`} */}
                   <div
                     key={tour.id}
                     className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"
@@ -86,7 +74,7 @@ function tours() {
                       <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.price}</p></div>
                     </div>
                   </div>
-                </Link>
+                </div>
               );
             })}
           </div>
@@ -96,5 +84,3 @@ function tours() {
     )
 }
 export default tours
-
-

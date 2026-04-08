@@ -35,10 +35,14 @@ export default function NavBar() {
         es: 'MX',
         de: 'DE'
     };
+    
     //PARA LA NAVEGACION ENTRE LAS SECCIONES
     const navigate = useNavigate();
     const location = useLocation();
-
+    /*const isPrerender = navigator.userAgent.includes("ReactSnap");
+        if (!isPrerender) {
+      navigate(`/${lang}`);
+    }*/
     const handleNavClick = (e, href) => {
       e.preventDefault();
       const targetId = href.replace('#', '');

@@ -1,41 +1,27 @@
 
-import { useContext } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { ToursContext } from "../../Context";
 import contentData from '../../data/content.json';
 import Logo from '/assets/images/cabos/cabos1.jpg';
-import Logo2 from '/assets/images/cabos/cabos2.jpg';
-import Logo3 from '/assets/images/cabos/cabos3.jpg';
 import Logo4 from '/assets/images/cabos/cabos4.jpg';
-import Logo5 from '/assets/images/cabos/cabos5.jpg';
 import Logo6 from '/assets/images/cabos/cabos6.jpg';
 import bgImage from '/assets/images/cabos/Vector.svg'; 
-import bgImage2 from '/assets/images/cabos/Vector2.svg'; 
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import videoSrc from '../../assets/videos/video.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
-import { withBase } from '../../Utils/path';
 import { useParams } from 'react-router-dom';
 const Cabos = () =>{  
-    //OPCION DE COLORES 2.1
-    //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
-    //Hover #286A77
-    //text #256A77
     const { lang } = useParams();  
     const language = lang || 'en';
-
     const content = contentData[language] || contentData['en']; // fallback to English
     const responsive = {
         desktop: {breakpoint: { max: 3500, min: 1024 }, items: 1, },
         tablet: {breakpoint: { max: 1024, min: 464 }, items: 1, },
         mobile: {breakpoint: { max: 464, min: 0 }, items: 1, },
     };
-
     const isRTL = language === 'ar';
-
     const CustomRightArrow = ({ onClick }) => {
     return (
         <button

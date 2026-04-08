@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { ToursContext } from "../../Context";
 import contentData from '../../data/content.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -45,8 +43,6 @@ const Footer = () =>{
                 <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-4">{content.information}</h3>
                     <a onClick={(e) => handleNavClick(e, '#aboutUs')}><p className="pb-1 cursor-pointer hover:text-[#DDE7E6]">{content.aboutUsTitle}</p></a>
-                    <Link to={`/${language}/Privacy`}><p className="pb-1 hover:text-[#DDE7E6]">{content.privacy}</p></Link>
-                    <Link to={`/${language}/Terms`}><p className="hover:text-[#DDE7E6]">{content.terms}</p></Link>
                 </div>
 
                 {/* Links Section */}

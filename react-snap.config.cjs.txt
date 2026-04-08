@@ -1,0 +1,29 @@
+const fs = require('fs')
+
+const toursData = JSON.parse(
+  fs.readFileSync('./src/data/tours.json', 'utf-8')
+)
+console.log("✅ react-snap config loaded")
+const languages = ['en', 'es', 'de']
+const routes = ['/']
+
+languages.forEach(lang => {
+  routes.push(`/${lang}`)
+  toursData.tours.forEach(tour => {
+    routes.push(`/${lang}/tours/${tour.category}`)
+  })
+})
+
+console.log("ROUTES LOADED:", routes)
+
+module.exports = {
+  source: 'build',
+  destination: 'build',
+  routes,
+  crawl: false,               // disable crawling — use explicit routes only
+  skipThirdPartyRequests: true,
+  include: routes,
+  inlineCss: false,
+  concurrency: 1,
+   minifyCss: false
+}
