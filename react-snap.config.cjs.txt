@@ -1,3 +1,37 @@
+//PARA PODER COMPILARO LA PAGINA Y SE GENEREN PARA EFECTOS DE SEO
+1. Se instalo la libreria de react-snap
+2. Agregar a package.json las siguientes lineas
+"scripts": {
+  "build": "vite build",
+  "postbuild": "node generate-routes.cjs && react-snap"
+},
+"reactSnap": {
+    "source": "build",
+    "destination": "build",
+    "crawl": false,
+    "skipThirdPartyRequests": true,
+    "inlineCss": false,
+    "concurrency": 1,
+    "routes": []
+}
+3. Generar el archivo generate-routes.cjs, en este archivo mapeamos las rutas manualmente desde los archivos JSON
+4. Se agregó un script a index.html
+ <script>
+  (function () {
+    var isSnap = navigator.userAgent === "ReactSnap";
+    if (!isSnap && window.location.pathname === "/") {
+      var lang = navigator.language.startsWith("es") ? "es" : "en";
+      window.location.replace("/" + lang);
+    }
+  })();
+</script>
+5. Tambien se configuró el Helmet-provider para agregar metas a las paginas, se agreo en el main.jsx
+
+
+
+
+
+
 const fs = require('fs')
 
 const toursData = JSON.parse(

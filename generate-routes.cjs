@@ -1,17 +1,21 @@
 const fs = require('fs')
 
 const toursData = JSON.parse(fs.readFileSync('./src/data/tours.json', 'utf-8'))
+const toursCategoriesData = JSON.parse(fs.readFileSync('./src/data/toursCategories.json', 'utf-8'))
 const languages = ['en', 'es', 'de']
 const routes = ['/']
 
 languages.forEach(lang => {
   routes.push(`/${lang}`)
-  toursData.tours.forEach(tour => {
+  toursCategoriesData.tours.forEach(tour => {
     routes.push(`/${lang}/tours/${tour.category}`)
+  })
+  toursData.tours.forEach(tour => {
+    routes.push(`/${lang}/tourDetail/${tour.id}`)
   })
 })
 
-console.log("✅ Routes generated:", routes)
+//console.log("✅ Routes generated:", routes)
 
 // Read package.json, inject routes, write it back
 const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf-8'))
@@ -26,4 +30,4 @@ pkg.reactSnap = {
   include: routes  // ✅ tells react-snap which ones to actually render
 }
 fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2))
-console.log("✅ Routes written to package.json reactSnap.routes")
+//console.log("✅ Routes written to package.json reactSnap.routes")

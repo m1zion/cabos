@@ -43,6 +43,8 @@ const Footer = () =>{
                 <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-4">{content.information}</h3>
                     <a onClick={(e) => handleNavClick(e, '#aboutUs')}><p className="pb-1 cursor-pointer hover:text-[#DDE7E6]">{content.aboutUsTitle}</p></a>
+                    <Link to={`/${language}/privacy`}><p className="pb-1 hover:text-[#DDE7E6]">{content.privacy}</p></Link>
+                    <Link to={`/${language}/terms`}><p className="hover:text-[#DDE7E6]">{content.terms}</p></Link>
                 </div>
 
                 {/* Links Section */}

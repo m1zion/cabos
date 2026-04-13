@@ -21,12 +21,10 @@ const categories = [
 function tours() {      
     const { lang, category } = useParams();  
     const language = ['en', 'es', 'de'].includes(lang) ? lang : 'en';
-    //const language = lang || 'en';
-    
     const content = contentData[language] || contentData['en']; 
     const filteredTours = toursData.tours.filter(tour => tour.category === category);
     if (!filteredTours.length) {
-         console.warn("Invalid category:", category);
+        console.warn("Invalid category:", category);
         return <div></div>; 
     }
     const categoryData = categories.find(cat => cat.key.toLowerCase() === (category || '').toLowerCase());
@@ -56,8 +54,11 @@ function tours() {
           <div className="font-[quicksand] px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {filteredTours.map((tour) => {
               const t = tour.translations[language] || tour.translations.en;
-              return (                
-                <div key={tour.id}> {/*to={`/${language}/tourDetail/${tour.id}`} */}
+              return (     
+                
+               
+                 <Link to={`/${language}/tourDetail/${tour.id}`} key={tour.id}>
+                  {/*<div key={tour.id}> to={`/${language}/tourDetail/${tour.id}`}*/}
                   <div
                     key={tour.id}
                     className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"
@@ -74,7 +75,7 @@ function tours() {
                       <div className="flex items-center gap-1"><CurrencyDollarIcon aria-hidden="true" className="shrink-[0] block size-5 text-[#256A77]"/><p className="text-sm text-gray-600">{t.price}</p></div>
                     </div>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>

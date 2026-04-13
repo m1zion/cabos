@@ -1,0 +1,39 @@
+{
+  "tours": [
+    {
+      "id": "sunsetPartyboat",
+      "name": "Sunset Partyboat with Mexican dinner",
+      "category": "sunsetCruises"
+    },
+    {
+      "id": "snorkelAdventure",
+      "name": "Snorkel adventure with lunch",
+      "category": "waterExperiences"
+    },
+    {
+      "id": "archOfCabo",
+      "name": "Visit the Arch of Cabo San Lucas in a transparent boat",
+      "category": "boatYatch"
+    },
+    {
+      "id": "whaleWatching",
+      "name": "Whale Watching breakfast",
+      "category": "whaleWatching"
+    },
+    {
+      "id": "dunesCamel",
+      "name": "Beach & Dunes Camel Ride Experience",
+      "category": "camelHorse"
+    },
+    {
+      "id": "dunesATV",
+      "name": "Beach & Dunes ATV Tour",
+      "category": "atvRazors"
+    },
+    {
+      "id": "balandraBeach",
+      "name": "Balandra Beach, City Tour La Paz & Todos Santos",
+      "category": "dayTrip"
+    }   
+  ]
+}

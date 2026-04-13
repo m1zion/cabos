@@ -1,9 +1,15 @@
 import React, { Suspense, lazy, useState, useEffect } from 'react'
 import { useLocation } from 'react-router'
 import Cabos from '../../Components/Cabos'
+import About from '../../Components/About'
+import Places from '../../Components/Places'
 import WhatsApp from '../../Components/WhatsApp';
 import { Helmet } from "react-helmet-async";
 const Tours = lazy(() => import('../../Components/Tours'))
+const Experiences = lazy(() => import('../../Components/Experiences'))
+const Restaurants = lazy(() => import('../../Components/Restaurants'))
+const Accomodation = lazy(() => import('../../Components/Accomodation'))
+const Transportation = lazy(() => import('../../Components/Transportation'))
 function Home() {  
   const location = useLocation();
   useEffect(() => {
@@ -30,7 +36,14 @@ function Home() {
       </Helmet>
       <Cabos/>
       <Suspense fallback={<div>Loading...</div>}>
+        <About/>
+        <Places/>
         <Tours />
+        <Experiences />
+        {/*<Medical/>*/}
+        <Accomodation/>
+        <Restaurants/>     
+        <Transportation/>
         <WhatsApp/>
       </Suspense>
     </>
