@@ -29,7 +29,7 @@ const categories = [
   { key: 'todosSantos', name: 'Todos Santos', image:['/assets/images/cabos/Picture15.png','/assets/images/cabos/todosSantos2.png','/assets/images/cabos/todosSantos3.png','/assets/images/cabos/todosSantos4.png']}
 ];
 
-function Places() {  
+function places() {  
     const { lang, id } = useParams();  
     const language = lang || 'en';
     //const { language } = useContext(ToursContext);
@@ -108,5 +108,5 @@ function Places() {
         </Layout>
     )
 }
-export default Places
+export default places
 
