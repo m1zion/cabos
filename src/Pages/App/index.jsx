@@ -45,7 +45,7 @@ const AppRoutes = () =>{
         { path: 'tours/:category', element: <Tours /> },
         { path: 'tourDetail/:id', element: <TourDetail /> },
         { path: 'bookTour/:id', element: <BookTour /> },
-        { path: 'places/:id', element: <Places /> },
+        { path: 'Places/:id', element: <Places /> },
         { path: 'ExperienceDetail/:id', element: <ExperienceDetail /> },
         { path: 'BookExperience/:id',  element: <BookExperience/> }, 
         { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },     
