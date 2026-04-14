@@ -15,7 +15,7 @@ export default defineConfig({
     react()
   ],
    build: {
-    outDir: 'build',
+    outDir: 'dist',
     target: 'es2015' // 👈 THIS IS THE FIX
   },
   base: isGithubPages ? '/cabos/' : '/',
