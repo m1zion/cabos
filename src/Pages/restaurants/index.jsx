@@ -15,7 +15,7 @@ const icons = import.meta.glob('../../assets/icons/*.svg', {
   eager: true,
   import: 'default',
 });
-function restaurants() {  
+function Restaurants() {  
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; 
     const restaurants = restaurantsData.restaurants
@@ -93,4 +93,4 @@ function restaurants() {
         </Layout>
     )
 }
-export default restaurants
+export default Restaurants

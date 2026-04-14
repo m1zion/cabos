@@ -18,7 +18,7 @@ const categories = [
   { key: 'atvRazors', image: '../assets/images/utv.jpg' },
   { key: 'dayTrip', image: '../assets/images/land.jpg' },
 ];
-function tours() {      
+function Tours() {      
     const { lang, category } = useParams();  
     const language = ['en', 'es', 'de'].includes(lang) ? lang : 'en';
     const content = contentData[language] || contentData['en']; 
@@ -84,4 +84,4 @@ function tours() {
       </>        
     )
 }
-export default tours
+export default Tours
