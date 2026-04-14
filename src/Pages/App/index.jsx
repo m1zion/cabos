@@ -7,14 +7,14 @@ import ScrollToTop from "../../Components/scrollToTop";
 import Footer from '../../Components/Footer'
 import Home from '../Home/'
 import NotFound from '../NotFound/'
-import Tours from '../Tours/'
-import TourDetail from '../Tours/tourDetail'
-import BookTour from '../Tours/bookTour'
-import Places from '../Places/'
-import ExperienceDetail from '../Experiences/'
 import Accommodation from '../Accommodation/'
-import BookExperience from '../Experiences/bookExperience'
+import Tours from '../Tours/'
+import Places from '../Places/'
 import Restaurants from '../Restaurants/'
+import TourDetail from '../Tours/tourDetail'
+import ExperienceDetail from '../Experiences/'
+import BookTour from '../Tours/bookTour'
+import BookExperience from '../Experiences/bookExperience'
 import BookRestaurant from '../Restaurants/bookRestaurant'
 import BookTransportation from '../Transportation/bookTransportation'
 import Medical from '../Medical/'
@@ -44,15 +44,15 @@ const AppRoutes = () =>{
         { index: true, element: <Home /> },
         { path: 'Tours/:category', element: <Tours /> },
         { path: 'TourDetail/:id', element: <TourDetail /> },
-        { path: 'BookTour/:id', element: <BookTour /> },
-        { path: 'Places/:id', element: <Places /> },
         { path: 'ExperienceDetail/:id', element: <ExperienceDetail /> },
-        { path: 'BookExperience/:id',  element: <BookExperience/> }, 
-        { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },     
+        { path: 'BookTour/:id', element: <BookTour /> },   
         { path: 'Accommodation/:id', element: <Accommodation /> },
+        { path: 'Places/:id', element: <Places /> },
+        { path: 'BookExperience/:id',  element: <BookExperience/> }, 
+        { path: 'BookRestaurant/:id',  element: <BookRestaurant/> },  
+        { path: 'BookTransportation/:id',  element: <BookTransportation/> },
         { path: 'Restaurants', element: <Restaurants /> },   
         { path: 'Medical', element: <Medical /> },
-        { path: 'BookTransportation/:id',  element: <BookTransportation/> },
         { path: 'Terms', element: <Terms /> },
         { path: 'Privacy', element: <Privacy /> }
       ]
