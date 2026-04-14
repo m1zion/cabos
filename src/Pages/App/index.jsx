@@ -10,7 +10,7 @@ import NotFound from '../NotFound/'
 import Tours from '../Tours/'
 import TourDetail from '../Tours/tourDetail'
 import BookTour from '../Tours/bookTour'
-import Places from '../Places'
+import Places from '../Places/'
 import ExperienceDetail from '../Experiences/'
 import Accommodation from '../Accommodation/'
 import BookExperience from '../Experiences/bookExperience'
@@ -42,9 +42,9 @@ const AppRoutes = () =>{
       element: <Layout />, //wrap everything
       children: [
         { index: true, element: <Home /> },
-        { path: 'tours/:category', element: <Tours /> },
-        { path: 'tourDetail/:id', element: <TourDetail /> },
-        { path: 'bookTour/:id', element: <BookTour /> },
+        { path: 'Tours/:category', element: <Tours /> },
+        { path: 'TourDetail/:id', element: <TourDetail /> },
+        { path: 'BookTour/:id', element: <BookTour /> },
         { path: 'Places/:id', element: <Places /> },
         { path: 'ExperienceDetail/:id', element: <ExperienceDetail /> },
         { path: 'BookExperience/:id',  element: <BookExperience/> }, 
@@ -54,7 +54,7 @@ const AppRoutes = () =>{
         { path: 'Medical', element: <Medical /> },
         { path: 'BookTransportation/:id',  element: <BookTransportation/> },
         { path: 'Terms', element: <Terms /> },
-        { path: 'Privacy', element: <Privacy /> },
+        { path: 'Privacy', element: <Privacy /> }
       ]
     },
     { path: '*',  element: <NotFound/> },

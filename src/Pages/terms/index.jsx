@@ -7,7 +7,7 @@ import WhatsApp from '../../Components/WhatsApp';
 import contentData from '../../data/terms.json';
 import 'react-multi-carousel/lib/styles.css';
 
-function Terms() {  
+function terms() {  
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en']; // fallback to English
     return (
@@ -62,4 +62,4 @@ function Terms() {
         </Layout>
     )
 }
-export default Terms
+export default terms

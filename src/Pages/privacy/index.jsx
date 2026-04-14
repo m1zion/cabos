@@ -7,7 +7,7 @@ import WhatsApp from '../../Components/WhatsApp';
 import contentData from '../../data/policy.json';
 
 
-function Privacy() {  
+function privacy() {  
     const { language } = useContext(ToursContext);
     const content = contentData[language] || contentData['en'];
     return (
@@ -66,4 +66,4 @@ function Privacy() {
         </Layout>
     )
 }
-export default Privacy
+export default privacy

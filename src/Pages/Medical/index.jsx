@@ -33,7 +33,7 @@ const responsive = {
   mobile: {breakpoint: { max: 464, min: 0 }, items: 1, },
 };
 
-function Medical() {  
+function medical() {  
     //const { language } = useContext(ToursContext);
     const { lang, id } = useParams();  
     const language = lang || 'en';
@@ -150,4 +150,4 @@ function Medical() {
         </Layout>
     )
 }
-export default Medical
+export default medical
