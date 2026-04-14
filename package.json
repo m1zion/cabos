@@ -51,8 +51,8 @@
     "vite-plugin-svgr": "^4.3.0"
   },
   "reactSnap": {
-    "source": "build",
-    "destination": "build",
+    "source": "dist",
+    "destination": "dist",
     "crawl": false,
     "skipThirdPartyRequests": true,
     "inlineCss": false,
