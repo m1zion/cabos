@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loscabosmoments.com/
+# Avoid crawling technical/internal stuff
+Disallow: /node_modules/
+Disallow: /static/
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.map$
+
+# Allow important rendered pages
+Allow: /$
+Allow: /en/
+Allow: /es/
+Allow: /de/
+
+# Sitemap
+Sitemap: https://loscabosmoments.com/sitemap.xml

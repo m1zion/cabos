@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-sitemap.js",
     "postbuild": "react-snap",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -161,7 +161,27 @@
       "/de/tourDetail/whaleSharkPaz",
       "/de/tourDetail/snorkelCaboPulmo",
       "/de/tourDetail/santiago",
-      "/de/tourDetail/todosSantos"
+      "/de/tourDetail/todosSantos",
+      "/en/experienceDetail/tequilaMezcalTasting",
+      "/en/experienceDetail/pizzaMakingExperience",
+      "/en/experienceDetail/salsa",
+      "/en/experienceDetail/decorations",
+      "/en/experienceDetail/butler",
+      "/en/experienceDetail/fireworks",
+      "/es/experienceDetail/tequilaMezcalTasting",
+      "/es/experienceDetail/pizzaMakingExperience",
+      "/es/experienceDetail/salsa",
+      "/es/experienceDetail/decorations",
+      "/es/experienceDetail/butler",
+      "/es/experienceDetail/fireworks",
+      "/de/experienceDetail/tequilaMezcalTasting",
+      "/de/experienceDetail/pizzaMakingExperience",
+      "/de/experienceDetail/salsa",
+      "/de/experienceDetail/decorations",
+      "/de/experienceDetail/butler",
+      "/de/experienceDetail/fireworks"
+
+
     ],
     "include": [
       "/",
@@ -266,7 +286,25 @@
       "/de/tourDetail/whaleSharkPaz",
       "/de/tourDetail/snorkelCaboPulmo",
       "/de/tourDetail/santiago",
-      "/de/tourDetail/todosSantos"
+      "/de/tourDetail/todosSantos",
+      "/en/experienceDetail/tequilaMezcalTasting",
+      "/en/experienceDetail/pizzaMakingExperience",
+      "/en/experienceDetail/salsa",
+      "/en/experienceDetail/decorations",
+      "/en/experienceDetail/butler",
+      "/en/experienceDetail/fireworks",
+      "/es/experienceDetail/tequilaMezcalTasting",
+      "/es/experienceDetail/pizzaMakingExperience",
+      "/es/experienceDetail/salsa",
+      "/es/experienceDetail/decorations",
+      "/es/experienceDetail/butler",
+      "/es/experienceDetail/fireworks",
+      "/de/experienceDetail/tequilaMezcalTasting",
+      "/de/experienceDetail/pizzaMakingExperience",
+      "/de/experienceDetail/salsa",
+      "/de/experienceDetail/decorations",
+      "/de/experienceDetail/butler",
+      "/de/experienceDetail/fireworks"
     ]
   }
 }

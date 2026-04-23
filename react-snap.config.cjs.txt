@@ -1,6 +1,8 @@
 //PARA PODER COMPILARO LA PAGINA Y SE GENEREN PARA EFECTOS DE SEO
 1. Se instalo la libreria de react-snap
 2. Agregar a package.json las siguientes lineas
+
+IMPORTANTE: Cuando  hacemos el deploy en netlify tenemos que dejar solo  "postbuild": "react-snap", ya que requiere bastantes recursos
 "scripts": {
   "build": "vite build",
   "postbuild": "node generate-routes.cjs && react-snap"
@@ -15,6 +17,7 @@
     "routes": []
 }
 3. Generar el archivo generate-routes.cjs, en este archivo mapeamos las rutas manualmente desde los archivos JSON
+  IMPORTANTE 
 4. Se agregó un script a index.html
  <script>
   (function () {
