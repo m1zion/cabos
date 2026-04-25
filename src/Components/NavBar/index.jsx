@@ -52,8 +52,10 @@ export default function NavBar() {
           element.scrollIntoView({ behavior: 'smooth' });
         }
       };
-      if (location.pathname !== "/") {
-        navigate("/", { replace: false }); // Go to home
+      if (location.pathname !== `/${language}`) {
+
+        navigate(`/${language}`, { replace: false });
+        //navigate("/", { replace: false }); // Go to home
         // Delay scroll to wait for the home page to load
         setTimeout(scrollToTarget, 200);
       } else {
@@ -81,8 +83,8 @@ export default function NavBar() {
               element.scrollIntoView({ behavior: "smooth" });
             }
           };
-          if (location.pathname !== "/") {
-            navigate("/", { replace: false });
+          if (location.pathname !== `/${language}`) {
+            navigate(`/${language}`, { replace: false });
             setTimeout(scrollToTarget, 200);
           } else {
             scrollToTarget();
