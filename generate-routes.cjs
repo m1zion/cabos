@@ -12,10 +12,10 @@ languages.forEach(lang => {
     routes.push(`/${lang}/tours/${tour.category}`)
   })
   toursData.tours.forEach(tour => {
-    routes.push(`/${lang}/tourDetail/${tour.id}`)
+    routes.push(`/${lang}/tourdetail/${tour.id}`)
   })
   experiencesData.experiences.forEach(experience => {
-    routes.push(`/${lang}/experienceDetail/${experience.id}`)
+    routes.push(`/${lang}/experiencedetail/${experience.id}`)
   })
 })
 

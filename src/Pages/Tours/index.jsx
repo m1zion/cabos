@@ -10,13 +10,13 @@ import WhatsApp from "../../Components/WhatsApp";
 import { withBase } from "../../Utils/path";
 import { Helmet } from "react-helmet-async";
 const categories = [
-  { key: 'sunsetCruises', image: '../assets/images/sunset.jpg',title:'Sunset & Luxury Tours in Los Cabos | Los Cabos Moments ',content:'Discover sunset cruises, luxury tours and unique experiences in Los Cabos. Private and premium tours curated by local experts.'},
-  { key: 'waterExperiences', image: '../assets/images/snorkel.jpg' },
-  { key: 'boatYatch', image: '../assets/images/boat.jpg' },
-  { key: 'whaleWatching', image: '../assets/images/sea.jpg' },
-  { key: 'camelHorse', image: '../assets/images/camel.jpg' },
-  { key: 'atvRazors', image: '../assets/images/utv.jpg' },
-  { key: 'dayTrip', image: '../assets/images/land.jpg' },
+  { key: 'sunsetcruises', image: '../assets/images/sunset.jpg',title:'Sunset & Luxury Tours in Los Cabos | Los Cabos Moments ',content:'Discover sunset cruises, luxury tours and unique experiences in Los Cabos. Private and premium tours curated by local experts.'},
+  { key: 'waterexperiences', image: '../assets/images/snorkel.jpg' },
+  { key: 'boatyatch', image: '../assets/images/boat.jpg' },
+  { key: 'whalewatching', image: '../assets/images/sea.jpg' },
+  { key: 'camelhorse', image: '../assets/images/camel.jpg' },
+  { key: 'atvrazors', image: '../assets/images/utv.jpg' },
+  { key: 'daytrip', image: '../assets/images/land.jpg' },
 ];
 function tours() {      
     const { lang, category } = useParams();  
@@ -57,8 +57,8 @@ function tours() {
               return (     
                 
                
-                 <Link to={`/${language}/tourDetail/${tour.id}`} key={tour.id}>
-                  {/*<div key={tour.id}> to={`/${language}/tourDetail/${tour.id}`}*/}
+                 <Link to={`/${language}/tourdetail/${tour.id}`} key={tour.id}>
+                  {/*<div key={tour.id}> to={`/${language}/tourdetail/${tour.id}`}*/}
                   <div
                     key={tour.id}
                     className="w-[330px] bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03]"

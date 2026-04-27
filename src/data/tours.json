@@ -1,9 +1,9 @@
 {
   "tours": [
     {
-      "id": "sunsetPartyboat",
+      "id": "sunsetpartyboat",
       "name": "Sunset Partyboat with Mexican dinner",
-      "category": "sunsetCruises",
+      "category": "sunsetcruises",
       "images": {
         "portrait": "/assets/images/tours/sunsetPartyboat/portrait.jpg",
         "gallery": [
@@ -48,9 +48,9 @@
       }
     },
     {
-      "id": "sunsetDinnerPirate",
+      "id": "sunsetdinnerpirate",
       "name": "Sunset Dinner & Pirate Show Tour",
-      "category": "sunsetCruises",
+      "category": "sunsetcruises",
       "images": {
         "portrait": "/assets/images/tours/sunsetDinnerPirate/portrait.jpg",
         "gallery": [
@@ -96,9 +96,9 @@
       }
     },
     {
-      "id": "sunsetJazz",
+      "id": "sunsetjazz",
       "name": "Sunset Jazz & Wine Tour",
-      "category": "sunsetCruises",
+      "category": "sunsetcruises",
       "images": {
         "portrait": "/assets/images/tours/sunsetJazz/portrait.jpg",
         "gallery": [
@@ -144,9 +144,9 @@
       }
     },
     {
-      "id": "romanticSunset",
+      "id": "romanticsunset",
       "name": "Romantic sunset sailing tour",
-      "category": "sunsetCruises",
+      "category": "sunsetcruises",
       "images": {
         "portrait": "/assets/images/tours/romanticSunset/portrait.jpg",
         "gallery": [
@@ -192,9 +192,9 @@
       }
     },
     {
-      "id": "snorkelAdventure",
+      "id": "snorkeladventure",
       "name": "Snorkel adventure with lunch",
-      "category": "waterExperiences",
+      "category": "waterexperiences",
       "images": {
         "portrait": "/assets/images/tours/snorkelAdventure/portrait.jpg",
         "gallery": [
@@ -240,9 +240,9 @@
       }
     },
     {
-      "id": "snorkelPirate",
+      "id": "snorkelpirate",
       "name": "Pirate Ship Snorkel experience with lunch",
-      "category": "waterExperiences",
+      "category": "waterexperiences",
       "images": {
         "portrait": "/assets/images/tours/snorkelPirate/portrait.jpg",
         "gallery": [
@@ -288,9 +288,9 @@
       }
     },
     {
-      "id": "scubaDiving",
+      "id": "scubadiving",
       "name": "Scuba Diving Beginner Experience",
-      "category": "waterExperiences",
+      "category": "waterexperiences",
       "images": {
         "portrait": "/assets/images/tours/scubaDiving/portrait.jpg",
         "gallery": [
@@ -339,9 +339,9 @@
       }
     },
     {
-      "id": "surfLessons",
+      "id": "surflessons",
       "name": "Surf Lessons at Costa Azul",
-      "category": "waterExperiences",
+      "category": "waterexperiences",
       "images": {
         "portrait": "/assets/images/tours/surfLessons/portrait.jpg",
         "gallery": [
@@ -390,9 +390,9 @@
       }
     },
     {
-      "id": "jetSki",
+      "id": "jetski",
       "name": "Jet Ski",
-      "category": "waterExperiences",
+      "category": "waterexperiences",
       "images": {
         "portrait": "/assets/images/tours/jetSki/portrait.jpg",
         "gallery": [
@@ -440,7 +440,7 @@
     {
       "id": "parasailing",
       "name": "Parasailing",
-      "category": "waterExperiences",
+      "category": "waterexperiences",
       "images": {
         "portrait": "/assets/images/tours/paraSailing/portrait.jpg",
         "gallery": [
@@ -485,9 +485,9 @@
       }
     },
     {
-      "id": "archOfCabo",
+      "id": "archofcabo",
       "name": "Visit the Arch of Cabo San Lucas in a transparent boat",
-      "category": "boatYatch",
+      "category": "boatyatch",
       "images": {
         "portrait": "/assets/images/tours/archOfCabo/portrait.jpg",
         "gallery": [
@@ -534,9 +534,9 @@
       }
     },
     {
-      "id": "privateBoat",
+      "id": "privateboat",
       "name": "Private Boat and Yacht Tours Cabo San Lucas",
-      "category": "boatYatch",
+      "category": "boatyatch",
       "images": {
         "portrait": "/assets/images/tours/privateBoat/portrait.jpg",
         "gallery": [
@@ -584,7 +584,7 @@
     {
       "id": "fishing",
       "name": "Fishing boat rental",
-      "category": "boatYatch",
+      "category": "boatyatch",
       "images": {
         "portrait": "/assets/images/tours/fishing/portrait.jpg",
         "gallery": []
@@ -627,9 +627,9 @@
       }
     },
     {
-      "id": "whaleWatching",
+      "id": "whalewatching",
       "name": "Whale Watching breakfast",
-      "category": "whaleWatching",
+      "category": "whalewatching",
       "images": {
         "portrait": "/assets/images/tours/whaleWatching/portrait.jpg",
         "gallery": [
@@ -674,9 +674,9 @@
       }
     },
     {
-      "id": "pirateWhaleWatching",
+      "id": "piratewhalewatching",
       "name": "Pirate Ship Whale Watching breakfast",
-      "category": "whaleWatching",
+      "category": "whalewatching",
       "images": {
         "portrait": "/assets/images/tours/pirateWhaleWatching/portrait.jpg",
         "gallery": [ ]
@@ -719,9 +719,9 @@
       }
     },
     {
-      "id": "whaleWatchingSunset",
+      "id": "whalewatchingsunset",
       "name": "Whale Watching dinner cruise",
-      "category": "whaleWatching",
+      "category": "whalewatching",
       "images": {
         "portrait": "/assets/images/tours/whaleWatchingSunset/portrait.jpg",
         "gallery": [
@@ -766,9 +766,9 @@
       }
     },
     {
-      "id": "dunesCamel",
+      "id": "dunescamel",
       "name": "Beach & Dunes Camel Ride Experience",
-      "category": "camelHorse",
+      "category": "camelhorse",
       "images": {
         "portrait": "/assets/images/tours/dunesCamel/portrait.jpg",
         "gallery": [
@@ -813,9 +813,9 @@
       }
     },
     {
-      "id": "beachHorse",
+      "id": "beachhorse",
       "name": "Beach Horseback Riding",
-      "category": "camelHorse",
+      "category": "camelhorse",
       "images": {
         "portrait": "/assets/images/tours/beachHorse/portrait.jpg",
         "gallery": [
@@ -860,9 +860,9 @@
       }
     },
     {
-      "id": "dunesATV",
+      "id": "dunesatv",
       "name": "Beach & Dunes ATV Tour",
-      "category": "atvRazors",
+      "category": "atvrazors",
       "images": {
         "portrait": "/assets/images/tours/dunesATV/portrait.jpg",
         "gallery": [
@@ -907,9 +907,9 @@
       }
     },
     {
-      "id": "dunesUTV",
+      "id": "dunesutv",
       "name": "Beach & Dunes UTV Razor Tour",
-      "category": "atvRazors",
+      "category": "atvrazors",
       "images": {
         "portrait": "/assets/images/tours/dunesUTV/portrait.jpg",
         "gallery": [
@@ -954,9 +954,9 @@
       }
     },
     {
-      "id": "balandraBeach",
+      "id": "balandrabeach",
       "name": "Balandra Beach, City Tour La Paz & Todos Santos",
-      "category": "dayTrip",
+      "category": "daytrip",
       "images": {
         "portrait": "/assets/images/tours/balandraBeach/portrait.jpg",
         "gallery": [
@@ -1002,9 +1002,9 @@
       }
     },
     {
-      "id": "espirituSanto",
+      "id": "espiritusanto",
       "name": "Espiritu Santo Island Boat and Snorkel Experience",
-      "category": "dayTrip",
+      "category": "daytrip",
       "images": {
         "portrait": "/assets/images/tours/espirituSanto/portrait.jpg",
         "gallery": [
@@ -1050,9 +1050,9 @@
       }
     },
     {
-      "id": "whaleSharkPaz",
+      "id": "whalesharkpaz",
       "name": "Whale Shark Snorkeling in La Paz",
-      "category": "dayTrip",
+      "category": "daytrip",
       "images": {
           "portrait": "/assets/images/tours/whaleSharkPaz/portrait.jpg",
           "gallery": [
@@ -1097,9 +1097,9 @@
       }
     },
     {
-      "id": "snorkelCaboPulmo",
+      "id": "snorkelcabopulmo",
       "name": "Snorkel in Cabo Pulmo Marine Park",
-      "category": "dayTrip",
+      "category": "daytrip",
       "images": {
           "portrait": "/assets/images/tours/snorkelCaboPulmo/portrait.jpg",
           "gallery": [
@@ -1146,7 +1146,7 @@
     {
       "id": "santiago",
       "name": "Santiago Waterfall",
-      "category": "dayTrip",
+      "category": "daytrip",
       "images": {
           "portrait": "/assets/images/tours/santiago/portrait.jpg",
           "gallery": []
@@ -1189,9 +1189,9 @@
       }
     },
     {
-      "id": "todosSantos",
+      "id": "todossantos",
       "name": "Todos Santos Day Tour",
-      "category": "dayTrip",
+      "category": "daytrip",
       "images": {
           "portrait": "/assets/images/tours/todosSantos/portrait.jpg",
           "gallery": [

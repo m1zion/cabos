@@ -9,7 +9,7 @@ const categories = [
   { key: 'sanJose', name: 'San José del Cabo', image: '/assets/images/cabos/Picture8.png' },
   { key: 'losCabos', name: 'Cabo San Lucas', image: '/assets/images/cabos/Picture13.png' },
   { key: 'laPaz', name: 'La Paz', image: '/assets/images/cabos/Picture6.jpg' },
-  { key: 'todosSantos', name: 'Todos Santos', image: '/assets/images/cabos/Picture15.png' }
+  { key: 'todossantos', name: 'Todos Santos', image: '/assets/images/cabos/Picture15.png' }
 ];
 const themes = {
   sand: {

@@ -26,7 +26,7 @@ const categories = [
   { key: 'sanJose', name: 'San José del Cabo', image:['/assets/images/city.jpg','/assets/images/cabos/sanJose2.png','/assets/images/cabos/sanJose3.png','/assets/images/cabos/sanJose5.png','/assets/images/cabos/sanJose6.png'] },
   { key: 'losCabos', name: 'Cabo San Lucas', image:['/assets/images/cabos/cabos1.png','/assets/images/cabos/cabos2.png','/assets/images/cabos/cabos3.png'] },
   { key: 'laPaz', name: 'La Paz', image:['/assets/images/cabos/Picture6.jpg','/assets/images/cabos/Picture7.png'] },
-  { key: 'todosSantos', name: 'Todos Santos', image:['/assets/images/cabos/Picture15.png','/assets/images/cabos/todosSantos2.png','/assets/images/cabos/todosSantos3.png','/assets/images/cabos/todosSantos4.png']}
+  { key: 'todossantos', name: 'Todos Santos', image:['/assets/images/cabos/Picture15.png','/assets/images/cabos/todosSantos2.png','/assets/images/cabos/todosSantos3.png','/assets/images/cabos/todosSantos4.png']}
 ];
 
 function places() {  
@@ -55,7 +55,7 @@ function places() {
         texto1 = content.place20;
         texto2 = content.place21;
       break;
-      case 'todosSantos':
+      case 'todossantos':
         texto1 = content.place22;
         texto2 = content.place23;
       break;

@@ -1,7 +1,7 @@
 {
   "experiences": [
     {
-      "id": "tequilaMezcalTasting",
+      "id": "tequilamezcaltasting",
       "name": "Private Tequila & Mezcal Tasting",
       "category": "Experiences",
       "images": {
@@ -48,7 +48,7 @@
       }
     },
     {
-      "id":  "pizzaMakingExperience",
+      "id":  "pizzamakingexperience",
       "name": "Pizza-Making Experience",
       "category": "Experiences",
       "images": {

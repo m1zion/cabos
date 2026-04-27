@@ -82,7 +82,7 @@ const Experiences = () =>{
               const t = experience.translations[language] || experience.translations.en;
               return (                
                 <Link 
-                  to={`/${language}/experienceDetail/${experience.id}`} 
+                  to={`/${language}/experiencedetail/${experience.id}`} 
                   key={experience.id}
                 >                
                   <div

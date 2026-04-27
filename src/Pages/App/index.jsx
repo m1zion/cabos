@@ -11,8 +11,8 @@ import Accommodation from '../Accommodation/'
 import Tours from '../Tours/'
 import Places from '../Places/'
 import Restaurants from '../Restaurants/'
-import TourDetail from '../Tours/tourDetail'
-import ExperienceDetail from '../Experiences/'
+import Tourdetail from '../Tours/tourdetail'
+import Experiencedetail from '../Experiences/'
 import BookTour from '../Tours/bookTour'
 import BookExperience from '../Experiences/bookExperience'
 import BookRestaurant from '../Restaurants/bookRestaurant'
@@ -43,8 +43,8 @@ const AppRoutes = () =>{
       children: [
         { index: true, element: <Home /> },
         { path: 'Tours/:category', element: <Tours /> },
-        { path: 'TourDetail/:id', element: <TourDetail /> },
-        { path: 'ExperienceDetail/:id', element: <ExperienceDetail /> },
+        { path: 'Tourdetail/:id', element: <Tourdetail /> },
+        { path: 'Experiencedetail/:id', element: <Experiencedetail /> },
         { path: 'BookTour/:id', element: <BookTour /> },   
         { path: 'Accommodation/:id', element: <Accommodation /> },
         { path: 'Places/:id', element: <Places /> },

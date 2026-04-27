@@ -24,7 +24,7 @@ L.Icon.Default.mergeOptions({
   iconUrl: markerIcon,
   shadowUrl: markerShadow,
 });
-function ExperienceDetail() {  
+function Experiencedetail() {  
     //const { language } = useContext(ToursContext);
     const { lang, id } = useParams();
     const language = lang || 'en';
@@ -138,4 +138,4 @@ function ExperienceDetail() {
         </Layout>
     )
 }
-export default ExperienceDetail
+export default Experiencedetail

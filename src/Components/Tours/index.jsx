@@ -9,13 +9,13 @@ import bgImage from '../../assets/icons/abstract-envelope-sand.svg?react';
 //import Logo2  from '../../assets/icons/bg3.svg?react';
 
 const categories = [
-  { key: 'sunsetCruises', image: '/assets/images/sunset.jpg' },
-  { key: 'waterExperiences', image: '/assets/images/snorkel.jpg' },
-  { key: 'boatYatch', image: '/assets/images/boat.jpg' },
-  { key: 'whaleWatching', image: '/assets/images/sea.jpg' },
-  { key: 'camelHorse', image: '/assets/images/camel.jpg' },
-  { key: 'atvRazors', image: '/assets/images/utv.jpg' },
-  { key: 'dayTrip', image: '/assets/images/land.jpg' },
+  { key: 'sunsetcruises', image: '/assets/images/sunset.jpg' },
+  { key: 'waterexperiences', image: '/assets/images/snorkel.jpg' },
+  { key: 'boatyatch', image: '/assets/images/boat.jpg' },
+  { key: 'whalewatching', image: '/assets/images/sea.jpg' },
+  { key: 'camelhorse', image: '/assets/images/camel.jpg' },
+  { key: 'atvrazors', image: '/assets/images/utv.jpg' },
+  { key: 'daytrip', image: '/assets/images/land.jpg' },
 ];
 //OPCION DE COLORES 2.1
 //#DDE7E6 #ADD2DA #378BA1 #F8EEDD #FFDCB6 #D2B387
